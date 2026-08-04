@@ -1,0 +1,541 @@
+[0m16:42:58.686926 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022570BBDA90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002256D8DAE90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022572FBBED0>]}
+
+
+============================== 16:42:58.693302 | 5b90382d-1353-495b-949b-78903a76d54e ==============================
+[0m16:42:58.693302 [info ] [MainThread]: Running with dbt=1.11.12
+[0m16:42:58.694050 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\tommad01\\.dbt', 'indirect_selection': 'eager', 'use_colors': 'True', 'invocation_command': 'dbt ', 'use_experimental_parser': 'False', 'log_path': 'c:\\Users\\tommad01\\Desktop\\Lab\\lab_dbt\\logs'}
+[0m16:42:58.993938 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '5b90382d-1353-495b-949b-78903a76d54e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000225712A9350>]}
+[0m16:42:59.038030 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m16:42:59.039258 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m16:42:59.041018 [debug] [MainThread]: Command `cli deps` succeeded at 16:42:59.040569 after 0.55 seconds
+[0m16:42:59.041437 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022571DF3DF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022573560270>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022571EB9850>]}
+[0m16:42:59.041838 [debug] [MainThread]: Flushing usage events
+[0m16:42:59.335881 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:01:09.573216 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001872B7FAAD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001872B7FB6D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001872B7FBC90>]}
+
+
+============================== 17:01:09.578186 | acdf237a-dbf5-426b-8765-8f6bb81bf987 ==============================
+[0m17:01:09.578186 [info ] [MainThread]: Running with dbt=1.12.0
+[0m17:01:09.579186 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\tommad01\\.dbt', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'invocation_command': 'dbt debug', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'C:\\Users\\tommad01\\Desktop\\Lab\\lab_dbt\\logs'}
+[0m17:01:09.604588 [info ] [MainThread]: dbt version: 1.12.0
+[0m17:01:09.605187 [info ] [MainThread]: python version: 3.11.15
+[0m17:01:09.607187 [info ] [MainThread]: python path: C:\Users\tommad01\envs\dbt\python.exe
+[0m17:01:09.607327 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m17:01:11.242794 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m17:01:11.243793 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m17:01:11.244906 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m17:01:12.396036 [info ] [MainThread]: Using profiles dir at C:\Users\tommad01\.dbt
+[0m17:01:12.397326 [info ] [MainThread]: Using profiles.yml file at C:\Users\tommad01\.dbt\profiles.yml
+[0m17:01:12.398036 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\tommad01\Desktop\Lab\lab_dbt\dbt_project.yml
+[0m17:01:12.399038 [info ] [MainThread]: adapter type: databricks
+[0m17:01:12.400040 [info ] [MainThread]: adapter version: 1.12.3
+[0m17:01:12.529071 [info ] [MainThread]: Configuration:
+[0m17:01:12.530038 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m17:01:12.530038 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m17:01:12.531039 [info ] [MainThread]: Required dependencies:
+[0m17:01:12.532038 [debug] [MainThread]: Executing "git --help"
+[0m17:01:12.679557 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m17:01:12.680591 [debug] [MainThread]: STDERR: "b''"
+[0m17:01:12.681165 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m17:01:12.681556 [info ] [MainThread]: Connection:
+[0m17:01:12.682555 [info ] [MainThread]:   host: adb-7405606624435497.17.azuredatabricks.net
+[0m17:01:12.682555 [info ] [MainThread]:   http_path: /sql/1.0/warehouses/8f40c0f5ed465bfa
+[0m17:01:12.683557 [info ] [MainThread]:   catalog: opsanalytics_adb_workspace01
+[0m17:01:12.684556 [info ] [MainThread]:   schema: lab_staging
+[0m17:01:12.685557 [info ] [MainThread]: Registered adapter: databricks=1.12.3
+[0m17:01:13.397877 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=debug) - Creating connection
+[0m17:01:13.398874 [debug] [MainThread]: Acquiring new databricks connection 'debug'
+[0m17:01:16.263796 [info ] [MainThread]: Databricks adapter: SPOG discovery probe to 'https://adb-7405606624435497.17.azuredatabricks.net/.well-known/databricks-config' failed after 3 attempts (last error: HTTPSConnectionPool(host='adb-7405606624435497.17.azuredatabricks.net', port=443): Max retries exceeded with url: /.well-known/databricks-config (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)')))). Proceeding as a non-SPOG host. If adb-7405606624435497.17.azuredatabricks.net is a SPOG (unified) workspace, routing errors may follow; verify network reachability to /.well-known/databricks-config.
+[0m17:01:16.275794 [info ] [MainThread]: Databricks adapter:   SPOG host (host_type=None): no
+[0m17:01:16.277882 [info ] [MainThread]: Databricks adapter:   workspace_id (from ?o= in http_path): None
+[0m17:01:16.279793 [info ] [MainThread]: Databricks adapter:   databricks-sql-connector version: 4.3.0 (supported)
+[0m17:01:16.280822 [info ] [MainThread]: Databricks adapter:   databricks-sdk version: 0.117.0 (supported)
+[0m17:01:16.282800 [debug] [MainThread]: Using databricks connection "debug"
+[0m17:01:16.283890 [debug] [MainThread]: On debug: select 1 as id
+[0m17:01:16.284794 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:01:33.600792 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+
+[0m17:01:33.619072 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\tommad01\envs\dbt\Lib\site-packages\urllib3\connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "C:\Users\tommad01\envs\dbt\Lib\site-packages\urllib3\connectionpool.py", line 1106, in _validate_conn
+    conn.connect()
+  File "C:\Users\tommad01\envs\dbt\Lib\site-packages\urllib3\connection.py", line 796, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tommad01\envs\dbt\Lib\site-packages\urllib3\connection.py", line 975, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+               ^^^^^^^^^^^^^^^^
+  File "C:\Users\tommad01\envs\dbt\Lib\site-packages\urllib3\util\ssl_.py", line 433, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tommad01\envs\dbt\Lib\site-packages\urllib3\util\ssl_.py", line 477, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tommad01\envs\dbt\Lib\ssl.py", line 517, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tommad01\envs\dbt\Lib\ssl.py", line 1104, in _create
+    self.do_handshake()
+  File "C:\Users\tommad01\envs\dbt\Lib\ssl.py", line 1382, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\tommad01\envs\dbt\Lib\site-packages\urllib3\connectionpool.py", line 788, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tommad01\envs\dbt\Lib\site-packages\urllib3\connectionpool.py", line 488, in _make_request
+    raise new_e
+urllib3.exceptions.SSLError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\tommad01\envs\dbt\Lib\site-packages\requests\adapters.py", line 696, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\tommad01\envs\dbt\Lib\site-packages\urllib3\connectionpool.py", line 842, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tommad01\envs\dbt\Lib\site-packages\urllib3\util\retry.py", line 543, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='adb-7405606624435497.17.azuredatabricks.net', port=443): Max retries exceeded with url: /.well-known/databricks-config (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\tommad01\envs\dbt\Lib\site-packages\databricks\sdk\retries.py", line 38, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tommad01\envs\dbt\Lib\site-packages\databricks\sdk\_base_client.py", line 284, in _perform
+    response = self._session.request(
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tommad01\envs\dbt\Lib\site-packages\requests\sessions.py", line 651, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tommad01\envs\dbt\Lib\site-packages\requests\sessions.py", line 784, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tommad01\envs\dbt\Lib\site-packages\requests\adapters.py", line 727, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='adb-7405606624435497.17.azuredatabricks.net', port=443): Max retries exceeded with url: /.well-known/databricks-config (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1016)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\tommad01\envs\dbt\Lib\site-packages\dbt\cli\requires.py", line 190, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tommad01\envs\dbt\Lib\site-packages\dbt\cli\requires.py", line 136, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tommad01\envs\dbt\Lib\site-packages\dbt\cli\main.py", line 439, in debug
+    results = task.run()
+              ^^^^^^^^^^
+  File "C:\Users\tommad01\envs\dbt\Lib\site-packages\dbt\task\debug.py", line 144, in run
+    connection_status = self.test_connection()
+                        ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tommad01\envs\dbt\Lib\site-packages\dbt\task\debug.py", line 465, in test_connection
+    connection_result = self.attempt_connection(self.profile)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tommad01\envs\dbt\Lib\site-packages\dbt\task\debug.py", line 443, in attempt_connection
+    adapter.debug_query()
+  File "C:\Users\tommad01\envs\dbt\Lib\site-packages\dbt\adapters\databricks\impl.py", line 1179, in debug_query
+    self.execute("select 1 as id")
+  File "C:\Users\tommad01\envs\dbt\Lib\site-packages\dbt\adapters\databricks\impl.py", line 520, in execute
+    return super().execute(sql=sql, auto_begin=auto_begin, fetch=fetch, limit=limit)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tommad01\envs\dbt\Lib\site-packages\dbt_common\record.py", line 538, in record_replay_wrapper
+    return func_to_record(*call_args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tommad01\envs\dbt\Lib\site-packages\dbt\adapters\base\impl.py", line 523, in execute
+    return self.connections.execute(sql=sql, auto_begin=auto_begin, fetch=fetch, limit=limit)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tommad01\envs\dbt\Lib\site-packages\dbt\adapters\databricks\connections.py", line 384, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tommad01\envs\dbt\Lib\site-packages\dbt\adapters\databricks\connections.py", line 356, in add_query
+    handle: DatabricksHandle = connection.handle
+                               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\tommad01\envs\dbt\Lib\site-packages\dbt\adapters\contracts\connection.py", line 96, in handle
+    self._handle.resolve(self)
+  File "C:\Users\tommad01\envs\dbt\Lib\site-packages\dbt\adapters\contracts\connection.py", line 120, in resolve
+    return self.opener(connection)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tommad01\envs\dbt\Lib\site-packages\dbt\adapters\databricks\connections.py", line 536, in open
+    return cls.retry_connection(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tommad01\envs\dbt\Lib\site-packages\dbt\adapters\base\connections.py", line 237, in retry_connection
+    connection.handle = connect()
+                        ^^^^^^^^^
+  File "C:\Users\tommad01\envs\dbt\Lib\site-packages\dbt\adapters\databricks\connections.py", line 511, in connect
+    conn = DatabricksHandle.from_connection_args(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tommad01\envs\dbt\Lib\site-packages\dbt\adapters\databricks\handle.py", line 280, in from_connection_args
+    conn = dbsql.connect(**conn_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tommad01\envs\dbt\Lib\site-packages\databricks\sql\__init__.py", line 93, in connect
+    return Connection(server_hostname, http_path, access_token, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tommad01\envs\dbt\Lib\site-packages\databricks\sql\client.py", line 321, in __init__
+    self.session = Session(
+                   ^^^^^^^^
+  File "C:\Users\tommad01\envs\dbt\Lib\site-packages\databricks\sql\session.py", line 121, in __init__
+    self.auth_provider = get_python_sql_connector_auth_provider(
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tommad01\envs\dbt\Lib\site-packages\databricks\sql\auth\auth.py", line 134, in get_python_sql_connector_auth_provider
+    return get_auth_provider(cfg, http_client)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tommad01\envs\dbt\Lib\site-packages\databricks\sql\auth\auth.py", line 19, in get_auth_provider
+    base_provider = ExternalAuthProvider(cfg.credentials_provider)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tommad01\envs\dbt\Lib\site-packages\databricks\sql\auth\authenticators.py", line 153, in __init__
+    self._header_factory = credentials_provider()
+                           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tommad01\envs\dbt\Lib\site-packages\dbt\adapters\databricks\credentials.py", line 433, in inner
+    return self.header_factory
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tommad01\envs\dbt\Lib\site-packages\dbt\adapters\databricks\credentials.py", line 439, in header_factory
+    header_factory = self._ensure_config()._header_factory
+                     ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tommad01\envs\dbt\Lib\site-packages\dbt\adapters\databricks\credentials.py", line 375, in _ensure_config
+    self._config = self.authenticate_with_pat()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tommad01\envs\dbt\Lib\site-packages\dbt\adapters\databricks\credentials.py", line 314, in authenticate_with_pat
+    return Config(**self._config_kwargs(host=self.host, token=self.token))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tommad01\envs\dbt\Lib\site-packages\databricks\sdk\config.py", line 321, in __init__
+    self._resolve_host_metadata()
+  File "C:\Users\tommad01\envs\dbt\Lib\site-packages\databricks\sdk\config.py", line 641, in _resolve_host_metadata
+    meta = get_host_metadata(self.host)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tommad01\envs\dbt\Lib\site-packages\databricks\sdk\oauth.py", line 482, in get_host_metadata
+    resp = client.do("GET", f"{host}/.well-known/databricks-config")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tommad01\envs\dbt\Lib\site-packages\databricks\sdk\_base_client.py", line 197, in do
+    response = call(
+               ^^^^^
+  File "C:\Users\tommad01\envs\dbt\Lib\site-packages\databricks\sdk\retries.py", line 65, in wrapper
+    clock.sleep(sleep + random())
+  File "C:\Users\tommad01\envs\dbt\Lib\site-packages\databricks\sdk\clock.py", line 48, in sleep
+    time.sleep(seconds)
+KeyboardInterrupt
+
+[0m17:01:33.620791 [debug] [MainThread]: Command `dbt debug` failed at 17:01:33.620791 after 24.25 seconds
+[0m17:01:33.622792 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001872B895190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001872B7F76D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001872B7F7D90>]}
+[0m17:01:33.623796 [debug] [MainThread]: Flushing usage events
+[0m17:01:33.752554 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:02:27.214905 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000277001AA3D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000277002DB010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000277002DB1D0>]}
+
+
+============================== 17:02:27.219222 | 23303ff7-8e12-45c3-a38f-302d12ea2fd5 ==============================
+[0m17:02:27.219222 [info ] [MainThread]: Running with dbt=1.12.0
+[0m17:02:27.221004 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\tommad01\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'hints_enabled': 'True', 'invocation_command': 'dbt debug', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\tommad01\\Desktop\\Lab\\lab_dbt\\logs'}
+[0m17:02:27.248437 [info ] [MainThread]: dbt version: 1.12.0
+[0m17:02:27.249449 [info ] [MainThread]: python version: 3.11.15
+[0m17:02:27.250666 [info ] [MainThread]: python path: C:\Users\tommad01\envs\dbt\python.exe
+[0m17:02:27.251392 [info ] [MainThread]: os info: Windows-10-10.0.19045-SP0
+[0m17:02:28.952419 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m17:02:28.953420 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m17:02:28.954419 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m17:02:30.118030 [info ] [MainThread]: Using profiles dir at C:\Users\tommad01\.dbt
+[0m17:02:30.119030 [info ] [MainThread]: Using profiles.yml file at C:\Users\tommad01\.dbt\profiles.yml
+[0m17:02:30.120032 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\tommad01\Desktop\Lab\lab_dbt\dbt_project.yml
+[0m17:02:30.121033 [info ] [MainThread]: adapter type: databricks
+[0m17:02:30.122030 [info ] [MainThread]: adapter version: 1.12.3
+[0m17:02:30.251063 [info ] [MainThread]: Configuration:
+[0m17:02:30.252402 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m17:02:30.253065 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m17:02:30.254064 [info ] [MainThread]: Required dependencies:
+[0m17:02:30.255031 [debug] [MainThread]: Executing "git --help"
+[0m17:02:30.408059 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m17:02:30.409061 [debug] [MainThread]: STDERR: "b''"
+[0m17:02:30.409668 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m17:02:30.410059 [info ] [MainThread]: Connection:
+[0m17:02:30.411060 [info ] [MainThread]:   host: adb-7405606624435497.17.azuredatabricks.net
+[0m17:02:30.411060 [info ] [MainThread]:   http_path: /sql/1.0/warehouses/8f40c0f5ed465bfa
+[0m17:02:30.412059 [info ] [MainThread]:   catalog: opsanalytics_adb_workspace01
+[0m17:02:30.413059 [info ] [MainThread]:   schema: lab_staging
+[0m17:02:30.414058 [info ] [MainThread]: Registered adapter: databricks=1.12.3
+[0m17:02:31.328339 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=debug) - Creating connection
+[0m17:02:31.329335 [debug] [MainThread]: Acquiring new databricks connection 'debug'
+[0m17:02:31.925453 [info ] [MainThread]: Databricks adapter:   SPOG host (host_type='workspace'): no
+[0m17:02:31.926448 [info ] [MainThread]: Databricks adapter:   workspace_id (from ?o= in http_path): None
+[0m17:02:31.927453 [info ] [MainThread]: Databricks adapter:   databricks-sql-connector version: 4.3.0 (supported)
+[0m17:02:31.929425 [info ] [MainThread]: Databricks adapter:   databricks-sdk version: 0.117.0 (supported)
+[0m17:02:31.930423 [debug] [MainThread]: Using databricks connection "debug"
+[0m17:02:31.931422 [debug] [MainThread]: On debug: select 1 as id
+[0m17:02:31.932958 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:02:33.709051 [debug] [MainThread]: Databricks adapter: Connection(session-id=01f18f7e-a592-11e5-830a-b699a38bd0f6) - Created
+[0m17:02:39.994633 [debug] [MainThread]: SQL status: OK in 8.060 seconds
+[0m17:02:39.999632 [debug] [MainThread]: Databricks adapter: Cursor(session-id=01f18f7e-a592-11e5-830a-b699a38bd0f6, command-id=01f18f7e-a5f3-17c5-9d17-3d93daa70973) - Closing
+[0m17:02:40.243801 [debug] [MainThread]: On debug: Close
+[0m17:02:40.244796 [debug] [MainThread]: Databricks adapter: Connection(session-id=01f18f7e-a592-11e5-830a-b699a38bd0f6) - Closing
+[0m17:02:40.398669 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m17:02:40.400632 [info ] [MainThread]: [32mAll checks passed![0m
+[0m17:02:40.403629 [debug] [MainThread]: Command `dbt debug` succeeded at 17:02:40.403629 after 13.33 seconds
+[0m17:02:40.405629 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000277001CD890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002770019E250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027700264650>]}
+[0m17:02:40.406627 [debug] [MainThread]: Flushing usage events
+[0m17:02:40.810635 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:06:59.734103 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000277C6AD8150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000277C6A18F50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000277C6A19810>]}
+
+
+============================== 17:06:59.739580 | 503f5bea-e597-44fd-bf88-1e81dfa04894 ==============================
+[0m17:06:59.739580 [info ] [MainThread]: Running with dbt=1.12.0
+[0m17:06:59.741104 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\tommad01\\.dbt', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'invocation_command': 'dbt run', 'log_path': 'C:\\Users\\tommad01\\Desktop\\Lab\\lab_dbt\\logs'}
+[0m17:07:01.408762 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m17:07:01.409763 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m17:07:01.410923 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m17:07:03.047587 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '503f5bea-e597-44fd-bf88-1e81dfa04894', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000277D8EA62D0>]}
+[0m17:07:03.143590 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '503f5bea-e597-44fd-bf88-1e81dfa04894', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000277C6B77610>]}
+[0m17:07:03.144590 [info ] [MainThread]: Registered adapter: databricks=1.12.3
+[0m17:07:03.937188 [debug] [MainThread]: checksum: b154c3494314c7223c912bef68d7678b521a9d4ab83524a76084633bd437b3da, vars: {}, profile: lab_dbt, target: dev, version: 1.12.0
+[0m17:07:04.249240 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m17:07:04.250240 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m17:07:04.250590 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m17:07:04.263269 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '503f5bea-e597-44fd-bf88-1e81dfa04894', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000277D8F3D010>]}
+[0m17:07:04.430577 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\tommad01\Desktop\Lab\lab_dbt\target\manifest.json
+[0m17:07:04.436579 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\tommad01\Desktop\Lab\lab_dbt\target\semantic_manifest.json
+[0m17:07:04.481909 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\tommad01\Desktop\Lab\lab_dbt\target\osi_document.json
+[0m17:07:04.502166 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '503f5bea-e597-44fd-bf88-1e81dfa04894', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000277DAD5EE10>]}
+[0m17:07:04.503167 [info ] [MainThread]: Found 2 models, 4 data tests, 773 macros
+[0m17:07:04.504166 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '503f5bea-e597-44fd-bf88-1e81dfa04894', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000277DAD0B350>]}
+[0m17:07:04.507199 [info ] [MainThread]: 
+[0m17:07:04.507827 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m17:07:04.508167 [info ] [MainThread]: 
+[0m17:07:04.509524 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=master) - Creating connection
+[0m17:07:04.510200 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m17:07:04.520168 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_opsanalytics_adb_workspace01) - Creating connection
+[0m17:07:04.521168 [debug] [ThreadPool]: Acquiring new databricks connection 'list_opsanalytics_adb_workspace01'
+[0m17:07:04.538681 [debug] [ThreadPool]: Using databricks connection "list_opsanalytics_adb_workspace01"
+[0m17:07:04.539651 [debug] [ThreadPool]: On list_opsanalytics_adb_workspace01: /* {"app": "dbt", "dbt_version": "1.12.0", "dbt_databricks_version": "1.12.3", "databricks_sql_connector_version": "4.3.0", "profile_name": "lab_dbt", "target_name": "dev", "invocation_id": "503f5bea-e597-44fd-bf88-1e81dfa04894", "connection_name": "list_opsanalytics_adb_workspace01"} */
+
+    
+
+  SHOW SCHEMAS IN `opsanalytics_adb_workspace01`
+
+
+  
+[0m17:07:04.540655 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:07:06.303356 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f18f7f-4821-1536-81a0-8068e9fae958) - Created
+[0m17:07:07.216923 [debug] [ThreadPool]: SQL status: OK in 2.680 seconds
+[0m17:07:07.240986 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f18f7f-4821-1536-81a0-8068e9fae958, command-id=01f18f7f-486f-161e-ac42-1eb9d126e245) - Closing
+[0m17:07:07.241916 [debug] [ThreadPool]: On list_opsanalytics_adb_workspace01: Close
+[0m17:07:07.243108 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f18f7f-4821-1536-81a0-8068e9fae958) - Closing
+[0m17:07:07.407588 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_opsanalytics_adb_workspace01_lab_staging) - Creating connection
+[0m17:07:07.408586 [debug] [ThreadPool]: Acquiring new databricks connection 'list_opsanalytics_adb_workspace01_lab_staging'
+[0m17:07:07.414586 [debug] [ThreadPool]: Using databricks connection "list_opsanalytics_adb_workspace01_lab_staging"
+[0m17:07:07.415874 [debug] [ThreadPool]: On list_opsanalytics_adb_workspace01_lab_staging: /* {"app": "dbt", "dbt_version": "1.12.0", "dbt_databricks_version": "1.12.3", "databricks_sql_connector_version": "4.3.0", "profile_name": "lab_dbt", "target_name": "dev", "invocation_id": "503f5bea-e597-44fd-bf88-1e81dfa04894", "connection_name": "list_opsanalytics_adb_workspace01_lab_staging"} */
+
+    
+SELECT
+  table_name,
+  if(table_type IN ('EXTERNAL', 'MANAGED', 'MANAGED_SHALLOW_CLONE', 'EXTERNAL_SHALLOW_CLONE'), 'table', lower(table_type)) AS table_type,
+  lower(data_source_format) AS file_format,
+  table_owner,
+  if(
+    table_type IN (
+      'EXTERNAL',
+      'MANAGED',
+      'MANAGED_SHALLOW_CLONE',
+      'EXTERNAL_SHALLOW_CLONE'
+    ),
+    lower(table_type),
+    NULL
+  ) AS databricks_table_type
+FROM `system`.`information_schema`.`tables`
+WHERE table_catalog = 'opsanalytics_adb_workspace01'
+  AND table_schema = 'lab_staging'
+
+  
+[0m17:07:07.416589 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:07:08.326009 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f18f7f-4971-14a7-85a0-eeb70192ab93) - Created
+[0m17:07:10.225018 [debug] [ThreadPool]: SQL status: OK in 2.810 seconds
+[0m17:07:10.245718 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f18f7f-4971-14a7-85a0-eeb70192ab93, command-id=01f18f7f-49a6-16ec-8d33-dddf12ef2cf7) - Closing
+[0m17:07:10.247758 [debug] [ThreadPool]: On list_opsanalytics_adb_workspace01_lab_staging: Close
+[0m17:07:10.250156 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f18f7f-4971-14a7-85a0-eeb70192ab93) - Closing
+[0m17:07:10.393776 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '503f5bea-e597-44fd-bf88-1e81dfa04894', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000277C2279550>]}
+[0m17:07:10.408780 [debug] [Thread-3 (]: Began running node model.lab_dbt.my_first_dbt_model
+[0m17:07:10.410763 [info ] [Thread-3 (]: 1 of 2 START sql table model lab_staging.my_first_dbt_model .................... [RUN]
+[0m17:07:10.412760 [debug] [Thread-3 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.lab_dbt.my_first_dbt_model) - Creating connection
+[0m17:07:10.413790 [debug] [Thread-3 (]: Acquiring new databricks connection 'model.lab_dbt.my_first_dbt_model'
+[0m17:07:10.414789 [debug] [Thread-3 (]: Began compiling node model.lab_dbt.my_first_dbt_model
+[0m17:07:10.421786 [debug] [Thread-3 (]: Writing injected SQL for node "model.lab_dbt.my_first_dbt_model"
+[0m17:07:10.427765 [debug] [Thread-3 (]: Began executing node model.lab_dbt.my_first_dbt_model
+[0m17:07:10.461785 [debug] [Thread-3 (]: MATERIALIZING TABLE
+[0m17:07:10.510789 [debug] [Thread-3 (]: Using databricks connection "model.lab_dbt.my_first_dbt_model"
+[0m17:07:10.512757 [debug] [Thread-3 (]: On model.lab_dbt.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.12.0", "dbt_databricks_version": "1.12.3", "databricks_sql_connector_version": "4.3.0", "profile_name": "lab_dbt", "target_name": "dev", "invocation_id": "503f5bea-e597-44fd-bf88-1e81dfa04894", "node_id": "model.lab_dbt.my_first_dbt_model"} */
+SELECT
+    table_catalog,
+    table_schema,
+    table_name,
+    filter_name,
+    target_columns
+  FROM `opsanalytics_adb_workspace01`.`information_schema`.`row_filters`
+  WHERE table_catalog = 'opsanalytics_adb_workspace01'
+    AND table_schema = 'lab_staging'
+    AND table_name = 'my_first_dbt_model'
+[0m17:07:10.514164 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m17:07:11.595495 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f18f7f-4b5b-171e-9cbe-6cf26bb2eedc) - Created
+[0m17:07:12.262989 [debug] [Thread-3 (]: SQL status: OK in 1.750 seconds
+[0m17:07:12.274965 [debug] [Thread-3 (]: Databricks adapter: Cursor(session-id=01f18f7f-4b5b-171e-9cbe-6cf26bb2eedc, command-id=01f18f7f-4b96-1cd6-8025-10cb88370124) - Closing
+[0m17:07:12.320932 [debug] [Thread-3 (]: Writing runtime sql for node "model.lab_dbt.my_first_dbt_model"
+[0m17:07:12.325936 [debug] [Thread-3 (]: Using databricks connection "model.lab_dbt.my_first_dbt_model"
+[0m17:07:12.327934 [debug] [Thread-3 (]: On model.lab_dbt.my_first_dbt_model: /* {"app": "dbt", "dbt_version": "1.12.0", "dbt_databricks_version": "1.12.3", "databricks_sql_connector_version": "4.3.0", "profile_name": "lab_dbt", "target_name": "dev", "invocation_id": "503f5bea-e597-44fd-bf88-1e81dfa04894", "node_id": "model.lab_dbt.my_first_dbt_model"} */
+
+  
+    
+        create or replace table `opsanalytics_adb_workspace01`.`lab_staging`.`my_first_dbt_model`
+      
+      
+    using delta
+  
+      
+      
+      
+      
+      
+      
+      
+      
+      as
+      /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+  
+[0m17:07:19.294902 [debug] [Thread-3 (]: SQL status: OK in 6.970 seconds
+[0m17:07:19.297016 [debug] [Thread-3 (]: Databricks adapter: Cursor(session-id=01f18f7f-4b5b-171e-9cbe-6cf26bb2eedc, command-id=01f18f7f-4c0b-187a-8eac-b475843d5c4a) - Closing
+[0m17:07:19.525834 [debug] [Thread-3 (]: Applying tags to relation None
+[0m17:07:19.560832 [debug] [Thread-3 (]: On model.lab_dbt.my_first_dbt_model: Close
+[0m17:07:19.562834 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f18f7f-4b5b-171e-9cbe-6cf26bb2eedc) - Closing
+[0m17:07:19.686834 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '503f5bea-e597-44fd-bf88-1e81dfa04894', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000277DAE34ED0>]}
+[0m17:07:19.688835 [info ] [Thread-3 (]: 1 of 2 OK created sql table model lab_staging.my_first_dbt_model ............... [[32mOK[0m in 9.27s]
+[0m17:07:19.692883 [debug] [Thread-3 (]: Finished running node model.lab_dbt.my_first_dbt_model
+[0m17:07:19.694833 [debug] [Thread-5 (]: Began running node model.lab_dbt.my_second_dbt_model
+[0m17:07:19.696833 [info ] [Thread-5 (]: 2 of 2 START sql view model lab_staging.my_second_dbt_model .................... [RUN]
+[0m17:07:19.701365 [debug] [Thread-5 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.lab_dbt.my_second_dbt_model) - Creating connection
+[0m17:07:19.703340 [debug] [Thread-5 (]: Acquiring new databricks connection 'model.lab_dbt.my_second_dbt_model'
+[0m17:07:19.704728 [debug] [Thread-5 (]: Began compiling node model.lab_dbt.my_second_dbt_model
+[0m17:07:19.710340 [debug] [Thread-5 (]: Writing injected SQL for node "model.lab_dbt.my_second_dbt_model"
+[0m17:07:19.715460 [debug] [Thread-5 (]: Began executing node model.lab_dbt.my_second_dbt_model
+[0m17:07:19.764343 [debug] [Thread-5 (]: MATERIALIZING VIEW
+[0m17:07:19.799340 [debug] [Thread-5 (]: Creating view `opsanalytics_adb_workspace01`.`lab_staging`.`my_second_dbt_model`
+[0m17:07:19.801497 [debug] [Thread-5 (]: Writing runtime sql for node "model.lab_dbt.my_second_dbt_model"
+[0m17:07:19.804736 [debug] [Thread-5 (]: Using databricks connection "model.lab_dbt.my_second_dbt_model"
+[0m17:07:19.806341 [debug] [Thread-5 (]: On model.lab_dbt.my_second_dbt_model: /* {"app": "dbt", "dbt_version": "1.12.0", "dbt_databricks_version": "1.12.3", "databricks_sql_connector_version": "4.3.0", "profile_name": "lab_dbt", "target_name": "dev", "invocation_id": "503f5bea-e597-44fd-bf88-1e81dfa04894", "node_id": "model.lab_dbt.my_second_dbt_model"} */
+
+  
+  
+  
+  create or replace view `opsanalytics_adb_workspace01`.`lab_staging`.`my_second_dbt_model`
+  
+  as (
+    -- Use the `ref` function to select from other models
+
+select *
+from `opsanalytics_adb_workspace01`.`lab_staging`.`my_first_dbt_model`
+where id = 1
+  )
+
+[0m17:07:19.806341 [debug] [Thread-5 (]: Opening a new connection, currently in state init
+[0m17:07:20.765016 [debug] [Thread-5 (]: Databricks adapter: Connection(session-id=01f18f7f-50db-1fc8-b638-112d053b6258) - Created
+[0m17:07:21.484340 [debug] [Thread-5 (]: SQL status: OK in 1.680 seconds
+[0m17:07:21.486340 [debug] [Thread-5 (]: Databricks adapter: Cursor(session-id=01f18f7f-50db-1fc8-b638-112d053b6258, command-id=01f18f7f-510e-194a-9026-a93e89abe1ee) - Closing
+[0m17:07:21.488341 [debug] [Thread-5 (]: Applying tags to relation None
+[0m17:07:21.489551 [debug] [Thread-5 (]: On model.lab_dbt.my_second_dbt_model: Close
+[0m17:07:21.491342 [debug] [Thread-5 (]: Databricks adapter: Connection(session-id=01f18f7f-50db-1fc8-b638-112d053b6258) - Closing
+[0m17:07:21.621455 [debug] [Thread-5 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '503f5bea-e597-44fd-bf88-1e81dfa04894', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000277DAE3F150>]}
+[0m17:07:21.622607 [info ] [Thread-5 (]: 2 of 2 OK created sql view model lab_staging.my_second_dbt_model ............... [[32mOK[0m in 1.92s]
+[0m17:07:21.624485 [debug] [Thread-5 (]: Finished running node model.lab_dbt.my_second_dbt_model
+[0m17:07:21.627420 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=master) - Creating connection
+[0m17:07:21.628415 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m17:07:21.629417 [info ] [MainThread]: 
+[0m17:07:21.630414 [info ] [MainThread]: Finished running 1 table model, 1 view model in 0 hours 0 minutes and 17.12 seconds (17.12s).
+[0m17:07:21.632447 [debug] [MainThread]: Command end result
+[0m17:07:21.743706 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\tommad01\Desktop\Lab\lab_dbt\target\manifest.json
+[0m17:07:21.749706 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\tommad01\Desktop\Lab\lab_dbt\target\semantic_manifest.json
+[0m17:07:21.755707 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\tommad01\Desktop\Lab\lab_dbt\target\osi_document.json
+[0m17:07:21.766706 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\tommad01\Desktop\Lab\lab_dbt\target\run_results.json
+[0m17:07:21.767707 [info ] [MainThread]: 
+[0m17:07:21.769709 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m17:07:21.770708 [info ] [MainThread]: 
+[0m17:07:21.770708 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=2
+[0m17:07:21.772707 [debug] [MainThread]: Command `dbt run` succeeded at 17:07:21.772707 after 22.18 seconds
+[0m17:07:21.774708 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000277C6A19190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000277C6A0A5D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000277C6AC4790>]}
+[0m17:07:21.775708 [debug] [MainThread]: Flushing usage events
+[0m17:07:22.184851 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:10:36.909777 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026920B6CD50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026920B12690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026920B6FBD0>]}
+
+
+============================== 17:10:36.913775 | 8f94e093-58a4-458b-a977-2b535a50e070 ==============================
+[0m17:10:36.913775 [info ] [MainThread]: Running with dbt=1.12.0
+[0m17:10:36.914949 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'target_path': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\tommad01\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt run-operation drop_example_models', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'C:\\Users\\tommad01\\Desktop\\Lab\\lab_dbt\\logs'}
+[0m17:10:38.432441 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m17:10:38.433443 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m17:10:38.434440 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m17:10:39.780359 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '8f94e093-58a4-458b-a977-2b535a50e070', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026934A07990>]}
+[0m17:10:39.853391 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '8f94e093-58a4-458b-a977-2b535a50e070', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026934845A90>]}
+[0m17:10:39.855359 [info ] [MainThread]: Registered adapter: databricks=1.12.3
+[0m17:10:40.597455 [debug] [MainThread]: checksum: b154c3494314c7223c912bef68d7678b521a9d4ab83524a76084633bd437b3da, vars: {}, profile: lab_dbt, target: dev, version: 1.12.0
+[0m17:10:40.857870 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m17:10:40.858982 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m17:10:40.858982 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m17:10:40.872720 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '8f94e093-58a4-458b-a977-2b535a50e070', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026934F4F1D0>]}
+[0m17:10:41.052947 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\tommad01\Desktop\Lab\lab_dbt\target\manifest.json
+[0m17:10:41.058070 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\tommad01\Desktop\Lab\lab_dbt\target\semantic_manifest.json
+[0m17:10:41.093333 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\tommad01\Desktop\Lab\lab_dbt\target\osi_document.json
+[0m17:10:41.114193 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '8f94e093-58a4-458b-a977-2b535a50e070', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026934D27BD0>]}
+[0m17:10:41.114193 [info ] [MainThread]: Found 2 models, 4 data tests, 773 macros
+[0m17:10:41.115508 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '8f94e093-58a4-458b-a977-2b535a50e070', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026934CC7310>]}
+[0m17:10:41.116159 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=macro_drop_example_models) - Creating connection
+[0m17:10:41.117540 [debug] [MainThread]: Acquiring new databricks connection 'macro_drop_example_models'
+[0m17:10:41.118157 [error] [MainThread]: [[31mERROR[0m]: Encountered an error while running operation: Runtime Error
+  dbt could not find a macro with the name "drop_example_models" in any package
+[0m17:10:41.120928 [debug] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\tommad01\envs\dbt\Lib\site-packages\dbt\task\run_operation.py", line 141, in run
+    self._run_unsafe(package_name, operation_name)
+  File "C:\Users\tommad01\envs\dbt\Lib\site-packages\dbt\task\run_operation.py", line 50, in _run_unsafe
+    res = adapter.execute_macro(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\tommad01\envs\dbt\Lib\site-packages\dbt\adapters\base\impl.py", line 1356, in execute_macro
+    raise DbtRuntimeError(
+dbt_common.exceptions.base.DbtRuntimeError: Runtime Error
+  dbt could not find a macro with the name "drop_example_models" in any package
+
+[0m17:10:41.121857 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Compilation Error
+  dbt could not find a macro with the name 'drop_example_models' in any package. This can happen when calling a macro that does not exist. Check for typos and/or install package dependencies with "dbt deps".
+[0m17:10:41.122860 [debug] [MainThread]: Command `dbt run-operation` failed at 17:10:41.122860 after 4.35 seconds
+[0m17:10:41.123889 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026920ACA190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026934D5F7D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000026920AC7290>]}
+[0m17:10:41.124857 [debug] [MainThread]: Flushing usage events
+[0m17:10:41.764086 [debug] [MainThread]: An error was encountered while trying to flush usage events
