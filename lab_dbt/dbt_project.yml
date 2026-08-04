@@ -31,11 +31,10 @@ clean-targets:         # directories to be removed by `dbt clean`
 # files using the `{{ config(...) }}` macro.
 models:
   lab_dbt:
+    +materialized: view
     bronze:
       +materialized: table
     silver:
-      +materialized: incremental
-      +incremental_strategy: merge
-      +file_format: delta
+      +materialized: table
     gold:
       +materialized: table
