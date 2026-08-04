@@ -1,0 +1,18 @@
+version: 2
+
+sources:
+  - name: lab
+    catalog: opsanalytics_adb_workspace01
+    schema: lab
+    tables:
+      - name: mshs_holidays
+        description: NYSE holidays 1990-2100 excluding Good Friday. Working-day calendar for AP turnaround times.
+      - name: powerpath_raw
+        description: Raw PowerPath KPI report extracts, one row per specimen, all columns as strings.
+      - name: lab_kpi_ap_patient_setting
+        description: Crosswalk from REV_CTR to patient setting.
+      - name: powerpath_cyto_biopsy_historical
+        description: >
+          Frozen Oracle-era output of the R pipeline, signed out 2025-01-01 through 2026-05-17.
+          Predates Excel ingestion, so _SOURCE_FILE and _INGESTED_AT are null.
+          Never written to — union'd into powerpath_cyto_biopsy_silver as history.
