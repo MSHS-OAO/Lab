@@ -4944,3 +4944,1076 @@ select * from new_data
 [0m17:11:44.979284 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A241036150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A240F24610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A240F37510>]}
 [0m17:11:44.979284 [debug] [MainThread]: Flushing usage events
 [0m17:11:45.393670 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:18:05.606309 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A5FECD9250>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A5FBE95B50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A5FED71810>]}
+
+
+============================== 17:18:05.614260 | e729de80-f223-4f78-baad-1ad39744144c ==============================
+[0m17:18:05.614260 [info ] [MainThread]: Running with dbt=1.12.0
+[0m17:18:05.615259 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\tommad01\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'invocation_command': 'dbt test', 'log_path': 'C:\\Users\\tommad01\\Desktop\\Lab\\lab_dbt\\logs'}
+[0m17:18:07.325021 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m17:18:07.326022 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m17:18:07.327021 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m17:18:09.039782 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e729de80-f223-4f78-baad-1ad39744144c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A592CD8E90>]}
+[0m17:18:09.115754 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'e729de80-f223-4f78-baad-1ad39744144c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A5FED7B990>]}
+[0m17:18:09.117754 [info ] [MainThread]: Registered adapter: databricks=1.12.3
+[0m17:18:09.937955 [debug] [MainThread]: checksum: b154c3494314c7223c912bef68d7678b521a9d4ab83524a76084633bd437b3da, vars: {}, profile: lab_dbt, target: dev, version: 1.12.0
+[0m17:18:10.263060 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m17:18:10.264583 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m17:18:10.265059 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m17:18:10.274088 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.lab_dbt.gold
+[0m17:18:10.280097 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e729de80-f223-4f78-baad-1ad39744144c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A5907AD210>]}
+[0m17:18:10.506071 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\tommad01\Desktop\Lab\lab_dbt\target\manifest.json
+[0m17:18:10.513139 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\tommad01\Desktop\Lab\lab_dbt\target\semantic_manifest.json
+[0m17:18:10.563128 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\tommad01\Desktop\Lab\lab_dbt\target\osi_document.json
+[0m17:18:10.600627 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'e729de80-f223-4f78-baad-1ad39744144c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A593543C10>]}
+[0m17:18:10.601274 [info ] [MainThread]: Found 3 models, 3 data tests, 4 sources, 774 macros
+[0m17:18:10.602504 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e729de80-f223-4f78-baad-1ad39744144c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A59352E690>]}
+[0m17:18:10.605460 [info ] [MainThread]: 
+[0m17:18:10.605892 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m17:18:10.606462 [info ] [MainThread]: 
+[0m17:18:10.607463 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=master) - Creating connection
+[0m17:18:10.608820 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m17:18:10.620117 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_opsanalytics_adb_workspace01_lab_staging) - Creating connection
+[0m17:18:10.621119 [debug] [ThreadPool]: Acquiring new databricks connection 'list_opsanalytics_adb_workspace01_lab_staging'
+[0m17:18:10.636120 [debug] [ThreadPool]: Using databricks connection "list_opsanalytics_adb_workspace01_lab_staging"
+[0m17:18:10.636120 [debug] [ThreadPool]: On list_opsanalytics_adb_workspace01_lab_staging: /* {"app": "dbt", "dbt_version": "1.12.0", "dbt_databricks_version": "1.12.3", "databricks_sql_connector_version": "4.3.0", "profile_name": "lab_dbt", "target_name": "dev", "invocation_id": "e729de80-f223-4f78-baad-1ad39744144c", "connection_name": "list_opsanalytics_adb_workspace01_lab_staging"} */
+
+    
+SELECT
+  table_name,
+  if(table_type IN ('EXTERNAL', 'MANAGED', 'MANAGED_SHALLOW_CLONE', 'EXTERNAL_SHALLOW_CLONE'), 'table', lower(table_type)) AS table_type,
+  lower(data_source_format) AS file_format,
+  table_owner,
+  if(
+    table_type IN (
+      'EXTERNAL',
+      'MANAGED',
+      'MANAGED_SHALLOW_CLONE',
+      'EXTERNAL_SHALLOW_CLONE'
+    ),
+    lower(table_type),
+    NULL
+  ) AS databricks_table_type
+FROM `system`.`information_schema`.`tables`
+WHERE table_catalog = 'opsanalytics_adb_workspace01'
+  AND table_schema = 'lab_staging'
+
+  
+[0m17:18:10.637478 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:18:12.216127 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f19049-ff82-16cb-b795-598d6fa5fddd) - Created
+[0m17:18:12.940132 [debug] [ThreadPool]: SQL status: OK in 2.300 seconds
+[0m17:18:12.963130 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f19049-ff82-16cb-b795-598d6fa5fddd, command-id=01f19049-ffd6-177f-ac59-8102a65f7a8c) - Closing
+[0m17:18:12.964313 [debug] [ThreadPool]: On list_opsanalytics_adb_workspace01_lab_staging: Close
+[0m17:18:12.965130 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f19049-ff82-16cb-b795-598d6fa5fddd) - Closing
+[0m17:18:13.118568 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e729de80-f223-4f78-baad-1ad39744144c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A593274D10>]}
+[0m17:18:13.150559 [debug] [Thread-2 (]: Began running node test.lab_dbt.accepted_values_powerpath_cyto_biopsy_silver_TEST_NAME__Breast_Biopsy__Breast_Large_Resection__Cytology_GYN__Cytology_NONGYN.5526c1ab39
+[0m17:18:13.152520 [debug] [Thread-3 (]: Began running node test.lab_dbt.dbt_utils_unique_combination_of_columns_powerpath_cyto_biopsy_silver_CASE_NO__TEST_NAME__SIGNED_OUT_DATE.d7bafdaecc
+[0m17:18:13.154511 [debug] [Thread-4 (]: Began running node test.lab_dbt.not_null_powerpath_cyto_biopsy_silver_SIGNED_OUT_DATE.bddcedd5e9
+[0m17:18:13.157512 [info ] [Thread-2 (]: 1 of 3 START test accepted_values_powerpath_cyto_biopsy_silver_TEST_NAME__Breast_Biopsy__Breast_Large_Resection__Cytology_GYN__Cytology_NONGYN  [RUN]
+[0m17:18:13.160518 [info ] [Thread-3 (]: 2 of 3 START test dbt_utils_unique_combination_of_columns_powerpath_cyto_biopsy_silver_CASE_NO__TEST_NAME__SIGNED_OUT_DATE  [RUN]
+[0m17:18:13.162510 [info ] [Thread-4 (]: 3 of 3 START test not_null_powerpath_cyto_biopsy_silver_SIGNED_OUT_DATE ........ [RUN]
+[0m17:18:13.166511 [debug] [Thread-2 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=test.lab_dbt.accepted_values_powerpath_cyto_biopsy_silver_TEST_NAME__Breast_Biopsy__Breast_Large_Resection__Cytology_GYN__Cytology_NONGYN.5526c1ab39) - Creating connection
+[0m17:18:13.168539 [debug] [Thread-3 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=test.lab_dbt.dbt_utils_unique_combination_of_columns_powerpath_cyto_biopsy_silver_CASE_NO__TEST_NAME__SIGNED_OUT_DATE.d7bafdaecc) - Creating connection
+[0m17:18:13.170508 [debug] [Thread-4 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=test.lab_dbt.not_null_powerpath_cyto_biopsy_silver_SIGNED_OUT_DATE.bddcedd5e9) - Creating connection
+[0m17:18:13.171508 [debug] [Thread-2 (]: Acquiring new databricks connection 'test.lab_dbt.accepted_values_powerpath_cyto_biopsy_silver_TEST_NAME__Breast_Biopsy__Breast_Large_Resection__Cytology_GYN__Cytology_NONGYN.5526c1ab39'
+[0m17:18:13.172505 [debug] [Thread-3 (]: Acquiring new databricks connection 'test.lab_dbt.dbt_utils_unique_combination_of_columns_powerpath_cyto_biopsy_silver_CASE_NO__TEST_NAME__SIGNED_OUT_DATE.d7bafdaecc'
+[0m17:18:13.173542 [debug] [Thread-4 (]: Acquiring new databricks connection 'test.lab_dbt.not_null_powerpath_cyto_biopsy_silver_SIGNED_OUT_DATE.bddcedd5e9'
+[0m17:18:13.173542 [debug] [Thread-2 (]: Began compiling node test.lab_dbt.accepted_values_powerpath_cyto_biopsy_silver_TEST_NAME__Breast_Biopsy__Breast_Large_Resection__Cytology_GYN__Cytology_NONGYN.5526c1ab39
+[0m17:18:13.174504 [debug] [Thread-3 (]: Began compiling node test.lab_dbt.dbt_utils_unique_combination_of_columns_powerpath_cyto_biopsy_silver_CASE_NO__TEST_NAME__SIGNED_OUT_DATE.d7bafdaecc
+[0m17:18:13.175506 [debug] [Thread-4 (]: Began compiling node test.lab_dbt.not_null_powerpath_cyto_biopsy_silver_SIGNED_OUT_DATE.bddcedd5e9
+[0m17:18:13.358457 [debug] [Thread-2 (]: Writing injected SQL for node "test.lab_dbt.accepted_values_powerpath_cyto_biopsy_silver_TEST_NAME__Breast_Biopsy__Breast_Large_Resection__Cytology_GYN__Cytology_NONGYN.5526c1ab39"
+[0m17:18:13.408455 [debug] [Thread-4 (]: Writing injected SQL for node "test.lab_dbt.not_null_powerpath_cyto_biopsy_silver_SIGNED_OUT_DATE.bddcedd5e9"
+[0m17:18:13.413457 [debug] [Thread-4 (]: Began executing node test.lab_dbt.not_null_powerpath_cyto_biopsy_silver_SIGNED_OUT_DATE.bddcedd5e9
+[0m17:18:13.414499 [debug] [Thread-2 (]: Began executing node test.lab_dbt.accepted_values_powerpath_cyto_biopsy_silver_TEST_NAME__Breast_Biopsy__Breast_Large_Resection__Cytology_GYN__Cytology_NONGYN.5526c1ab39
+[0m17:18:13.444487 [debug] [Thread-4 (]: Writing runtime sql for node "test.lab_dbt.not_null_powerpath_cyto_biopsy_silver_SIGNED_OUT_DATE.bddcedd5e9"
+[0m17:18:13.448576 [debug] [Thread-2 (]: Writing runtime sql for node "test.lab_dbt.accepted_values_powerpath_cyto_biopsy_silver_TEST_NAME__Breast_Biopsy__Breast_Large_Resection__Cytology_GYN__Cytology_NONGYN.5526c1ab39"
+[0m17:18:13.451490 [debug] [Thread-2 (]: Using databricks connection "test.lab_dbt.accepted_values_powerpath_cyto_biopsy_silver_TEST_NAME__Breast_Biopsy__Breast_Large_Resection__Cytology_GYN__Cytology_NONGYN.5526c1ab39"
+[0m17:18:13.453843 [debug] [Thread-2 (]: On test.lab_dbt.accepted_values_powerpath_cyto_biopsy_silver_TEST_NAME__Breast_Biopsy__Breast_Large_Resection__Cytology_GYN__Cytology_NONGYN.5526c1ab39: /* {"app": "dbt", "dbt_version": "1.12.0", "dbt_databricks_version": "1.12.3", "databricks_sql_connector_version": "4.3.0", "profile_name": "lab_dbt", "target_name": "dev", "invocation_id": "e729de80-f223-4f78-baad-1ad39744144c", "node_id": "test.lab_dbt.accepted_values_powerpath_cyto_biopsy_silver_TEST_NAME__Breast_Biopsy__Breast_Large_Resection__Cytology_GYN__Cytology_NONGYN.5526c1ab39"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with all_values as (
+
+    select
+        TEST_NAME as value_field,
+        count(*) as n_records
+
+    from `opsanalytics_adb_workspace01`.`lab_staging`.`powerpath_cyto_biopsy_silver`
+    group by TEST_NAME
+
+)
+
+select *
+from all_values
+where value_field not in (
+    'Breast Biopsy','Breast Large/Resection','Cytology GYN','Cytology NONGYN'
+)
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m17:18:13.454487 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m17:18:13.455585 [debug] [Thread-4 (]: Using databricks connection "test.lab_dbt.not_null_powerpath_cyto_biopsy_silver_SIGNED_OUT_DATE.bddcedd5e9"
+[0m17:18:13.457488 [debug] [Thread-4 (]: On test.lab_dbt.not_null_powerpath_cyto_biopsy_silver_SIGNED_OUT_DATE.bddcedd5e9: /* {"app": "dbt", "dbt_version": "1.12.0", "dbt_databricks_version": "1.12.3", "databricks_sql_connector_version": "4.3.0", "profile_name": "lab_dbt", "target_name": "dev", "invocation_id": "e729de80-f223-4f78-baad-1ad39744144c", "node_id": "test.lab_dbt.not_null_powerpath_cyto_biopsy_silver_SIGNED_OUT_DATE.bddcedd5e9"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select SIGNED_OUT_DATE
+from `opsanalytics_adb_workspace01`.`lab_staging`.`powerpath_cyto_biopsy_silver`
+where SIGNED_OUT_DATE is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m17:18:13.458508 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m17:18:13.461488 [debug] [Thread-3 (]: Compilation Error in test dbt_utils_unique_combination_of_columns_powerpath_cyto_biopsy_silver_CASE_NO__TEST_NAME__SIGNED_OUT_DATE (models\silver\schema.yml)
+  'dbt_utils' is undefined. This can happen when calling a macro that does not exist. Check for typos and/or install package dependencies with "dbt deps".
+[0m17:18:13.611489 [error] [Thread-3 (]: 2 of 3 ERROR dbt_utils_unique_combination_of_columns_powerpath_cyto_biopsy_silver_CASE_NO__TEST_NAME__SIGNED_OUT_DATE  [[31mERROR[0m in 0.44s]
+[0m17:18:13.613490 [debug] [Thread-3 (]: Finished running node test.lab_dbt.dbt_utils_unique_combination_of_columns_powerpath_cyto_biopsy_silver_CASE_NO__TEST_NAME__SIGNED_OUT_DATE.d7bafdaecc
+[0m17:18:13.614489 [debug] [Thread-8 (]: Marking all children of 'test.lab_dbt.dbt_utils_unique_combination_of_columns_powerpath_cyto_biopsy_silver_CASE_NO__TEST_NAME__SIGNED_OUT_DATE.d7bafdaecc' to be skipped because of status 'error'.  Reason: Compilation Error in test dbt_utils_unique_combination_of_columns_powerpath_cyto_biopsy_silver_CASE_NO__TEST_NAME__SIGNED_OUT_DATE (models\silver\schema.yml)
+  'dbt_utils' is undefined. This can happen when calling a macro that does not exist. Check for typos and/or install package dependencies with "dbt deps"..
+[0m17:18:14.755913 [debug] [Thread-2 (]: Databricks adapter: Connection(session-id=01f1904a-011e-17f7-80aa-f87513cad282) - Created
+[0m17:18:14.756911 [debug] [Thread-4 (]: Databricks adapter: Connection(session-id=01f1904a-0123-1273-a718-aa576d860bcf) - Created
+[0m17:18:15.238082 [debug] [Thread-4 (]: SQL status: OK in 1.780 seconds
+[0m17:18:15.246086 [debug] [Thread-4 (]: Databricks adapter: Cursor(session-id=01f1904a-0123-1273-a718-aa576d860bcf, command-id=01f1904a-014b-1212-b32c-fca46f4f6b5d) - Closing
+[0m17:18:15.251118 [debug] [Thread-4 (]: On test.lab_dbt.not_null_powerpath_cyto_biopsy_silver_SIGNED_OUT_DATE.bddcedd5e9: Close
+[0m17:18:15.252113 [debug] [Thread-4 (]: Databricks adapter: Connection(session-id=01f1904a-0123-1273-a718-aa576d860bcf) - Closing
+[0m17:18:15.383297 [info ] [Thread-4 (]: 3 of 3 PASS not_null_powerpath_cyto_biopsy_silver_SIGNED_OUT_DATE .............. [[32mPASS[0m in 2.21s]
+[0m17:18:15.386304 [debug] [Thread-4 (]: Finished running node test.lab_dbt.not_null_powerpath_cyto_biopsy_silver_SIGNED_OUT_DATE.bddcedd5e9
+[0m17:18:15.583516 [debug] [Thread-2 (]: SQL status: OK in 2.130 seconds
+[0m17:18:15.591526 [debug] [Thread-2 (]: Databricks adapter: Cursor(session-id=01f1904a-011e-17f7-80aa-f87513cad282, command-id=01f1904a-014b-10b1-93d3-3278abe2f950) - Closing
+[0m17:18:15.593522 [debug] [Thread-2 (]: On test.lab_dbt.accepted_values_powerpath_cyto_biopsy_silver_TEST_NAME__Breast_Biopsy__Breast_Large_Resection__Cytology_GYN__Cytology_NONGYN.5526c1ab39: Close
+[0m17:18:15.595524 [debug] [Thread-2 (]: Databricks adapter: Connection(session-id=01f1904a-011e-17f7-80aa-f87513cad282) - Closing
+[0m17:18:15.730410 [info ] [Thread-2 (]: 1 of 3 PASS accepted_values_powerpath_cyto_biopsy_silver_TEST_NAME__Breast_Biopsy__Breast_Large_Resection__Cytology_GYN__Cytology_NONGYN  [[32mPASS[0m in 2.56s]
+[0m17:18:15.732406 [debug] [Thread-2 (]: Finished running node test.lab_dbt.accepted_values_powerpath_cyto_biopsy_silver_TEST_NAME__Breast_Biopsy__Breast_Large_Resection__Cytology_GYN__Cytology_NONGYN.5526c1ab39
+[0m17:18:15.736406 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=master) - Creating connection
+[0m17:18:15.737405 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m17:18:15.739405 [info ] [MainThread]: 
+[0m17:18:15.740427 [info ] [MainThread]: Finished running 3 data tests in 0 hours 0 minutes and 5.13 seconds (5.13s).
+[0m17:18:15.743402 [debug] [MainThread]: Command end result
+[0m17:18:15.859712 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\tommad01\Desktop\Lab\lab_dbt\target\manifest.json
+[0m17:18:15.864562 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\tommad01\Desktop\Lab\lab_dbt\target\semantic_manifest.json
+[0m17:18:15.869663 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\tommad01\Desktop\Lab\lab_dbt\target\osi_document.json
+[0m17:18:15.879564 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\tommad01\Desktop\Lab\lab_dbt\target\run_results.json
+[0m17:18:15.881565 [info ] [MainThread]: 
+[0m17:18:15.881565 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m17:18:15.882562 [info ] [MainThread]: 
+[0m17:18:15.883609 [error] [MainThread]: [[31mERROR[0m]: in test dbt_utils_unique_combination_of_columns_powerpath_cyto_biopsy_silver_CASE_NO__TEST_NAME__SIGNED_OUT_DATE (models\silver\schema.yml)
+[0m17:18:15.885562 [error] [MainThread]:   Compilation Error in test dbt_utils_unique_combination_of_columns_powerpath_cyto_biopsy_silver_CASE_NO__TEST_NAME__SIGNED_OUT_DATE (models\silver\schema.yml)
+  'dbt_utils' is undefined. This can happen when calling a macro that does not exist. Check for typos and/or install package dependencies with "dbt deps".
+[0m17:18:15.886562 [info ] [MainThread]: 
+[0m17:18:15.886562 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=1 SKIP=0 NO-OP=0 REUSED=0 TOTAL=3
+[0m17:18:15.888566 [debug] [MainThread]: Command `dbt test` failed at 17:18:15.888566 after 10.42 seconds
+[0m17:18:15.889212 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A5FECD7310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A5FECD7490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001A5FECD75D0>]}
+[0m17:18:15.889565 [debug] [MainThread]: Flushing usage events
+[0m17:18:16.198891 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:18:45.388610 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013A63E1B410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013A63E1BCD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013A63E19110>]}
+
+
+============================== 17:18:45.394101 | 257f550b-c386-438f-b353-abed7ec12612 ==============================
+[0m17:18:45.394101 [info ] [MainThread]: Running with dbt=1.12.0
+[0m17:18:45.396112 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\tommad01\\.dbt', 'invocation_command': 'dbt deps', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\tommad01\\Desktop\\Lab\\lab_dbt\\logs'}
+[0m17:18:45.666287 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '257f550b-c386-438f-b353-abed7ec12612', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013A61D01DD0>]}
+[0m17:18:45.718492 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m17:18:45.720352 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m17:18:45.722353 [debug] [MainThread]: Command `dbt deps` succeeded at 17:18:45.722353 after 0.49 seconds
+[0m17:18:45.723349 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013A63E17290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013A63E17610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000013A63E17390>]}
+[0m17:18:45.724353 [debug] [MainThread]: Flushing usage events
+[0m17:18:46.019454 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:18:50.033536 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000217192E8150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002171921A450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021719229810>]}
+
+
+============================== 17:18:50.038536 | e1e8be38-dced-4ab1-84e2-e1ac9b0056c8 ==============================
+[0m17:18:50.038536 [info ] [MainThread]: Running with dbt=1.12.0
+[0m17:18:50.039765 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\tommad01\\.dbt', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'invocation_command': 'dbt test', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'C:\\Users\\tommad01\\Desktop\\Lab\\lab_dbt\\logs'}
+[0m17:18:51.600923 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m17:18:51.601923 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m17:18:51.602588 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m17:18:53.036904 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e1e8be38-dced-4ab1-84e2-e1ac9b0056c8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002172D183510>]}
+[0m17:18:53.170933 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'e1e8be38-dced-4ab1-84e2-e1ac9b0056c8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021719387850>]}
+[0m17:18:53.173007 [info ] [MainThread]: Registered adapter: databricks=1.12.3
+[0m17:18:54.046101 [debug] [MainThread]: checksum: b154c3494314c7223c912bef68d7678b521a9d4ab83524a76084633bd437b3da, vars: {}, profile: lab_dbt, target: dev, version: 1.12.0
+[0m17:18:54.374502 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m17:18:54.375469 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m17:18:54.376470 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m17:18:54.384470 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.lab_dbt.gold
+[0m17:18:54.390469 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e1e8be38-dced-4ab1-84e2-e1ac9b0056c8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002172D5B8390>]}
+[0m17:18:54.602664 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\tommad01\Desktop\Lab\lab_dbt\target\manifest.json
+[0m17:18:54.607654 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\tommad01\Desktop\Lab\lab_dbt\target\semantic_manifest.json
+[0m17:18:54.643654 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\tommad01\Desktop\Lab\lab_dbt\target\osi_document.json
+[0m17:18:54.674894 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'e1e8be38-dced-4ab1-84e2-e1ac9b0056c8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002172DAAB590>]}
+[0m17:18:54.675655 [info ] [MainThread]: Found 3 models, 3 data tests, 4 sources, 774 macros
+[0m17:18:54.676812 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e1e8be38-dced-4ab1-84e2-e1ac9b0056c8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002172D18BAD0>]}
+[0m17:18:54.679654 [info ] [MainThread]: 
+[0m17:18:54.680656 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m17:18:54.681655 [info ] [MainThread]: 
+[0m17:18:54.682655 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=master) - Creating connection
+[0m17:18:54.682655 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m17:18:54.693439 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_opsanalytics_adb_workspace01_lab_staging) - Creating connection
+[0m17:18:54.693655 [debug] [ThreadPool]: Acquiring new databricks connection 'list_opsanalytics_adb_workspace01_lab_staging'
+[0m17:18:54.707656 [debug] [ThreadPool]: Using databricks connection "list_opsanalytics_adb_workspace01_lab_staging"
+[0m17:18:54.708654 [debug] [ThreadPool]: On list_opsanalytics_adb_workspace01_lab_staging: /* {"app": "dbt", "dbt_version": "1.12.0", "dbt_databricks_version": "1.12.3", "databricks_sql_connector_version": "4.3.0", "profile_name": "lab_dbt", "target_name": "dev", "invocation_id": "e1e8be38-dced-4ab1-84e2-e1ac9b0056c8", "connection_name": "list_opsanalytics_adb_workspace01_lab_staging"} */
+
+    
+SELECT
+  table_name,
+  if(table_type IN ('EXTERNAL', 'MANAGED', 'MANAGED_SHALLOW_CLONE', 'EXTERNAL_SHALLOW_CLONE'), 'table', lower(table_type)) AS table_type,
+  lower(data_source_format) AS file_format,
+  table_owner,
+  if(
+    table_type IN (
+      'EXTERNAL',
+      'MANAGED',
+      'MANAGED_SHALLOW_CLONE',
+      'EXTERNAL_SHALLOW_CLONE'
+    ),
+    lower(table_type),
+    NULL
+  ) AS databricks_table_type
+FROM `system`.`information_schema`.`tables`
+WHERE table_catalog = 'opsanalytics_adb_workspace01'
+  AND table_schema = 'lab_staging'
+
+  
+[0m17:18:54.709862 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:18:56.306666 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1904a-19bf-1d70-9fd7-4d0690c4b2eb) - Created
+[0m17:18:57.171216 [debug] [ThreadPool]: SQL status: OK in 2.460 seconds
+[0m17:18:57.182184 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f1904a-19bf-1d70-9fd7-4d0690c4b2eb, command-id=01f1904a-1a0f-1246-b9f6-6cde00e42c35) - Closing
+[0m17:18:57.184184 [debug] [ThreadPool]: On list_opsanalytics_adb_workspace01_lab_staging: Close
+[0m17:18:57.184801 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1904a-19bf-1d70-9fd7-4d0690c4b2eb) - Closing
+[0m17:18:57.367633 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e1e8be38-dced-4ab1-84e2-e1ac9b0056c8', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002172D7D6490>]}
+[0m17:18:57.375957 [debug] [Thread-2 (]: Began running node test.lab_dbt.accepted_values_powerpath_cyto_biopsy_silver_TEST_NAME__Breast_Biopsy__Breast_Large_Resection__Cytology_GYN__Cytology_NONGYN.5526c1ab39
+[0m17:18:57.376955 [debug] [Thread-3 (]: Began running node test.lab_dbt.dbt_utils_unique_combination_of_columns_powerpath_cyto_biopsy_silver_CASE_NO__TEST_NAME__SIGNED_OUT_DATE.d7bafdaecc
+[0m17:18:57.377957 [debug] [Thread-4 (]: Began running node test.lab_dbt.not_null_powerpath_cyto_biopsy_silver_SIGNED_OUT_DATE.bddcedd5e9
+[0m17:18:57.378957 [info ] [Thread-2 (]: 1 of 3 START test accepted_values_powerpath_cyto_biopsy_silver_TEST_NAME__Breast_Biopsy__Breast_Large_Resection__Cytology_GYN__Cytology_NONGYN  [RUN]
+[0m17:18:57.379956 [info ] [Thread-3 (]: 2 of 3 START test dbt_utils_unique_combination_of_columns_powerpath_cyto_biopsy_silver_CASE_NO__TEST_NAME__SIGNED_OUT_DATE  [RUN]
+[0m17:18:57.380956 [info ] [Thread-4 (]: 3 of 3 START test not_null_powerpath_cyto_biopsy_silver_SIGNED_OUT_DATE ........ [RUN]
+[0m17:18:57.381955 [debug] [Thread-2 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=test.lab_dbt.accepted_values_powerpath_cyto_biopsy_silver_TEST_NAME__Breast_Biopsy__Breast_Large_Resection__Cytology_GYN__Cytology_NONGYN.5526c1ab39) - Creating connection
+[0m17:18:57.382955 [debug] [Thread-3 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=test.lab_dbt.dbt_utils_unique_combination_of_columns_powerpath_cyto_biopsy_silver_CASE_NO__TEST_NAME__SIGNED_OUT_DATE.d7bafdaecc) - Creating connection
+[0m17:18:57.383956 [debug] [Thread-4 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=test.lab_dbt.not_null_powerpath_cyto_biopsy_silver_SIGNED_OUT_DATE.bddcedd5e9) - Creating connection
+[0m17:18:57.383956 [debug] [Thread-2 (]: Acquiring new databricks connection 'test.lab_dbt.accepted_values_powerpath_cyto_biopsy_silver_TEST_NAME__Breast_Biopsy__Breast_Large_Resection__Cytology_GYN__Cytology_NONGYN.5526c1ab39'
+[0m17:18:57.384956 [debug] [Thread-3 (]: Acquiring new databricks connection 'test.lab_dbt.dbt_utils_unique_combination_of_columns_powerpath_cyto_biopsy_silver_CASE_NO__TEST_NAME__SIGNED_OUT_DATE.d7bafdaecc'
+[0m17:18:57.385955 [debug] [Thread-4 (]: Acquiring new databricks connection 'test.lab_dbt.not_null_powerpath_cyto_biopsy_silver_SIGNED_OUT_DATE.bddcedd5e9'
+[0m17:18:57.386969 [debug] [Thread-2 (]: Began compiling node test.lab_dbt.accepted_values_powerpath_cyto_biopsy_silver_TEST_NAME__Breast_Biopsy__Breast_Large_Resection__Cytology_GYN__Cytology_NONGYN.5526c1ab39
+[0m17:18:57.386969 [debug] [Thread-3 (]: Began compiling node test.lab_dbt.dbt_utils_unique_combination_of_columns_powerpath_cyto_biopsy_silver_CASE_NO__TEST_NAME__SIGNED_OUT_DATE.d7bafdaecc
+[0m17:18:57.387956 [debug] [Thread-4 (]: Began compiling node test.lab_dbt.not_null_powerpath_cyto_biopsy_silver_SIGNED_OUT_DATE.bddcedd5e9
+[0m17:18:57.561982 [debug] [Thread-2 (]: Writing injected SQL for node "test.lab_dbt.accepted_values_powerpath_cyto_biopsy_silver_TEST_NAME__Breast_Biopsy__Breast_Large_Resection__Cytology_GYN__Cytology_NONGYN.5526c1ab39"
+[0m17:18:57.612990 [debug] [Thread-4 (]: Writing injected SQL for node "test.lab_dbt.not_null_powerpath_cyto_biopsy_silver_SIGNED_OUT_DATE.bddcedd5e9"
+[0m17:18:57.615960 [debug] [Thread-2 (]: Began executing node test.lab_dbt.accepted_values_powerpath_cyto_biopsy_silver_TEST_NAME__Breast_Biopsy__Breast_Large_Resection__Cytology_GYN__Cytology_NONGYN.5526c1ab39
+[0m17:18:57.637121 [debug] [Thread-4 (]: Began executing node test.lab_dbt.not_null_powerpath_cyto_biopsy_silver_SIGNED_OUT_DATE.bddcedd5e9
+[0m17:18:57.637963 [debug] [Thread-2 (]: Writing runtime sql for node "test.lab_dbt.accepted_values_powerpath_cyto_biopsy_silver_TEST_NAME__Breast_Biopsy__Breast_Large_Resection__Cytology_GYN__Cytology_NONGYN.5526c1ab39"
+[0m17:18:57.639961 [debug] [Thread-4 (]: Writing runtime sql for node "test.lab_dbt.not_null_powerpath_cyto_biopsy_silver_SIGNED_OUT_DATE.bddcedd5e9"
+[0m17:18:57.642765 [debug] [Thread-2 (]: Using databricks connection "test.lab_dbt.accepted_values_powerpath_cyto_biopsy_silver_TEST_NAME__Breast_Biopsy__Breast_Large_Resection__Cytology_GYN__Cytology_NONGYN.5526c1ab39"
+[0m17:18:57.643746 [debug] [Thread-2 (]: On test.lab_dbt.accepted_values_powerpath_cyto_biopsy_silver_TEST_NAME__Breast_Biopsy__Breast_Large_Resection__Cytology_GYN__Cytology_NONGYN.5526c1ab39: /* {"app": "dbt", "dbt_version": "1.12.0", "dbt_databricks_version": "1.12.3", "databricks_sql_connector_version": "4.3.0", "profile_name": "lab_dbt", "target_name": "dev", "invocation_id": "e1e8be38-dced-4ab1-84e2-e1ac9b0056c8", "node_id": "test.lab_dbt.accepted_values_powerpath_cyto_biopsy_silver_TEST_NAME__Breast_Biopsy__Breast_Large_Resection__Cytology_GYN__Cytology_NONGYN.5526c1ab39"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with all_values as (
+
+    select
+        TEST_NAME as value_field,
+        count(*) as n_records
+
+    from `opsanalytics_adb_workspace01`.`lab_staging`.`powerpath_cyto_biopsy_silver`
+    group by TEST_NAME
+
+)
+
+select *
+from all_values
+where value_field not in (
+    'Breast Biopsy','Breast Large/Resection','Cytology GYN','Cytology NONGYN'
+)
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m17:18:57.644749 [debug] [Thread-4 (]: Using databricks connection "test.lab_dbt.not_null_powerpath_cyto_biopsy_silver_SIGNED_OUT_DATE.bddcedd5e9"
+[0m17:18:57.645751 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m17:18:57.646757 [debug] [Thread-4 (]: On test.lab_dbt.not_null_powerpath_cyto_biopsy_silver_SIGNED_OUT_DATE.bddcedd5e9: /* {"app": "dbt", "dbt_version": "1.12.0", "dbt_databricks_version": "1.12.3", "databricks_sql_connector_version": "4.3.0", "profile_name": "lab_dbt", "target_name": "dev", "invocation_id": "e1e8be38-dced-4ab1-84e2-e1ac9b0056c8", "node_id": "test.lab_dbt.not_null_powerpath_cyto_biopsy_silver_SIGNED_OUT_DATE.bddcedd5e9"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select SIGNED_OUT_DATE
+from `opsanalytics_adb_workspace01`.`lab_staging`.`powerpath_cyto_biopsy_silver`
+where SIGNED_OUT_DATE is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m17:18:57.647746 [debug] [Thread-3 (]: Compilation Error in test dbt_utils_unique_combination_of_columns_powerpath_cyto_biopsy_silver_CASE_NO__TEST_NAME__SIGNED_OUT_DATE (models\silver\schema.yml)
+  'dbt_utils' is undefined. This can happen when calling a macro that does not exist. Check for typos and/or install package dependencies with "dbt deps".
+[0m17:18:57.648762 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m17:18:57.649745 [error] [Thread-3 (]: 2 of 3 ERROR dbt_utils_unique_combination_of_columns_powerpath_cyto_biopsy_silver_CASE_NO__TEST_NAME__SIGNED_OUT_DATE  [[31mERROR[0m in 0.27s]
+[0m17:18:57.650746 [debug] [Thread-3 (]: Finished running node test.lab_dbt.dbt_utils_unique_combination_of_columns_powerpath_cyto_biopsy_silver_CASE_NO__TEST_NAME__SIGNED_OUT_DATE.d7bafdaecc
+[0m17:18:57.652747 [debug] [Thread-8 (]: Marking all children of 'test.lab_dbt.dbt_utils_unique_combination_of_columns_powerpath_cyto_biopsy_silver_CASE_NO__TEST_NAME__SIGNED_OUT_DATE.d7bafdaecc' to be skipped because of status 'error'.  Reason: Compilation Error in test dbt_utils_unique_combination_of_columns_powerpath_cyto_biopsy_silver_CASE_NO__TEST_NAME__SIGNED_OUT_DATE (models\silver\schema.yml)
+  'dbt_utils' is undefined. This can happen when calling a macro that does not exist. Check for typos and/or install package dependencies with "dbt deps"..
+[0m17:18:58.914366 [debug] [Thread-2 (]: Databricks adapter: Connection(session-id=01f1904a-1b6f-10c8-b87e-b81dfb3c2551) - Created
+[0m17:18:58.915369 [debug] [Thread-4 (]: Databricks adapter: Connection(session-id=01f1904a-1b75-1d18-8440-3aeb876d9356) - Created
+[0m17:18:59.267625 [debug] [Thread-4 (]: SQL status: OK in 1.620 seconds
+[0m17:18:59.274215 [debug] [Thread-4 (]: Databricks adapter: Cursor(session-id=01f1904a-1b75-1d18-8440-3aeb876d9356, command-id=01f1904a-1ba6-1f66-b3c5-216347e3bd37) - Closing
+[0m17:18:59.282211 [debug] [Thread-4 (]: On test.lab_dbt.not_null_powerpath_cyto_biopsy_silver_SIGNED_OUT_DATE.bddcedd5e9: Close
+[0m17:18:59.283210 [debug] [Thread-4 (]: Databricks adapter: Connection(session-id=01f1904a-1b75-1d18-8440-3aeb876d9356) - Closing
+[0m17:18:59.338756 [debug] [Thread-2 (]: SQL status: OK in 1.690 seconds
+[0m17:18:59.341263 [debug] [Thread-2 (]: Databricks adapter: Cursor(session-id=01f1904a-1b6f-10c8-b87e-b81dfb3c2551, command-id=01f1904a-1b9f-1ca6-954b-63b24d2c9031) - Closing
+[0m17:18:59.448928 [debug] [Thread-2 (]: On test.lab_dbt.accepted_values_powerpath_cyto_biopsy_silver_TEST_NAME__Breast_Biopsy__Breast_Large_Resection__Cytology_GYN__Cytology_NONGYN.5526c1ab39: Close
+[0m17:18:59.449960 [debug] [Thread-2 (]: Databricks adapter: Connection(session-id=01f1904a-1b6f-10c8-b87e-b81dfb3c2551) - Closing
+[0m17:18:59.611048 [info ] [Thread-4 (]: 3 of 3 PASS not_null_powerpath_cyto_biopsy_silver_SIGNED_OUT_DATE .............. [[32mPASS[0m in 2.23s]
+[0m17:18:59.612502 [info ] [Thread-2 (]: 1 of 3 PASS accepted_values_powerpath_cyto_biopsy_silver_TEST_NAME__Breast_Biopsy__Breast_Large_Resection__Cytology_GYN__Cytology_NONGYN  [[32mPASS[0m in 2.23s]
+[0m17:18:59.616493 [debug] [Thread-4 (]: Finished running node test.lab_dbt.not_null_powerpath_cyto_biopsy_silver_SIGNED_OUT_DATE.bddcedd5e9
+[0m17:18:59.619499 [debug] [Thread-2 (]: Finished running node test.lab_dbt.accepted_values_powerpath_cyto_biopsy_silver_TEST_NAME__Breast_Biopsy__Breast_Large_Resection__Cytology_GYN__Cytology_NONGYN.5526c1ab39
+[0m17:18:59.623491 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=master) - Creating connection
+[0m17:18:59.625499 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m17:18:59.627490 [info ] [MainThread]: 
+[0m17:18:59.629495 [info ] [MainThread]: Finished running 3 data tests in 0 hours 0 minutes and 4.95 seconds (4.95s).
+[0m17:18:59.632493 [debug] [MainThread]: Command end result
+[0m17:18:59.764494 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\tommad01\Desktop\Lab\lab_dbt\target\manifest.json
+[0m17:18:59.771492 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\tommad01\Desktop\Lab\lab_dbt\target\semantic_manifest.json
+[0m17:18:59.777575 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\tommad01\Desktop\Lab\lab_dbt\target\osi_document.json
+[0m17:18:59.788492 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\tommad01\Desktop\Lab\lab_dbt\target\run_results.json
+[0m17:18:59.789492 [info ] [MainThread]: 
+[0m17:18:59.790495 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m17:18:59.792495 [info ] [MainThread]: 
+[0m17:18:59.793493 [error] [MainThread]: [[31mERROR[0m]: in test dbt_utils_unique_combination_of_columns_powerpath_cyto_biopsy_silver_CASE_NO__TEST_NAME__SIGNED_OUT_DATE (models\silver\schema.yml)
+[0m17:18:59.794496 [error] [MainThread]:   Compilation Error in test dbt_utils_unique_combination_of_columns_powerpath_cyto_biopsy_silver_CASE_NO__TEST_NAME__SIGNED_OUT_DATE (models\silver\schema.yml)
+  'dbt_utils' is undefined. This can happen when calling a macro that does not exist. Check for typos and/or install package dependencies with "dbt deps".
+[0m17:18:59.796495 [info ] [MainThread]: 
+[0m17:18:59.797494 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=1 SKIP=0 NO-OP=0 REUSED=0 TOTAL=3
+[0m17:18:59.799495 [debug] [MainThread]: Command `dbt test` failed at 17:18:59.799495 after 9.90 seconds
+[0m17:18:59.800494 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000217192E79D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000217192E7190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000217192E7610>]}
+[0m17:18:59.802495 [debug] [MainThread]: Flushing usage events
+[0m17:19:00.029665 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:20:04.410920 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F5F617AE50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F5F623E090>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F5F60CD910>]}
+
+
+============================== 17:20:04.416919 | d5051140-6ed8-4b91-bf54-f2f082e57609 ==============================
+[0m17:20:04.416919 [info ] [MainThread]: Running with dbt=1.12.0
+[0m17:20:04.417920 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'static_parser': 'True', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\tommad01\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt test', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'C:\\Users\\tommad01\\Desktop\\Lab\\lab_dbt\\logs'}
+[0m17:20:06.155203 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m17:20:06.156201 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m17:20:06.157202 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m17:20:07.801258 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd5051140-6ed8-4b91-bf54-f2f082e57609', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F5F6295A50>]}
+[0m17:20:07.872286 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'd5051140-6ed8-4b91-bf54-f2f082e57609', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F5F6217690>]}
+[0m17:20:07.873291 [info ] [MainThread]: Registered adapter: databricks=1.12.3
+[0m17:20:08.635508 [debug] [MainThread]: checksum: b154c3494314c7223c912bef68d7678b521a9d4ab83524a76084633bd437b3da, vars: {}, profile: lab_dbt, target: dev, version: 1.12.0
+[0m17:20:08.947034 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m17:20:08.948191 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m17:20:08.948191 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m17:20:08.957061 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.lab_dbt.gold
+[0m17:20:08.963346 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'd5051140-6ed8-4b91-bf54-f2f082e57609', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F58A45F890>]}
+[0m17:20:09.171901 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\tommad01\Desktop\Lab\lab_dbt\target\manifest.json
+[0m17:20:09.178834 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\tommad01\Desktop\Lab\lab_dbt\target\semantic_manifest.json
+[0m17:20:09.225832 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\tommad01\Desktop\Lab\lab_dbt\target\osi_document.json
+[0m17:20:09.257295 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'd5051140-6ed8-4b91-bf54-f2f082e57609', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F58A983F10>]}
+[0m17:20:09.257704 [info ] [MainThread]: Found 3 models, 3 data tests, 4 sources, 774 macros
+[0m17:20:09.258822 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd5051140-6ed8-4b91-bf54-f2f082e57609', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F58A966C50>]}
+[0m17:20:09.260737 [info ] [MainThread]: 
+[0m17:20:09.262198 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m17:20:09.262936 [info ] [MainThread]: 
+[0m17:20:09.263935 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=master) - Creating connection
+[0m17:20:09.263935 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m17:20:09.274253 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_opsanalytics_adb_workspace01_lab_staging) - Creating connection
+[0m17:20:09.275000 [debug] [ThreadPool]: Acquiring new databricks connection 'list_opsanalytics_adb_workspace01_lab_staging'
+[0m17:20:09.288966 [debug] [ThreadPool]: Using databricks connection "list_opsanalytics_adb_workspace01_lab_staging"
+[0m17:20:09.289972 [debug] [ThreadPool]: On list_opsanalytics_adb_workspace01_lab_staging: /* {"app": "dbt", "dbt_version": "1.12.0", "dbt_databricks_version": "1.12.3", "databricks_sql_connector_version": "4.3.0", "profile_name": "lab_dbt", "target_name": "dev", "invocation_id": "d5051140-6ed8-4b91-bf54-f2f082e57609", "connection_name": "list_opsanalytics_adb_workspace01_lab_staging"} */
+
+    
+SELECT
+  table_name,
+  if(table_type IN ('EXTERNAL', 'MANAGED', 'MANAGED_SHALLOW_CLONE', 'EXTERNAL_SHALLOW_CLONE'), 'table', lower(table_type)) AS table_type,
+  lower(data_source_format) AS file_format,
+  table_owner,
+  if(
+    table_type IN (
+      'EXTERNAL',
+      'MANAGED',
+      'MANAGED_SHALLOW_CLONE',
+      'EXTERNAL_SHALLOW_CLONE'
+    ),
+    lower(table_type),
+    NULL
+  ) AS databricks_table_type
+FROM `system`.`information_schema`.`tables`
+WHERE table_catalog = 'opsanalytics_adb_workspace01'
+  AND table_schema = 'lab_staging'
+
+  
+[0m17:20:09.291532 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:20:11.227532 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1904a-466a-157b-8481-7d3a9a6ee3b4) - Created
+[0m17:20:11.793921 [debug] [ThreadPool]: SQL status: OK in 2.500 seconds
+[0m17:20:11.817156 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f1904a-466a-157b-8481-7d3a9a6ee3b4, command-id=01f1904a-46b8-1c1e-bfd2-e740e38c45e9) - Closing
+[0m17:20:11.819156 [debug] [ThreadPool]: On list_opsanalytics_adb_workspace01_lab_staging: Close
+[0m17:20:11.819869 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1904a-466a-157b-8481-7d3a9a6ee3b4) - Closing
+[0m17:20:11.957524 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'd5051140-6ed8-4b91-bf54-f2f082e57609', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F58A3D5090>]}
+[0m17:20:11.976617 [debug] [Thread-2 (]: Began running node test.lab_dbt.accepted_values_powerpath_cyto_biopsy_silver_TEST_NAME__Breast_Biopsy__Breast_Large_Resection__Cytology_GYN__Cytology_NONGYN.5526c1ab39
+[0m17:20:11.977613 [debug] [Thread-3 (]: Began running node test.lab_dbt.dbt_utils_unique_combination_of_columns_powerpath_cyto_biopsy_silver_CASE_NO__TEST_NAME__SIGNED_OUT_DATE.d7bafdaecc
+[0m17:20:11.978619 [debug] [Thread-4 (]: Began running node test.lab_dbt.not_null_powerpath_cyto_biopsy_silver_SIGNED_OUT_DATE.bddcedd5e9
+[0m17:20:11.979616 [info ] [Thread-2 (]: 1 of 3 START test accepted_values_powerpath_cyto_biopsy_silver_TEST_NAME__Breast_Biopsy__Breast_Large_Resection__Cytology_GYN__Cytology_NONGYN  [RUN]
+[0m17:20:11.980615 [info ] [Thread-3 (]: 2 of 3 START test dbt_utils_unique_combination_of_columns_powerpath_cyto_biopsy_silver_CASE_NO__TEST_NAME__SIGNED_OUT_DATE  [RUN]
+[0m17:20:11.982616 [info ] [Thread-4 (]: 3 of 3 START test not_null_powerpath_cyto_biopsy_silver_SIGNED_OUT_DATE ........ [RUN]
+[0m17:20:11.983614 [debug] [Thread-2 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=test.lab_dbt.accepted_values_powerpath_cyto_biopsy_silver_TEST_NAME__Breast_Biopsy__Breast_Large_Resection__Cytology_GYN__Cytology_NONGYN.5526c1ab39) - Creating connection
+[0m17:20:11.984789 [debug] [Thread-3 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=test.lab_dbt.dbt_utils_unique_combination_of_columns_powerpath_cyto_biopsy_silver_CASE_NO__TEST_NAME__SIGNED_OUT_DATE.d7bafdaecc) - Creating connection
+[0m17:20:11.985615 [debug] [Thread-4 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=test.lab_dbt.not_null_powerpath_cyto_biopsy_silver_SIGNED_OUT_DATE.bddcedd5e9) - Creating connection
+[0m17:20:11.986613 [debug] [Thread-2 (]: Acquiring new databricks connection 'test.lab_dbt.accepted_values_powerpath_cyto_biopsy_silver_TEST_NAME__Breast_Biopsy__Breast_Large_Resection__Cytology_GYN__Cytology_NONGYN.5526c1ab39'
+[0m17:20:11.987613 [debug] [Thread-3 (]: Acquiring new databricks connection 'test.lab_dbt.dbt_utils_unique_combination_of_columns_powerpath_cyto_biopsy_silver_CASE_NO__TEST_NAME__SIGNED_OUT_DATE.d7bafdaecc'
+[0m17:20:11.987613 [debug] [Thread-4 (]: Acquiring new databricks connection 'test.lab_dbt.not_null_powerpath_cyto_biopsy_silver_SIGNED_OUT_DATE.bddcedd5e9'
+[0m17:20:11.988612 [debug] [Thread-2 (]: Began compiling node test.lab_dbt.accepted_values_powerpath_cyto_biopsy_silver_TEST_NAME__Breast_Biopsy__Breast_Large_Resection__Cytology_GYN__Cytology_NONGYN.5526c1ab39
+[0m17:20:11.989613 [debug] [Thread-3 (]: Began compiling node test.lab_dbt.dbt_utils_unique_combination_of_columns_powerpath_cyto_biopsy_silver_CASE_NO__TEST_NAME__SIGNED_OUT_DATE.d7bafdaecc
+[0m17:20:11.989613 [debug] [Thread-4 (]: Began compiling node test.lab_dbt.not_null_powerpath_cyto_biopsy_silver_SIGNED_OUT_DATE.bddcedd5e9
+[0m17:20:12.160760 [debug] [Thread-2 (]: Writing injected SQL for node "test.lab_dbt.accepted_values_powerpath_cyto_biopsy_silver_TEST_NAME__Breast_Biopsy__Breast_Large_Resection__Cytology_GYN__Cytology_NONGYN.5526c1ab39"
+[0m17:20:12.209438 [debug] [Thread-4 (]: Writing injected SQL for node "test.lab_dbt.not_null_powerpath_cyto_biopsy_silver_SIGNED_OUT_DATE.bddcedd5e9"
+[0m17:20:12.212728 [debug] [Thread-2 (]: Began executing node test.lab_dbt.accepted_values_powerpath_cyto_biopsy_silver_TEST_NAME__Breast_Biopsy__Breast_Large_Resection__Cytology_GYN__Cytology_NONGYN.5526c1ab39
+[0m17:20:12.213733 [debug] [Thread-4 (]: Began executing node test.lab_dbt.not_null_powerpath_cyto_biopsy_silver_SIGNED_OUT_DATE.bddcedd5e9
+[0m17:20:12.236731 [debug] [Thread-2 (]: Writing runtime sql for node "test.lab_dbt.accepted_values_powerpath_cyto_biopsy_silver_TEST_NAME__Breast_Biopsy__Breast_Large_Resection__Cytology_GYN__Cytology_NONGYN.5526c1ab39"
+[0m17:20:12.238793 [debug] [Thread-4 (]: Writing runtime sql for node "test.lab_dbt.not_null_powerpath_cyto_biopsy_silver_SIGNED_OUT_DATE.bddcedd5e9"
+[0m17:20:12.240731 [debug] [Thread-2 (]: Using databricks connection "test.lab_dbt.accepted_values_powerpath_cyto_biopsy_silver_TEST_NAME__Breast_Biopsy__Breast_Large_Resection__Cytology_GYN__Cytology_NONGYN.5526c1ab39"
+[0m17:20:12.241732 [debug] [Thread-4 (]: Using databricks connection "test.lab_dbt.not_null_powerpath_cyto_biopsy_silver_SIGNED_OUT_DATE.bddcedd5e9"
+[0m17:20:12.242729 [debug] [Thread-2 (]: On test.lab_dbt.accepted_values_powerpath_cyto_biopsy_silver_TEST_NAME__Breast_Biopsy__Breast_Large_Resection__Cytology_GYN__Cytology_NONGYN.5526c1ab39: /* {"app": "dbt", "dbt_version": "1.12.0", "dbt_databricks_version": "1.12.3", "databricks_sql_connector_version": "4.3.0", "profile_name": "lab_dbt", "target_name": "dev", "invocation_id": "d5051140-6ed8-4b91-bf54-f2f082e57609", "node_id": "test.lab_dbt.accepted_values_powerpath_cyto_biopsy_silver_TEST_NAME__Breast_Biopsy__Breast_Large_Resection__Cytology_GYN__Cytology_NONGYN.5526c1ab39"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with all_values as (
+
+    select
+        TEST_NAME as value_field,
+        count(*) as n_records
+
+    from `opsanalytics_adb_workspace01`.`lab_staging`.`powerpath_cyto_biopsy_silver`
+    group by TEST_NAME
+
+)
+
+select *
+from all_values
+where value_field not in (
+    'Breast Biopsy','Breast Large/Resection','Cytology GYN','Cytology NONGYN'
+)
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m17:20:12.243807 [debug] [Thread-4 (]: On test.lab_dbt.not_null_powerpath_cyto_biopsy_silver_SIGNED_OUT_DATE.bddcedd5e9: /* {"app": "dbt", "dbt_version": "1.12.0", "dbt_databricks_version": "1.12.3", "databricks_sql_connector_version": "4.3.0", "profile_name": "lab_dbt", "target_name": "dev", "invocation_id": "d5051140-6ed8-4b91-bf54-f2f082e57609", "node_id": "test.lab_dbt.not_null_powerpath_cyto_biopsy_silver_SIGNED_OUT_DATE.bddcedd5e9"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select SIGNED_OUT_DATE
+from `opsanalytics_adb_workspace01`.`lab_staging`.`powerpath_cyto_biopsy_silver`
+where SIGNED_OUT_DATE is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m17:20:12.244732 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m17:20:12.245732 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m17:20:12.520768 [debug] [Thread-3 (]: Compilation Error in test dbt_utils_unique_combination_of_columns_powerpath_cyto_biopsy_silver_CASE_NO__TEST_NAME__SIGNED_OUT_DATE (models\silver\schema.yml)
+  'dbt_utils' is undefined. This can happen when calling a macro that does not exist. Check for typos and/or install package dependencies with "dbt deps".
+[0m17:20:12.522784 [error] [Thread-3 (]: 2 of 3 ERROR dbt_utils_unique_combination_of_columns_powerpath_cyto_biopsy_silver_CASE_NO__TEST_NAME__SIGNED_OUT_DATE  [[31mERROR[0m in 0.54s]
+[0m17:20:12.523748 [debug] [Thread-3 (]: Finished running node test.lab_dbt.dbt_utils_unique_combination_of_columns_powerpath_cyto_biopsy_silver_CASE_NO__TEST_NAME__SIGNED_OUT_DATE.d7bafdaecc
+[0m17:20:12.524741 [debug] [Thread-8 (]: Marking all children of 'test.lab_dbt.dbt_utils_unique_combination_of_columns_powerpath_cyto_biopsy_silver_CASE_NO__TEST_NAME__SIGNED_OUT_DATE.d7bafdaecc' to be skipped because of status 'error'.  Reason: Compilation Error in test dbt_utils_unique_combination_of_columns_powerpath_cyto_biopsy_silver_CASE_NO__TEST_NAME__SIGNED_OUT_DATE (models\silver\schema.yml)
+  'dbt_utils' is undefined. This can happen when calling a macro that does not exist. Check for typos and/or install package dependencies with "dbt deps"..
+[0m17:20:13.411002 [debug] [Thread-2 (]: Databricks adapter: Connection(session-id=01f1904a-47dc-1d64-af8a-f20187d8b4f4) - Created
+[0m17:20:13.411997 [debug] [Thread-4 (]: Databricks adapter: Connection(session-id=01f1904a-47e3-1eb6-acc8-d082ed86c595) - Created
+[0m17:20:13.750510 [debug] [Thread-4 (]: SQL status: OK in 1.500 seconds
+[0m17:20:13.757510 [debug] [Thread-4 (]: Databricks adapter: Cursor(session-id=01f1904a-47e3-1eb6-acc8-d082ed86c595, command-id=01f1904a-480a-1d01-bc2a-fbbee53dcbca) - Closing
+[0m17:20:13.762509 [debug] [Thread-4 (]: On test.lab_dbt.not_null_powerpath_cyto_biopsy_silver_SIGNED_OUT_DATE.bddcedd5e9: Close
+[0m17:20:13.763578 [debug] [Thread-4 (]: Databricks adapter: Connection(session-id=01f1904a-47e3-1eb6-acc8-d082ed86c595) - Closing
+[0m17:20:13.788510 [debug] [Thread-2 (]: SQL status: OK in 1.540 seconds
+[0m17:20:13.791541 [debug] [Thread-2 (]: Databricks adapter: Cursor(session-id=01f1904a-47dc-1d64-af8a-f20187d8b4f4, command-id=01f1904a-4808-1d15-8d38-ea98b9065783) - Closing
+[0m17:20:13.897514 [debug] [Thread-2 (]: On test.lab_dbt.accepted_values_powerpath_cyto_biopsy_silver_TEST_NAME__Breast_Biopsy__Breast_Large_Resection__Cytology_GYN__Cytology_NONGYN.5526c1ab39: Close
+[0m17:20:13.898513 [debug] [Thread-2 (]: Databricks adapter: Connection(session-id=01f1904a-47dc-1d64-af8a-f20187d8b4f4) - Closing
+[0m17:20:14.022518 [info ] [Thread-4 (]: 3 of 3 PASS not_null_powerpath_cyto_biopsy_silver_SIGNED_OUT_DATE .............. [[32mPASS[0m in 2.04s]
+[0m17:20:14.022518 [info ] [Thread-2 (]: 1 of 3 PASS accepted_values_powerpath_cyto_biopsy_silver_TEST_NAME__Breast_Biopsy__Breast_Large_Resection__Cytology_GYN__Cytology_NONGYN  [[32mPASS[0m in 2.04s]
+[0m17:20:14.024519 [debug] [Thread-4 (]: Finished running node test.lab_dbt.not_null_powerpath_cyto_biopsy_silver_SIGNED_OUT_DATE.bddcedd5e9
+[0m17:20:14.025685 [debug] [Thread-2 (]: Finished running node test.lab_dbt.accepted_values_powerpath_cyto_biopsy_silver_TEST_NAME__Breast_Biopsy__Breast_Large_Resection__Cytology_GYN__Cytology_NONGYN.5526c1ab39
+[0m17:20:14.028516 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=master) - Creating connection
+[0m17:20:14.029516 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m17:20:14.030516 [info ] [MainThread]: 
+[0m17:20:14.031604 [info ] [MainThread]: Finished running 3 data tests in 0 hours 0 minutes and 4.77 seconds (4.77s).
+[0m17:20:14.033518 [debug] [MainThread]: Command end result
+[0m17:20:14.129623 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\tommad01\Desktop\Lab\lab_dbt\target\manifest.json
+[0m17:20:14.135625 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\tommad01\Desktop\Lab\lab_dbt\target\semantic_manifest.json
+[0m17:20:14.143624 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\tommad01\Desktop\Lab\lab_dbt\target\osi_document.json
+[0m17:20:14.158984 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\tommad01\Desktop\Lab\lab_dbt\target\run_results.json
+[0m17:20:14.159624 [info ] [MainThread]: 
+[0m17:20:14.161626 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m17:20:14.162626 [info ] [MainThread]: 
+[0m17:20:14.163625 [error] [MainThread]: [[31mERROR[0m]: in test dbt_utils_unique_combination_of_columns_powerpath_cyto_biopsy_silver_CASE_NO__TEST_NAME__SIGNED_OUT_DATE (models\silver\schema.yml)
+[0m17:20:14.164625 [error] [MainThread]:   Compilation Error in test dbt_utils_unique_combination_of_columns_powerpath_cyto_biopsy_silver_CASE_NO__TEST_NAME__SIGNED_OUT_DATE (models\silver\schema.yml)
+  'dbt_utils' is undefined. This can happen when calling a macro that does not exist. Check for typos and/or install package dependencies with "dbt deps".
+[0m17:20:14.165803 [info ] [MainThread]: 
+[0m17:20:14.167624 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=1 SKIP=0 NO-OP=0 REUSED=0 TOTAL=3
+[0m17:20:14.169627 [debug] [MainThread]: Command `dbt test` failed at 17:20:14.169627 after 9.90 seconds
+[0m17:20:14.170625 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F5F6177290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F5F6177650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F5F61777D0>]}
+[0m17:20:14.171819 [debug] [MainThread]: Flushing usage events
+[0m17:20:14.503781 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:20:31.932508 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EE0F39AF50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EE0F3978D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EE0F39B390>]}
+
+
+============================== 17:20:31.939507 | f09808e7-b304-452f-a44a-9e4643a7afe1 ==============================
+[0m17:20:31.939507 [info ] [MainThread]: Running with dbt=1.12.0
+[0m17:20:31.941507 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\tommad01\\.dbt', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'invocation_command': 'dbt test', 'log_path': 'C:\\Users\\tommad01\\Desktop\\Lab\\lab_dbt\\logs'}
+[0m17:20:33.789976 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m17:20:33.790737 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m17:20:33.791399 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m17:20:34.955257 [warn ] [MainThread]: [[33mWARNING[0m][CustomTopLevelKeyDeprecation]: Deprecated functionality
+Unexpected top-level key packages in file
+`C:\Users\tommad01\Desktop\Lab\lab_dbt\dbt_project.yml`
+[0m17:20:34.956482 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': 'f09808e7-b304-452f-a44a-9e4643a7afe1', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EE230EAA10>]}
+[0m17:20:35.149823 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'f09808e7-b304-452f-a44a-9e4643a7afe1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EE23292210>]}
+[0m17:20:35.223386 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'f09808e7-b304-452f-a44a-9e4643a7afe1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EE122C0050>]}
+[0m17:20:35.225354 [info ] [MainThread]: Registered adapter: databricks=1.12.3
+[0m17:20:35.997227 [debug] [MainThread]: checksum: b154c3494314c7223c912bef68d7678b521a9d4ab83524a76084633bd437b3da, vars: {}, profile: lab_dbt, target: dev, version: 1.12.0
+[0m17:20:36.280952 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m17:20:36.281957 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m17:20:36.281957 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m17:20:36.290952 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.lab_dbt.gold
+[0m17:20:36.297004 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'f09808e7-b304-452f-a44a-9e4643a7afe1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EE237F8F10>]}
+[0m17:20:36.527015 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\tommad01\Desktop\Lab\lab_dbt\target\manifest.json
+[0m17:20:36.532929 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\tommad01\Desktop\Lab\lab_dbt\target\semantic_manifest.json
+[0m17:20:36.569931 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\tommad01\Desktop\Lab\lab_dbt\target\osi_document.json
+[0m17:20:36.599360 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'f09808e7-b304-452f-a44a-9e4643a7afe1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EE236E7F90>]}
+[0m17:20:36.599360 [info ] [MainThread]: Found 3 models, 3 data tests, 4 sources, 774 macros
+[0m17:20:36.600355 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f09808e7-b304-452f-a44a-9e4643a7afe1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EE236D1B50>]}
+[0m17:20:36.603356 [info ] [MainThread]: 
+[0m17:20:36.604359 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m17:20:36.604359 [info ] [MainThread]: 
+[0m17:20:36.606357 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=master) - Creating connection
+[0m17:20:36.607358 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m17:20:36.617358 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_opsanalytics_adb_workspace01_lab_staging) - Creating connection
+[0m17:20:36.618355 [debug] [ThreadPool]: Acquiring new databricks connection 'list_opsanalytics_adb_workspace01_lab_staging'
+[0m17:20:36.634359 [debug] [ThreadPool]: Using databricks connection "list_opsanalytics_adb_workspace01_lab_staging"
+[0m17:20:36.636358 [debug] [ThreadPool]: On list_opsanalytics_adb_workspace01_lab_staging: /* {"app": "dbt", "dbt_version": "1.12.0", "dbt_databricks_version": "1.12.3", "databricks_sql_connector_version": "4.3.0", "profile_name": "lab_dbt", "target_name": "dev", "invocation_id": "f09808e7-b304-452f-a44a-9e4643a7afe1", "connection_name": "list_opsanalytics_adb_workspace01_lab_staging"} */
+
+    
+SELECT
+  table_name,
+  if(table_type IN ('EXTERNAL', 'MANAGED', 'MANAGED_SHALLOW_CLONE', 'EXTERNAL_SHALLOW_CLONE'), 'table', lower(table_type)) AS table_type,
+  lower(data_source_format) AS file_format,
+  table_owner,
+  if(
+    table_type IN (
+      'EXTERNAL',
+      'MANAGED',
+      'MANAGED_SHALLOW_CLONE',
+      'EXTERNAL_SHALLOW_CLONE'
+    ),
+    lower(table_type),
+    NULL
+  ) AS databricks_table_type
+FROM `system`.`information_schema`.`tables`
+WHERE table_catalog = 'opsanalytics_adb_workspace01'
+  AND table_schema = 'lab_staging'
+
+  
+[0m17:20:36.637358 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:20:38.365772 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1904a-569a-1e62-8e8e-a5bc12a46714) - Created
+[0m17:20:38.917408 [debug] [ThreadPool]: SQL status: OK in 2.280 seconds
+[0m17:20:38.927415 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f1904a-569a-1e62-8e8e-a5bc12a46714, command-id=01f1904a-56e9-1c9e-a40a-e50cc4757dfe) - Closing
+[0m17:20:38.928414 [debug] [ThreadPool]: On list_opsanalytics_adb_workspace01_lab_staging: Close
+[0m17:20:38.929851 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1904a-569a-1e62-8e8e-a5bc12a46714) - Closing
+[0m17:20:39.087523 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'f09808e7-b304-452f-a44a-9e4643a7afe1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EE11F13290>]}
+[0m17:20:39.098750 [debug] [Thread-2 (]: Began running node test.lab_dbt.accepted_values_powerpath_cyto_biopsy_silver_TEST_NAME__Breast_Biopsy__Breast_Large_Resection__Cytology_GYN__Cytology_NONGYN.5526c1ab39
+[0m17:20:39.099749 [debug] [Thread-3 (]: Began running node test.lab_dbt.dbt_utils_unique_combination_of_columns_powerpath_cyto_biopsy_silver_CASE_NO__TEST_NAME__SIGNED_OUT_DATE.d7bafdaecc
+[0m17:20:39.099749 [debug] [Thread-4 (]: Began running node test.lab_dbt.not_null_powerpath_cyto_biopsy_silver_SIGNED_OUT_DATE.bddcedd5e9
+[0m17:20:39.100922 [info ] [Thread-2 (]: 1 of 3 START test accepted_values_powerpath_cyto_biopsy_silver_TEST_NAME__Breast_Biopsy__Breast_Large_Resection__Cytology_GYN__Cytology_NONGYN  [RUN]
+[0m17:20:39.101749 [info ] [Thread-3 (]: 2 of 3 START test dbt_utils_unique_combination_of_columns_powerpath_cyto_biopsy_silver_CASE_NO__TEST_NAME__SIGNED_OUT_DATE  [RUN]
+[0m17:20:39.102813 [info ] [Thread-4 (]: 3 of 3 START test not_null_powerpath_cyto_biopsy_silver_SIGNED_OUT_DATE ........ [RUN]
+[0m17:20:39.103750 [debug] [Thread-2 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=test.lab_dbt.accepted_values_powerpath_cyto_biopsy_silver_TEST_NAME__Breast_Biopsy__Breast_Large_Resection__Cytology_GYN__Cytology_NONGYN.5526c1ab39) - Creating connection
+[0m17:20:39.104751 [debug] [Thread-3 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=test.lab_dbt.dbt_utils_unique_combination_of_columns_powerpath_cyto_biopsy_silver_CASE_NO__TEST_NAME__SIGNED_OUT_DATE.d7bafdaecc) - Creating connection
+[0m17:20:39.105749 [debug] [Thread-4 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=test.lab_dbt.not_null_powerpath_cyto_biopsy_silver_SIGNED_OUT_DATE.bddcedd5e9) - Creating connection
+[0m17:20:39.106749 [debug] [Thread-2 (]: Acquiring new databricks connection 'test.lab_dbt.accepted_values_powerpath_cyto_biopsy_silver_TEST_NAME__Breast_Biopsy__Breast_Large_Resection__Cytology_GYN__Cytology_NONGYN.5526c1ab39'
+[0m17:20:39.107751 [debug] [Thread-3 (]: Acquiring new databricks connection 'test.lab_dbt.dbt_utils_unique_combination_of_columns_powerpath_cyto_biopsy_silver_CASE_NO__TEST_NAME__SIGNED_OUT_DATE.d7bafdaecc'
+[0m17:20:39.107751 [debug] [Thread-4 (]: Acquiring new databricks connection 'test.lab_dbt.not_null_powerpath_cyto_biopsy_silver_SIGNED_OUT_DATE.bddcedd5e9'
+[0m17:20:39.108752 [debug] [Thread-2 (]: Began compiling node test.lab_dbt.accepted_values_powerpath_cyto_biopsy_silver_TEST_NAME__Breast_Biopsy__Breast_Large_Resection__Cytology_GYN__Cytology_NONGYN.5526c1ab39
+[0m17:20:39.109749 [debug] [Thread-3 (]: Began compiling node test.lab_dbt.dbt_utils_unique_combination_of_columns_powerpath_cyto_biopsy_silver_CASE_NO__TEST_NAME__SIGNED_OUT_DATE.d7bafdaecc
+[0m17:20:39.109749 [debug] [Thread-4 (]: Began compiling node test.lab_dbt.not_null_powerpath_cyto_biopsy_silver_SIGNED_OUT_DATE.bddcedd5e9
+[0m17:20:39.159911 [debug] [Thread-2 (]: Writing injected SQL for node "test.lab_dbt.accepted_values_powerpath_cyto_biopsy_silver_TEST_NAME__Breast_Biopsy__Breast_Large_Resection__Cytology_GYN__Cytology_NONGYN.5526c1ab39"
+[0m17:20:39.205907 [debug] [Thread-4 (]: Writing injected SQL for node "test.lab_dbt.not_null_powerpath_cyto_biopsy_silver_SIGNED_OUT_DATE.bddcedd5e9"
+[0m17:20:39.208880 [debug] [Thread-2 (]: Began executing node test.lab_dbt.accepted_values_powerpath_cyto_biopsy_silver_TEST_NAME__Breast_Biopsy__Breast_Large_Resection__Cytology_GYN__Cytology_NONGYN.5526c1ab39
+[0m17:20:39.209911 [debug] [Thread-4 (]: Began executing node test.lab_dbt.not_null_powerpath_cyto_biopsy_silver_SIGNED_OUT_DATE.bddcedd5e9
+[0m17:20:39.229125 [debug] [Thread-2 (]: Writing runtime sql for node "test.lab_dbt.accepted_values_powerpath_cyto_biopsy_silver_TEST_NAME__Breast_Biopsy__Breast_Large_Resection__Cytology_GYN__Cytology_NONGYN.5526c1ab39"
+[0m17:20:39.231124 [debug] [Thread-4 (]: Writing runtime sql for node "test.lab_dbt.not_null_powerpath_cyto_biopsy_silver_SIGNED_OUT_DATE.bddcedd5e9"
+[0m17:20:39.234089 [debug] [Thread-2 (]: Using databricks connection "test.lab_dbt.accepted_values_powerpath_cyto_biopsy_silver_TEST_NAME__Breast_Biopsy__Breast_Large_Resection__Cytology_GYN__Cytology_NONGYN.5526c1ab39"
+[0m17:20:39.235091 [debug] [Thread-4 (]: Using databricks connection "test.lab_dbt.not_null_powerpath_cyto_biopsy_silver_SIGNED_OUT_DATE.bddcedd5e9"
+[0m17:20:39.236092 [debug] [Thread-2 (]: On test.lab_dbt.accepted_values_powerpath_cyto_biopsy_silver_TEST_NAME__Breast_Biopsy__Breast_Large_Resection__Cytology_GYN__Cytology_NONGYN.5526c1ab39: /* {"app": "dbt", "dbt_version": "1.12.0", "dbt_databricks_version": "1.12.3", "databricks_sql_connector_version": "4.3.0", "profile_name": "lab_dbt", "target_name": "dev", "invocation_id": "f09808e7-b304-452f-a44a-9e4643a7afe1", "node_id": "test.lab_dbt.accepted_values_powerpath_cyto_biopsy_silver_TEST_NAME__Breast_Biopsy__Breast_Large_Resection__Cytology_GYN__Cytology_NONGYN.5526c1ab39"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with all_values as (
+
+    select
+        TEST_NAME as value_field,
+        count(*) as n_records
+
+    from `opsanalytics_adb_workspace01`.`lab_staging`.`powerpath_cyto_biopsy_silver`
+    group by TEST_NAME
+
+)
+
+select *
+from all_values
+where value_field not in (
+    'Breast Biopsy','Breast Large/Resection','Cytology GYN','Cytology NONGYN'
+)
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m17:20:39.237091 [debug] [Thread-4 (]: On test.lab_dbt.not_null_powerpath_cyto_biopsy_silver_SIGNED_OUT_DATE.bddcedd5e9: /* {"app": "dbt", "dbt_version": "1.12.0", "dbt_databricks_version": "1.12.3", "databricks_sql_connector_version": "4.3.0", "profile_name": "lab_dbt", "target_name": "dev", "invocation_id": "f09808e7-b304-452f-a44a-9e4643a7afe1", "node_id": "test.lab_dbt.not_null_powerpath_cyto_biopsy_silver_SIGNED_OUT_DATE.bddcedd5e9"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select SIGNED_OUT_DATE
+from `opsanalytics_adb_workspace01`.`lab_staging`.`powerpath_cyto_biopsy_silver`
+where SIGNED_OUT_DATE is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m17:20:39.238280 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m17:20:39.239088 [debug] [Thread-3 (]: Compilation Error in test dbt_utils_unique_combination_of_columns_powerpath_cyto_biopsy_silver_CASE_NO__TEST_NAME__SIGNED_OUT_DATE (models\silver\schema.yml)
+  'dbt_utils' is undefined. This can happen when calling a macro that does not exist. Check for typos and/or install package dependencies with "dbt deps".
+[0m17:20:39.240088 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m17:20:39.242092 [error] [Thread-3 (]: 2 of 3 ERROR dbt_utils_unique_combination_of_columns_powerpath_cyto_biopsy_silver_CASE_NO__TEST_NAME__SIGNED_OUT_DATE  [[31mERROR[0m in 0.14s]
+[0m17:20:39.373092 [debug] [Thread-3 (]: Finished running node test.lab_dbt.dbt_utils_unique_combination_of_columns_powerpath_cyto_biopsy_silver_CASE_NO__TEST_NAME__SIGNED_OUT_DATE.d7bafdaecc
+[0m17:20:39.374093 [debug] [Thread-8 (]: Marking all children of 'test.lab_dbt.dbt_utils_unique_combination_of_columns_powerpath_cyto_biopsy_silver_CASE_NO__TEST_NAME__SIGNED_OUT_DATE.d7bafdaecc' to be skipped because of status 'error'.  Reason: Compilation Error in test dbt_utils_unique_combination_of_columns_powerpath_cyto_biopsy_silver_CASE_NO__TEST_NAME__SIGNED_OUT_DATE (models\silver\schema.yml)
+  'dbt_utils' is undefined. This can happen when calling a macro that does not exist. Check for typos and/or install package dependencies with "dbt deps"..
+[0m17:20:40.329666 [debug] [Thread-2 (]: Databricks adapter: Connection(session-id=01f1904a-57e3-1eb3-aa0d-e8216980ea7a) - Created
+[0m17:20:40.329666 [debug] [Thread-4 (]: Databricks adapter: Connection(session-id=01f1904a-57f8-12ee-aded-b1998da31cfb) - Created
+[0m17:20:40.668624 [debug] [Thread-4 (]: SQL status: OK in 1.430 seconds
+[0m17:20:40.672770 [debug] [Thread-2 (]: SQL status: OK in 1.430 seconds
+[0m17:20:40.674624 [debug] [Thread-4 (]: Databricks adapter: Cursor(session-id=01f1904a-57f8-12ee-aded-b1998da31cfb, command-id=01f1904a-580f-1ba8-818e-629e14d44708) - Closing
+[0m17:20:40.680081 [debug] [Thread-4 (]: On test.lab_dbt.not_null_powerpath_cyto_biopsy_silver_SIGNED_OUT_DATE.bddcedd5e9: Close
+[0m17:20:40.682745 [debug] [Thread-2 (]: Databricks adapter: Cursor(session-id=01f1904a-57e3-1eb3-aa0d-e8216980ea7a, command-id=01f1904a-580f-1e87-a987-57fadfc4ca84) - Closing
+[0m17:20:40.683834 [debug] [Thread-4 (]: Databricks adapter: Connection(session-id=01f1904a-57f8-12ee-aded-b1998da31cfb) - Closing
+[0m17:20:40.804771 [debug] [Thread-2 (]: On test.lab_dbt.accepted_values_powerpath_cyto_biopsy_silver_TEST_NAME__Breast_Biopsy__Breast_Large_Resection__Cytology_GYN__Cytology_NONGYN.5526c1ab39: Close
+[0m17:20:40.805628 [debug] [Thread-2 (]: Databricks adapter: Connection(session-id=01f1904a-57e3-1eb3-aa0d-e8216980ea7a) - Closing
+[0m17:20:40.969296 [info ] [Thread-4 (]: 3 of 3 PASS not_null_powerpath_cyto_biopsy_silver_SIGNED_OUT_DATE .............. [[32mPASS[0m in 1.86s]
+[0m17:20:40.970297 [info ] [Thread-2 (]: 1 of 3 PASS accepted_values_powerpath_cyto_biopsy_silver_TEST_NAME__Breast_Biopsy__Breast_Large_Resection__Cytology_GYN__Cytology_NONGYN  [[32mPASS[0m in 1.87s]
+[0m17:20:40.971305 [debug] [Thread-4 (]: Finished running node test.lab_dbt.not_null_powerpath_cyto_biopsy_silver_SIGNED_OUT_DATE.bddcedd5e9
+[0m17:20:40.972297 [debug] [Thread-2 (]: Finished running node test.lab_dbt.accepted_values_powerpath_cyto_biopsy_silver_TEST_NAME__Breast_Biopsy__Breast_Large_Resection__Cytology_GYN__Cytology_NONGYN.5526c1ab39
+[0m17:20:40.974296 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=master) - Creating connection
+[0m17:20:40.975297 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m17:20:40.976416 [info ] [MainThread]: 
+[0m17:20:40.977297 [info ] [MainThread]: Finished running 3 data tests in 0 hours 0 minutes and 4.37 seconds (4.37s).
+[0m17:20:40.979297 [debug] [MainThread]: Command end result
+[0m17:20:41.192144 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\tommad01\Desktop\Lab\lab_dbt\target\manifest.json
+[0m17:20:41.198143 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\tommad01\Desktop\Lab\lab_dbt\target\semantic_manifest.json
+[0m17:20:41.204145 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\tommad01\Desktop\Lab\lab_dbt\target\osi_document.json
+[0m17:20:41.215507 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\tommad01\Desktop\Lab\lab_dbt\target\run_results.json
+[0m17:20:41.216142 [info ] [MainThread]: 
+[0m17:20:41.217142 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m17:20:41.218147 [info ] [MainThread]: 
+[0m17:20:41.219143 [error] [MainThread]: [[31mERROR[0m]: in test dbt_utils_unique_combination_of_columns_powerpath_cyto_biopsy_silver_CASE_NO__TEST_NAME__SIGNED_OUT_DATE (models\silver\schema.yml)
+[0m17:20:41.221146 [error] [MainThread]:   Compilation Error in test dbt_utils_unique_combination_of_columns_powerpath_cyto_biopsy_silver_CASE_NO__TEST_NAME__SIGNED_OUT_DATE (models\silver\schema.yml)
+  'dbt_utils' is undefined. This can happen when calling a macro that does not exist. Check for typos and/or install package dependencies with "dbt deps".
+[0m17:20:41.221146 [info ] [MainThread]: 
+[0m17:20:41.222143 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=1 SKIP=0 NO-OP=0 REUSED=0 TOTAL=3
+[0m17:20:41.223175 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- CustomTopLevelKeyDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m17:20:41.225145 [debug] [MainThread]: Command `dbt test` failed at 17:20:41.225145 after 9.51 seconds
+[0m17:20:41.226144 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EE23857A50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EE237D3950>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EE235EFD50>]}
+[0m17:20:41.226753 [debug] [MainThread]: Flushing usage events
+[0m17:20:41.412565 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:20:47.598681 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018B7089C290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018B70FDF8D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018B70F80190>]}
+
+
+============================== 17:20:47.603678 | e31bc4d7-2de9-43c8-acda-c0beae47fd07 ==============================
+[0m17:20:47.603678 [info ] [MainThread]: Running with dbt=1.12.0
+[0m17:20:47.604712 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\tommad01\\.dbt', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'invocation_command': 'dbt deps', 'log_path': 'C:\\Users\\tommad01\\Desktop\\Lab\\lab_dbt\\logs'}
+[0m17:20:47.864795 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e31bc4d7-2de9-43c8-acda-c0beae47fd07', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018B6EE963D0>]}
+[0m17:20:47.906790 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m17:20:47.908766 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m17:20:47.910768 [debug] [MainThread]: Command `dbt deps` succeeded at 17:20:47.910768 after 0.44 seconds
+[0m17:20:47.911765 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018B710218D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018B70F77350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018B70F776D0>]}
+[0m17:20:47.912224 [debug] [MainThread]: Flushing usage events
+[0m17:20:48.205941 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:21:40.739911 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D357E1B910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D357E17A10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D357E17BD0>]}
+
+
+============================== 17:21:40.746556 | fb8b2f83-6217-4d7b-9bee-2b796e7024b0 ==============================
+[0m17:21:40.746556 [info ] [MainThread]: Running with dbt=1.12.0
+[0m17:21:40.747914 [debug] [MainThread]: running dbt with arguments {'maximum_seed_size_mib': '1', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\tommad01\\.dbt', 'invocation_command': 'dbt deps', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\tommad01\\Desktop\\Lab\\lab_dbt\\logs'}
+[0m17:21:41.089419 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'fb8b2f83-6217-4d7b-9bee-2b796e7024b0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D357E9E8D0>]}
+[0m17:21:41.140304 [debug] [MainThread]: Set downloads directory='C:\Users\tommad01\AppData\Local\Temp\dbt-downloads-li2dwe4j'
+[0m17:21:41.142262 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m17:21:41.455121 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m17:21:41.458086 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m17:21:41.627816 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m17:21:41.646811 [info ] [MainThread]: Updating lock file in file path: C:\Users\tommad01\Desktop\Lab\lab_dbt/package-lock.yml
+[0m17:21:41.825655 [debug] [MainThread]: Set downloads directory='C:\Users\tommad01\AppData\Local\Temp\dbt-downloads-4ipa1uwz'
+[0m17:21:41.835654 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m17:21:44.134597 [info ] [MainThread]: Installed from version 1.4.1
+[0m17:21:44.135685 [info ] [MainThread]: Up to date!
+[0m17:21:44.136597 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': 'fb8b2f83-6217-4d7b-9bee-2b796e7024b0', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D357E17890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D3580240D0>]}
+[0m17:21:44.140598 [debug] [MainThread]: Command `dbt deps` succeeded at 17:21:44.140598 after 3.56 seconds
+[0m17:21:44.142598 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D357E045D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D357E7AC90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D357D6D4D0>]}
+[0m17:21:44.144598 [debug] [MainThread]: Flushing usage events
+[0m17:21:44.547734 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:21:54.503727 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001846C5AB110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001846C4DA290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001846C5AB150>]}
+
+
+============================== 17:21:54.510726 | 786c241c-b485-40e8-80a4-dfa429964175 ==============================
+[0m17:21:54.510726 [info ] [MainThread]: Running with dbt=1.12.0
+[0m17:21:54.511725 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'version_check': 'True', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\tommad01\\.dbt', 'invocation_command': 'dbt test', 'hints_enabled': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\tommad01\\Desktop\\Lab\\lab_dbt\\logs'}
+[0m17:21:56.885114 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m17:21:56.886114 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m17:21:56.887207 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m17:21:58.782759 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '786c241c-b485-40e8-80a4-dfa429964175', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018400472190>]}
+[0m17:21:58.865725 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '786c241c-b485-40e8-80a4-dfa429964175', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001846A43BA90>]}
+[0m17:21:58.867729 [info ] [MainThread]: Registered adapter: databricks=1.12.3
+[0m17:21:59.687133 [debug] [MainThread]: checksum: b154c3494314c7223c912bef68d7678b521a9d4ab83524a76084633bd437b3da, vars: {}, profile: lab_dbt, target: dev, version: 1.12.0
+[0m17:21:59.849164 [info ] [MainThread]: Unable to do partial parsing because a project dependency has been added
+[0m17:21:59.850556 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '786c241c-b485-40e8-80a4-dfa429964175', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001846ABBE3D0>]}
+[0m17:22:03.455519 [warn ] [MainThread]: [[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test `accepted_values` defined on
+'powerpath_cyto_biopsy_silver' in package 'lab_dbt' (models\silver\schema.yml).
+Arguments to generic tests should be nested under the `arguments` property.
+[0m17:22:03.456522 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '786c241c-b485-40e8-80a4-dfa429964175', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018400EF60D0>]}
+[0m17:22:03.692069 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.lab_dbt.gold
+[0m17:22:03.697099 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '786c241c-b485-40e8-80a4-dfa429964175', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001846A439C50>]}
+[0m17:22:03.896110 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\tommad01\Desktop\Lab\lab_dbt\target\manifest.json
+[0m17:22:03.903112 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\tommad01\Desktop\Lab\lab_dbt\target\semantic_manifest.json
+[0m17:22:03.954191 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\tommad01\Desktop\Lab\lab_dbt\target\osi_document.json
+[0m17:22:03.992395 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '786c241c-b485-40e8-80a4-dfa429964175', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000184010B4CD0>]}
+[0m17:22:03.993251 [info ] [MainThread]: Found 3 models, 3 data tests, 4 sources, 890 macros
+[0m17:22:03.994252 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '786c241c-b485-40e8-80a4-dfa429964175', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018400F59AD0>]}
+[0m17:22:03.996280 [info ] [MainThread]: 
+[0m17:22:03.997716 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m17:22:03.998290 [info ] [MainThread]: 
+[0m17:22:03.999252 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=master) - Creating connection
+[0m17:22:04.000283 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m17:22:04.012252 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_opsanalytics_adb_workspace01_lab_staging) - Creating connection
+[0m17:22:04.012252 [debug] [ThreadPool]: Acquiring new databricks connection 'list_opsanalytics_adb_workspace01_lab_staging'
+[0m17:22:04.032254 [debug] [ThreadPool]: Using databricks connection "list_opsanalytics_adb_workspace01_lab_staging"
+[0m17:22:04.033250 [debug] [ThreadPool]: On list_opsanalytics_adb_workspace01_lab_staging: /* {"app": "dbt", "dbt_version": "1.12.0", "dbt_databricks_version": "1.12.3", "databricks_sql_connector_version": "4.3.0", "profile_name": "lab_dbt", "target_name": "dev", "invocation_id": "786c241c-b485-40e8-80a4-dfa429964175", "connection_name": "list_opsanalytics_adb_workspace01_lab_staging"} */
+
+    
+SELECT
+  table_name,
+  if(table_type IN ('EXTERNAL', 'MANAGED', 'MANAGED_SHALLOW_CLONE', 'EXTERNAL_SHALLOW_CLONE'), 'table', lower(table_type)) AS table_type,
+  lower(data_source_format) AS file_format,
+  table_owner,
+  if(
+    table_type IN (
+      'EXTERNAL',
+      'MANAGED',
+      'MANAGED_SHALLOW_CLONE',
+      'EXTERNAL_SHALLOW_CLONE'
+    ),
+    lower(table_type),
+    NULL
+  ) AS databricks_table_type
+FROM `system`.`information_schema`.`tables`
+WHERE table_catalog = 'opsanalytics_adb_workspace01'
+  AND table_schema = 'lab_staging'
+
+  
+[0m17:22:04.033250 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:22:05.880506 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1904a-8ac2-1ce2-b3ef-78ed7053603a) - Created
+[0m17:22:06.462864 [debug] [ThreadPool]: SQL status: OK in 2.430 seconds
+[0m17:22:06.487863 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f1904a-8ac2-1ce2-b3ef-78ed7053603a, command-id=01f1904a-8b0d-1c2d-aaf7-fe341b7bbc68) - Closing
+[0m17:22:06.488864 [debug] [ThreadPool]: On list_opsanalytics_adb_workspace01_lab_staging: Close
+[0m17:22:06.489865 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1904a-8ac2-1ce2-b3ef-78ed7053603a) - Closing
+[0m17:22:06.659822 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '786c241c-b485-40e8-80a4-dfa429964175', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018400F6D810>]}
+[0m17:22:06.674681 [debug] [Thread-2 (]: Began running node test.lab_dbt.accepted_values_powerpath_cyto_biopsy_silver_TEST_NAME__Breast_Biopsy__Breast_Large_Resection__Cytology_GYN__Cytology_NONGYN.5526c1ab39
+[0m17:22:06.675165 [debug] [Thread-3 (]: Began running node test.lab_dbt.dbt_utils_unique_combination_of_columns_powerpath_cyto_biopsy_silver_CASE_NO__TEST_NAME__SIGNED_OUT_DATE.d7bafdaecc
+[0m17:22:06.676162 [debug] [Thread-4 (]: Began running node test.lab_dbt.not_null_powerpath_cyto_biopsy_silver_SIGNED_OUT_DATE.bddcedd5e9
+[0m17:22:06.677156 [info ] [Thread-2 (]: 1 of 3 START test accepted_values_powerpath_cyto_biopsy_silver_TEST_NAME__Breast_Biopsy__Breast_Large_Resection__Cytology_GYN__Cytology_NONGYN  [RUN]
+[0m17:22:06.678202 [info ] [Thread-3 (]: 2 of 3 START test dbt_utils_unique_combination_of_columns_powerpath_cyto_biopsy_silver_CASE_NO__TEST_NAME__SIGNED_OUT_DATE  [RUN]
+[0m17:22:06.680164 [info ] [Thread-4 (]: 3 of 3 START test not_null_powerpath_cyto_biopsy_silver_SIGNED_OUT_DATE ........ [RUN]
+[0m17:22:06.681131 [debug] [Thread-2 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=test.lab_dbt.accepted_values_powerpath_cyto_biopsy_silver_TEST_NAME__Breast_Biopsy__Breast_Large_Resection__Cytology_GYN__Cytology_NONGYN.5526c1ab39) - Creating connection
+[0m17:22:06.682246 [debug] [Thread-3 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=test.lab_dbt.dbt_utils_unique_combination_of_columns_powerpath_cyto_biopsy_silver_CASE_NO__TEST_NAME__SIGNED_OUT_DATE.d7bafdaecc) - Creating connection
+[0m17:22:06.684132 [debug] [Thread-4 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=test.lab_dbt.not_null_powerpath_cyto_biopsy_silver_SIGNED_OUT_DATE.bddcedd5e9) - Creating connection
+[0m17:22:06.685133 [debug] [Thread-2 (]: Acquiring new databricks connection 'test.lab_dbt.accepted_values_powerpath_cyto_biopsy_silver_TEST_NAME__Breast_Biopsy__Breast_Large_Resection__Cytology_GYN__Cytology_NONGYN.5526c1ab39'
+[0m17:22:06.686134 [debug] [Thread-3 (]: Acquiring new databricks connection 'test.lab_dbt.dbt_utils_unique_combination_of_columns_powerpath_cyto_biopsy_silver_CASE_NO__TEST_NAME__SIGNED_OUT_DATE.d7bafdaecc'
+[0m17:22:06.686134 [debug] [Thread-4 (]: Acquiring new databricks connection 'test.lab_dbt.not_null_powerpath_cyto_biopsy_silver_SIGNED_OUT_DATE.bddcedd5e9'
+[0m17:22:06.687521 [debug] [Thread-2 (]: Began compiling node test.lab_dbt.accepted_values_powerpath_cyto_biopsy_silver_TEST_NAME__Breast_Biopsy__Breast_Large_Resection__Cytology_GYN__Cytology_NONGYN.5526c1ab39
+[0m17:22:06.688130 [debug] [Thread-3 (]: Began compiling node test.lab_dbt.dbt_utils_unique_combination_of_columns_powerpath_cyto_biopsy_silver_CASE_NO__TEST_NAME__SIGNED_OUT_DATE.d7bafdaecc
+[0m17:22:06.689131 [debug] [Thread-4 (]: Began compiling node test.lab_dbt.not_null_powerpath_cyto_biopsy_silver_SIGNED_OUT_DATE.bddcedd5e9
+[0m17:22:06.708163 [debug] [Thread-2 (]: Writing injected SQL for node "test.lab_dbt.accepted_values_powerpath_cyto_biopsy_silver_TEST_NAME__Breast_Biopsy__Breast_Large_Resection__Cytology_GYN__Cytology_NONGYN.5526c1ab39"
+[0m17:22:06.719164 [debug] [Thread-3 (]: Writing injected SQL for node "test.lab_dbt.dbt_utils_unique_combination_of_columns_powerpath_cyto_biopsy_silver_CASE_NO__TEST_NAME__SIGNED_OUT_DATE.d7bafdaecc"
+[0m17:22:06.737160 [debug] [Thread-4 (]: Writing injected SQL for node "test.lab_dbt.not_null_powerpath_cyto_biopsy_silver_SIGNED_OUT_DATE.bddcedd5e9"
+[0m17:22:06.740133 [debug] [Thread-2 (]: Began executing node test.lab_dbt.accepted_values_powerpath_cyto_biopsy_silver_TEST_NAME__Breast_Biopsy__Breast_Large_Resection__Cytology_GYN__Cytology_NONGYN.5526c1ab39
+[0m17:22:06.761161 [debug] [Thread-2 (]: Writing runtime sql for node "test.lab_dbt.accepted_values_powerpath_cyto_biopsy_silver_TEST_NAME__Breast_Biopsy__Breast_Large_Resection__Cytology_GYN__Cytology_NONGYN.5526c1ab39"
+[0m17:22:06.762166 [debug] [Thread-3 (]: Began executing node test.lab_dbt.dbt_utils_unique_combination_of_columns_powerpath_cyto_biopsy_silver_CASE_NO__TEST_NAME__SIGNED_OUT_DATE.d7bafdaecc
+[0m17:22:06.763133 [debug] [Thread-4 (]: Began executing node test.lab_dbt.not_null_powerpath_cyto_biopsy_silver_SIGNED_OUT_DATE.bddcedd5e9
+[0m17:22:06.765131 [debug] [Thread-3 (]: Writing runtime sql for node "test.lab_dbt.dbt_utils_unique_combination_of_columns_powerpath_cyto_biopsy_silver_CASE_NO__TEST_NAME__SIGNED_OUT_DATE.d7bafdaecc"
+[0m17:22:06.768168 [debug] [Thread-4 (]: Writing runtime sql for node "test.lab_dbt.not_null_powerpath_cyto_biopsy_silver_SIGNED_OUT_DATE.bddcedd5e9"
+[0m17:22:06.769176 [debug] [Thread-2 (]: Using databricks connection "test.lab_dbt.accepted_values_powerpath_cyto_biopsy_silver_TEST_NAME__Breast_Biopsy__Breast_Large_Resection__Cytology_GYN__Cytology_NONGYN.5526c1ab39"
+[0m17:22:06.770183 [debug] [Thread-2 (]: On test.lab_dbt.accepted_values_powerpath_cyto_biopsy_silver_TEST_NAME__Breast_Biopsy__Breast_Large_Resection__Cytology_GYN__Cytology_NONGYN.5526c1ab39: /* {"app": "dbt", "dbt_version": "1.12.0", "dbt_databricks_version": "1.12.3", "databricks_sql_connector_version": "4.3.0", "profile_name": "lab_dbt", "target_name": "dev", "invocation_id": "786c241c-b485-40e8-80a4-dfa429964175", "node_id": "test.lab_dbt.accepted_values_powerpath_cyto_biopsy_silver_TEST_NAME__Breast_Biopsy__Breast_Large_Resection__Cytology_GYN__Cytology_NONGYN.5526c1ab39"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+with all_values as (
+
+    select
+        TEST_NAME as value_field,
+        count(*) as n_records
+
+    from `opsanalytics_adb_workspace01`.`lab_staging`.`powerpath_cyto_biopsy_silver`
+    group by TEST_NAME
+
+)
+
+select *
+from all_values
+where value_field not in (
+    'Breast Biopsy','Breast Large/Resection','Cytology GYN','Cytology NONGYN'
+)
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m17:22:06.771132 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m17:22:06.772135 [debug] [Thread-4 (]: Using databricks connection "test.lab_dbt.not_null_powerpath_cyto_biopsy_silver_SIGNED_OUT_DATE.bddcedd5e9"
+[0m17:22:06.772135 [debug] [Thread-3 (]: Using databricks connection "test.lab_dbt.dbt_utils_unique_combination_of_columns_powerpath_cyto_biopsy_silver_CASE_NO__TEST_NAME__SIGNED_OUT_DATE.d7bafdaecc"
+[0m17:22:06.773133 [debug] [Thread-4 (]: On test.lab_dbt.not_null_powerpath_cyto_biopsy_silver_SIGNED_OUT_DATE.bddcedd5e9: /* {"app": "dbt", "dbt_version": "1.12.0", "dbt_databricks_version": "1.12.3", "databricks_sql_connector_version": "4.3.0", "profile_name": "lab_dbt", "target_name": "dev", "invocation_id": "786c241c-b485-40e8-80a4-dfa429964175", "node_id": "test.lab_dbt.not_null_powerpath_cyto_biopsy_silver_SIGNED_OUT_DATE.bddcedd5e9"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select SIGNED_OUT_DATE
+from `opsanalytics_adb_workspace01`.`lab_staging`.`powerpath_cyto_biopsy_silver`
+where SIGNED_OUT_DATE is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m17:22:06.774132 [debug] [Thread-3 (]: On test.lab_dbt.dbt_utils_unique_combination_of_columns_powerpath_cyto_biopsy_silver_CASE_NO__TEST_NAME__SIGNED_OUT_DATE.d7bafdaecc: /* {"app": "dbt", "dbt_version": "1.12.0", "dbt_databricks_version": "1.12.3", "databricks_sql_connector_version": "4.3.0", "profile_name": "lab_dbt", "target_name": "dev", "invocation_id": "786c241c-b485-40e8-80a4-dfa429964175", "node_id": "test.lab_dbt.dbt_utils_unique_combination_of_columns_powerpath_cyto_biopsy_silver_CASE_NO__TEST_NAME__SIGNED_OUT_DATE.d7bafdaecc"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+
+
+
+
+
+with validation_errors as (
+
+    select
+        CASE_NO, TEST_NAME, SIGNED_OUT_DATE
+    from `opsanalytics_adb_workspace01`.`lab_staging`.`powerpath_cyto_biopsy_silver`
+    group by CASE_NO, TEST_NAME, SIGNED_OUT_DATE
+    having count(*) > 1
+
+)
+
+select *
+from validation_errors
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m17:22:06.775132 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m17:22:06.884134 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m17:22:08.569788 [debug] [Thread-2 (]: Databricks adapter: Connection(session-id=01f1904a-8c7a-1d18-b26e-c7806923adb0) - Created
+[0m17:22:08.570790 [debug] [Thread-4 (]: Databricks adapter: Connection(session-id=01f1904a-8c8a-1c5b-8300-5a81c6691996) - Created
+[0m17:22:08.700248 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f1904a-8ca7-108e-8456-89cad0899e82) - Created
+[0m17:22:08.952335 [debug] [Thread-2 (]: SQL status: OK in 2.180 seconds
+[0m17:22:08.958524 [debug] [Thread-2 (]: Databricks adapter: Cursor(session-id=01f1904a-8c7a-1d18-b26e-c7806923adb0, command-id=01f1904a-8ca7-1588-88f2-1a5077491ae8) - Closing
+[0m17:22:08.963518 [debug] [Thread-2 (]: On test.lab_dbt.accepted_values_powerpath_cyto_biopsy_silver_TEST_NAME__Breast_Biopsy__Breast_Large_Resection__Cytology_GYN__Cytology_NONGYN.5526c1ab39: Close
+[0m17:22:08.964491 [debug] [Thread-2 (]: Databricks adapter: Connection(session-id=01f1904a-8c7a-1d18-b26e-c7806923adb0) - Closing
+[0m17:22:08.985492 [debug] [Thread-4 (]: SQL status: OK in 2.210 seconds
+[0m17:22:08.988494 [debug] [Thread-4 (]: Databricks adapter: Cursor(session-id=01f1904a-8c8a-1c5b-8300-5a81c6691996, command-id=01f1904a-8cb3-1cb6-bb18-736afc71c6d3) - Closing
+[0m17:22:09.114803 [debug] [Thread-4 (]: On test.lab_dbt.not_null_powerpath_cyto_biopsy_silver_SIGNED_OUT_DATE.bddcedd5e9: Close
+[0m17:22:09.115903 [debug] [Thread-4 (]: Databricks adapter: Connection(session-id=01f1904a-8c8a-1c5b-8300-5a81c6691996) - Closing
+[0m17:22:09.235968 [info ] [Thread-2 (]: 1 of 3 PASS accepted_values_powerpath_cyto_biopsy_silver_TEST_NAME__Breast_Biopsy__Breast_Large_Resection__Cytology_GYN__Cytology_NONGYN  [[32mPASS[0m in 2.55s]
+[0m17:22:09.236997 [info ] [Thread-4 (]: 3 of 3 PASS not_null_powerpath_cyto_biopsy_silver_SIGNED_OUT_DATE .............. [[32mPASS[0m in 2.55s]
+[0m17:22:09.237971 [debug] [Thread-2 (]: Finished running node test.lab_dbt.accepted_values_powerpath_cyto_biopsy_silver_TEST_NAME__Breast_Biopsy__Breast_Large_Resection__Cytology_GYN__Cytology_NONGYN.5526c1ab39
+[0m17:22:09.239966 [debug] [Thread-4 (]: Finished running node test.lab_dbt.not_null_powerpath_cyto_biopsy_silver_SIGNED_OUT_DATE.bddcedd5e9
+[0m17:22:09.284089 [debug] [Thread-3 (]: SQL status: OK in 2.400 seconds
+[0m17:22:09.287003 [debug] [Thread-3 (]: Databricks adapter: Cursor(session-id=01f1904a-8ca7-108e-8456-89cad0899e82, command-id=01f1904a-8cbd-1404-8d93-49ea25fe0ca5) - Closing
+[0m17:22:09.287968 [debug] [Thread-3 (]: On test.lab_dbt.dbt_utils_unique_combination_of_columns_powerpath_cyto_biopsy_silver_CASE_NO__TEST_NAME__SIGNED_OUT_DATE.d7bafdaecc: Close
+[0m17:22:09.288970 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f1904a-8ca7-108e-8456-89cad0899e82) - Closing
+[0m17:22:09.398970 [info ] [Thread-3 (]: 2 of 3 PASS dbt_utils_unique_combination_of_columns_powerpath_cyto_biopsy_silver_CASE_NO__TEST_NAME__SIGNED_OUT_DATE  [[32mPASS[0m in 2.72s]
+[0m17:22:09.400971 [debug] [Thread-3 (]: Finished running node test.lab_dbt.dbt_utils_unique_combination_of_columns_powerpath_cyto_biopsy_silver_CASE_NO__TEST_NAME__SIGNED_OUT_DATE.d7bafdaecc
+[0m17:22:09.402971 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=master) - Creating connection
+[0m17:22:09.404310 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m17:22:09.404970 [info ] [MainThread]: 
+[0m17:22:09.406070 [info ] [MainThread]: Finished running 3 data tests in 0 hours 0 minutes and 5.41 seconds (5.41s).
+[0m17:22:09.408077 [debug] [MainThread]: Command end result
+[0m17:22:09.515972 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\tommad01\Desktop\Lab\lab_dbt\target\manifest.json
+[0m17:22:09.521175 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\tommad01\Desktop\Lab\lab_dbt\target\semantic_manifest.json
+[0m17:22:09.526973 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\tommad01\Desktop\Lab\lab_dbt\target\osi_document.json
+[0m17:22:09.537973 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\tommad01\Desktop\Lab\lab_dbt\target\run_results.json
+[0m17:22:09.538973 [info ] [MainThread]: 
+[0m17:22:09.539975 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m17:22:09.541976 [info ] [MainThread]: 
+[0m17:22:09.542979 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=3
+[0m17:22:09.543977 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingArgumentsPropertyInGenericTestDeprecation: 2 occurrences
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m17:22:09.545976 [debug] [MainThread]: Command `dbt test` succeeded at 17:22:09.544976 after 15.20 seconds
+[0m17:22:09.546724 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001846C4DA150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001846C594510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001846C5A79D0>]}
+[0m17:22:09.546973 [debug] [MainThread]: Flushing usage events
+[0m17:22:09.720270 [debug] [MainThread]: An error was encountered while trying to flush usage events

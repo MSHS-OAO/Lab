@@ -4989,3 +4989,318 @@ There are 1 unused configuration paths:
 21:10:35.797352 [info ]: Started scheduling
 21:10:35.797419 [info ]: Finished scheduling [  0.00s]
 21:10:35.798290 [info ]: Cached model count updated: 3 models (accurate)
+21:20:25.031877 [info ]: Started loading project
+21:20:25.032980 [info ]: Loading ~/.dbt/profiles.yml
+21:20:25.036548 [error]: [UnusedConfigKey (dbt1060)]: Ignored unexpected key `"packages"`. YAML path: `packages`.
+  --> dbt_project.yml:25:1
+21:20:25.046520 [info ]: Started loading project
+21:20:25.047455 [info ]: Loading ~/.dbt/profiles.yml
+21:20:25.047525 [info ]: Finished loading project [  0.02s]
+21:20:25.112666 [debug]:    Started loading packages
+21:20:25.114364 [error]: [UnusedConfigKey (dbt1060)]: Ignored unexpected key `"packages"`. YAML path: `packages`.
+  --> dbt_project.yml:25:1
+21:20:25.121880 [info ]: Started parsing
+21:20:25.185257 [debug]:     Loaded [  0.07s] packages
+21:20:25.185283 [info ]: Finished loading project [  0.14s]
+21:20:25.186907 [debug]: Finished parsing models/silver/schema.yml [  0.00s]
+21:20:25.187706 [debug]: Finished parsing models/sources.yml [  0.00s]
+21:20:25.189837 [debug]: Finished parsing models/bronze/date_filter_bronze.sql [  0.00s]
+21:20:25.191070 [debug]: Finished parsing models/bronze/powerpath_cyto_biopsy_bronze.sql [  0.00s]
+21:20:25.192221 [debug]: Finished parsing models/silver/powerpath_cyto_biopsy_silver.sql [  0.00s]
+21:20:25.197726 [warn ]: [UnusedResourceConfigPath (dbt1097)]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.lab_dbt.gold
+21:20:25.199920 [info ]: Cached model count updated: 3 models (estimate)
+21:20:25.199939 [info ]: Cached model count updated: 3 models (accurate)
+21:20:25.199971 [info ]: Started scheduling
+21:20:25.200012 [info ]: Finished scheduling [  0.00s]
+21:20:25.200028 [debug]: Compilation - 0 nodes selected: {}
+21:20:25.200047 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '' does not match any enabled nodes
+21:20:25.200056 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+21:20:25.200068 [info ]: Started scheduling
+21:20:25.200119 [info ]: Finished scheduling [  0.00s]
+21:20:25.200164 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "opsanalytics_adb_workspace01", schema: "lab", table: "mshs_holidays" }) and interval: None
+21:20:25.200229 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "opsanalytics_adb_workspace01", schema: "lab", table: "powerpath_cyto_biopsy_historical" }) and interval: None
+21:20:25.200265 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "opsanalytics_adb_workspace01", schema: "lab", table: "lab_kpi_ap_patient_setting" }) and interval: None
+21:20:25.200295 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "opsanalytics_adb_workspace01", schema: "lab", table: "powerpath_raw" }) and interval: None
+21:20:25.203127 [info ]: Started building task graph
+21:20:25.203173 [info ]: Finished building task graph [  0.00s]
+21:20:25.256988 [info ]: Started scheduling
+21:20:25.257051 [info ]: Finished scheduling [  0.00s]
+21:20:25.258125 [info ]: Cached model count updated: 3 models (accurate)
+21:20:25.258323 [info ]: Finished parsing [  0.14s]
+21:20:26.842987 [info ]: Started loading project
+21:20:26.844284 [info ]: Loading ~/.dbt/profiles.yml
+21:20:26.846831 [error]: [UnusedConfigKey (dbt1060)]: Ignored unexpected key `"packages"`. YAML path: `packages`.
+  --> dbt_project.yml:25:1
+21:20:26.898280 [info ]: Cached model count updated: 3 models (estimate)
+21:20:26.898300 [info ]: Cached model count updated: 3 models (accurate)
+21:20:26.898337 [info ]: Started scheduling
+21:20:26.898423 [info ]: Finished scheduling [  0.00s]
+21:20:26.898441 [debug]: Compilation - 3 nodes selected: {"model.lab_dbt.date_filter_bronze", "model.lab_dbt.powerpath_cyto_biopsy_bronze", "model.lab_dbt.powerpath_cyto_biopsy_silver"}
+21:20:26.901556 [info ]: Started building task graph
+21:20:26.901656 [info ]: Finished building task graph [  0.00s]
+21:20:26.907479 [info ]: Started rendering (3 nodes)
+21:20:26.907507 [info ]: Started model lab_staging.powerpath_cyto_biopsy_silver
+21:20:26.907518 [debug]: Started rendering model lab_staging.powerpath_cyto_biopsy_silver
+21:20:26.907564 [info ]: Started model lab_staging.powerpath_cyto_biopsy_bronze
+21:20:26.907576 [debug]: Started rendering model lab_staging.powerpath_cyto_biopsy_bronze
+21:20:26.907599 [info ]: Started model lab_staging.date_filter_bronze
+21:20:26.907610 [debug]: Started rendering model lab_staging.date_filter_bronze
+21:20:26.907616 [info ]: Finished loading project [  0.06s]
+21:20:26.913991 [debug]: Compiled SQL for node model.lab_dbt.date_filter_bronze at target\.lsp\compiled\lab_dbt\models\bronze\date_filter_bronze.sql
+21:20:26.914054 [debug]: Compiled SQL for node model.lab_dbt.powerpath_cyto_biopsy_silver at target\.lsp\compiled\lab_dbt\models\silver\powerpath_cyto_biopsy_silver.sql
+21:20:26.914119 [debug]: Compiled SQL for node model.lab_dbt.powerpath_cyto_biopsy_bronze at target\.lsp\compiled\lab_dbt\models\bronze\powerpath_cyto_biopsy_bronze.sql
+21:20:26.914217 [debug]: Finished rendering [  0.01s] model lab_staging.date_filter_bronze [success]
+21:20:26.914268 [info ]: Started analyzing (3 nodes)
+21:20:26.914286 [debug]: Started analyzing model lab_staging.date_filter_bronze
+21:20:26.914318 [debug]: Finished rendering [  0.01s] model lab_staging.powerpath_cyto_biopsy_silver [success]
+21:20:26.914340 [debug]: Started analyzing model lab_staging.powerpath_cyto_biopsy_silver
+21:20:26.914371 [debug]: Finished rendering [  0.01s] model lab_staging.powerpath_cyto_biopsy_bronze [success]
+21:20:26.914384 [info ]: Finished rendering [  0.01s] (3 nodes, 0 skipped, 0 errors)
+21:20:26.914399 [debug]: Started analyzing model lab_staging.powerpath_cyto_biopsy_bronze
+21:20:26.915432 [debug]: Finished analyzing [  0.00s] model lab_staging.powerpath_cyto_biopsy_bronze [success]
+21:20:26.915456 [info ]:  Succeeded [  0.01s] model lab_staging.powerpath_cyto_biopsy_bronze (table)
+21:20:26.915591 [debug]: Finished analyzing [  0.00s] model lab_staging.date_filter_bronze [success]
+21:20:26.915609 [info ]:  Succeeded [  0.01s] model lab_staging.date_filter_bronze (table)
+21:20:26.918017 [debug]: Finished analyzing [  0.00s] model lab_staging.powerpath_cyto_biopsy_silver [success]
+21:20:26.918051 [info ]: Finished analyzing [  0.00s] (3 nodes, 0 skipped, 0 errors)
+21:20:26.918065 [info ]:  Succeeded [  0.01s] model lab_staging.powerpath_cyto_biopsy_silver (table)
+21:20:26.924184 [info ]: Started scheduling
+21:20:26.924238 [info ]: Finished scheduling [  0.00s]
+21:20:26.925300 [info ]: Cached model count updated: 3 models (accurate)
+21:20:27.259402 [info ]: Loading ~/.dbt/profiles.yml
+21:20:27.261835 [error]: [UnusedConfigKey (dbt1060)]: Ignored unexpected key `"packages"`. YAML path: `packages`.
+  --> dbt_project.yml:25:1
+21:21:11.088719 [info ]: Started loading project
+21:21:11.089828 [info ]: Loading ~/.dbt/profiles.yml
+21:21:11.103730 [info ]: Started loading project
+21:21:11.104662 [info ]: Loading ~/.dbt/profiles.yml
+21:21:11.104727 [info ]: Finished loading project [  0.02s]
+21:21:11.164757 [debug]:    Started loading packages
+21:21:11.170746 [debug]:     Loaded [  0.01s] packages
+21:21:11.172281 [info ]: Finished loading project [  0.07s]
+21:21:11.172747 [info ]: Started parsing
+21:21:11.228543 [debug]: Finished parsing models/silver/schema.yml [  0.00s]
+21:21:11.229066 [debug]: Finished parsing models/sources.yml [  0.00s]
+21:21:11.230983 [debug]: Finished parsing models/bronze/date_filter_bronze.sql [  0.00s]
+21:21:11.232190 [debug]: Finished parsing models/bronze/powerpath_cyto_biopsy_bronze.sql [  0.00s]
+21:21:11.233254 [debug]: Finished parsing models/silver/powerpath_cyto_biopsy_silver.sql [  0.00s]
+21:21:11.238108 [warn ]: [UnusedResourceConfigPath (dbt1097)]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.lab_dbt.gold
+21:21:11.240436 [info ]: Cached model count updated: 3 models (estimate)
+21:21:11.240456 [info ]: Cached model count updated: 3 models (accurate)
+21:21:11.240500 [info ]: Started scheduling
+21:21:11.240539 [info ]: Finished scheduling [  0.00s]
+21:21:11.240550 [debug]: Compilation - 0 nodes selected: {}
+21:21:11.240565 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '' does not match any enabled nodes
+21:21:11.240579 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+21:21:11.240586 [info ]: Started scheduling
+21:21:11.240654 [info ]: Finished scheduling [  0.00s]
+21:21:11.240694 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "opsanalytics_adb_workspace01", schema: "lab", table: "lab_kpi_ap_patient_setting" }) and interval: None
+21:21:11.240758 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "opsanalytics_adb_workspace01", schema: "lab", table: "mshs_holidays" }) and interval: None
+21:21:11.240793 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "opsanalytics_adb_workspace01", schema: "lab", table: "powerpath_raw" }) and interval: None
+21:21:11.240825 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "opsanalytics_adb_workspace01", schema: "lab", table: "powerpath_cyto_biopsy_historical" }) and interval: None
+21:21:11.242972 [info ]: Started building task graph
+21:21:11.243000 [info ]: Finished building task graph [  0.00s]
+21:21:11.252400 [info ]: Started scheduling
+21:21:11.252444 [info ]: Finished scheduling [  0.00s]
+21:21:11.254425 [info ]: Cached model count updated: 3 models (accurate)
+21:21:11.254526 [info ]: Finished parsing [  0.08s]
+21:21:12.800968 [info ]: Started loading project
+21:21:12.801879 [info ]: Loading ~/.dbt/profiles.yml
+21:21:12.850926 [info ]: Cached model count updated: 3 models (estimate)
+21:21:12.850945 [info ]: Cached model count updated: 3 models (accurate)
+21:21:12.850972 [info ]: Started scheduling
+21:21:12.851041 [info ]: Finished scheduling [  0.00s]
+21:21:12.851054 [debug]: Compilation - 3 nodes selected: {"model.lab_dbt.date_filter_bronze", "model.lab_dbt.powerpath_cyto_biopsy_bronze", "model.lab_dbt.powerpath_cyto_biopsy_silver"}
+21:21:12.853301 [info ]: Started building task graph
+21:21:12.853364 [info ]: Finished building task graph [  0.00s]
+21:21:12.860369 [info ]: Started rendering (3 nodes)
+21:21:12.860406 [info ]: Started model lab_staging.powerpath_cyto_biopsy_silver
+21:21:12.860428 [debug]: Started rendering model lab_staging.powerpath_cyto_biopsy_silver
+21:21:12.860460 [info ]: Started model lab_staging.powerpath_cyto_biopsy_bronze
+21:21:12.860476 [debug]: Started rendering model lab_staging.powerpath_cyto_biopsy_bronze
+21:21:12.860498 [info ]: Started model lab_staging.date_filter_bronze
+21:21:12.860500 [info ]: Finished loading project [  0.06s]
+21:21:12.860508 [debug]: Started rendering model lab_staging.date_filter_bronze
+21:21:12.866089 [debug]: Compiled SQL for node model.lab_dbt.date_filter_bronze at target\.lsp\compiled\lab_dbt\models\bronze\date_filter_bronze.sql
+21:21:12.866110 [debug]: Compiled SQL for node model.lab_dbt.powerpath_cyto_biopsy_silver at target\.lsp\compiled\lab_dbt\models\silver\powerpath_cyto_biopsy_silver.sql
+21:21:12.866114 [debug]: Compiled SQL for node model.lab_dbt.powerpath_cyto_biopsy_bronze at target\.lsp\compiled\lab_dbt\models\bronze\powerpath_cyto_biopsy_bronze.sql
+21:21:12.866274 [debug]: Finished rendering [  0.01s] model lab_staging.powerpath_cyto_biopsy_bronze [success]
+21:21:12.866310 [info ]: Started analyzing (3 nodes)
+21:21:12.866319 [debug]: Started analyzing model lab_staging.powerpath_cyto_biopsy_bronze
+21:21:12.866340 [debug]: Finished rendering [  0.01s] model lab_staging.date_filter_bronze [success]
+21:21:12.866352 [debug]: Started analyzing model lab_staging.date_filter_bronze
+21:21:12.866372 [debug]: Finished rendering [  0.01s] model lab_staging.powerpath_cyto_biopsy_silver [success]
+21:21:12.866381 [info ]: Finished rendering [  0.01s] (3 nodes, 0 skipped, 0 errors)
+21:21:12.866393 [debug]: Started analyzing model lab_staging.powerpath_cyto_biopsy_silver
+21:21:12.867297 [debug]: Finished analyzing [  0.00s] model lab_staging.powerpath_cyto_biopsy_bronze [success]
+21:21:12.867321 [info ]:  Succeeded [  0.01s] model lab_staging.powerpath_cyto_biopsy_bronze (table)
+21:21:12.867829 [debug]: Finished analyzing [  0.00s] model lab_staging.date_filter_bronze [success]
+21:21:12.867854 [info ]:  Succeeded [  0.01s] model lab_staging.date_filter_bronze (table)
+21:21:12.869046 [debug]: Finished analyzing [  0.00s] model lab_staging.powerpath_cyto_biopsy_silver [success]
+21:21:12.869061 [info ]: Finished analyzing [  0.00s] (3 nodes, 0 skipped, 0 errors)
+21:21:12.869069 [info ]:  Succeeded [  0.01s] model lab_staging.powerpath_cyto_biopsy_silver (table)
+21:21:12.873687 [info ]: Started scheduling
+21:21:12.873751 [info ]: Finished scheduling [  0.00s]
+21:21:12.874764 [info ]: Cached model count updated: 3 models (accurate)
+21:21:13.208962 [info ]: Loading ~/.dbt/profiles.yml
+21:21:27.038827 [info ]: Started loading project
+21:21:27.039682 [info ]: Loading ~/.dbt/profiles.yml
+21:21:27.052071 [info ]: Started loading project
+21:21:27.053132 [info ]: Loading ~/.dbt/profiles.yml
+21:21:27.053167 [info ]: Finished loading project [  0.01s]
+21:21:27.206533 [info ]:    Started resolving packages from packages.yml
+21:21:27.229605 [info ]:   Finished [  0.02s] resolving packages from packages.yml
+21:21:27.229802 [debug]:    Started loading packages
+21:21:27.246195 [debug]:     Loaded [  0.02s] packages
+21:21:27.248286 [info ]: Finished loading project [  0.20s]
+21:21:27.248858 [info ]: Started parsing
+21:21:27.371282 [debug]: Finished parsing models/silver/schema.yml [  0.00s]
+21:21:27.372971 [debug]: Finished parsing models/sources.yml [  0.00s]
+21:21:27.382762 [debug]: Finished parsing models/bronze/date_filter_bronze.sql [  0.01s]
+21:21:27.384877 [debug]: Finished parsing models/bronze/powerpath_cyto_biopsy_bronze.sql [  0.00s]
+21:21:27.395047 [debug]: Finished parsing models/silver/powerpath_cyto_biopsy_silver.sql [  0.01s]
+21:21:27.423528 [warn ]: [UnusedResourceConfigPath (dbt1097)]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.lab_dbt.gold
+21:21:27.430306 [info ]: Cached model count updated: 3 models (estimate)
+21:21:27.430347 [info ]: Cached model count updated: 3 models (accurate)
+21:21:27.430386 [info ]: Started scheduling
+21:21:27.430433 [info ]: Finished scheduling [  0.00s]
+21:21:27.430461 [debug]: Compilation - 0 nodes selected: {}
+21:21:27.430482 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '' does not match any enabled nodes
+21:21:27.430497 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+21:21:27.430511 [info ]: Started scheduling
+21:21:27.430596 [info ]: Finished scheduling [  0.00s]
+21:21:27.430650 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "opsanalytics_adb_workspace01", schema: "lab", table: "powerpath_cyto_biopsy_historical" }) and interval: None
+21:21:27.430746 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "opsanalytics_adb_workspace01", schema: "lab", table: "lab_kpi_ap_patient_setting" }) and interval: None
+21:21:27.430810 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "opsanalytics_adb_workspace01", schema: "lab", table: "powerpath_raw" }) and interval: None
+21:21:27.430869 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "opsanalytics_adb_workspace01", schema: "lab", table: "mshs_holidays" }) and interval: None
+21:21:27.439771 [info ]: Started building task graph
+21:21:27.439802 [info ]: Finished building task graph [  0.00s]
+21:21:27.466601 [info ]: Started scheduling
+21:21:27.466679 [info ]: Finished scheduling [  0.00s]
+21:21:27.471530 [info ]: Cached model count updated: 3 models (accurate)
+21:21:27.471708 [info ]: Finished parsing [  0.22s]
+21:21:29.024962 [info ]: Started loading project
+21:21:29.026024 [info ]: Loading ~/.dbt/profiles.yml
+21:21:29.091363 [info ]: Cached model count updated: 3 models (estimate)
+21:21:29.091389 [info ]: Cached model count updated: 3 models (accurate)
+21:21:29.091426 [info ]: Started scheduling
+21:21:29.091522 [info ]: Finished scheduling [  0.00s]
+21:21:29.091542 [debug]: Compilation - 3 nodes selected: {"model.lab_dbt.date_filter_bronze", "model.lab_dbt.powerpath_cyto_biopsy_bronze", "model.lab_dbt.powerpath_cyto_biopsy_silver"}
+21:21:29.095108 [info ]: Started building task graph
+21:21:29.095201 [info ]: Finished building task graph [  0.00s]
+21:21:29.104595 [info ]: Started rendering (3 nodes)
+21:21:29.104642 [info ]: Started model lab_staging.powerpath_cyto_biopsy_silver
+21:21:29.104658 [debug]: Started rendering model lab_staging.powerpath_cyto_biopsy_silver
+21:21:29.104692 [info ]: Started model lab_staging.powerpath_cyto_biopsy_bronze
+21:21:29.104704 [debug]: Started rendering model lab_staging.powerpath_cyto_biopsy_bronze
+21:21:29.104725 [info ]: Started model lab_staging.date_filter_bronze
+21:21:29.104738 [debug]: Started rendering model lab_staging.date_filter_bronze
+21:21:29.104779 [info ]: Finished loading project [  0.08s]
+21:21:29.111656 [debug]: Compiled SQL for node model.lab_dbt.powerpath_cyto_biopsy_silver at target\.lsp\compiled\lab_dbt\models\silver\powerpath_cyto_biopsy_silver.sql
+21:21:29.112133 [debug]: Finished rendering [  0.01s] model lab_staging.powerpath_cyto_biopsy_silver [success]
+21:21:29.112238 [info ]: Started analyzing (3 nodes)
+21:21:29.112254 [debug]: Started analyzing model lab_staging.powerpath_cyto_biopsy_silver
+21:21:29.113352 [debug]: Compiled SQL for node model.lab_dbt.powerpath_cyto_biopsy_bronze at target\.lsp\compiled\lab_dbt\models\bronze\powerpath_cyto_biopsy_bronze.sql
+21:21:29.113882 [debug]: Compiled SQL for node model.lab_dbt.date_filter_bronze at target\.lsp\compiled\lab_dbt\models\bronze\date_filter_bronze.sql
+21:21:29.114446 [debug]: Finished rendering [  0.01s] model lab_staging.powerpath_cyto_biopsy_bronze [success]
+21:21:29.114488 [debug]: Started analyzing model lab_staging.powerpath_cyto_biopsy_bronze
+21:21:29.115587 [debug]: Finished analyzing [  0.00s] model lab_staging.powerpath_cyto_biopsy_bronze [success]
+21:21:29.115621 [info ]:  Succeeded [  0.01s] model lab_staging.powerpath_cyto_biopsy_bronze (table)
+21:21:29.115676 [debug]: Finished rendering [  0.01s] model lab_staging.date_filter_bronze [success]
+21:21:29.115694 [info ]: Finished rendering [  0.01s] (3 nodes, 0 skipped, 0 errors)
+21:21:29.115728 [debug]: Started analyzing model lab_staging.date_filter_bronze
+21:21:29.116580 [debug]: Finished analyzing [  0.00s] model lab_staging.powerpath_cyto_biopsy_silver [success]
+21:21:29.116608 [info ]:  Succeeded [  0.01s] model lab_staging.powerpath_cyto_biopsy_silver (table)
+21:21:29.117295 [debug]: Finished analyzing [  0.00s] model lab_staging.date_filter_bronze [success]
+21:21:29.117314 [info ]: Finished analyzing [  0.01s] (3 nodes, 0 skipped, 0 errors)
+21:21:29.117328 [info ]:  Succeeded [  0.01s] model lab_staging.date_filter_bronze (table)
+21:21:29.124065 [info ]: Started scheduling
+21:21:29.124160 [info ]: Finished scheduling [  0.00s]
+21:21:29.125134 [info ]: Cached model count updated: 3 models (accurate)
+21:21:32.389322 [info ]: Started loading project
+21:21:32.390328 [info ]: Loading ~/.dbt/profiles.yml
+21:21:32.401376 [info ]: Started loading project
+21:21:32.402222 [info ]: Loading ~/.dbt/profiles.yml
+21:21:32.402280 [info ]: Finished loading project [  0.01s]
+21:21:32.470431 [info ]:    Started resolving packages from packages.yml
+21:21:32.870922 [info ]:   Finished [  0.40s] resolving packages from packages.yml (1 items)
+21:21:32.871326 [info ]: Auto installing dependencies while running `dbt compile`. To ensure dependencies are cached, run `dbt deps` to initialize a valid package-lock.yml.
+21:21:32.871346 [info ]: Installing packages
+21:21:32.877940 [info ]: Installing dbt-labs/dbt_utils
+21:21:34.198523 [info ]:  Installed dbt-labs/dbt_utils: 1.4.1
+21:21:34.198868 [info ]:  Installed 1 package
+21:21:34.202587 [debug]:    Started loading packages
+21:21:34.242122 [debug]:     Loaded [  0.04s] packages
+21:21:34.244089 [info ]: Finished loading project [  1.84s]
+21:21:34.244597 [info ]: Started parsing
+21:21:34.391651 [debug]: Finished parsing models/silver/schema.yml [  0.00s]
+21:21:34.392572 [debug]: Finished parsing models/sources.yml [  0.00s]
+21:21:34.395600 [debug]: Finished parsing models/bronze/date_filter_bronze.sql [  0.00s]
+21:21:34.397578 [debug]: Finished parsing models/bronze/powerpath_cyto_biopsy_bronze.sql [  0.00s]
+21:21:34.399342 [debug]: Finished parsing models/silver/powerpath_cyto_biopsy_silver.sql [  0.00s]
+21:21:34.408085 [warn ]: [UnusedResourceConfigPath (dbt1097)]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.lab_dbt.gold
+21:21:34.411649 [info ]: Cached model count updated: 3 models (estimate)
+21:21:34.411674 [info ]: Cached model count updated: 3 models (accurate)
+21:21:34.411707 [info ]: Started scheduling
+21:21:34.411755 [info ]: Finished scheduling [  0.00s]
+21:21:34.411771 [debug]: Compilation - 0 nodes selected: {}
+21:21:34.411789 [warn ]: [NoNodesForSelectionCriteria (dbt1092)]: The selection criterion '' does not match any enabled nodes
+21:21:34.411803 [warn ]: [NoNodesSelected (dbt1601)]: Nothing to do. Try checking your model configs and model specification args
+21:21:34.411820 [info ]: Started scheduling
+21:21:34.411905 [info ]: Finished scheduling [  0.00s]
+21:21:34.411956 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "opsanalytics_adb_workspace01", schema: "lab", table: "powerpath_raw" }) and interval: None
+21:21:34.412047 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "opsanalytics_adb_workspace01", schema: "lab", table: "mshs_holidays" }) and interval: None
+21:21:34.412103 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "opsanalytics_adb_workspace01", schema: "lab", table: "lab_kpi_ap_patient_setting" }) and interval: None
+21:21:34.412154 [debug]: Initializing schema store with entry: Frontier(CanonicalFqn { catalog: "opsanalytics_adb_workspace01", schema: "lab", table: "powerpath_cyto_biopsy_historical" }) and interval: None
+21:21:34.498144 [info ]: Started building task graph
+21:21:34.498169 [info ]: Finished building task graph [  0.00s]
+21:21:34.515696 [info ]: Started scheduling
+21:21:34.515752 [info ]: Finished scheduling [  0.00s]
+21:21:34.516915 [info ]: Cached model count updated: 3 models (accurate)
+21:21:34.516947 [info ]: Finished parsing [  0.27s]
+21:21:36.094032 [info ]: Started loading project
+21:21:36.095941 [info ]: Loading ~/.dbt/profiles.yml
+21:21:36.214727 [info ]: Cached model count updated: 3 models (estimate)
+21:21:36.214759 [info ]: Cached model count updated: 3 models (accurate)
+21:21:36.214820 [info ]: Started scheduling
+21:21:36.214978 [info ]: Finished scheduling [  0.00s]
+21:21:36.215010 [debug]: Compilation - 3 nodes selected: {"model.lab_dbt.date_filter_bronze", "model.lab_dbt.powerpath_cyto_biopsy_bronze", "model.lab_dbt.powerpath_cyto_biopsy_silver"}
+21:21:36.510027 [info ]: Started building task graph
+21:21:36.510161 [info ]: Finished building task graph [  0.00s]
+21:21:36.544467 [info ]: Started rendering (3 nodes)
+21:21:36.544519 [info ]: Started model lab_staging.powerpath_cyto_biopsy_silver
+21:21:36.544552 [debug]: Started rendering model lab_staging.powerpath_cyto_biopsy_silver
+21:21:36.544618 [info ]: Started model lab_staging.powerpath_cyto_biopsy_bronze
+21:21:36.544643 [info ]: Finished loading project [  0.45s]
+21:21:36.544656 [debug]: Started rendering model lab_staging.powerpath_cyto_biopsy_bronze
+21:21:36.544692 [info ]: Started model lab_staging.date_filter_bronze
+21:21:36.544720 [debug]: Started rendering model lab_staging.date_filter_bronze
+21:21:36.603101 [debug]: Compiled SQL for node model.lab_dbt.powerpath_cyto_biopsy_silver at target\.lsp\compiled\lab_dbt\models\silver\powerpath_cyto_biopsy_silver.sql
+21:21:36.603522 [debug]: Finished rendering [  0.06s] model lab_staging.powerpath_cyto_biopsy_silver [success]
+21:21:36.603582 [info ]: Started analyzing (3 nodes)
+21:21:36.603602 [debug]: Started analyzing model lab_staging.powerpath_cyto_biopsy_silver
+21:21:36.612115 [debug]: Finished analyzing [  0.01s] model lab_staging.powerpath_cyto_biopsy_silver [success]
+21:21:36.612166 [info ]:  Succeeded [  0.07s] model lab_staging.powerpath_cyto_biopsy_silver (table)
+21:21:36.631041 [debug]: Compiled SQL for node model.lab_dbt.powerpath_cyto_biopsy_bronze at target\.lsp\compiled\lab_dbt\models\bronze\powerpath_cyto_biopsy_bronze.sql
+21:21:36.634430 [debug]: Started analyzing model lab_staging.powerpath_cyto_biopsy_bronze
+21:21:36.634910 [debug]: Finished rendering [  0.09s] model lab_staging.powerpath_cyto_biopsy_bronze [success]
+21:21:36.635871 [debug]: Compiled SQL for node model.lab_dbt.date_filter_bronze at target\.lsp\compiled\lab_dbt\models\bronze\date_filter_bronze.sql
+21:21:36.636130 [debug]: Finished rendering [  0.09s] model lab_staging.date_filter_bronze [success]
+21:21:36.636163 [info ]: Finished rendering [  0.09s] (3 nodes, 0 skipped, 0 errors)
+21:21:36.636200 [debug]: Started analyzing model lab_staging.date_filter_bronze
+21:21:36.636520 [debug]: Finished analyzing [  0.00s] model lab_staging.powerpath_cyto_biopsy_bronze [success]
+21:21:36.636561 [info ]:  Succeeded [  0.09s] model lab_staging.powerpath_cyto_biopsy_bronze (table)
+21:21:36.638911 [debug]: Finished analyzing [  0.00s] model lab_staging.date_filter_bronze [success]
+21:21:36.638955 [info ]: Finished analyzing [  0.04s] (3 nodes, 0 skipped, 0 errors)
+21:21:36.638985 [info ]:  Succeeded [  0.09s] model lab_staging.date_filter_bronze (table)
+21:21:36.659921 [info ]: Started scheduling
+21:21:36.660019 [info ]: Finished scheduling [  0.00s]
+21:21:36.662987 [info ]: Cached model count updated: 3 models (accurate)
