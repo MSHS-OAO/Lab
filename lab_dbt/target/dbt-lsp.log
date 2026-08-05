@@ -7072,3 +7072,139 @@ There are 1 unused configuration paths:
 19:23:01.574936 [info ]: Started scheduling
 19:23:01.575392 [info ]: Finished scheduling [  0.00s]
 19:23:01.576761 [info ]: Cached model count updated: 7 models (accurate)
+19:43:59.318612 [info ]: Started loading project
+19:43:59.333419 [info ]: Loading ~/.dbt/profiles.yml
+19:43:59.599875 [info ]: Started parsing
+19:43:59.964995 [info ]: Finished loading project [  0.65s]
+19:43:59.988922 [debug]: Finished parsing models/gold/schema.yml [  0.00s]
+19:44:00.010840 [debug]: Finished parsing models/gold/cyto_backlog_gold.sql [  0.02s]
+19:44:00.027064 [info ]: Finished parsing [  0.43s]
+19:44:00.034461 [info ]: Cached model count updated: 7 models (estimate)
+19:44:00.034704 [info ]: Cached model count updated: 7 models (accurate)
+19:44:00.035112 [info ]: Started scheduling
+19:44:00.036085 [info ]: Finished scheduling [  0.00s]
+19:44:00.036261 [debug]: Compilation - 7 nodes selected: {"model.lab_dbt.cyto_backlog_bronze", "model.lab_dbt.cyto_backlog_gold", "model.lab_dbt.cyto_backlog_silver", "model.lab_dbt.date_filter_bronze", "model.lab_dbt.powerpath_cyto_biopsy_bronze", "model.lab_dbt.powerpath_cyto_biopsy_silver", "model.lab_dbt.powerpath_cyto_gold"}
+19:44:00.138137 [info ]: Started building task graph
+19:44:00.138410 [info ]: Finished building task graph [  0.00s]
+19:44:00.183754 [info ]: Started rendering (7 nodes)
+19:44:00.183968 [info ]: Started model lab_staging.cyto_backlog_gold
+19:44:00.184001 [debug]: Started rendering model lab_staging.cyto_backlog_gold
+19:44:00.184032 [info ]: Started model lab_staging.powerpath_cyto_gold
+19:44:00.184040 [debug]: Started rendering model lab_staging.powerpath_cyto_gold
+19:44:00.184058 [info ]: Started model lab_staging.powerpath_cyto_biopsy_silver
+19:44:00.184064 [debug]: Started rendering model lab_staging.powerpath_cyto_biopsy_silver
+19:44:00.184075 [info ]: Started model lab_staging.powerpath_cyto_biopsy_bronze
+19:44:00.184091 [debug]: Started rendering model lab_staging.powerpath_cyto_biopsy_bronze
+19:44:00.184110 [info ]: Started model lab_staging.cyto_backlog_silver
+19:44:00.184138 [debug]: Started rendering model lab_staging.cyto_backlog_silver
+19:44:00.184533 [info ]: Started model lab_staging.date_filter_bronze
+19:44:00.184569 [debug]: Started rendering model lab_staging.date_filter_bronze
+19:44:00.184604 [info ]: Started model lab_staging.cyto_backlog_bronze
+19:44:00.184616 [debug]: Started rendering model lab_staging.cyto_backlog_bronze
+19:44:00.189194 [debug]: Compiled SQL for node model.lab_dbt.powerpath_cyto_gold at target\.lsp\compiled\lab_dbt\models\gold\powerpath_cyto_gold.sql
+19:44:00.189499 [debug]: Compiled SQL for node model.lab_dbt.cyto_backlog_silver at target\.lsp\compiled\lab_dbt\models\silver\cyto_backlog_silver.sql
+19:44:00.190233 [debug]: Compiled SQL for node model.lab_dbt.powerpath_cyto_biopsy_bronze at target\.lsp\compiled\lab_dbt\models\bronze\powerpath_cyto_biopsy_bronze.sql
+19:44:00.190480 [debug]: Finished rendering [  0.01s] model lab_staging.powerpath_cyto_gold [success]
+19:44:00.190700 [debug]: Compiled SQL for node model.lab_dbt.cyto_backlog_bronze at target\.lsp\compiled\lab_dbt\models\bronze\cyto_backlog_bronze.sql
+19:44:00.190789 [debug]: Compiled SQL for node model.lab_dbt.date_filter_bronze at target\.lsp\compiled\lab_dbt\models\bronze\date_filter_bronze.sql
+19:44:00.190944 [info ]: Started analyzing (7 nodes)
+19:44:00.190979 [debug]: Started analyzing model lab_staging.powerpath_cyto_gold
+19:44:00.191016 [debug]: Finished rendering [  0.01s] model lab_staging.powerpath_cyto_biopsy_bronze [success]
+19:44:00.191041 [debug]: Started analyzing model lab_staging.powerpath_cyto_biopsy_bronze
+19:44:00.191513 [debug]: Finished rendering [  0.01s] model lab_staging.cyto_backlog_silver [success]
+19:44:00.191558 [debug]: Compiled SQL for node model.lab_dbt.powerpath_cyto_biopsy_silver at target\.lsp\compiled\lab_dbt\models\silver\powerpath_cyto_biopsy_silver.sql
+19:44:00.191586 [debug]: Started analyzing model lab_staging.cyto_backlog_silver
+19:44:00.191632 [debug]: Finished rendering [  0.01s] model lab_staging.cyto_backlog_bronze [success]
+19:44:00.191652 [debug]: Started analyzing model lab_staging.cyto_backlog_bronze
+19:44:00.191675 [debug]: Finished rendering [  0.01s] model lab_staging.date_filter_bronze [success]
+19:44:00.192797 [debug]: Started analyzing model lab_staging.date_filter_bronze
+19:44:00.192874 [debug]: Finished rendering [  0.01s] model lab_staging.powerpath_cyto_biopsy_silver [success]
+19:44:00.192909 [debug]: Started analyzing model lab_staging.powerpath_cyto_biopsy_silver
+19:44:00.195928 [debug]: Compiled SQL for node model.lab_dbt.cyto_backlog_gold at target\.lsp\compiled\lab_dbt\models\gold\cyto_backlog_gold.sql
+19:44:00.196496 [debug]: Finished rendering [  0.01s] model lab_staging.cyto_backlog_gold [success]
+19:44:00.196528 [info ]: Finished rendering [  0.01s] (7 nodes, 0 skipped, 0 errors)
+19:44:00.196559 [debug]: Started analyzing model lab_staging.cyto_backlog_gold
+19:44:00.205138 [debug]: Finished analyzing [  0.01s] model lab_staging.powerpath_cyto_biopsy_bronze [success]
+19:44:00.205177 [info ]:  Succeeded [  0.02s] model lab_staging.powerpath_cyto_biopsy_bronze (table)
+19:44:00.205898 [debug]: Finished analyzing [  0.01s] model lab_staging.date_filter_bronze [success]
+19:44:00.205925 [info ]:  Succeeded [  0.02s] model lab_staging.date_filter_bronze (table)
+19:44:00.205955 [debug]: Finished analyzing [  0.01s] model lab_staging.cyto_backlog_silver [success]
+19:44:00.205964 [info ]:  Succeeded [  0.02s] model lab_staging.cyto_backlog_silver (table)
+19:44:00.207297 [debug]: Finished analyzing [  0.02s] model lab_staging.cyto_backlog_bronze [success]
+19:44:00.207626 [info ]:  Succeeded [  0.02s] model lab_staging.cyto_backlog_bronze (table)
+19:44:00.207663 [debug]: Finished analyzing [  0.01s] model lab_staging.cyto_backlog_gold [success]
+19:44:00.207684 [info ]:  Succeeded [  0.02s] model lab_staging.cyto_backlog_gold (table)
+19:44:00.208923 [debug]: Finished analyzing [  0.02s] model lab_staging.powerpath_cyto_gold [success]
+19:44:00.209120 [info ]:  Succeeded [  0.02s] model lab_staging.powerpath_cyto_gold (table)
+19:44:00.209881 [debug]: Finished analyzing [  0.02s] model lab_staging.powerpath_cyto_biopsy_silver [success]
+19:44:00.209925 [info ]: Finished analyzing [  0.02s] (7 nodes, 0 skipped, 0 errors)
+19:44:00.209978 [info ]:  Succeeded [  0.02s] model lab_staging.powerpath_cyto_biopsy_silver (table)
+19:44:00.218832 [info ]: Started scheduling
+19:44:00.218892 [info ]: Finished scheduling [  0.00s]
+19:44:00.224283 [info ]: Cached model count updated: 7 models (accurate)
+19:44:01.788419 [info ]: Started loading project
+19:44:01.790611 [info ]: Loading ~/.dbt/profiles.yml
+19:44:01.896733 [info ]: Cached model count updated: 7 models (estimate)
+19:44:01.896753 [info ]: Cached model count updated: 7 models (accurate)
+19:44:01.896788 [info ]: Started scheduling
+19:44:01.896935 [info ]: Finished scheduling [  0.00s]
+19:44:01.896953 [debug]: Compilation - 7 nodes selected: {"model.lab_dbt.cyto_backlog_bronze", "model.lab_dbt.cyto_backlog_gold", "model.lab_dbt.cyto_backlog_silver", "model.lab_dbt.date_filter_bronze", "model.lab_dbt.powerpath_cyto_biopsy_bronze", "model.lab_dbt.powerpath_cyto_biopsy_silver", "model.lab_dbt.powerpath_cyto_gold"}
+19:44:01.973480 [info ]: Started building task graph
+19:44:01.973577 [info ]: Finished building task graph [  0.00s]
+19:44:01.985779 [info ]: Started rendering (7 nodes)
+19:44:01.985809 [info ]: Started model lab_staging.cyto_backlog_gold
+19:44:01.985819 [debug]: Started rendering model lab_staging.cyto_backlog_gold
+19:44:01.985841 [info ]: Started model lab_staging.powerpath_cyto_gold
+19:44:01.985849 [debug]: Started rendering model lab_staging.powerpath_cyto_gold
+19:44:01.985859 [info ]: Started model lab_staging.powerpath_cyto_biopsy_silver
+19:44:01.985866 [debug]: Started rendering model lab_staging.powerpath_cyto_biopsy_silver
+19:44:01.985878 [info ]: Started model lab_staging.powerpath_cyto_biopsy_bronze
+19:44:01.985898 [debug]: Started rendering model lab_staging.powerpath_cyto_biopsy_bronze
+19:44:01.985902 [info ]: Finished loading project [  0.20s]
+19:44:01.985919 [info ]: Started model lab_staging.cyto_backlog_silver
+19:44:01.985948 [debug]: Started rendering model lab_staging.cyto_backlog_silver
+19:44:01.985976 [info ]: Started model lab_staging.date_filter_bronze
+19:44:01.986019 [debug]: Started rendering model lab_staging.date_filter_bronze
+19:44:01.986045 [info ]: Started model lab_staging.cyto_backlog_bronze
+19:44:01.986149 [debug]: Started rendering model lab_staging.cyto_backlog_bronze
+19:44:01.989312 [debug]: Compiled SQL for node model.lab_dbt.date_filter_bronze at target\.lsp\compiled\lab_dbt\models\bronze\date_filter_bronze.sql
+19:44:01.989366 [debug]: Compiled SQL for node model.lab_dbt.cyto_backlog_gold at target\.lsp\compiled\lab_dbt\models\gold\cyto_backlog_gold.sql
+19:44:01.989378 [debug]: Compiled SQL for node model.lab_dbt.powerpath_cyto_biopsy_silver at target\.lsp\compiled\lab_dbt\models\silver\powerpath_cyto_biopsy_silver.sql
+19:44:01.989412 [debug]: Compiled SQL for node model.lab_dbt.powerpath_cyto_gold at target\.lsp\compiled\lab_dbt\models\gold\powerpath_cyto_gold.sql
+19:44:01.989412 [debug]: Compiled SQL for node model.lab_dbt.powerpath_cyto_biopsy_bronze at target\.lsp\compiled\lab_dbt\models\bronze\powerpath_cyto_biopsy_bronze.sql
+19:44:01.989526 [debug]: Finished rendering [  0.00s] model lab_staging.date_filter_bronze [success]
+19:44:01.989536 [debug]: Compiled SQL for node model.lab_dbt.cyto_backlog_bronze at target\.lsp\compiled\lab_dbt\models\bronze\cyto_backlog_bronze.sql
+19:44:01.989569 [info ]: Started analyzing (7 nodes)
+19:44:01.989582 [debug]: Started analyzing model lab_staging.date_filter_bronze
+19:44:01.989708 [debug]: Compiled SQL for node model.lab_dbt.cyto_backlog_silver at target\.lsp\compiled\lab_dbt\models\silver\cyto_backlog_silver.sql
+19:44:01.990005 [debug]: Finished rendering [  0.00s] model lab_staging.cyto_backlog_gold [success]
+19:44:01.990038 [debug]: Started analyzing model lab_staging.cyto_backlog_gold
+19:44:01.990059 [debug]: Finished rendering [  0.00s] model lab_staging.powerpath_cyto_biopsy_silver [success]
+19:44:01.990074 [debug]: Started analyzing model lab_staging.powerpath_cyto_biopsy_silver
+19:44:01.990097 [debug]: Finished rendering [  0.00s] model lab_staging.powerpath_cyto_gold [success]
+19:44:01.990115 [debug]: Started analyzing model lab_staging.powerpath_cyto_gold
+19:44:01.990142 [debug]: Finished rendering [  0.00s] model lab_staging.powerpath_cyto_biopsy_bronze [success]
+19:44:01.990158 [debug]: Started analyzing model lab_staging.powerpath_cyto_biopsy_bronze
+19:44:01.990180 [debug]: Finished rendering [  0.00s] model lab_staging.cyto_backlog_bronze [success]
+19:44:01.990198 [debug]: Started analyzing model lab_staging.cyto_backlog_bronze
+19:44:01.990218 [debug]: Finished rendering [  0.00s] model lab_staging.cyto_backlog_silver [success]
+19:44:01.990230 [info ]: Finished rendering [  0.00s] (7 nodes, 0 skipped, 0 errors)
+19:44:01.990241 [debug]: Started analyzing model lab_staging.cyto_backlog_silver
+19:44:01.991401 [debug]: Finished analyzing [  0.00s] model lab_staging.powerpath_cyto_biopsy_bronze [success]
+19:44:01.991436 [info ]:  Succeeded [  0.01s] model lab_staging.powerpath_cyto_biopsy_bronze (table)
+19:44:01.991468 [debug]: Finished analyzing [  0.00s] model lab_staging.date_filter_bronze [success]
+19:44:01.991482 [info ]:  Succeeded [  0.00s] model lab_staging.date_filter_bronze (table)
+19:44:01.991804 [debug]: Finished analyzing [  0.00s] model lab_staging.cyto_backlog_silver [success]
+19:44:01.991828 [info ]:  Succeeded [  0.01s] model lab_staging.cyto_backlog_silver (table)
+19:44:01.992424 [debug]: Finished analyzing [  0.00s] model lab_staging.cyto_backlog_bronze [success]
+19:44:01.992443 [info ]:  Succeeded [  0.01s] model lab_staging.cyto_backlog_bronze (table)
+19:44:01.992662 [debug]: Finished analyzing [  0.00s] model lab_staging.cyto_backlog_gold [success]
+19:44:01.992680 [info ]:  Succeeded [  0.01s] model lab_staging.cyto_backlog_gold (table)
+19:44:01.993728 [debug]: Finished analyzing [  0.00s] model lab_staging.powerpath_cyto_gold [success]
+19:44:01.993761 [info ]:  Succeeded [  0.01s] model lab_staging.powerpath_cyto_gold (table)
+19:44:01.993794 [debug]: Finished analyzing [  0.00s] model lab_staging.powerpath_cyto_biopsy_silver [success]
+19:44:01.993806 [info ]: Finished analyzing [  0.00s] (7 nodes, 0 skipped, 0 errors)
+19:44:01.993817 [info ]:  Succeeded [  0.01s] model lab_staging.powerpath_cyto_biopsy_silver (table)
+19:44:01.999613 [info ]: Started scheduling
+19:44:01.999686 [info ]: Finished scheduling [  0.00s]
+19:44:02.000903 [info ]: Cached model count updated: 7 models (accurate)

@@ -5,4 +5,4 @@ models:
     description: One row per pending case per report date.
     columns:
       - name: backlog
-        description: Business days from case creation to report date, minus one.
+        description: Business days from case creation to report date, minus one. Feeds into Dashboard
