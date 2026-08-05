@@ -1,0 +1,83 @@
+{
+  "macro_spans": [
+    {
+      "macro_span": {
+        "start": {
+          "line": 1,
+          "col": 1,
+          "index": 0
+        },
+        "stop": {
+          "line": 1,
+          "col": 35,
+          "index": 34
+        }
+      },
+      "expanded_span": {
+        "start": {
+          "line": 1,
+          "col": 1,
+          "index": 0
+        },
+        "stop": {
+          "line": 1,
+          "col": 1,
+          "index": 0
+        }
+      }
+    },
+    {
+      "macro_span": {
+        "start": {
+          "line": 12,
+          "col": 10,
+          "index": 660
+        },
+        "stop": {
+          "line": 12,
+          "col": 42,
+          "index": 692
+        }
+      },
+      "expanded_span": {
+        "start": {
+          "line": 12,
+          "col": 10,
+          "index": 626
+        },
+        "stop": {
+          "line": 12,
+          "col": 76,
+          "index": 692
+        }
+      }
+    },
+    {
+      "macro_span": {
+        "start": {
+          "line": 21,
+          "col": 10,
+          "index": 900
+        },
+        "stop": {
+          "line": 21,
+          "col": 42,
+          "index": 932
+        }
+      },
+      "expanded_span": {
+        "start": {
+          "line": 21,
+          "col": 10,
+          "index": 900
+        },
+        "stop": {
+          "line": 21,
+          "col": 76,
+          "index": 966
+        }
+      }
+    }
+  ],
+  "reclassify_spans": []
+}
