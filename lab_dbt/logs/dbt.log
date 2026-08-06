@@ -10715,3 +10715,42 @@ KeyboardInterrupt
 [0m16:02:19.882524 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000191D4E6ED90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000191D4E6C0D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000191E8C73050>]}
 [0m16:02:19.883654 [debug] [MainThread]: Flushing usage events
 [0m16:02:20.509872 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m09:55:45.008981 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F4AFFE9550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F4ACE4D450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F4B277BC50>]}
+
+
+============================== 09:55:45.017853 | b19da22e-e3c5-4d2c-927e-3025eb66c795 ==============================
+[0m09:55:45.017853 [info ] [MainThread]: Running with dbt=1.12.0
+[0m09:55:45.018904 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\tommad01\\.dbt', 'invocation_command': 'dbt build', 'hints_enabled': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'use_colors': 'True', 'log_path': 'C:\\Users\\tommad01\\Desktop\\Lab\\lab_dbt\\logs'}
+[0m09:55:46.895467 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m09:55:46.895965 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m09:55:46.896316 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m09:55:48.627510 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b19da22e-e3c5-4d2c-927e-3025eb66c795', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F4B06FD6E0>]}
+[0m09:55:48.718585 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b19da22e-e3c5-4d2c-927e-3025eb66c795', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F4C672FAC0>]}
+[0m09:55:48.719805 [info ] [MainThread]: Registered adapter: databricks=1.12.3
+[0m09:55:49.482839 [debug] [MainThread]: checksum: b154c3494314c7223c912bef68d7678b521a9d4ab83524a76084633bd437b3da, vars: {}, profile: lab_dbt, target: dev, version: 1.12.0
+[0m09:55:49.881012 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m09:55:49.881743 [debug] [MainThread]: Partial parsing: updated file: lab_dbt://models\silver\schema.yml
+[0m09:55:50.760901 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b19da22e-e3c5-4d2c-927e-3025eb66c795', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F4C6FFB150>]}
+[0m09:55:50.926752 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\tommad01\Desktop\Lab\lab_dbt\target\manifest.json
+[0m09:55:50.932835 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\tommad01\Desktop\Lab\lab_dbt\target\semantic_manifest.json
+[0m09:55:50.984273 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\tommad01\Desktop\Lab\lab_dbt\target\osi_document.json
+[0m09:55:51.050016 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b19da22e-e3c5-4d2c-927e-3025eb66c795', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F4C6CAFE30>]}
+[0m09:55:51.050581 [info ] [MainThread]: Found 7 models, 3 data tests, 6 sources, 890 macros
+[0m09:55:51.053787 [info ] [MainThread]: 
+[0m09:55:51.054391 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m09:55:51.054960 [info ] [MainThread]: 
+[0m09:55:51.055934 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=master) - Creating connection
+[0m09:55:51.056791 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m09:55:51.066123 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_opsanalytics_adb_workspace01) - Creating connection
+[0m09:55:51.066665 [debug] [ThreadPool]: Acquiring new databricks connection 'list_opsanalytics_adb_workspace01'
+[0m09:55:51.093622 [debug] [ThreadPool]: Using databricks connection "list_opsanalytics_adb_workspace01"
+[0m09:55:51.094453 [debug] [ThreadPool]: On list_opsanalytics_adb_workspace01: /* {"app": "dbt", "dbt_version": "1.12.0", "dbt_databricks_version": "1.12.3", "databricks_sql_connector_version": "4.3.0", "profile_name": "lab_dbt", "target_name": "dev", "invocation_id": "b19da22e-e3c5-4d2c-927e-3025eb66c795", "connection_name": "list_opsanalytics_adb_workspace01"} */
+
+    
+
+  SHOW SCHEMAS IN `opsanalytics_adb_workspace01`
+
+
+  
+[0m09:55:51.095159 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m09:55:54.976749 [info ] [ThreadPool]: Databricks adapter: SPOG discovery probe to 'https://adb-7405606624435497.17.azuredatabricks.net/.well-known/databricks-config' failed after 3 attempts (last error: HTTPSConnectionPool(host='adb-7405606624435497.17.azuredatabricks.net', port=443): Max retries exceeded with url: /.well-known/databricks-config (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)')))). Proceeding as a non-SPOG host. If adb-7405606624435497.17.azuredatabricks.net is a SPOG (unified) workspace, routing errors may follow; verify network reachability to /.well-known/databricks-config.
