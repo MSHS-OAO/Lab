@@ -1,5 +1,3 @@
-
-
 with filtered as (
     select *
     from `opsanalytics_adb_workspace01`.`lab_staging`.`cyto_backlog_bronze`
@@ -30,7 +28,7 @@ select
     date_format(c.Received_Date, 'EEEE')                as acc_day_only,
     greatest(rd.bizday_index - cc.bizday_index - 1, 0)  as backlog
 from cleaned c
-left join `opsanalytics_adb_workspace01`.`lab_staging`.`date_filter_bronze` cc
+left join `opsanalytics_adb_workspace01`.`lab`.`date_filter` cc
     on cast(c.Case_created_date as date) = cc.calendar_date
-left join `opsanalytics_adb_workspace01`.`lab_staging`.`date_filter_bronze` rd
+left join `opsanalytics_adb_workspace01`.`lab`.`date_filter` rd
     on c._report_date = rd.calendar_date
