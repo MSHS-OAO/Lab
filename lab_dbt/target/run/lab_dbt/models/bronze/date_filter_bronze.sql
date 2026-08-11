@@ -1,21 +1,16 @@
 
   
-    
-        create or replace table `opsanalytics_adb_workspace01`.`lab_staging`.`date_filter_bronze`
-      
-      
-    using delta
   
-      
-      
-      
-      
-      
-      
-      
-      
-      as
-      with dates as (
+  
+  create or replace view `opsanalytics_adb_workspace01`.`lab_staging`.`date_filter_bronze`
+  (
+    `calendar_date`,
+	`is_working_day`,
+	`bizday_index`
+  )
+  
+  as (
+    with dates as (
     select explode(sequence(
         date '1990-01-01',
         date '2100-12-31',
@@ -42,4 +37,4 @@ select
     sum(is_working_day) over (order by calendar_date
         rows between unbounded preceding and current row) as bizday_index
 from flagged
-  
+  )

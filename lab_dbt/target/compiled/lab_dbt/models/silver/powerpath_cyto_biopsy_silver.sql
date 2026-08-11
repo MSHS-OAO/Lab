@@ -1,5 +1,3 @@
-
-
 with raw as (
     select *
     from `opsanalytics_adb_workspace01`.`lab_staging`.`powerpath_cyto_biopsy_bronze`
@@ -55,9 +53,9 @@ with_tat as (
         datediff(w.signed_out_date, w.Collection_Date)   as Collection_to_signed_out,
         so.bizday_index - rc.bizday_index                as Received_to_signed_out
     from with_setting w
-    left join `opsanalytics_adb_workspace01`.`lab_staging`.`date_filter_bronze` rc
+    left join `opsanalytics_adb_workspace01`.`lab`.`date_filter` rc
         on cast(w.Received_Date   as date) = rc.calendar_date
-    left join `opsanalytics_adb_workspace01`.`lab_staging`.`date_filter_bronze` so
+    left join `opsanalytics_adb_workspace01`.`lab`.`date_filter` so
         on cast(w.signed_out_date as date) = so.calendar_date
 ),
 

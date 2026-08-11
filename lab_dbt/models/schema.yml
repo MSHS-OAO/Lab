@@ -23,3 +23,8 @@ models:
       - dbt_utils.unique_combination_of_columns:
           arguments:
             combination_of_columns: [Case_no, _report_date]
+  - name: cyto_backlog_gold
+    description: One row per pending case per report date.
+    columns:
+      - name: backlog
+        description: Business days from case creation to report date, minus one. Feeds into Dashboard

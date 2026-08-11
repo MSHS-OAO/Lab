@@ -22,3 +22,5 @@ sources:
           the same case recurs across files until signed out. Grain is (Case_no, _report_date).
       - name: lab_kpi_ap_tat_targets
         description: Turnaround targets by SPEC_GROUP and PATIENT_SETTING.
+      - name: date_filter
+        description: Table for business days calculation; created from mshs_holidays.

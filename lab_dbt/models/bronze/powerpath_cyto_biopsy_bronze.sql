@@ -1,5 +1,3 @@
-{{ config(materialized='table') }}
-
 select
     c.*,
     ps.PATIENT_SETTING
