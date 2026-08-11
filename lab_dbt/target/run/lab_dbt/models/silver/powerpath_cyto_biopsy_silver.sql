@@ -1,21 +1,38 @@
 
   
-    
-        create or replace table `opsanalytics_adb_workspace01`.`lab_staging`.`powerpath_cyto_biopsy_silver`
-      
-      
-    using delta
   
-      
-      
-      
-      
-      
-      
-      
-      
-      as
-      with raw as (
+  
+  create or replace view `opsanalytics_adb_workspace01`.`lab_staging`.`powerpath_cyto_biopsy_silver`
+  (
+    `FACILITY`,
+	`PRIORITY`,
+	`SPEC_CODE`,
+	`SPECIMEN_DESCRIPTION`,
+	`CPT_CODE`,
+	`REV_CTR`,
+	`ENCOUNTER_NO`,
+	`MRN`,
+	`CASE_NO`,
+	`CASE_CREATED_DATE`,
+	`COLLECTION_DATE`,
+	`RECEIVED_DATE`,
+	`SIGNED_OUT_DATE`,
+	`REFMD_CODE`,
+	`SPEC_SORT_ORDER`,
+	`TEST_NAME`,
+	`PATIENT_SETTING`,
+	`COLLECTION_TO_SIGNED_OUT`,
+	`RECEIVED_TO_SIGNED_OUT`,
+	`TAT_TARGET`,
+	`IS_TAT_WITHIN_TARGET`,
+	`SPEC_GROUP`,
+	`REFMD_NAME`,
+	`_SOURCE_FILE`,
+	`_INGESTED_AT`
+  )
+  
+  as (
+    with raw as (
     select *
     from `opsanalytics_adb_workspace01`.`lab_staging`.`powerpath_cyto_biopsy_bronze`
     where spec_group in ('CYTO NONGYN', 'CYTO GYN', 'BREAST')
@@ -70,9 +87,9 @@ with_tat as (
         datediff(w.signed_out_date, w.Collection_Date)   as Collection_to_signed_out,
         so.bizday_index - rc.bizday_index                as Received_to_signed_out
     from with_setting w
-    left join `opsanalytics_adb_workspace01`.`lab_staging`.`date_filter_bronze` rc
+    left join `opsanalytics_adb_workspace01`.`lab`.`date_filter` rc
         on cast(w.Received_Date   as date) = rc.calendar_date
-    left join `opsanalytics_adb_workspace01`.`lab_staging`.`date_filter_bronze` so
+    left join `opsanalytics_adb_workspace01`.`lab`.`date_filter` so
         on cast(w.signed_out_date as date) = so.calendar_date
 ),
 
@@ -135,4 +152,4 @@ historical as (
 select * from historical
 union all
 select * from new_data
-  
+  )

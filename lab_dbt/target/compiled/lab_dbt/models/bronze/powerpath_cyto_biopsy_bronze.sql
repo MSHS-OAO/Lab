@@ -1,7 +1,3 @@
-
-
-
-
 select
     c.*,
     ps.PATIENT_SETTING

@@ -1,5 +1,3 @@
-
-
 with dates as (
     select explode(sequence(
         date '1990-01-01',
