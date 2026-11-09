@@ -19839,3 +19839,2802 @@ left join cyto_accessioned c
 [0m14:59:40.336841 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A96AFF70D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A96AFF7590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002A96AF4D290>]}
 [0m14:59:40.338842 [debug] [MainThread]: Flushing usage events
 [0m14:59:40.746606 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:08:23.477221 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C8DD3FB610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C8DD3F7D10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C8DD3F7950>]}
+
+
+============================== 15:08:23.487319 | 79339aac-24c9-4ef5-bd6c-cf2168cc7613 ==============================
+[0m15:08:23.487319 [info ] [MainThread]: Running with dbt=1.12.0
+[0m15:08:23.491220 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\tommad01\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'hints_enabled': 'True', 'invocation_command': 'dbt run', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\tommad01\\Desktop\\Lab\\lab_dbt\\logs'}
+[0m15:08:28.299426 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m15:08:28.301423 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m15:08:28.303423 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m15:08:31.592097 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '79339aac-24c9-4ef5-bd6c-cf2168cc7613', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C8DD4CD010>]}
+[0m15:08:31.757775 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '79339aac-24c9-4ef5-bd6c-cf2168cc7613', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C8DD49B950>]}
+[0m15:08:31.759778 [info ] [MainThread]: Registered adapter: databricks=1.12.3
+[0m15:08:33.293609 [debug] [MainThread]: checksum: b154c3494314c7223c912bef68d7678b521a9d4ab83524a76084633bd437b3da, vars: {}, profile: lab_dbt, target: dev, version: 1.12.0
+[0m15:08:33.807706 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m15:08:33.809192 [debug] [MainThread]: Partial parsing: updated file: lab_dbt://models\silver\powerpath_daily_silver.sql
+[0m15:08:34.443340 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '79339aac-24c9-4ef5-bd6c-cf2168cc7613', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C8F136CBD0>]}
+[0m15:08:34.678426 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\tommad01\Desktop\Lab\lab_dbt\target\manifest.json
+[0m15:08:34.686659 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\tommad01\Desktop\Lab\lab_dbt\target\semantic_manifest.json
+[0m15:08:34.749564 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\tommad01\Desktop\Lab\lab_dbt\target\osi_document.json
+[0m15:08:34.789895 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '79339aac-24c9-4ef5-bd6c-cf2168cc7613', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C8F12C2590>]}
+[0m15:08:34.790897 [info ] [MainThread]: Found 9 models, 3 data tests, 12 sources, 890 macros
+[0m15:08:34.792847 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '79339aac-24c9-4ef5-bd6c-cf2168cc7613', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C8F12D4D50>]}
+[0m15:08:34.795876 [info ] [MainThread]: 
+[0m15:08:34.796848 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m15:08:34.797849 [info ] [MainThread]: 
+[0m15:08:34.798849 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=master) - Creating connection
+[0m15:08:34.799848 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m15:08:34.820457 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_opsanalytics_adb_workspace01) - Creating connection
+[0m15:08:34.823157 [debug] [ThreadPool]: Acquiring new databricks connection 'list_opsanalytics_adb_workspace01'
+[0m15:08:34.847313 [debug] [ThreadPool]: Using databricks connection "list_opsanalytics_adb_workspace01"
+[0m15:08:34.849286 [debug] [ThreadPool]: On list_opsanalytics_adb_workspace01: /* {"app": "dbt", "dbt_version": "1.12.0", "dbt_databricks_version": "1.12.3", "databricks_sql_connector_version": "4.3.0", "profile_name": "lab_dbt", "target_name": "dev", "invocation_id": "79339aac-24c9-4ef5-bd6c-cf2168cc7613", "connection_name": "list_opsanalytics_adb_workspace01"} */
+
+    
+
+  SHOW SCHEMAS IN `opsanalytics_adb_workspace01`
+
+
+  
+[0m15:08:34.850460 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:08:37.336646 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1dc79-58fa-1c12-bf03-85fc628830c9) - Created
+[0m15:08:37.929112 [debug] [ThreadPool]: SQL status: OK in 3.080 seconds
+[0m15:08:37.956895 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f1dc79-58fa-1c12-bf03-85fc628830c9, command-id=01f1dc79-596c-1292-89c7-33740b94e616) - Closing
+[0m15:08:37.960125 [debug] [ThreadPool]: On list_opsanalytics_adb_workspace01: Close
+[0m15:08:37.960898 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1dc79-58fa-1c12-bf03-85fc628830c9) - Closing
+[0m15:08:38.189314 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_opsanalytics_adb_workspace01_lab_staging) - Creating connection
+[0m15:08:38.189314 [debug] [ThreadPool]: Acquiring new databricks connection 'list_opsanalytics_adb_workspace01_lab_staging'
+[0m15:08:38.198315 [debug] [ThreadPool]: Using databricks connection "list_opsanalytics_adb_workspace01_lab_staging"
+[0m15:08:38.199335 [debug] [ThreadPool]: On list_opsanalytics_adb_workspace01_lab_staging: /* {"app": "dbt", "dbt_version": "1.12.0", "dbt_databricks_version": "1.12.3", "databricks_sql_connector_version": "4.3.0", "profile_name": "lab_dbt", "target_name": "dev", "invocation_id": "79339aac-24c9-4ef5-bd6c-cf2168cc7613", "connection_name": "list_opsanalytics_adb_workspace01_lab_staging"} */
+
+    
+SELECT
+  table_name,
+  if(table_type IN ('EXTERNAL', 'MANAGED', 'MANAGED_SHALLOW_CLONE', 'EXTERNAL_SHALLOW_CLONE'), 'table', lower(table_type)) AS table_type,
+  lower(data_source_format) AS file_format,
+  table_owner,
+  if(
+    table_type IN (
+      'EXTERNAL',
+      'MANAGED',
+      'MANAGED_SHALLOW_CLONE',
+      'EXTERNAL_SHALLOW_CLONE'
+    ),
+    lower(table_type),
+    NULL
+  ) AS databricks_table_type
+FROM `system`.`information_schema`.`tables`
+WHERE table_catalog = 'opsanalytics_adb_workspace01'
+  AND table_schema = 'lab_staging'
+
+  
+[0m15:08:38.200315 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:08:39.265486 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1dc79-5a54-1311-a147-796f1a10fd6b) - Created
+[0m15:08:39.996679 [debug] [ThreadPool]: SQL status: OK in 1.800 seconds
+[0m15:08:40.010342 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f1dc79-5a54-1311-a147-796f1a10fd6b, command-id=01f1dc79-5a95-1ecc-8898-6b2923368283) - Closing
+[0m15:08:40.011339 [debug] [ThreadPool]: On list_opsanalytics_adb_workspace01_lab_staging: Close
+[0m15:08:40.012337 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1dc79-5a54-1311-a147-796f1a10fd6b) - Closing
+[0m15:08:40.173210 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '79339aac-24c9-4ef5-bd6c-cf2168cc7613', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C8DFF76E50>]}
+[0m15:08:40.183737 [debug] [Thread-3 (]: Began running node model.lab_dbt.cyto_backlog_bronze
+[0m15:08:40.184769 [debug] [Thread-4 (]: Began running node model.lab_dbt.powerpath_bronze
+[0m15:08:40.185772 [debug] [Thread-5 (]: Began running node model.lab_dbt.powerpath_cyto_biopsy_bronze
+[0m15:08:40.185772 [debug] [Thread-6 (]: Began running node model.lab_dbt.scc_bronze
+[0m15:08:40.186771 [info ] [Thread-3 (]: 1 of 9 START sql view model lab_staging.cyto_backlog_bronze .................... [RUN]
+[0m15:08:40.187737 [info ] [Thread-4 (]: 2 of 9 START sql view model lab_staging.powerpath_bronze ....................... [RUN]
+[0m15:08:40.189770 [info ] [Thread-5 (]: 3 of 9 START sql view model lab_staging.powerpath_cyto_biopsy_bronze ........... [RUN]
+[0m15:08:40.190737 [info ] [Thread-6 (]: 4 of 9 START sql view model lab_staging.scc_bronze ............................. [RUN]
+[0m15:08:40.191736 [debug] [Thread-3 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.lab_dbt.cyto_backlog_bronze) - Creating connection
+[0m15:08:40.193012 [debug] [Thread-4 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.lab_dbt.powerpath_bronze) - Creating connection
+[0m15:08:40.195799 [debug] [Thread-5 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.lab_dbt.powerpath_cyto_biopsy_bronze) - Creating connection
+[0m15:08:40.197427 [debug] [Thread-6 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.lab_dbt.scc_bronze) - Creating connection
+[0m15:08:40.198427 [debug] [Thread-3 (]: Acquiring new databricks connection 'model.lab_dbt.cyto_backlog_bronze'
+[0m15:08:40.198427 [debug] [Thread-4 (]: Acquiring new databricks connection 'model.lab_dbt.powerpath_bronze'
+[0m15:08:40.200035 [debug] [Thread-5 (]: Acquiring new databricks connection 'model.lab_dbt.powerpath_cyto_biopsy_bronze'
+[0m15:08:40.200431 [debug] [Thread-6 (]: Acquiring new databricks connection 'model.lab_dbt.scc_bronze'
+[0m15:08:40.201429 [debug] [Thread-3 (]: Began compiling node model.lab_dbt.cyto_backlog_bronze
+[0m15:08:40.202427 [debug] [Thread-4 (]: Began compiling node model.lab_dbt.powerpath_bronze
+[0m15:08:40.203645 [debug] [Thread-5 (]: Began compiling node model.lab_dbt.powerpath_cyto_biopsy_bronze
+[0m15:08:40.204401 [debug] [Thread-6 (]: Began compiling node model.lab_dbt.scc_bronze
+[0m15:08:40.217428 [debug] [Thread-3 (]: Writing injected SQL for node "model.lab_dbt.cyto_backlog_bronze"
+[0m15:08:40.221399 [debug] [Thread-4 (]: Writing injected SQL for node "model.lab_dbt.powerpath_bronze"
+[0m15:08:40.224397 [debug] [Thread-5 (]: Writing injected SQL for node "model.lab_dbt.powerpath_cyto_biopsy_bronze"
+[0m15:08:40.231431 [debug] [Thread-6 (]: Writing injected SQL for node "model.lab_dbt.scc_bronze"
+[0m15:08:40.234398 [debug] [Thread-3 (]: Began executing node model.lab_dbt.cyto_backlog_bronze
+[0m15:08:40.234398 [debug] [Thread-4 (]: Began executing node model.lab_dbt.powerpath_bronze
+[0m15:08:40.235399 [debug] [Thread-5 (]: Began executing node model.lab_dbt.powerpath_cyto_biopsy_bronze
+[0m15:08:40.249536 [debug] [Thread-6 (]: Began executing node model.lab_dbt.scc_bronze
+[0m15:08:40.260006 [debug] [Thread-3 (]: MATERIALIZING VIEW
+[0m15:08:40.263023 [debug] [Thread-4 (]: MATERIALIZING VIEW
+[0m15:08:40.266007 [debug] [Thread-5 (]: MATERIALIZING VIEW
+[0m15:08:40.268055 [debug] [Thread-6 (]: MATERIALIZING VIEW
+[0m15:08:40.305645 [debug] [Thread-3 (]: Creating view `opsanalytics_adb_workspace01`.`lab_staging`.`cyto_backlog_bronze`
+[0m15:08:40.307529 [debug] [Thread-4 (]: Creating view `opsanalytics_adb_workspace01`.`lab_staging`.`powerpath_bronze`
+[0m15:08:40.311553 [debug] [Thread-5 (]: Creating view `opsanalytics_adb_workspace01`.`lab_staging`.`powerpath_cyto_biopsy_bronze`
+[0m15:08:40.313529 [debug] [Thread-6 (]: Creating view `opsanalytics_adb_workspace01`.`lab_staging`.`scc_bronze`
+[0m15:08:40.323531 [debug] [Thread-3 (]: Using databricks connection "model.lab_dbt.cyto_backlog_bronze"
+[0m15:08:40.325594 [debug] [Thread-4 (]: Using databricks connection "model.lab_dbt.powerpath_bronze"
+[0m15:08:40.329542 [debug] [Thread-5 (]: Using databricks connection "model.lab_dbt.powerpath_cyto_biopsy_bronze"
+[0m15:08:40.332520 [debug] [Thread-6 (]: Using databricks connection "model.lab_dbt.scc_bronze"
+[0m15:08:40.333490 [debug] [Thread-3 (]: On model.lab_dbt.cyto_backlog_bronze: /* {"app": "dbt", "dbt_version": "1.12.0", "dbt_databricks_version": "1.12.3", "databricks_sql_connector_version": "4.3.0", "profile_name": "lab_dbt", "target_name": "dev", "invocation_id": "79339aac-24c9-4ef5-bd6c-cf2168cc7613", "node_id": "model.lab_dbt.cyto_backlog_bronze"} */
+select * from (
+        select
+    c.*,
+    ps.PATIENT_SETTING,
+    tt.RECEIVED_TO_SIGNED_OUT_DAYS
+from `opsanalytics_adb_workspace01`.`lab`.`cyto_backlog_raw` c
+left join `opsanalytics_adb_workspace01`.`lab`.`lab_kpi_ap_patient_setting` ps
+    on c.Rev_ctr = ps.REV_CTR
+left join `opsanalytics_adb_workspace01`.`lab`.`lab_kpi_ap_tat_targets` tt
+    on  c.spec_group = tt.SPEC_GROUP
+    and ps.PATIENT_SETTING = tt.PATIENT_SETTING
+    ) as __dbt_sbq
+    where false
+    limit 0
+
+    
+[0m15:08:40.334489 [debug] [Thread-4 (]: On model.lab_dbt.powerpath_bronze: /* {"app": "dbt", "dbt_version": "1.12.0", "dbt_databricks_version": "1.12.3", "databricks_sql_connector_version": "4.3.0", "profile_name": "lab_dbt", "target_name": "dev", "invocation_id": "79339aac-24c9-4ef5-bd6c-cf2168cc7613", "node_id": "model.lab_dbt.powerpath_bronze"} */
+select * from (
+        select
+    c.*,
+    ps.PATIENT_SETTING,
+    gi.GI_CODE_INCLEXCL
+from `opsanalytics_adb_workspace01`.`lab`.`powerpath_raw` c
+left join `opsanalytics_adb_workspace01`.`lab`.`lab_kpi_gi_codes` gi
+    on c.Spec_code = gi.SPEC_CODE
+left join `opsanalytics_adb_workspace01`.`lab`.`lab_kpi_ap_patient_setting` ps
+on c.Rev_ctr = ps.REV_CTR
+    ) as __dbt_sbq
+    where false
+    limit 0
+
+    
+[0m15:08:40.336444 [debug] [Thread-5 (]: On model.lab_dbt.powerpath_cyto_biopsy_bronze: /* {"app": "dbt", "dbt_version": "1.12.0", "dbt_databricks_version": "1.12.3", "databricks_sql_connector_version": "4.3.0", "profile_name": "lab_dbt", "target_name": "dev", "invocation_id": "79339aac-24c9-4ef5-bd6c-cf2168cc7613", "node_id": "model.lab_dbt.powerpath_cyto_biopsy_bronze"} */
+select * from (
+        select
+    c.*,
+    ps.PATIENT_SETTING
+from `opsanalytics_adb_workspace01`.`lab`.`powerpath_raw` c
+left join `opsanalytics_adb_workspace01`.`lab`.`lab_kpi_ap_patient_setting` ps
+    on c.Rev_ctr = ps.REV_CTR
+    ) as __dbt_sbq
+    where false
+    limit 0
+
+    
+[0m15:08:40.337443 [debug] [Thread-6 (]: On model.lab_dbt.scc_bronze: /* {"app": "dbt", "dbt_version": "1.12.0", "dbt_databricks_version": "1.12.3", "databricks_sql_connector_version": "4.3.0", "profile_name": "lab_dbt", "target_name": "dev", "invocation_id": "79339aac-24c9-4ef5-bd6c-cf2168cc7613", "node_id": "model.lab_dbt.scc_bronze"} */
+select * from (
+        select distinct scc_raw.Ward,
+                scc_raw.WARD_NAME,
+                scc_raw.REQUESTING_DOC,
+                scc_raw.LAST_NAME,
+                scc_raw.FIRST_NAME,
+                scc_raw.ORDER_ID,
+                scc_raw.ORDERING_DATE,
+                scc_raw.COLLECTION_DATE,
+                scc_raw.RECEIVE_DATE,
+                scc_raw.VERIFIED_DATE,
+                scc_raw.GROUP_TEST_ID,
+                scc_raw.TEST_ID,
+                scc_raw.TEST_NAME,
+                scc_raw.COLLECT_CENTER_ID,
+                scc_raw.TAT_OV,
+                scc_raw.TAT_CV,
+                scc_raw.TAT_RV,
+                scc_raw.TAT_CR,
+                scc_raw.PRIORITY,
+                scc_raw.COLLECTION_TO_RECEIVED,
+                scc_raw.ORDER_TO_COLLECTION,
+                scc_raw.REQUESTING_DOC_NAME,
+                scc_raw.PATIENT_MRN,
+                scc_raw.WORK_SHIFT,
+                scc_raw.WORKSTATION,
+                scc_raw.RESULT,
+                scc_raw.Addon,
+                scc_raw.MPI,
+                scc_raw._ingested_at,
+                ps.SCC_TEST_ID,
+                tt.CLINIC_TYPE,
+                site_map.SITE
+from `opsanalytics_adb_workspace01`.`lab`.`scc_raw` scc_raw
+left join `opsanalytics_adb_workspace01`.`lab`.`lab_kpi_scc_test_codes` ps
+    on scc_raw.TEST_ID = ps.SCC_TEST_ID
+left join `opsanalytics_adb_workspace01`.`lab`.`lab_kpi_scc_clinictype` tt
+    on  scc_raw.CLINIC_TYPE = tt.CLINIC_TYPE
+left join `opsanalytics_adb_workspace01`.`lab`.`lab_kpi_site_names` site_map
+    on scc_raw.SITE = site_map.SITE
+    ) as __dbt_sbq
+    where false
+    limit 0
+
+    
+[0m15:08:40.339443 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m15:08:40.339443 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m15:08:40.341469 [debug] [Thread-5 (]: Opening a new connection, currently in state init
+[0m15:08:40.343444 [debug] [Thread-6 (]: Opening a new connection, currently in state init
+[0m15:08:42.674549 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f1dc79-5c63-1d01-8fd6-6e57551631a7) - Created
+[0m15:08:42.674549 [debug] [Thread-4 (]: Databricks adapter: Connection(session-id=01f1dc79-5c6d-1ac5-8a2d-31315d31f864) - Created
+[0m15:08:42.793570 [debug] [Thread-6 (]: Databricks adapter: Connection(session-id=01f1dc79-5c94-1c2d-8e1c-6b146ca11d69) - Created
+[0m15:08:42.833543 [debug] [Thread-5 (]: Databricks adapter: Connection(session-id=01f1dc79-5c96-1565-8947-d7c2dad079fd) - Created
+[0m15:08:43.191442 [debug] [Thread-4 (]: SQL status: OK in 2.850 seconds
+[0m15:08:43.221559 [debug] [Thread-3 (]: SQL status: OK in 2.880 seconds
+[0m15:08:43.222557 [debug] [Thread-5 (]: SQL status: OK in 2.880 seconds
+[0m15:08:43.234557 [debug] [Thread-4 (]: Databricks adapter: Cursor(session-id=01f1dc79-5c6d-1ac5-8a2d-31315d31f864, command-id=01f1dc79-5c99-1295-9f7d-afb69244bdb8) - Closing
+[0m15:08:43.262703 [debug] [Thread-4 (]: Writing runtime sql for node "model.lab_dbt.powerpath_bronze"
+[0m15:08:43.276622 [debug] [Thread-3 (]: Databricks adapter: Cursor(session-id=01f1dc79-5c63-1d01-8fd6-6e57551631a7, command-id=01f1dc79-5c93-1b64-a467-c37c7f323e3a) - Closing
+[0m15:08:43.278375 [debug] [Thread-6 (]: SQL status: OK in 2.940 seconds
+[0m15:08:43.280376 [debug] [Thread-5 (]: Databricks adapter: Cursor(session-id=01f1dc79-5c96-1565-8947-d7c2dad079fd, command-id=01f1dc79-5cb4-19c0-b449-d0caf377ca03) - Closing
+[0m15:08:43.283512 [debug] [Thread-3 (]: Writing runtime sql for node "model.lab_dbt.cyto_backlog_bronze"
+[0m15:08:43.285376 [debug] [Thread-4 (]: Using databricks connection "model.lab_dbt.powerpath_bronze"
+[0m15:08:43.289376 [debug] [Thread-5 (]: Writing runtime sql for node "model.lab_dbt.powerpath_cyto_biopsy_bronze"
+[0m15:08:43.291375 [debug] [Thread-4 (]: On model.lab_dbt.powerpath_bronze: /* {"app": "dbt", "dbt_version": "1.12.0", "dbt_databricks_version": "1.12.3", "databricks_sql_connector_version": "4.3.0", "profile_name": "lab_dbt", "target_name": "dev", "invocation_id": "79339aac-24c9-4ef5-bd6c-cf2168cc7613", "node_id": "model.lab_dbt.powerpath_bronze"} */
+
+  
+  
+  
+  create or replace view `opsanalytics_adb_workspace01`.`lab_staging`.`powerpath_bronze`
+  (
+    `Facility`,
+	`Priority`,
+	`spec_group`,
+	`Spec_code`,
+	`Specimen_description`,
+	`CPT_code`,
+	`Fee_sch`,
+	`Rev_ctr`,
+	`Encounter_no`,
+	`MRN`,
+	`AGE`,
+	`Case_no`,
+	`Case_created_date`,
+	`Collection_Date`,
+	`Received_Date`,
+	`signed_out_date`,
+	`TAT`,
+	`signed_out_Pathologist`,
+	`Refmd_name`,
+	`Refmd_code`,
+	`NPI_NO`,
+	`spec_sort_order`,
+	`patient_type`,
+	`_source_file`,
+	`_ingested_at`,
+	`PATIENT_SETTING`,
+	`GI_CODE_INCLEXCL`
+  )
+  
+  as (
+    select
+    c.*,
+    ps.PATIENT_SETTING,
+    gi.GI_CODE_INCLEXCL
+from `opsanalytics_adb_workspace01`.`lab`.`powerpath_raw` c
+left join `opsanalytics_adb_workspace01`.`lab`.`lab_kpi_gi_codes` gi
+    on c.Spec_code = gi.SPEC_CODE
+left join `opsanalytics_adb_workspace01`.`lab`.`lab_kpi_ap_patient_setting` ps
+on c.Rev_ctr = ps.REV_CTR
+  )
+
+[0m15:08:43.292376 [debug] [Thread-3 (]: Using databricks connection "model.lab_dbt.cyto_backlog_bronze"
+[0m15:08:43.294493 [debug] [Thread-3 (]: On model.lab_dbt.cyto_backlog_bronze: /* {"app": "dbt", "dbt_version": "1.12.0", "dbt_databricks_version": "1.12.3", "databricks_sql_connector_version": "4.3.0", "profile_name": "lab_dbt", "target_name": "dev", "invocation_id": "79339aac-24c9-4ef5-bd6c-cf2168cc7613", "node_id": "model.lab_dbt.cyto_backlog_bronze"} */
+
+  
+  
+  
+  create or replace view `opsanalytics_adb_workspace01`.`lab_staging`.`cyto_backlog_bronze`
+  (
+    `Facility`,
+	`Priority`,
+	`spec_group`,
+	`Spec_code`,
+	`Specimen_description`,
+	`Current_step`,
+	`CPT_code`,
+	`Fee_sch`,
+	`Rev_ctr`,
+	`Encounter_no`,
+	`MRN`,
+	`AGE`,
+	`Case_no`,
+	`Case_created_date`,
+	`Collection_Date`,
+	`Received_Date`,
+	`signed_out_date`,
+	`TAT_days`,
+	`Refmd_name`,
+	`Refmd_code`,
+	`NPI_NO`,
+	`_source_file`,
+	`_report_date`,
+	`_ingested_at`,
+	`PATIENT_SETTING`,
+	`RECEIVED_TO_SIGNED_OUT_DAYS`
+  )
+  
+  as (
+    select
+    c.*,
+    ps.PATIENT_SETTING,
+    tt.RECEIVED_TO_SIGNED_OUT_DAYS
+from `opsanalytics_adb_workspace01`.`lab`.`cyto_backlog_raw` c
+left join `opsanalytics_adb_workspace01`.`lab`.`lab_kpi_ap_patient_setting` ps
+    on c.Rev_ctr = ps.REV_CTR
+left join `opsanalytics_adb_workspace01`.`lab`.`lab_kpi_ap_tat_targets` tt
+    on  c.spec_group = tt.SPEC_GROUP
+    and ps.PATIENT_SETTING = tt.PATIENT_SETTING
+  )
+
+[0m15:08:43.295398 [debug] [Thread-5 (]: Using databricks connection "model.lab_dbt.powerpath_cyto_biopsy_bronze"
+[0m15:08:43.298384 [debug] [Thread-6 (]: Databricks adapter: Cursor(session-id=01f1dc79-5c94-1c2d-8e1c-6b146ca11d69, command-id=01f1dc79-5cb1-191b-9da7-6dafff5fedb5) - Closing
+[0m15:08:43.300397 [debug] [Thread-5 (]: On model.lab_dbt.powerpath_cyto_biopsy_bronze: /* {"app": "dbt", "dbt_version": "1.12.0", "dbt_databricks_version": "1.12.3", "databricks_sql_connector_version": "4.3.0", "profile_name": "lab_dbt", "target_name": "dev", "invocation_id": "79339aac-24c9-4ef5-bd6c-cf2168cc7613", "node_id": "model.lab_dbt.powerpath_cyto_biopsy_bronze"} */
+
+  
+  
+  
+  create or replace view `opsanalytics_adb_workspace01`.`lab_staging`.`powerpath_cyto_biopsy_bronze`
+  (
+    `Facility`,
+	`Priority`,
+	`spec_group`,
+	`Spec_code`,
+	`Specimen_description`,
+	`CPT_code`,
+	`Fee_sch`,
+	`Rev_ctr`,
+	`Encounter_no`,
+	`MRN`,
+	`AGE`,
+	`Case_no`,
+	`Case_created_date`,
+	`Collection_Date`,
+	`Received_Date`,
+	`signed_out_date`,
+	`TAT`,
+	`signed_out_Pathologist`,
+	`Refmd_name`,
+	`Refmd_code`,
+	`NPI_NO`,
+	`spec_sort_order`,
+	`patient_type`,
+	`_source_file`,
+	`_ingested_at`,
+	`PATIENT_SETTING`
+  )
+  comment 'Contains data raw powerpath data from 05/18/2026'
+  as (
+    select
+    c.*,
+    ps.PATIENT_SETTING
+from `opsanalytics_adb_workspace01`.`lab`.`powerpath_raw` c
+left join `opsanalytics_adb_workspace01`.`lab`.`lab_kpi_ap_patient_setting` ps
+    on c.Rev_ctr = ps.REV_CTR
+  )
+
+[0m15:08:43.303374 [debug] [Thread-6 (]: Writing runtime sql for node "model.lab_dbt.scc_bronze"
+[0m15:08:43.307587 [debug] [Thread-6 (]: Using databricks connection "model.lab_dbt.scc_bronze"
+[0m15:08:43.308584 [debug] [Thread-6 (]: On model.lab_dbt.scc_bronze: /* {"app": "dbt", "dbt_version": "1.12.0", "dbt_databricks_version": "1.12.3", "databricks_sql_connector_version": "4.3.0", "profile_name": "lab_dbt", "target_name": "dev", "invocation_id": "79339aac-24c9-4ef5-bd6c-cf2168cc7613", "node_id": "model.lab_dbt.scc_bronze"} */
+
+  
+  
+  
+  create or replace view `opsanalytics_adb_workspace01`.`lab_staging`.`scc_bronze`
+  (
+    `Ward`,
+	`WARD_NAME`,
+	`REQUESTING_DOC`,
+	`LAST_NAME`,
+	`FIRST_NAME`,
+	`ORDER_ID`,
+	`ORDERING_DATE`,
+	`COLLECTION_DATE`,
+	`RECEIVE_DATE`,
+	`VERIFIED_DATE`,
+	`GROUP_TEST_ID`,
+	`TEST_ID`,
+	`TEST_NAME`,
+	`COLLECT_CENTER_ID`,
+	`TAT_OV`,
+	`TAT_CV`,
+	`TAT_RV`,
+	`TAT_CR`,
+	`PRIORITY`,
+	`COLLECTION_TO_RECEIVED`,
+	`ORDER_TO_COLLECTION`,
+	`REQUESTING_DOC_NAME`,
+	`PATIENT_MRN`,
+	`WORK_SHIFT`,
+	`WORKSTATION`,
+	`RESULT`,
+	`Addon`,
+	`MPI`,
+	`_ingested_at`,
+	`SCC_TEST_ID`,
+	`CLINIC_TYPE`,
+	`SITE`
+  )
+  
+  as (
+    select distinct scc_raw.Ward,
+                scc_raw.WARD_NAME,
+                scc_raw.REQUESTING_DOC,
+                scc_raw.LAST_NAME,
+                scc_raw.FIRST_NAME,
+                scc_raw.ORDER_ID,
+                scc_raw.ORDERING_DATE,
+                scc_raw.COLLECTION_DATE,
+                scc_raw.RECEIVE_DATE,
+                scc_raw.VERIFIED_DATE,
+                scc_raw.GROUP_TEST_ID,
+                scc_raw.TEST_ID,
+                scc_raw.TEST_NAME,
+                scc_raw.COLLECT_CENTER_ID,
+                scc_raw.TAT_OV,
+                scc_raw.TAT_CV,
+                scc_raw.TAT_RV,
+                scc_raw.TAT_CR,
+                scc_raw.PRIORITY,
+                scc_raw.COLLECTION_TO_RECEIVED,
+                scc_raw.ORDER_TO_COLLECTION,
+                scc_raw.REQUESTING_DOC_NAME,
+                scc_raw.PATIENT_MRN,
+                scc_raw.WORK_SHIFT,
+                scc_raw.WORKSTATION,
+                scc_raw.RESULT,
+                scc_raw.Addon,
+                scc_raw.MPI,
+                scc_raw._ingested_at,
+                ps.SCC_TEST_ID,
+                tt.CLINIC_TYPE,
+                site_map.SITE
+from `opsanalytics_adb_workspace01`.`lab`.`scc_raw` scc_raw
+left join `opsanalytics_adb_workspace01`.`lab`.`lab_kpi_scc_test_codes` ps
+    on scc_raw.TEST_ID = ps.SCC_TEST_ID
+left join `opsanalytics_adb_workspace01`.`lab`.`lab_kpi_scc_clinictype` tt
+    on  scc_raw.CLINIC_TYPE = tt.CLINIC_TYPE
+left join `opsanalytics_adb_workspace01`.`lab`.`lab_kpi_site_names` site_map
+    on scc_raw.SITE = site_map.SITE
+  )
+
+[0m15:08:44.453272 [debug] [Thread-4 (]: SQL status: OK in 1.160 seconds
+[0m15:08:44.454276 [debug] [Thread-4 (]: Databricks adapter: Cursor(session-id=01f1dc79-5c6d-1ac5-8a2d-31315d31f864, command-id=01f1dc79-5cfa-1ec5-9aaa-d02c07213aab) - Closing
+[0m15:08:44.471276 [debug] [Thread-4 (]: Applying tags to relation None
+[0m15:08:44.474275 [debug] [Thread-5 (]: SQL status: OK in 1.170 seconds
+[0m15:08:44.478458 [debug] [Thread-4 (]: On model.lab_dbt.powerpath_bronze: Close
+[0m15:08:44.480570 [debug] [Thread-5 (]: Databricks adapter: Cursor(session-id=01f1dc79-5c96-1565-8947-d7c2dad079fd, command-id=01f1dc79-5d01-17b9-b3ea-79a26833829c) - Closing
+[0m15:08:44.483898 [debug] [Thread-4 (]: Databricks adapter: Connection(session-id=01f1dc79-5c6d-1ac5-8a2d-31315d31f864) - Closing
+[0m15:08:44.485568 [debug] [Thread-5 (]: Applying tags to relation None
+[0m15:08:44.505698 [debug] [Thread-3 (]: SQL status: OK in 1.210 seconds
+[0m15:08:44.507737 [debug] [Thread-3 (]: Databricks adapter: Cursor(session-id=01f1dc79-5c63-1d01-8fd6-6e57551631a7, command-id=01f1dc79-5cf7-1211-bf98-967d56b1c359) - Closing
+[0m15:08:44.509735 [debug] [Thread-3 (]: Applying tags to relation None
+[0m15:08:44.570594 [debug] [Thread-6 (]: SQL status: OK in 1.260 seconds
+[0m15:08:44.573595 [debug] [Thread-6 (]: Databricks adapter: Cursor(session-id=01f1dc79-5c94-1c2d-8e1c-6b146ca11d69, command-id=01f1dc79-5cfc-1830-81e4-742f1c7e34bb) - Closing
+[0m15:08:44.577562 [debug] [Thread-6 (]: Applying tags to relation None
+[0m15:08:44.746282 [debug] [Thread-5 (]: On model.lab_dbt.powerpath_cyto_biopsy_bronze: Close
+[0m15:08:44.747241 [debug] [Thread-5 (]: Databricks adapter: Connection(session-id=01f1dc79-5c96-1565-8947-d7c2dad079fd) - Closing
+[0m15:08:44.942889 [debug] [Thread-3 (]: On model.lab_dbt.cyto_backlog_bronze: Close
+[0m15:08:44.944857 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f1dc79-5c63-1d01-8fd6-6e57551631a7) - Closing
+[0m15:08:45.108259 [debug] [Thread-6 (]: On model.lab_dbt.scc_bronze: Close
+[0m15:08:45.109804 [debug] [Thread-6 (]: Databricks adapter: Connection(session-id=01f1dc79-5c94-1c2d-8e1c-6b146ca11d69) - Closing
+[0m15:08:45.324896 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '79339aac-24c9-4ef5-bd6c-cf2168cc7613', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C8F184C910>]}
+[0m15:08:45.324896 [debug] [Thread-5 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '79339aac-24c9-4ef5-bd6c-cf2168cc7613', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C8F1D251D0>]}
+[0m15:08:45.325899 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '79339aac-24c9-4ef5-bd6c-cf2168cc7613', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C8F1D25010>]}
+[0m15:08:45.325899 [debug] [Thread-6 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '79339aac-24c9-4ef5-bd6c-cf2168cc7613', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C8DBA2C4D0>]}
+[0m15:08:45.327399 [info ] [Thread-4 (]: 2 of 9 OK created sql view model lab_staging.powerpath_bronze .................. [[32mOK[0m in 5.13s]
+[0m15:08:45.328899 [info ] [Thread-5 (]: 3 of 9 OK created sql view model lab_staging.powerpath_cyto_biopsy_bronze ...... [[32mOK[0m in 5.13s]
+[0m15:08:45.329897 [info ] [Thread-3 (]: 1 of 9 OK created sql view model lab_staging.cyto_backlog_bronze ............... [[32mOK[0m in 5.13s]
+[0m15:08:45.332361 [info ] [Thread-6 (]: 4 of 9 OK created sql view model lab_staging.scc_bronze ........................ [[32mOK[0m in 5.13s]
+[0m15:08:45.333897 [debug] [Thread-4 (]: Finished running node model.lab_dbt.powerpath_bronze
+[0m15:08:45.335689 [debug] [Thread-5 (]: Finished running node model.lab_dbt.powerpath_cyto_biopsy_bronze
+[0m15:08:45.337612 [debug] [Thread-3 (]: Finished running node model.lab_dbt.cyto_backlog_bronze
+[0m15:08:45.339609 [debug] [Thread-6 (]: Finished running node model.lab_dbt.scc_bronze
+[0m15:08:45.340608 [debug] [Thread-4 (]: Began running node model.lab_dbt.powerpath_daily_silver
+[0m15:08:45.341607 [debug] [Thread-5 (]: Began running node model.lab_dbt.powerpath_cyto_biopsy_silver
+[0m15:08:45.342608 [debug] [Thread-3 (]: Began running node model.lab_dbt.cyto_backlog_silver
+[0m15:08:45.343611 [info ] [Thread-4 (]: 5 of 9 START sql view model lab_staging.powerpath_daily_silver ................. [RUN]
+[0m15:08:45.345249 [info ] [Thread-5 (]: 6 of 9 START sql view model lab_staging.powerpath_cyto_biopsy_silver ........... [RUN]
+[0m15:08:45.346280 [info ] [Thread-3 (]: 7 of 9 START sql view model lab_staging.cyto_backlog_silver .................... [RUN]
+[0m15:08:45.347237 [debug] [Thread-4 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.lab_dbt.powerpath_daily_silver) - Creating connection
+[0m15:08:45.351297 [debug] [Thread-5 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.lab_dbt.powerpath_cyto_biopsy_silver) - Creating connection
+[0m15:08:45.353235 [debug] [Thread-3 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.lab_dbt.cyto_backlog_silver) - Creating connection
+[0m15:08:45.354266 [debug] [Thread-4 (]: Acquiring new databricks connection 'model.lab_dbt.powerpath_daily_silver'
+[0m15:08:45.355395 [debug] [Thread-5 (]: Acquiring new databricks connection 'model.lab_dbt.powerpath_cyto_biopsy_silver'
+[0m15:08:45.356500 [debug] [Thread-3 (]: Acquiring new databricks connection 'model.lab_dbt.cyto_backlog_silver'
+[0m15:08:45.357268 [debug] [Thread-4 (]: Began compiling node model.lab_dbt.powerpath_daily_silver
+[0m15:08:45.358333 [debug] [Thread-5 (]: Began compiling node model.lab_dbt.powerpath_cyto_biopsy_silver
+[0m15:08:45.359237 [debug] [Thread-3 (]: Began compiling node model.lab_dbt.cyto_backlog_silver
+[0m15:08:45.402521 [debug] [Thread-5 (]: Writing injected SQL for node "model.lab_dbt.powerpath_cyto_biopsy_silver"
+[0m15:08:45.404961 [debug] [Thread-4 (]: Writing injected SQL for node "model.lab_dbt.powerpath_daily_silver"
+[0m15:08:45.409589 [debug] [Thread-3 (]: Writing injected SQL for node "model.lab_dbt.cyto_backlog_silver"
+[0m15:08:45.412598 [debug] [Thread-5 (]: Began executing node model.lab_dbt.powerpath_cyto_biopsy_silver
+[0m15:08:45.413598 [debug] [Thread-4 (]: Began executing node model.lab_dbt.powerpath_daily_silver
+[0m15:08:45.414613 [debug] [Thread-3 (]: Began executing node model.lab_dbt.cyto_backlog_silver
+[0m15:08:45.420598 [debug] [Thread-5 (]: MATERIALIZING VIEW
+[0m15:08:45.422626 [debug] [Thread-4 (]: MATERIALIZING VIEW
+[0m15:08:45.424027 [debug] [Thread-3 (]: MATERIALIZING VIEW
+[0m15:08:45.426057 [debug] [Thread-5 (]: Creating view `opsanalytics_adb_workspace01`.`lab_staging`.`powerpath_cyto_biopsy_silver`
+[0m15:08:45.428038 [debug] [Thread-4 (]: Creating view `opsanalytics_adb_workspace01`.`lab_staging`.`powerpath_daily_silver`
+[0m15:08:45.429039 [debug] [Thread-3 (]: Creating view `opsanalytics_adb_workspace01`.`lab_staging`.`cyto_backlog_silver`
+[0m15:08:45.432293 [debug] [Thread-5 (]: Using databricks connection "model.lab_dbt.powerpath_cyto_biopsy_silver"
+[0m15:08:45.434039 [debug] [Thread-4 (]: Using databricks connection "model.lab_dbt.powerpath_daily_silver"
+[0m15:08:45.435382 [debug] [Thread-3 (]: Using databricks connection "model.lab_dbt.cyto_backlog_silver"
+[0m15:08:45.437376 [debug] [Thread-5 (]: On model.lab_dbt.powerpath_cyto_biopsy_silver: /* {"app": "dbt", "dbt_version": "1.12.0", "dbt_databricks_version": "1.12.3", "databricks_sql_connector_version": "4.3.0", "profile_name": "lab_dbt", "target_name": "dev", "invocation_id": "79339aac-24c9-4ef5-bd6c-cf2168cc7613", "node_id": "model.lab_dbt.powerpath_cyto_biopsy_silver"} */
+select * from (
+        with raw as (
+    select *
+    from `opsanalytics_adb_workspace01`.`lab_staging`.`powerpath_cyto_biopsy_bronze`
+    where spec_group in ('CYTO NONGYN', 'CYTO GYN', 'BREAST')
+      and spec_sort_order = 'A'
+),
+
+cleaned as (
+    select
+        replace(Case_no, '*failed to decode utf16*', '')   as Case_no,
+        case
+            when Facility = 'KH'   then 'MSB'
+            when Facility = 'R'    then 'MSW'
+            when Facility = 'STL'  then 'MSM'
+            when Facility = 'SNCH' then 'MSSN'
+            when Facility = 'MSS'  then 'MSH'
+            when Facility = 'SL'   then 'MSM'
+            when Facility = 'PACC' then 'MSUS'
+            else Facility
+        end                                                 as Facility,
+        case
+            when Spec_code = 'BREA1' and spec_group = 'BREAST' then 'Breast Biopsy'
+            when spec_group = 'CYTO NONGYN'                    then 'Cytology NONGYN'
+            when spec_group = 'CYTO GYN'                       then 'Cytology GYN'
+            else 'Breast Large/Resection'
+        end                                                 as TEST_NAME,
+        cast(Case_created_date as timestamp)                as Case_created_date,
+        cast(Collection_Date   as timestamp)                as Collection_Date,
+        cast(Received_Date     as timestamp)                as Received_Date,
+        cast(signed_out_date   as timestamp)                as signed_out_date,
+        Priority, Spec_code, Specimen_description, CPT_code, Rev_ctr,
+        Encounter_no, MRN, Refmd_code, Refmd_name,
+        spec_sort_order, spec_group, patient_type,
+        PATIENT_SETTING,
+        _source_file, _ingested_at
+    from raw
+),
+
+with_setting as (
+    select
+        c.* except (PATIENT_SETTING),
+        case
+            when c.Rev_ctr = 'MSBK' and c.patient_type in ('A', 'O') then 'Amb'
+            when c.Rev_ctr = 'MSBK' and c.patient_type = 'IN'        then 'IP'
+            else PATIENT_SETTING
+        end as PATIENT_SETTING
+    from cleaned c
+),
+
+with_tat as (
+    select
+        w.*,
+        datediff(w.signed_out_date, w.Collection_Date)   as Collection_to_signed_out,
+        so.bizday_index - rc.bizday_index                as Received_to_signed_out
+    from with_setting w
+    left join `opsanalytics_adb_workspace01`.`lab`.`date_filter` rc
+        on cast(w.Received_Date   as date) = rc.calendar_date
+    left join `opsanalytics_adb_workspace01`.`lab`.`date_filter` so
+        on cast(w.signed_out_date as date) = so.calendar_date
+),
+
+
+new_data as (
+    select
+        Facility                as FACILITY,
+        Priority                as PRIORITY,
+        Spec_code               as SPEC_CODE,
+        Specimen_description    as SPECIMEN_DESCRIPTION,
+        CPT_code                as CPT_CODE,
+        Rev_ctr                 as REV_CTR,
+        Encounter_no            as ENCOUNTER_NO,
+        MRN,
+        Case_no                 as CASE_NO,
+        Case_created_date       as CASE_CREATED_DATE,
+        Collection_Date         as COLLECTION_DATE,
+        Received_Date           as RECEIVED_DATE,
+        signed_out_date         as SIGNED_OUT_DATE,
+        Refmd_code              as REFMD_CODE,
+        spec_sort_order         as SPEC_SORT_ORDER,
+        TEST_NAME,
+        PATIENT_SETTING,
+        Collection_to_signed_out as COLLECTION_TO_SIGNED_OUT,
+        Received_to_signed_out   as RECEIVED_TO_SIGNED_OUT,
+        case
+            when TEST_NAME = 'Breast Biopsy'          then 3
+            when TEST_NAME = 'Breast Large/Resection' then 5
+            when TEST_NAME = 'Cytology GYN'           then 8
+            else 8
+        end                     as TAT_TARGET,
+        case
+            when Received_to_signed_out <= case
+                when TEST_NAME = 'Breast Biopsy'          then 3
+                when TEST_NAME = 'Breast Large/Resection' then 5
+                when TEST_NAME = 'Cytology GYN'           then 8
+                else 8
+            end then 1 else 0
+        end                     as IS_TAT_WITHIN_TARGET,
+        spec_group              as SPEC_GROUP,
+        Refmd_name              as REFMD_NAME,
+        _source_file            as _SOURCE_FILE,
+        _ingested_at            as _INGESTED_AT
+    from with_tat
+),
+
+historical as (
+    select
+        FACILITY, PRIORITY, SPEC_CODE, SPECIMEN_DESCRIPTION, CPT_CODE, REV_CTR,
+        ENCOUNTER_NO, MRN, CASE_NO, CASE_CREATED_DATE, COLLECTION_DATE,
+        RECEIVED_DATE, SIGNED_OUT_DATE, REFMD_CODE, SPEC_SORT_ORDER, TEST_NAME,
+        PATIENT_SETTING, COLLECTION_TO_SIGNED_OUT, RECEIVED_TO_SIGNED_OUT,
+        TAT_TARGET, IS_TAT_WITHIN_TARGET, SPEC_GROUP, REFMD_NAME,
+        cast(null as string)    as _SOURCE_FILE,
+        cast(null as timestamp) as _INGESTED_AT
+    from `opsanalytics_adb_workspace01`.`lab`.`powerpath_cyto_biopsy_historical`
+)
+
+
+select * from historical
+union all
+select * from new_data
+    ) as __dbt_sbq
+    where false
+    limit 0
+
+    
+[0m15:08:45.438449 [debug] [Thread-4 (]: On model.lab_dbt.powerpath_daily_silver: /* {"app": "dbt", "dbt_version": "1.12.0", "dbt_databricks_version": "1.12.3", "databricks_sql_connector_version": "4.3.0", "profile_name": "lab_dbt", "target_name": "dev", "invocation_id": "79339aac-24c9-4ef5-bd6c-cf2168cc7613", "node_id": "model.lab_dbt.powerpath_daily_silver"} */
+select * from (
+        -- Surgical pathology (Breast + GI) case-level silver.
+-- Mirrors patho_prep() in Lab_KPI_Daily_Dashboard_Prelim_Run_4.Rmd.
+
+with bronze as (
+    select
+        *,
+        case when spec_group = 'BREAST' then 'Breast' else spec_group end as spec_group_clean
+    from `opsanalytics_adb_workspace01`.`lab_staging`.`powerpath_bronze`
+),
+
+-- GI cases with any specimen code not marked 'Include' are dropped entirely
+exclude_case_numbers as (
+    select distinct Case_no
+    from bronze
+    where spec_group_clean = 'GI'
+      and (GI_CODE_INCLEXCL is null or GI_CODE_INCLEXCL <> 'Include')
+),
+
+cleaned as (
+    select
+        replace(b.Case_no, '*failed to decode utf16*', '')  as Case_no,
+        b.spec_group_clean                                  as spec_group,
+        case
+            when b.Facility = 'KH'   then 'MSB'
+            when b.Facility = 'R'    then 'MSW'
+            when b.Facility = 'STL'  then 'MSM'
+            when b.Facility = 'BIMC' then 'MSBI'
+            when b.Facility = 'SNCH' then 'MSSN'
+            when b.Facility = 'MSS'  then 'MSH'
+            when b.Facility = 'SL'   then 'MSM'
+            else b.Facility                                 -- PACC stays PACC (as in R)
+        end                                                 as Facility,
+        cast(b.Case_created_date as timestamp)              as Case_created_date,
+        cast(b.Collection_Date   as timestamp)              as Collection_Date,
+        cast(b.Received_Date     as timestamp)              as Received_Date,
+        cast(b.signed_out_date   as timestamp)              as signed_out_date,
+        b.Priority, b.Spec_code, b.Specimen_description, b.CPT_code, b.Rev_ctr,
+        b.Encounter_no, b.MRN, b.Refmd_code, b.Refmd_name,
+        b.spec_sort_order, b.patient_type, b.GI_CODE_INCLEXCL,
+        -- MSBK patient setting comes from patient_type, not the rev-center crosswalk
+        case
+            when b.Rev_ctr = 'MSBK' and b.patient_type in ('A', 'O') then 'Amb'
+            when b.Rev_ctr = 'MSBK' and b.patient_type = 'IN'        then 'IP'
+            else b.PATIENT_SETTING
+        end                                                 as PATIENT_SETTING,
+        b._source_file, b._ingested_at
+    from bronze b
+    left anti join exclude_case_numbers x
+        on b.Case_no = x.Case_no
+    where b.spec_sort_order = 'A'                           -- primary specimens only
+      and b.spec_group_clean in ('GI', 'Breast')
+),
+
+filtered as (
+    select *
+    from cleaned
+    where Facility not in ('NYEE', 'MSBI')
+)
+
+select
+    f.Facility                as FACILITY,
+    f.Priority                as PRIORITY,
+    f.Spec_code               as SPEC_CODE,
+    f.Specimen_description    as SPECIMEN_DESCRIPTION,
+    f.CPT_code                as CPT_CODE,
+    f.Rev_ctr                 as REV_CTR,
+    f.Encounter_no            as ENCOUNTER_NO,
+    f.MRN,
+    f.Case_no                 as CASE_NO,
+    f.Case_created_date       as CASE_CREATED_DATE,
+    f.Collection_Date         as COLLECTION_DATE,
+    f.Received_Date           as RECEIVED_DATE,
+    f.signed_out_date         as SIGNED_OUT_DATE,
+    f.Refmd_code              as REFMD_CODE,
+    f.Refmd_name              as REFMD_NAME,
+    f.spec_sort_order         as SPEC_SORT_ORDER,
+    f.spec_group              as SPEC_GROUP,
+    f.patient_type            as PATIENT_TYPE,
+    f.PATIENT_SETTING,
+    f.GI_CODE_INCLEXCL,
+    -- R: difftime(signed_out, collection, units = "days") -> fractional calendar days
+    (unix_timestamp(f.signed_out_date) - unix_timestamp(f.Collection_Date)) / 86400.0
+                              as COLLECTION_TO_SIGNED_OUT,
+    -- R: bizdays(Received_Date, signed_out_date) on the MSHS working-day calendar
+    so.bizday_index - rc.bizday_index
+                              as RECEIVED_TO_SIGNED_OUT,
+    f._source_file            as _SOURCE_FILE,
+    f._ingested_at            as _INGESTED_AT
+from filtered f
+left join `opsanalytics_adb_workspace01`.`lab`.`date_filter` rc
+    on cast(f.Received_Date as date) = rc.calendar_date
+left join `opsanalytics_adb_workspace01`.`lab`.`date_filter` so
+    on cast(f.signed_out_date as date) = so.calendar_date
+    ) as __dbt_sbq
+    where false
+    limit 0
+
+    
+[0m15:08:45.439776 [debug] [Thread-3 (]: On model.lab_dbt.cyto_backlog_silver: /* {"app": "dbt", "dbt_version": "1.12.0", "dbt_databricks_version": "1.12.3", "databricks_sql_connector_version": "4.3.0", "profile_name": "lab_dbt", "target_name": "dev", "invocation_id": "79339aac-24c9-4ef5-bd6c-cf2168cc7613", "node_id": "model.lab_dbt.cyto_backlog_silver"} */
+select * from (
+        with filtered as (
+    select *
+    from `opsanalytics_adb_workspace01`.`lab_staging`.`cyto_backlog_bronze`
+    where spec_group in ('CYTO NONGYN', 'CYTO GYN')
+),
+
+cleaned as (
+    select
+        b.* except (Facility, Case_created_date, Received_Date),
+        case
+            when Facility = 'KH'   then 'MSB'
+            when Facility = 'R'    then 'MSW'
+            when Facility = 'STL'  then 'MSM'
+            when Facility = 'SNCH' then 'MSSN'
+            when Facility = 'MSS'  then 'MSH'
+            when Facility = 'SL'   then 'MSM'
+            when Facility = 'PACC' then 'MSUS'
+            else Facility
+        end                                      as Facility,
+        cast(Case_created_date as timestamp)     as Case_created_date,
+        cast(Received_Date     as timestamp)     as Received_Date
+    from filtered b
+)
+
+select
+    c.*,
+    cast(c.Received_Date as date)                       as acc_date_only,
+    date_format(c.Received_Date, 'EEEE')                as acc_day_only,
+    greatest(rd.bizday_index - cc.bizday_index - 1, 0)  as backlog
+from cleaned c
+left join `opsanalytics_adb_workspace01`.`lab`.`date_filter` cc
+    on cast(c.Case_created_date as date) = cc.calendar_date
+left join `opsanalytics_adb_workspace01`.`lab`.`date_filter` rd
+    on c._report_date = rd.calendar_date
+    ) as __dbt_sbq
+    where false
+    limit 0
+
+    
+[0m15:08:45.440410 [debug] [Thread-5 (]: Opening a new connection, currently in state init
+[0m15:08:45.441377 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m15:08:45.442517 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m15:08:48.445086 [debug] [Thread-4 (]: Databricks adapter: Connection(session-id=01f1dc79-5fcf-13a4-a6a5-3ea608e69c88) - Created
+[0m15:08:48.446129 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f1dc79-5fd5-1b00-8305-431933237d8b) - Created
+[0m15:08:48.447168 [debug] [Thread-5 (]: Databricks adapter: Connection(session-id=01f1dc79-5fd8-12a8-a753-d113d3b1ec89) - Created
+[0m15:08:48.946465 [debug] [Thread-3 (]: SQL status: OK in 3.500 seconds
+[0m15:08:48.956322 [debug] [Thread-3 (]: Databricks adapter: Cursor(session-id=01f1dc79-5fd5-1b00-8305-431933237d8b, command-id=01f1dc79-600b-192a-a8ca-f2af80d216ae) - Closing
+[0m15:08:48.960320 [debug] [Thread-3 (]: Writing runtime sql for node "model.lab_dbt.cyto_backlog_silver"
+[0m15:08:48.962319 [debug] [Thread-3 (]: Using databricks connection "model.lab_dbt.cyto_backlog_silver"
+[0m15:08:48.963320 [debug] [Thread-3 (]: On model.lab_dbt.cyto_backlog_silver: /* {"app": "dbt", "dbt_version": "1.12.0", "dbt_databricks_version": "1.12.3", "databricks_sql_connector_version": "4.3.0", "profile_name": "lab_dbt", "target_name": "dev", "invocation_id": "79339aac-24c9-4ef5-bd6c-cf2168cc7613", "node_id": "model.lab_dbt.cyto_backlog_silver"} */
+
+  
+  
+  
+  create or replace view `opsanalytics_adb_workspace01`.`lab_staging`.`cyto_backlog_silver`
+  (
+    `Priority`,
+	`spec_group`,
+	`Spec_code`,
+	`Specimen_description`,
+	`Current_step`,
+	`CPT_code`,
+	`Fee_sch`,
+	`Rev_ctr`,
+	`Encounter_no`,
+	`MRN`,
+	`AGE`,
+	`Case_no`,
+	`Collection_Date`,
+	`signed_out_date`,
+	`TAT_days`,
+	`Refmd_name`,
+	`Refmd_code`,
+	`NPI_NO`,
+	`_source_file`,
+	`_report_date`,
+	`_ingested_at`,
+	`PATIENT_SETTING`,
+	`RECEIVED_TO_SIGNED_OUT_DAYS`,
+	`Facility`,
+	`Case_created_date`,
+	`Received_Date`,
+	`acc_date_only`,
+	`acc_day_only`,
+	`backlog`
+  )
+  comment 'One row per pending case per report date. Snapshot grain — the same case recurs daily until signed out. Never dedupe on Case_no alone.
+'
+  as (
+    with filtered as (
+    select *
+    from `opsanalytics_adb_workspace01`.`lab_staging`.`cyto_backlog_bronze`
+    where spec_group in ('CYTO NONGYN', 'CYTO GYN')
+),
+
+cleaned as (
+    select
+        b.* except (Facility, Case_created_date, Received_Date),
+        case
+            when Facility = 'KH'   then 'MSB'
+            when Facility = 'R'    then 'MSW'
+            when Facility = 'STL'  then 'MSM'
+            when Facility = 'SNCH' then 'MSSN'
+            when Facility = 'MSS'  then 'MSH'
+            when Facility = 'SL'   then 'MSM'
+            when Facility = 'PACC' then 'MSUS'
+            else Facility
+        end                                      as Facility,
+        cast(Case_created_date as timestamp)     as Case_created_date,
+        cast(Received_Date     as timestamp)     as Received_Date
+    from filtered b
+)
+
+select
+    c.*,
+    cast(c.Received_Date as date)                       as acc_date_only,
+    date_format(c.Received_Date, 'EEEE')                as acc_day_only,
+    greatest(rd.bizday_index - cc.bizday_index - 1, 0)  as backlog
+from cleaned c
+left join `opsanalytics_adb_workspace01`.`lab`.`date_filter` cc
+    on cast(c.Case_created_date as date) = cc.calendar_date
+left join `opsanalytics_adb_workspace01`.`lab`.`date_filter` rd
+    on c._report_date = rd.calendar_date
+  )
+
+[0m15:08:48.982349 [debug] [Thread-5 (]: SQL status: OK in 3.540 seconds
+[0m15:08:48.987378 [debug] [Thread-5 (]: Databricks adapter: Cursor(session-id=01f1dc79-5fd8-12a8-a753-d113d3b1ec89, command-id=01f1dc79-600d-11ec-b0c8-bb7dcdd88051) - Closing
+[0m15:08:48.991323 [debug] [Thread-5 (]: Writing runtime sql for node "model.lab_dbt.powerpath_cyto_biopsy_silver"
+[0m15:08:48.994738 [debug] [Thread-5 (]: Using databricks connection "model.lab_dbt.powerpath_cyto_biopsy_silver"
+[0m15:08:48.996249 [debug] [Thread-5 (]: On model.lab_dbt.powerpath_cyto_biopsy_silver: /* {"app": "dbt", "dbt_version": "1.12.0", "dbt_databricks_version": "1.12.3", "databricks_sql_connector_version": "4.3.0", "profile_name": "lab_dbt", "target_name": "dev", "invocation_id": "79339aac-24c9-4ef5-bd6c-cf2168cc7613", "node_id": "model.lab_dbt.powerpath_cyto_biopsy_silver"} */
+
+  
+  
+  
+  create or replace view `opsanalytics_adb_workspace01`.`lab_staging`.`powerpath_cyto_biopsy_silver`
+  (
+    `FACILITY`,
+	`PRIORITY`,
+	`SPEC_CODE`,
+	`SPECIMEN_DESCRIPTION`,
+	`CPT_CODE`,
+	`REV_CTR`,
+	`ENCOUNTER_NO`,
+	`MRN`,
+	`CASE_NO`,
+	`CASE_CREATED_DATE`,
+	`COLLECTION_DATE`,
+	`RECEIVED_DATE`,
+	`SIGNED_OUT_DATE`,
+	`REFMD_CODE`,
+	`SPEC_SORT_ORDER`,
+	`TEST_NAME`,
+	`PATIENT_SETTING`,
+	`COLLECTION_TO_SIGNED_OUT`,
+	`RECEIVED_TO_SIGNED_OUT`,
+	`TAT_TARGET`,
+	`IS_TAT_WITHIN_TARGET`,
+	`SPEC_GROUP`,
+	`REFMD_NAME`,
+	`_SOURCE_FILE`,
+	`_INGESTED_AT`
+  )
+  
+  as (
+    with raw as (
+    select *
+    from `opsanalytics_adb_workspace01`.`lab_staging`.`powerpath_cyto_biopsy_bronze`
+    where spec_group in ('CYTO NONGYN', 'CYTO GYN', 'BREAST')
+      and spec_sort_order = 'A'
+),
+
+cleaned as (
+    select
+        replace(Case_no, '*failed to decode utf16*', '')   as Case_no,
+        case
+            when Facility = 'KH'   then 'MSB'
+            when Facility = 'R'    then 'MSW'
+            when Facility = 'STL'  then 'MSM'
+            when Facility = 'SNCH' then 'MSSN'
+            when Facility = 'MSS'  then 'MSH'
+            when Facility = 'SL'   then 'MSM'
+            when Facility = 'PACC' then 'MSUS'
+            else Facility
+        end                                                 as Facility,
+        case
+            when Spec_code = 'BREA1' and spec_group = 'BREAST' then 'Breast Biopsy'
+            when spec_group = 'CYTO NONGYN'                    then 'Cytology NONGYN'
+            when spec_group = 'CYTO GYN'                       then 'Cytology GYN'
+            else 'Breast Large/Resection'
+        end                                                 as TEST_NAME,
+        cast(Case_created_date as timestamp)                as Case_created_date,
+        cast(Collection_Date   as timestamp)                as Collection_Date,
+        cast(Received_Date     as timestamp)                as Received_Date,
+        cast(signed_out_date   as timestamp)                as signed_out_date,
+        Priority, Spec_code, Specimen_description, CPT_code, Rev_ctr,
+        Encounter_no, MRN, Refmd_code, Refmd_name,
+        spec_sort_order, spec_group, patient_type,
+        PATIENT_SETTING,
+        _source_file, _ingested_at
+    from raw
+),
+
+with_setting as (
+    select
+        c.* except (PATIENT_SETTING),
+        case
+            when c.Rev_ctr = 'MSBK' and c.patient_type in ('A', 'O') then 'Amb'
+            when c.Rev_ctr = 'MSBK' and c.patient_type = 'IN'        then 'IP'
+            else PATIENT_SETTING
+        end as PATIENT_SETTING
+    from cleaned c
+),
+
+with_tat as (
+    select
+        w.*,
+        datediff(w.signed_out_date, w.Collection_Date)   as Collection_to_signed_out,
+        so.bizday_index - rc.bizday_index                as Received_to_signed_out
+    from with_setting w
+    left join `opsanalytics_adb_workspace01`.`lab`.`date_filter` rc
+        on cast(w.Received_Date   as date) = rc.calendar_date
+    left join `opsanalytics_adb_workspace01`.`lab`.`date_filter` so
+        on cast(w.signed_out_date as date) = so.calendar_date
+),
+
+
+new_data as (
+    select
+        Facility                as FACILITY,
+        Priority                as PRIORITY,
+        Spec_code               as SPEC_CODE,
+        Specimen_description    as SPECIMEN_DESCRIPTION,
+        CPT_code                as CPT_CODE,
+        Rev_ctr                 as REV_CTR,
+        Encounter_no            as ENCOUNTER_NO,
+        MRN,
+        Case_no                 as CASE_NO,
+        Case_created_date       as CASE_CREATED_DATE,
+        Collection_Date         as COLLECTION_DATE,
+        Received_Date           as RECEIVED_DATE,
+        signed_out_date         as SIGNED_OUT_DATE,
+        Refmd_code              as REFMD_CODE,
+        spec_sort_order         as SPEC_SORT_ORDER,
+        TEST_NAME,
+        PATIENT_SETTING,
+        Collection_to_signed_out as COLLECTION_TO_SIGNED_OUT,
+        Received_to_signed_out   as RECEIVED_TO_SIGNED_OUT,
+        case
+            when TEST_NAME = 'Breast Biopsy'          then 3
+            when TEST_NAME = 'Breast Large/Resection' then 5
+            when TEST_NAME = 'Cytology GYN'           then 8
+            else 8
+        end                     as TAT_TARGET,
+        case
+            when Received_to_signed_out <= case
+                when TEST_NAME = 'Breast Biopsy'          then 3
+                when TEST_NAME = 'Breast Large/Resection' then 5
+                when TEST_NAME = 'Cytology GYN'           then 8
+                else 8
+            end then 1 else 0
+        end                     as IS_TAT_WITHIN_TARGET,
+        spec_group              as SPEC_GROUP,
+        Refmd_name              as REFMD_NAME,
+        _source_file            as _SOURCE_FILE,
+        _ingested_at            as _INGESTED_AT
+    from with_tat
+),
+
+historical as (
+    select
+        FACILITY, PRIORITY, SPEC_CODE, SPECIMEN_DESCRIPTION, CPT_CODE, REV_CTR,
+        ENCOUNTER_NO, MRN, CASE_NO, CASE_CREATED_DATE, COLLECTION_DATE,
+        RECEIVED_DATE, SIGNED_OUT_DATE, REFMD_CODE, SPEC_SORT_ORDER, TEST_NAME,
+        PATIENT_SETTING, COLLECTION_TO_SIGNED_OUT, RECEIVED_TO_SIGNED_OUT,
+        TAT_TARGET, IS_TAT_WITHIN_TARGET, SPEC_GROUP, REFMD_NAME,
+        cast(null as string)    as _SOURCE_FILE,
+        cast(null as timestamp) as _INGESTED_AT
+    from `opsanalytics_adb_workspace01`.`lab`.`powerpath_cyto_biopsy_historical`
+)
+
+
+select * from historical
+union all
+select * from new_data
+  )
+
+[0m15:08:49.064347 [debug] [Thread-4 (]: SQL status: OK in 3.620 seconds
+[0m15:08:49.068317 [debug] [Thread-4 (]: Databricks adapter: Cursor(session-id=01f1dc79-5fcf-13a4-a6a5-3ea608e69c88, command-id=01f1dc79-600a-184f-a605-bc7544ee2d62) - Closing
+[0m15:08:49.072321 [debug] [Thread-4 (]: Writing runtime sql for node "model.lab_dbt.powerpath_daily_silver"
+[0m15:08:49.076320 [debug] [Thread-4 (]: Using databricks connection "model.lab_dbt.powerpath_daily_silver"
+[0m15:08:49.077349 [debug] [Thread-4 (]: On model.lab_dbt.powerpath_daily_silver: /* {"app": "dbt", "dbt_version": "1.12.0", "dbt_databricks_version": "1.12.3", "databricks_sql_connector_version": "4.3.0", "profile_name": "lab_dbt", "target_name": "dev", "invocation_id": "79339aac-24c9-4ef5-bd6c-cf2168cc7613", "node_id": "model.lab_dbt.powerpath_daily_silver"} */
+
+  
+  
+  
+  create or replace view `opsanalytics_adb_workspace01`.`lab_staging`.`powerpath_daily_silver`
+  (
+    `FACILITY`,
+	`PRIORITY`,
+	`SPEC_CODE`,
+	`SPECIMEN_DESCRIPTION`,
+	`CPT_CODE`,
+	`REV_CTR`,
+	`ENCOUNTER_NO`,
+	`MRN`,
+	`CASE_NO`,
+	`CASE_CREATED_DATE`,
+	`COLLECTION_DATE`,
+	`RECEIVED_DATE`,
+	`SIGNED_OUT_DATE`,
+	`REFMD_CODE`,
+	`REFMD_NAME`,
+	`SPEC_SORT_ORDER`,
+	`SPEC_GROUP`,
+	`PATIENT_TYPE`,
+	`PATIENT_SETTING`,
+	`GI_CODE_INCLEXCL`,
+	`COLLECTION_TO_SIGNED_OUT`,
+	`RECEIVED_TO_SIGNED_OUT`,
+	`_SOURCE_FILE`,
+	`_INGESTED_AT`
+  )
+  
+  as (
+    -- Surgical pathology (Breast + GI) case-level silver.
+-- Mirrors patho_prep() in Lab_KPI_Daily_Dashboard_Prelim_Run_4.Rmd.
+
+with bronze as (
+    select
+        *,
+        case when spec_group = 'BREAST' then 'Breast' else spec_group end as spec_group_clean
+    from `opsanalytics_adb_workspace01`.`lab_staging`.`powerpath_bronze`
+),
+
+-- GI cases with any specimen code not marked 'Include' are dropped entirely
+exclude_case_numbers as (
+    select distinct Case_no
+    from bronze
+    where spec_group_clean = 'GI'
+      and (GI_CODE_INCLEXCL is null or GI_CODE_INCLEXCL <> 'Include')
+),
+
+cleaned as (
+    select
+        replace(b.Case_no, '*failed to decode utf16*', '')  as Case_no,
+        b.spec_group_clean                                  as spec_group,
+        case
+            when b.Facility = 'KH'   then 'MSB'
+            when b.Facility = 'R'    then 'MSW'
+            when b.Facility = 'STL'  then 'MSM'
+            when b.Facility = 'BIMC' then 'MSBI'
+            when b.Facility = 'SNCH' then 'MSSN'
+            when b.Facility = 'MSS'  then 'MSH'
+            when b.Facility = 'SL'   then 'MSM'
+            else b.Facility                                 -- PACC stays PACC (as in R)
+        end                                                 as Facility,
+        cast(b.Case_created_date as timestamp)              as Case_created_date,
+        cast(b.Collection_Date   as timestamp)              as Collection_Date,
+        cast(b.Received_Date     as timestamp)              as Received_Date,
+        cast(b.signed_out_date   as timestamp)              as signed_out_date,
+        b.Priority, b.Spec_code, b.Specimen_description, b.CPT_code, b.Rev_ctr,
+        b.Encounter_no, b.MRN, b.Refmd_code, b.Refmd_name,
+        b.spec_sort_order, b.patient_type, b.GI_CODE_INCLEXCL,
+        -- MSBK patient setting comes from patient_type, not the rev-center crosswalk
+        case
+            when b.Rev_ctr = 'MSBK' and b.patient_type in ('A', 'O') then 'Amb'
+            when b.Rev_ctr = 'MSBK' and b.patient_type = 'IN'        then 'IP'
+            else b.PATIENT_SETTING
+        end                                                 as PATIENT_SETTING,
+        b._source_file, b._ingested_at
+    from bronze b
+    left anti join exclude_case_numbers x
+        on b.Case_no = x.Case_no
+    where b.spec_sort_order = 'A'                           -- primary specimens only
+      and b.spec_group_clean in ('GI', 'Breast')
+),
+
+filtered as (
+    select *
+    from cleaned
+    where Facility not in ('NYEE', 'MSBI')
+)
+
+select
+    f.Facility                as FACILITY,
+    f.Priority                as PRIORITY,
+    f.Spec_code               as SPEC_CODE,
+    f.Specimen_description    as SPECIMEN_DESCRIPTION,
+    f.CPT_code                as CPT_CODE,
+    f.Rev_ctr                 as REV_CTR,
+    f.Encounter_no            as ENCOUNTER_NO,
+    f.MRN,
+    f.Case_no                 as CASE_NO,
+    f.Case_created_date       as CASE_CREATED_DATE,
+    f.Collection_Date         as COLLECTION_DATE,
+    f.Received_Date           as RECEIVED_DATE,
+    f.signed_out_date         as SIGNED_OUT_DATE,
+    f.Refmd_code              as REFMD_CODE,
+    f.Refmd_name              as REFMD_NAME,
+    f.spec_sort_order         as SPEC_SORT_ORDER,
+    f.spec_group              as SPEC_GROUP,
+    f.patient_type            as PATIENT_TYPE,
+    f.PATIENT_SETTING,
+    f.GI_CODE_INCLEXCL,
+    -- R: difftime(signed_out, collection, units = "days") -> fractional calendar days
+    (unix_timestamp(f.signed_out_date) - unix_timestamp(f.Collection_Date)) / 86400.0
+                              as COLLECTION_TO_SIGNED_OUT,
+    -- R: bizdays(Received_Date, signed_out_date) on the MSHS working-day calendar
+    so.bizday_index - rc.bizday_index
+                              as RECEIVED_TO_SIGNED_OUT,
+    f._source_file            as _SOURCE_FILE,
+    f._ingested_at            as _INGESTED_AT
+from filtered f
+left join `opsanalytics_adb_workspace01`.`lab`.`date_filter` rc
+    on cast(f.Received_Date as date) = rc.calendar_date
+left join `opsanalytics_adb_workspace01`.`lab`.`date_filter` so
+    on cast(f.signed_out_date as date) = so.calendar_date
+  )
+
+[0m15:08:49.909530 [debug] [Thread-4 (]: SQL status: OK in 0.830 seconds
+[0m15:08:49.911529 [debug] [Thread-4 (]: Databricks adapter: Cursor(session-id=01f1dc79-5fcf-13a4-a6a5-3ea608e69c88, command-id=01f1dc79-6068-1b1e-9b2b-d80dadbfc2a6) - Closing
+[0m15:08:49.912528 [debug] [Thread-4 (]: Applying tags to relation None
+[0m15:08:49.913527 [debug] [Thread-4 (]: On model.lab_dbt.powerpath_daily_silver: Close
+[0m15:08:49.914529 [debug] [Thread-4 (]: Databricks adapter: Connection(session-id=01f1dc79-5fcf-13a4-a6a5-3ea608e69c88) - Closing
+[0m15:08:50.092108 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '79339aac-24c9-4ef5-bd6c-cf2168cc7613', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C8F13898D0>]}
+[0m15:08:50.094108 [info ] [Thread-4 (]: 5 of 9 OK created sql view model lab_staging.powerpath_daily_silver ............ [[32mOK[0m in 4.74s]
+[0m15:08:50.096378 [debug] [Thread-4 (]: Finished running node model.lab_dbt.powerpath_daily_silver
+[0m15:08:50.118125 [debug] [Thread-3 (]: SQL status: OK in 1.150 seconds
+[0m15:08:50.120099 [debug] [Thread-3 (]: Databricks adapter: Cursor(session-id=01f1dc79-5fd5-1b00-8305-431933237d8b, command-id=01f1dc79-6055-1211-a640-27b5016376c6) - Closing
+[0m15:08:50.123632 [debug] [Thread-3 (]: Applying tags to relation None
+[0m15:08:50.125405 [debug] [Thread-3 (]: On model.lab_dbt.cyto_backlog_silver: Close
+[0m15:08:50.126696 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f1dc79-5fd5-1b00-8305-431933237d8b) - Closing
+[0m15:08:50.242513 [debug] [Thread-5 (]: SQL status: OK in 1.250 seconds
+[0m15:08:50.244513 [debug] [Thread-5 (]: Databricks adapter: Cursor(session-id=01f1dc79-5fd8-12a8-a753-d113d3b1ec89, command-id=01f1dc79-605b-1f4f-b9cc-cb448c3e0ee2) - Closing
+[0m15:08:50.246512 [debug] [Thread-5 (]: Applying tags to relation None
+[0m15:08:50.340559 [debug] [Thread-5 (]: On model.lab_dbt.powerpath_cyto_biopsy_silver: Close
+[0m15:08:50.341558 [debug] [Thread-5 (]: Databricks adapter: Connection(session-id=01f1dc79-5fd8-12a8-a753-d113d3b1ec89) - Closing
+[0m15:08:50.496994 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '79339aac-24c9-4ef5-bd6c-cf2168cc7613', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C8F12C2910>]}
+[0m15:08:50.497459 [debug] [Thread-5 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '79339aac-24c9-4ef5-bd6c-cf2168cc7613', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C8F13B6B10>]}
+[0m15:08:50.499459 [info ] [Thread-3 (]: 7 of 9 OK created sql view model lab_staging.cyto_backlog_silver ............... [[32mOK[0m in 5.14s]
+[0m15:08:50.500458 [info ] [Thread-5 (]: 6 of 9 OK created sql view model lab_staging.powerpath_cyto_biopsy_silver ...... [[32mOK[0m in 5.15s]
+[0m15:08:50.502486 [debug] [Thread-3 (]: Finished running node model.lab_dbt.cyto_backlog_silver
+[0m15:08:50.504459 [debug] [Thread-5 (]: Finished running node model.lab_dbt.powerpath_cyto_biopsy_silver
+[0m15:08:50.507010 [debug] [Thread-6 (]: Began running node model.lab_dbt.powerpath_cyto_gold
+[0m15:08:50.508040 [info ] [Thread-6 (]: 8 of 9 START sql table model lab_staging.powerpath_cyto_gold ................... [RUN]
+[0m15:08:50.510010 [debug] [Thread-6 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.lab_dbt.powerpath_cyto_gold) - Creating connection
+[0m15:08:50.511011 [debug] [Thread-6 (]: Acquiring new databricks connection 'model.lab_dbt.powerpath_cyto_gold'
+[0m15:08:50.512014 [debug] [Thread-6 (]: Began compiling node model.lab_dbt.powerpath_cyto_gold
+[0m15:08:50.516588 [debug] [Thread-6 (]: Writing injected SQL for node "model.lab_dbt.powerpath_cyto_gold"
+[0m15:08:50.519588 [debug] [Thread-6 (]: Began executing node model.lab_dbt.powerpath_cyto_gold
+[0m15:08:50.550427 [debug] [Thread-6 (]: MATERIALIZING TABLE
+[0m15:08:50.601382 [debug] [Thread-6 (]: Using databricks connection "model.lab_dbt.powerpath_cyto_gold"
+[0m15:08:50.603380 [debug] [Thread-6 (]: On model.lab_dbt.powerpath_cyto_gold: /* {"app": "dbt", "dbt_version": "1.12.0", "dbt_databricks_version": "1.12.3", "databricks_sql_connector_version": "4.3.0", "profile_name": "lab_dbt", "target_name": "dev", "invocation_id": "79339aac-24c9-4ef5-bd6c-cf2168cc7613", "node_id": "model.lab_dbt.powerpath_cyto_gold"} */
+SELECT
+    table_catalog,
+    table_schema,
+    table_name,
+    filter_name,
+    target_columns
+  FROM `opsanalytics_adb_workspace01`.`information_schema`.`row_filters`
+  WHERE table_catalog = 'opsanalytics_adb_workspace01'
+    AND table_schema = 'lab_staging'
+    AND table_name = 'powerpath_cyto_gold'
+[0m15:08:50.605382 [debug] [Thread-6 (]: Opening a new connection, currently in state init
+[0m15:08:51.785847 [debug] [Thread-6 (]: Databricks adapter: Connection(session-id=01f1dc79-61d1-135e-9370-9d954ca71504) - Created
+[0m15:08:52.398496 [debug] [Thread-6 (]: SQL status: OK in 1.790 seconds
+[0m15:08:52.404815 [debug] [Thread-6 (]: Databricks adapter: Cursor(session-id=01f1dc79-61d1-135e-9370-9d954ca71504, command-id=01f1dc79-6208-194a-8200-fa5c1dc7cb8e) - Closing
+[0m15:08:52.428371 [debug] [Thread-6 (]: Writing runtime sql for node "model.lab_dbt.powerpath_cyto_gold"
+[0m15:08:52.431488 [debug] [Thread-6 (]: Using databricks connection "model.lab_dbt.powerpath_cyto_gold"
+[0m15:08:52.433372 [debug] [Thread-6 (]: On model.lab_dbt.powerpath_cyto_gold: /* {"app": "dbt", "dbt_version": "1.12.0", "dbt_databricks_version": "1.12.3", "databricks_sql_connector_version": "4.3.0", "profile_name": "lab_dbt", "target_name": "dev", "invocation_id": "79339aac-24c9-4ef5-bd6c-cf2168cc7613", "node_id": "model.lab_dbt.powerpath_cyto_gold"} */
+
+  
+    
+        create or replace table `opsanalytics_adb_workspace01`.`lab_staging`.`powerpath_cyto_gold`
+      
+      
+    using delta
+  
+      
+      
+      
+      
+      
+      
+      
+      
+      as
+      with base as (
+    select
+        s.*,
+        cast(s.SIGNED_OUT_DATE as date)              as signed_out_date_only,
+        cast(s.RECEIVED_DATE   as date)              as acc_date_only,
+        tt.RECEIVED_TO_SIGNED_OUT_DAYS,
+        tt.COLLECTED_TO_SIGNED_OUT_DAYS
+    from `opsanalytics_adb_workspace01`.`lab_staging`.`powerpath_cyto_biopsy_silver` s
+    left join `opsanalytics_adb_workspace01`.`lab`.`lab_kpi_ap_tat_targets` tt
+        on  s.SPEC_GROUP       = tt.SPEC_GROUP
+        and s.PATIENT_SETTING  = tt.PATIENT_SETTING
+)
+
+select
+    SPEC_CODE                                        as SPECIMEN_CODE,
+    SPEC_GROUP                                       as SPECIMEN_GROUP,
+    FACILITY                                         as SITE,
+    PATIENT_SETTING,
+    REV_CTR                                          as REVENUE_CENTER,
+    signed_out_date_only                             as SIGNED_OUT_DATE,
+    date_format(signed_out_date_only, 'EEEE')        as SIGNED_OUT_DAY,
+    RECEIVED_TO_SIGNED_OUT_DAYS                      as REC_TO_SIGNED_OUT_TARGET,
+    COLLECTED_TO_SIGNED_OUT_DAYS                     as COL_TO_SIGNED_OUT_TARGET,
+    acc_date_only                                    as ACCESSION_DATE,
+    date_format(acc_date_only, 'EEEE')               as ACCESION_DAY,
+    date_add(signed_out_date_only, 1)                as REPORT_DATE,
+    date_format(date_add(signed_out_date_only, 1), 'EEEE') as REPORT_DAY,
+
+    count(*)                                         as NO_CASES_SIGNED_OUT,
+    round(avg(RECEIVED_TO_SIGNED_OUT), 0)            as REC_TO_SIGNED_OUT_AVG,
+    round(percentile(RECEIVED_TO_SIGNED_OUT, 0.5), 0) as REC_TO_SIGNED_OUT_MEDIAN,
+    round(stddev(RECEIVED_TO_SIGNED_OUT), 1)         as REC_TO_SIGNED_OUT_STDDEV,
+    round(
+        sum(case when RECEIVED_TO_SIGNED_OUT <= RECEIVED_TO_SIGNED_OUT_DAYS then 1 else 0 end)
+        / nullif(sum(case when RECEIVED_TO_SIGNED_OUT >= 0 then 1 else 0 end), 0)
+    , 2)                                             as REC_TO_SIGNED_OUT_WITHIN_TARGET,
+    ceil(avg(COLLECTION_TO_SIGNED_OUT))              as COL_TO_SIGNED_OUT_AVG,
+    round(percentile(COLLECTION_TO_SIGNED_OUT, 0.5), 0) as COL_TO_SIGNED_OUT_MEDIAN,
+    round(stddev(COLLECTION_TO_SIGNED_OUT), 1)       as COL_TO_SIGNED_OUT_STDDEV,
+    sum(case when signed_out_date_only = acc_date_only then 1 else 0 end) as CYTO_ACCESSION_VOLUME
+from base
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13
+  
+[0m15:08:55.261425 [debug] [Thread-6 (]: SQL status: OK in 2.830 seconds
+[0m15:08:55.263419 [debug] [Thread-6 (]: Databricks adapter: Cursor(session-id=01f1dc79-61d1-135e-9370-9d954ca71504, command-id=01f1dc79-6266-102e-b5bf-812bab29953a) - Closing
+[0m15:08:55.270418 [debug] [Thread-6 (]: Applying tags to relation None
+[0m15:08:55.305955 [debug] [Thread-6 (]: On model.lab_dbt.powerpath_cyto_gold: Close
+[0m15:08:55.308992 [debug] [Thread-6 (]: Databricks adapter: Connection(session-id=01f1dc79-61d1-135e-9370-9d954ca71504) - Closing
+[0m15:08:55.518050 [debug] [Thread-6 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '79339aac-24c9-4ef5-bd6c-cf2168cc7613', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C8F1A5B0D0>]}
+[0m15:08:55.523040 [info ] [Thread-6 (]: 8 of 9 OK created sql table model lab_staging.powerpath_cyto_gold .............. [[32mOK[0m in 5.01s]
+[0m15:08:55.528783 [debug] [Thread-6 (]: Finished running node model.lab_dbt.powerpath_cyto_gold
+[0m15:08:55.531773 [debug] [Thread-3 (]: Began running node model.lab_dbt.cyto_backlog_gold
+[0m15:08:55.533774 [info ] [Thread-3 (]: 9 of 9 START sql table model lab_staging.cyto_backlog_gold ..................... [RUN]
+[0m15:08:55.537314 [debug] [Thread-3 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.lab_dbt.cyto_backlog_gold) - Creating connection
+[0m15:08:55.539312 [debug] [Thread-3 (]: Acquiring new databricks connection 'model.lab_dbt.cyto_backlog_gold'
+[0m15:08:55.541363 [debug] [Thread-3 (]: Began compiling node model.lab_dbt.cyto_backlog_gold
+[0m15:08:55.548310 [debug] [Thread-3 (]: Writing injected SQL for node "model.lab_dbt.cyto_backlog_gold"
+[0m15:08:55.552311 [debug] [Thread-3 (]: Began executing node model.lab_dbt.cyto_backlog_gold
+[0m15:08:55.555526 [debug] [Thread-3 (]: MATERIALIZING TABLE
+[0m15:08:55.562553 [debug] [Thread-3 (]: Using databricks connection "model.lab_dbt.cyto_backlog_gold"
+[0m15:08:55.565548 [debug] [Thread-3 (]: On model.lab_dbt.cyto_backlog_gold: /* {"app": "dbt", "dbt_version": "1.12.0", "dbt_databricks_version": "1.12.3", "databricks_sql_connector_version": "4.3.0", "profile_name": "lab_dbt", "target_name": "dev", "invocation_id": "79339aac-24c9-4ef5-bd6c-cf2168cc7613", "node_id": "model.lab_dbt.cyto_backlog_gold"} */
+SELECT
+    table_catalog,
+    table_schema,
+    table_name,
+    filter_name,
+    target_columns
+  FROM `opsanalytics_adb_workspace01`.`information_schema`.`row_filters`
+  WHERE table_catalog = 'opsanalytics_adb_workspace01'
+    AND table_schema = 'lab_staging'
+    AND table_name = 'cyto_backlog_gold'
+[0m15:08:55.567534 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m15:08:57.132000 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f1dc79-64c6-1461-af23-c0035ff55396) - Created
+[0m15:08:57.621366 [debug] [Thread-3 (]: SQL status: OK in 2.050 seconds
+[0m15:08:57.631949 [debug] [Thread-3 (]: Databricks adapter: Cursor(session-id=01f1dc79-64c6-1461-af23-c0035ff55396, command-id=01f1dc79-6538-1310-b508-60d7e6b3e1bf) - Closing
+[0m15:08:57.639642 [debug] [Thread-3 (]: Writing runtime sql for node "model.lab_dbt.cyto_backlog_gold"
+[0m15:08:57.672638 [debug] [Thread-3 (]: Using databricks connection "model.lab_dbt.cyto_backlog_gold"
+[0m15:08:57.674639 [debug] [Thread-3 (]: On model.lab_dbt.cyto_backlog_gold: /* {"app": "dbt", "dbt_version": "1.12.0", "dbt_databricks_version": "1.12.3", "databricks_sql_connector_version": "4.3.0", "profile_name": "lab_dbt", "target_name": "dev", "invocation_id": "79339aac-24c9-4ef5-bd6c-cf2168cc7613", "node_id": "model.lab_dbt.cyto_backlog_gold"} */
+
+  
+    
+        create or replace table `opsanalytics_adb_workspace01`.`lab_staging`.`cyto_backlog_gold`
+      
+      
+    using delta
+  
+      
+      
+      
+      
+      
+      
+      comment 'One row per pending case per report date.'
+      
+      as
+      with backlog_summary as (
+    select
+        spec_group,
+        _report_date,
+        count(case when backlog > RECEIVED_TO_SIGNED_OUT_DAYS then 1 end) as cyto_backlog,
+        ceil(percentile(case when backlog > RECEIVED_TO_SIGNED_OUT_DAYS then backlog end, 0.25)) as percentile_25th,
+        ceil(percentile(case when backlog > RECEIVED_TO_SIGNED_OUT_DAYS then backlog end, 0.50)) as percentile_50th,
+        coalesce(max(case when backlog > RECEIVED_TO_SIGNED_OUT_DAYS then backlog end), 0) as maximum,
+        sum(case when acc_date_only = _report_date then 1 else 0 end) as cyto_acc_spec_group_vol
+    from `opsanalytics_adb_workspace01`.`lab_staging`.`cyto_backlog_silver`
+    group by 1, 2
+),
+
+cyto_accessioned as (
+    select
+        SPECIMEN_GROUP as spec_group,
+        REPORT_DATE    as _report_date,
+        sum(CYTO_ACCESSION_VOLUME) as cyto_acc_recieved
+    from `opsanalytics_adb_workspace01`.`lab_staging`.`powerpath_cyto_gold`
+    group by 1, 2
+)
+
+select
+    b.spec_group,
+    b._report_date,
+    b.cyto_backlog,
+    b.percentile_25th,
+    b.percentile_50th,
+    b.maximum,
+    coalesce(c.cyto_acc_recieved, 0) + b.cyto_acc_spec_group_vol as total_accessioned_volume
+from backlog_summary b
+left join cyto_accessioned c
+    on  b.spec_group    = c.spec_group
+    and b._report_date  = c._report_date
+  
+[0m15:09:00.315363 [debug] [Thread-3 (]: SQL status: OK in 2.640 seconds
+[0m15:09:00.318355 [debug] [Thread-3 (]: Databricks adapter: Cursor(session-id=01f1dc79-64c6-1461-af23-c0035ff55396, command-id=01f1dc79-6587-12ba-9c9d-3177db07c3ca) - Closing
+[0m15:09:00.321354 [debug] [Thread-3 (]: Applying tags to relation None
+[0m15:09:00.337792 [debug] [Thread-3 (]: Using databricks connection "model.lab_dbt.cyto_backlog_gold"
+[0m15:09:00.339353 [debug] [Thread-3 (]: On model.lab_dbt.cyto_backlog_gold: /* {"app": "dbt", "dbt_version": "1.12.0", "dbt_databricks_version": "1.12.3", "databricks_sql_connector_version": "4.3.0", "profile_name": "lab_dbt", "target_name": "dev", "invocation_id": "79339aac-24c9-4ef5-bd6c-cf2168cc7613", "node_id": "model.lab_dbt.cyto_backlog_gold"} */
+
+    
+  DESCRIBE TABLE EXTENDED `opsanalytics_adb_workspace01`.`lab_staging`.`cyto_backlog_gold` AS JSON
+
+  
+[0m15:09:00.723737 [debug] [Thread-3 (]: SQL status: OK in 0.380 seconds
+[0m15:09:00.726487 [debug] [Thread-3 (]: Databricks adapter: Cursor(session-id=01f1dc79-64c6-1461-af23-c0035ff55396, command-id=01f1dc79-6727-10d7-bc13-7403be270d2b) - Closing
+[0m15:09:00.742486 [debug] [Thread-3 (]: On model.lab_dbt.cyto_backlog_gold: Close
+[0m15:09:00.744490 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f1dc79-64c6-1461-af23-c0035ff55396) - Closing
+[0m15:09:00.911409 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '79339aac-24c9-4ef5-bd6c-cf2168cc7613', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C8F1D1C590>]}
+[0m15:09:00.915416 [info ] [Thread-3 (]: 9 of 9 OK created sql table model lab_staging.cyto_backlog_gold ................ [[32mOK[0m in 5.37s]
+[0m15:09:00.921410 [debug] [Thread-3 (]: Finished running node model.lab_dbt.cyto_backlog_gold
+[0m15:09:00.924413 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=master) - Creating connection
+[0m15:09:00.926079 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m15:09:00.927409 [info ] [MainThread]: 
+[0m15:09:00.928408 [info ] [MainThread]: Finished running 2 table models, 7 view models in 0 hours 0 minutes and 26.13 seconds (26.13s).
+[0m15:09:00.938771 [debug] [MainThread]: Command end result
+[0m15:09:01.119112 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\tommad01\Desktop\Lab\lab_dbt\target\manifest.json
+[0m15:09:01.125690 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\tommad01\Desktop\Lab\lab_dbt\target\semantic_manifest.json
+[0m15:09:01.136657 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\tommad01\Desktop\Lab\lab_dbt\target\osi_document.json
+[0m15:09:01.157741 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\tommad01\Desktop\Lab\lab_dbt\target\run_results.json
+[0m15:09:01.158744 [info ] [MainThread]: 
+[0m15:09:01.159744 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m15:09:01.160743 [info ] [MainThread]: 
+[0m15:09:01.161743 [info ] [MainThread]: Done. PASS=9 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=9
+[0m15:09:01.164757 [debug] [MainThread]: Command `dbt run` succeeded at 15:09:01.164757 after 38.10 seconds
+[0m15:09:01.168780 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C8DD4F7F90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C8DD4F7990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002C8DD3E4490>]}
+[0m15:09:01.169748 [debug] [MainThread]: Flushing usage events
+[0m15:09:01.562648 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:12:09.022893 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D4D0B3B190>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D4D0B37B50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D4D0B39190>]}
+
+
+============================== 15:12:09.032004 | 2e9f6e12-ba37-4fb3-b90e-35d80b869793 ==============================
+[0m15:12:09.032004 [info ] [MainThread]: Running with dbt=1.12.0
+[0m15:12:09.034006 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\tommad01\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'hints_enabled': 'True', 'invocation_command': 'dbt run', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'log_path': 'C:\\Users\\tommad01\\Desktop\\Lab\\lab_dbt\\logs'}
+[0m15:12:11.196755 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m15:12:11.198731 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m15:12:11.199733 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m15:12:12.928215 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '2e9f6e12-ba37-4fb3-b90e-35d80b869793', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D4E4A3E690>]}
+[0m15:12:13.019983 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '2e9f6e12-ba37-4fb3-b90e-35d80b869793', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D4D0BD7850>]}
+[0m15:12:13.021125 [info ] [MainThread]: Registered adapter: databricks=1.12.3
+[0m15:12:14.119991 [debug] [MainThread]: checksum: b154c3494314c7223c912bef68d7678b521a9d4ab83524a76084633bd437b3da, vars: {}, profile: lab_dbt, target: dev, version: 1.12.0
+[0m15:12:14.657321 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m15:12:14.659323 [debug] [MainThread]: Partial parsing: updated file: lab_dbt://models\bronze\scc_bronze.sql
+[0m15:12:15.280158 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '2e9f6e12-ba37-4fb3-b90e-35d80b869793', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D4E5484A90>]}
+[0m15:12:15.567791 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\tommad01\Desktop\Lab\lab_dbt\target\manifest.json
+[0m15:12:15.605282 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\tommad01\Desktop\Lab\lab_dbt\target\semantic_manifest.json
+[0m15:12:15.737814 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\tommad01\Desktop\Lab\lab_dbt\target\osi_document.json
+[0m15:12:15.846948 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '2e9f6e12-ba37-4fb3-b90e-35d80b869793', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D4E4843010>]}
+[0m15:12:15.848946 [info ] [MainThread]: Found 9 models, 3 data tests, 12 sources, 890 macros
+[0m15:12:15.850945 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2e9f6e12-ba37-4fb3-b90e-35d80b869793', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D4D0A6A310>]}
+[0m15:12:15.857485 [info ] [MainThread]: 
+[0m15:12:15.867743 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m15:12:15.870486 [info ] [MainThread]: 
+[0m15:12:15.873009 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=master) - Creating connection
+[0m15:12:15.874030 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m15:12:15.917069 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_opsanalytics_adb_workspace01) - Creating connection
+[0m15:12:15.919071 [debug] [ThreadPool]: Acquiring new databricks connection 'list_opsanalytics_adb_workspace01'
+[0m15:12:15.952909 [debug] [ThreadPool]: Using databricks connection "list_opsanalytics_adb_workspace01"
+[0m15:12:15.953910 [debug] [ThreadPool]: On list_opsanalytics_adb_workspace01: /* {"app": "dbt", "dbt_version": "1.12.0", "dbt_databricks_version": "1.12.3", "databricks_sql_connector_version": "4.3.0", "profile_name": "lab_dbt", "target_name": "dev", "invocation_id": "2e9f6e12-ba37-4fb3-b90e-35d80b869793", "connection_name": "list_opsanalytics_adb_workspace01"} */
+
+    
+
+  SHOW SCHEMAS IN `opsanalytics_adb_workspace01`
+
+
+  
+[0m15:12:15.954910 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:12:18.132284 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1dc79-dca7-16bc-b2db-f37fe48c9b23) - Created
+[0m15:12:18.649255 [debug] [ThreadPool]: SQL status: OK in 2.690 seconds
+[0m15:12:18.660103 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f1dc79-dca7-16bc-b2db-f37fe48c9b23, command-id=01f1dc79-dd0b-1928-b62e-1822d4b46d92) - Closing
+[0m15:12:18.661172 [debug] [ThreadPool]: On list_opsanalytics_adb_workspace01: Close
+[0m15:12:18.663175 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1dc79-dca7-16bc-b2db-f37fe48c9b23) - Closing
+[0m15:12:18.875560 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_opsanalytics_adb_workspace01_lab_staging) - Creating connection
+[0m15:12:18.876624 [debug] [ThreadPool]: Acquiring new databricks connection 'list_opsanalytics_adb_workspace01_lab_staging'
+[0m15:12:18.882559 [debug] [ThreadPool]: Using databricks connection "list_opsanalytics_adb_workspace01_lab_staging"
+[0m15:12:18.883557 [debug] [ThreadPool]: On list_opsanalytics_adb_workspace01_lab_staging: /* {"app": "dbt", "dbt_version": "1.12.0", "dbt_databricks_version": "1.12.3", "databricks_sql_connector_version": "4.3.0", "profile_name": "lab_dbt", "target_name": "dev", "invocation_id": "2e9f6e12-ba37-4fb3-b90e-35d80b869793", "connection_name": "list_opsanalytics_adb_workspace01_lab_staging"} */
+
+    
+SELECT
+  table_name,
+  if(table_type IN ('EXTERNAL', 'MANAGED', 'MANAGED_SHALLOW_CLONE', 'EXTERNAL_SHALLOW_CLONE'), 'table', lower(table_type)) AS table_type,
+  lower(data_source_format) AS file_format,
+  table_owner,
+  if(
+    table_type IN (
+      'EXTERNAL',
+      'MANAGED',
+      'MANAGED_SHALLOW_CLONE',
+      'EXTERNAL_SHALLOW_CLONE'
+    ),
+    lower(table_type),
+    NULL
+  ) AS databricks_table_type
+FROM `system`.`information_schema`.`tables`
+WHERE table_catalog = 'opsanalytics_adb_workspace01'
+  AND table_schema = 'lab_staging'
+
+  
+[0m15:12:18.884558 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:12:19.870948 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1dc79-dddc-1229-aac6-f4759113d523) - Created
+[0m15:12:20.406997 [debug] [ThreadPool]: SQL status: OK in 1.520 seconds
+[0m15:12:20.412027 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f1dc79-dddc-1229-aac6-f4759113d523, command-id=01f1dc79-de0a-17e5-9724-3914e13f6fdb) - Closing
+[0m15:12:20.413029 [debug] [ThreadPool]: On list_opsanalytics_adb_workspace01_lab_staging: Close
+[0m15:12:20.415007 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1dc79-dddc-1229-aac6-f4759113d523) - Closing
+[0m15:12:20.570356 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '2e9f6e12-ba37-4fb3-b90e-35d80b869793', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D4D3A1A850>]}
+[0m15:12:20.588446 [debug] [Thread-3 (]: Began running node model.lab_dbt.cyto_backlog_bronze
+[0m15:12:20.589446 [debug] [Thread-4 (]: Began running node model.lab_dbt.powerpath_bronze
+[0m15:12:20.590477 [debug] [Thread-5 (]: Began running node model.lab_dbt.powerpath_cyto_biopsy_bronze
+[0m15:12:20.590477 [debug] [Thread-6 (]: Began running node model.lab_dbt.scc_bronze
+[0m15:12:20.591907 [info ] [Thread-3 (]: 1 of 9 START sql view model lab_staging.cyto_backlog_bronze .................... [RUN]
+[0m15:12:20.592887 [info ] [Thread-4 (]: 2 of 9 START sql view model lab_staging.powerpath_bronze ....................... [RUN]
+[0m15:12:20.594450 [info ] [Thread-5 (]: 3 of 9 START sql view model lab_staging.powerpath_cyto_biopsy_bronze ........... [RUN]
+[0m15:12:20.595745 [info ] [Thread-6 (]: 4 of 9 START sql view model lab_staging.scc_bronze ............................. [RUN]
+[0m15:12:20.597655 [debug] [Thread-3 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.lab_dbt.cyto_backlog_bronze) - Creating connection
+[0m15:12:20.598653 [debug] [Thread-4 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.lab_dbt.powerpath_bronze) - Creating connection
+[0m15:12:20.600124 [debug] [Thread-5 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.lab_dbt.powerpath_cyto_biopsy_bronze) - Creating connection
+[0m15:12:20.602282 [debug] [Thread-6 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.lab_dbt.scc_bronze) - Creating connection
+[0m15:12:20.602282 [debug] [Thread-3 (]: Acquiring new databricks connection 'model.lab_dbt.cyto_backlog_bronze'
+[0m15:12:20.603996 [debug] [Thread-4 (]: Acquiring new databricks connection 'model.lab_dbt.powerpath_bronze'
+[0m15:12:20.604323 [debug] [Thread-5 (]: Acquiring new databricks connection 'model.lab_dbt.powerpath_cyto_biopsy_bronze'
+[0m15:12:20.605322 [debug] [Thread-6 (]: Acquiring new databricks connection 'model.lab_dbt.scc_bronze'
+[0m15:12:20.606313 [debug] [Thread-3 (]: Began compiling node model.lab_dbt.cyto_backlog_bronze
+[0m15:12:20.607423 [debug] [Thread-4 (]: Began compiling node model.lab_dbt.powerpath_bronze
+[0m15:12:20.608289 [debug] [Thread-5 (]: Began compiling node model.lab_dbt.powerpath_cyto_biopsy_bronze
+[0m15:12:20.609288 [debug] [Thread-6 (]: Began compiling node model.lab_dbt.scc_bronze
+[0m15:12:20.618414 [debug] [Thread-3 (]: Writing injected SQL for node "model.lab_dbt.cyto_backlog_bronze"
+[0m15:12:20.621881 [debug] [Thread-4 (]: Writing injected SQL for node "model.lab_dbt.powerpath_bronze"
+[0m15:12:20.624164 [debug] [Thread-5 (]: Writing injected SQL for node "model.lab_dbt.powerpath_cyto_biopsy_bronze"
+[0m15:12:20.629383 [debug] [Thread-6 (]: Writing injected SQL for node "model.lab_dbt.scc_bronze"
+[0m15:12:20.634881 [debug] [Thread-4 (]: Began executing node model.lab_dbt.powerpath_bronze
+[0m15:12:20.634881 [debug] [Thread-3 (]: Began executing node model.lab_dbt.cyto_backlog_bronze
+[0m15:12:20.642644 [debug] [Thread-6 (]: Began executing node model.lab_dbt.scc_bronze
+[0m15:12:20.656239 [debug] [Thread-4 (]: MATERIALIZING VIEW
+[0m15:12:20.657059 [debug] [Thread-5 (]: Began executing node model.lab_dbt.powerpath_cyto_biopsy_bronze
+[0m15:12:20.659059 [debug] [Thread-3 (]: MATERIALIZING VIEW
+[0m15:12:20.661999 [debug] [Thread-6 (]: MATERIALIZING VIEW
+[0m15:12:20.696418 [debug] [Thread-4 (]: Creating view `opsanalytics_adb_workspace01`.`lab_staging`.`powerpath_bronze`
+[0m15:12:20.699070 [debug] [Thread-5 (]: MATERIALIZING VIEW
+[0m15:12:20.701070 [debug] [Thread-3 (]: Creating view `opsanalytics_adb_workspace01`.`lab_staging`.`cyto_backlog_bronze`
+[0m15:12:20.704067 [debug] [Thread-6 (]: Creating view `opsanalytics_adb_workspace01`.`lab_staging`.`scc_bronze`
+[0m15:12:20.713068 [debug] [Thread-4 (]: Using databricks connection "model.lab_dbt.powerpath_bronze"
+[0m15:12:20.716068 [debug] [Thread-5 (]: Creating view `opsanalytics_adb_workspace01`.`lab_staging`.`powerpath_cyto_biopsy_bronze`
+[0m15:12:20.718067 [debug] [Thread-3 (]: Using databricks connection "model.lab_dbt.cyto_backlog_bronze"
+[0m15:12:20.720070 [debug] [Thread-6 (]: Using databricks connection "model.lab_dbt.scc_bronze"
+[0m15:12:20.721066 [debug] [Thread-4 (]: On model.lab_dbt.powerpath_bronze: /* {"app": "dbt", "dbt_version": "1.12.0", "dbt_databricks_version": "1.12.3", "databricks_sql_connector_version": "4.3.0", "profile_name": "lab_dbt", "target_name": "dev", "invocation_id": "2e9f6e12-ba37-4fb3-b90e-35d80b869793", "node_id": "model.lab_dbt.powerpath_bronze"} */
+select * from (
+        select
+    c.*,
+    ps.PATIENT_SETTING,
+    gi.GI_CODE_INCLEXCL
+from `opsanalytics_adb_workspace01`.`lab`.`powerpath_raw` c
+left join `opsanalytics_adb_workspace01`.`lab`.`lab_kpi_gi_codes` gi
+    on c.Spec_code = gi.SPEC_CODE
+left join `opsanalytics_adb_workspace01`.`lab`.`lab_kpi_ap_patient_setting` ps
+on c.Rev_ctr = ps.REV_CTR
+    ) as __dbt_sbq
+    where false
+    limit 0
+
+    
+[0m15:12:20.723070 [debug] [Thread-5 (]: Using databricks connection "model.lab_dbt.powerpath_cyto_biopsy_bronze"
+[0m15:12:20.724264 [debug] [Thread-3 (]: On model.lab_dbt.cyto_backlog_bronze: /* {"app": "dbt", "dbt_version": "1.12.0", "dbt_databricks_version": "1.12.3", "databricks_sql_connector_version": "4.3.0", "profile_name": "lab_dbt", "target_name": "dev", "invocation_id": "2e9f6e12-ba37-4fb3-b90e-35d80b869793", "node_id": "model.lab_dbt.cyto_backlog_bronze"} */
+select * from (
+        select
+    c.*,
+    ps.PATIENT_SETTING,
+    tt.RECEIVED_TO_SIGNED_OUT_DAYS
+from `opsanalytics_adb_workspace01`.`lab`.`cyto_backlog_raw` c
+left join `opsanalytics_adb_workspace01`.`lab`.`lab_kpi_ap_patient_setting` ps
+    on c.Rev_ctr = ps.REV_CTR
+left join `opsanalytics_adb_workspace01`.`lab`.`lab_kpi_ap_tat_targets` tt
+    on  c.spec_group = tt.SPEC_GROUP
+    and ps.PATIENT_SETTING = tt.PATIENT_SETTING
+    ) as __dbt_sbq
+    where false
+    limit 0
+
+    
+[0m15:12:20.725072 [debug] [Thread-6 (]: On model.lab_dbt.scc_bronze: /* {"app": "dbt", "dbt_version": "1.12.0", "dbt_databricks_version": "1.12.3", "databricks_sql_connector_version": "4.3.0", "profile_name": "lab_dbt", "target_name": "dev", "invocation_id": "2e9f6e12-ba37-4fb3-b90e-35d80b869793", "node_id": "model.lab_dbt.scc_bronze"} */
+select * from (
+        select distinct scc_raw.Ward,
+                scc_raw.WARD_NAME,
+                scc_raw.REQUESTING_DOC,
+                scc_raw.LAST_NAME,
+                scc_raw.FIRST_NAME,
+                scc_raw.ORDER_ID,
+                scc_raw.ORDERING_DATE,
+                scc_raw.COLLECTION_DATE,
+                scc_raw.RECEIVE_DATE,
+                scc_raw.VERIFIED_DATE,
+                scc_raw.GROUP_TEST_ID,
+                scc_raw.TEST_ID,
+                scc_raw.TEST_NAME,
+                scc_raw.COLLECT_CENTER_ID,
+                scc_raw.TAT_OV,
+                scc_raw.TAT_CV,
+                scc_raw.TAT_RV,
+                scc_raw.TAT_CR,
+                scc_raw.PRIORITY,
+                scc_raw.COLLECTION_TO_RECEIVED,
+                scc_raw.ORDER_TO_COLLECTION,
+                scc_raw.REQUESTING_DOC_NAME,
+                scc_raw.PATIENT_MRN,
+                scc_raw.WORK_SHIFT,
+                scc_raw.WORKSTATION,
+                scc_raw.RESULT,
+                scc_raw.Addon,
+                scc_raw.MPI,
+                scc_raw._ingested_at,
+                scc_raw._source_file,
+                ps.SCC_TEST_ID,
+                tt.CLINIC_TYPE,
+                site_map.SITE
+from `opsanalytics_adb_workspace01`.`lab`.`scc_raw` scc_raw
+left join `opsanalytics_adb_workspace01`.`lab`.`lab_kpi_scc_test_codes` ps
+    on scc_raw.TEST_ID = ps.SCC_TEST_ID
+left join `opsanalytics_adb_workspace01`.`lab`.`lab_kpi_scc_clinictype` tt
+    on  scc_raw.CLINIC_TYPE = tt.CLINIC_TYPE
+left join `opsanalytics_adb_workspace01`.`lab`.`lab_kpi_site_names` site_map
+    on scc_raw.SITE = site_map.SITE
+    ) as __dbt_sbq
+    where false
+    limit 0
+
+    
+[0m15:12:20.727066 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m15:12:20.728069 [debug] [Thread-5 (]: On model.lab_dbt.powerpath_cyto_biopsy_bronze: /* {"app": "dbt", "dbt_version": "1.12.0", "dbt_databricks_version": "1.12.3", "databricks_sql_connector_version": "4.3.0", "profile_name": "lab_dbt", "target_name": "dev", "invocation_id": "2e9f6e12-ba37-4fb3-b90e-35d80b869793", "node_id": "model.lab_dbt.powerpath_cyto_biopsy_bronze"} */
+select * from (
+        select
+    c.*,
+    ps.PATIENT_SETTING
+from `opsanalytics_adb_workspace01`.`lab`.`powerpath_raw` c
+left join `opsanalytics_adb_workspace01`.`lab`.`lab_kpi_ap_patient_setting` ps
+    on c.Rev_ctr = ps.REV_CTR
+    ) as __dbt_sbq
+    where false
+    limit 0
+
+    
+[0m15:12:20.729068 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m15:12:20.730179 [debug] [Thread-6 (]: Opening a new connection, currently in state init
+[0m15:12:20.732084 [debug] [Thread-5 (]: Opening a new connection, currently in state init
+[0m15:12:23.076006 [debug] [Thread-4 (]: Databricks adapter: Connection(session-id=01f1dc79-dfc5-129c-bcbb-23813f0d19f0) - Created
+[0m15:12:23.077006 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f1dc79-dfd3-1830-9333-5734870803c7) - Created
+[0m15:12:23.266912 [debug] [Thread-5 (]: Databricks adapter: Connection(session-id=01f1dc79-dffa-1879-8845-9ab263a76fd9) - Created
+[0m15:12:23.303366 [debug] [Thread-6 (]: Databricks adapter: Connection(session-id=01f1dc79-dffc-159e-aa8c-e306549c6e4f) - Created
+[0m15:12:23.394342 [debug] [Thread-4 (]: SQL status: OK in 2.670 seconds
+[0m15:12:23.412367 [debug] [Thread-3 (]: SQL status: OK in 2.680 seconds
+[0m15:12:23.420368 [debug] [Thread-3 (]: Databricks adapter: Cursor(session-id=01f1dc79-dfd3-1830-9333-5734870803c7, command-id=01f1dc79-dff2-121c-ab7a-47877ecccef9) - Closing
+[0m15:12:23.435498 [debug] [Thread-4 (]: Databricks adapter: Cursor(session-id=01f1dc79-dfc5-129c-bcbb-23813f0d19f0, command-id=01f1dc79-dff4-1b65-9c2a-816cb7a240d3) - Closing
+[0m15:12:23.450028 [debug] [Thread-3 (]: Writing runtime sql for node "model.lab_dbt.cyto_backlog_bronze"
+[0m15:12:23.452876 [debug] [Thread-4 (]: Writing runtime sql for node "model.lab_dbt.powerpath_bronze"
+[0m15:12:23.455879 [debug] [Thread-3 (]: Using databricks connection "model.lab_dbt.cyto_backlog_bronze"
+[0m15:12:23.456877 [debug] [Thread-4 (]: Using databricks connection "model.lab_dbt.powerpath_bronze"
+[0m15:12:23.456877 [debug] [Thread-3 (]: On model.lab_dbt.cyto_backlog_bronze: /* {"app": "dbt", "dbt_version": "1.12.0", "dbt_databricks_version": "1.12.3", "databricks_sql_connector_version": "4.3.0", "profile_name": "lab_dbt", "target_name": "dev", "invocation_id": "2e9f6e12-ba37-4fb3-b90e-35d80b869793", "node_id": "model.lab_dbt.cyto_backlog_bronze"} */
+
+  
+  
+  
+  create or replace view `opsanalytics_adb_workspace01`.`lab_staging`.`cyto_backlog_bronze`
+  (
+    `Facility`,
+	`Priority`,
+	`spec_group`,
+	`Spec_code`,
+	`Specimen_description`,
+	`Current_step`,
+	`CPT_code`,
+	`Fee_sch`,
+	`Rev_ctr`,
+	`Encounter_no`,
+	`MRN`,
+	`AGE`,
+	`Case_no`,
+	`Case_created_date`,
+	`Collection_Date`,
+	`Received_Date`,
+	`signed_out_date`,
+	`TAT_days`,
+	`Refmd_name`,
+	`Refmd_code`,
+	`NPI_NO`,
+	`_source_file`,
+	`_report_date`,
+	`_ingested_at`,
+	`PATIENT_SETTING`,
+	`RECEIVED_TO_SIGNED_OUT_DAYS`
+  )
+  
+  as (
+    select
+    c.*,
+    ps.PATIENT_SETTING,
+    tt.RECEIVED_TO_SIGNED_OUT_DAYS
+from `opsanalytics_adb_workspace01`.`lab`.`cyto_backlog_raw` c
+left join `opsanalytics_adb_workspace01`.`lab`.`lab_kpi_ap_patient_setting` ps
+    on c.Rev_ctr = ps.REV_CTR
+left join `opsanalytics_adb_workspace01`.`lab`.`lab_kpi_ap_tat_targets` tt
+    on  c.spec_group = tt.SPEC_GROUP
+    and ps.PATIENT_SETTING = tt.PATIENT_SETTING
+  )
+
+[0m15:12:23.458435 [debug] [Thread-4 (]: On model.lab_dbt.powerpath_bronze: /* {"app": "dbt", "dbt_version": "1.12.0", "dbt_databricks_version": "1.12.3", "databricks_sql_connector_version": "4.3.0", "profile_name": "lab_dbt", "target_name": "dev", "invocation_id": "2e9f6e12-ba37-4fb3-b90e-35d80b869793", "node_id": "model.lab_dbt.powerpath_bronze"} */
+
+  
+  
+  
+  create or replace view `opsanalytics_adb_workspace01`.`lab_staging`.`powerpath_bronze`
+  (
+    `Facility`,
+	`Priority`,
+	`spec_group`,
+	`Spec_code`,
+	`Specimen_description`,
+	`CPT_code`,
+	`Fee_sch`,
+	`Rev_ctr`,
+	`Encounter_no`,
+	`MRN`,
+	`AGE`,
+	`Case_no`,
+	`Case_created_date`,
+	`Collection_Date`,
+	`Received_Date`,
+	`signed_out_date`,
+	`TAT`,
+	`signed_out_Pathologist`,
+	`Refmd_name`,
+	`Refmd_code`,
+	`NPI_NO`,
+	`spec_sort_order`,
+	`patient_type`,
+	`_source_file`,
+	`_ingested_at`,
+	`PATIENT_SETTING`,
+	`GI_CODE_INCLEXCL`
+  )
+  
+  as (
+    select
+    c.*,
+    ps.PATIENT_SETTING,
+    gi.GI_CODE_INCLEXCL
+from `opsanalytics_adb_workspace01`.`lab`.`powerpath_raw` c
+left join `opsanalytics_adb_workspace01`.`lab`.`lab_kpi_gi_codes` gi
+    on c.Spec_code = gi.SPEC_CODE
+left join `opsanalytics_adb_workspace01`.`lab`.`lab_kpi_ap_patient_setting` ps
+on c.Rev_ctr = ps.REV_CTR
+  )
+
+[0m15:12:23.574280 [debug] [Thread-5 (]: SQL status: OK in 2.840 seconds
+[0m15:12:23.579211 [debug] [Thread-5 (]: Databricks adapter: Cursor(session-id=01f1dc79-dffa-1879-8845-9ab263a76fd9, command-id=01f1dc79-e015-1b00-b960-f1450161f0b3) - Closing
+[0m15:12:23.582213 [debug] [Thread-5 (]: Writing runtime sql for node "model.lab_dbt.powerpath_cyto_biopsy_bronze"
+[0m15:12:23.586216 [debug] [Thread-5 (]: Using databricks connection "model.lab_dbt.powerpath_cyto_biopsy_bronze"
+[0m15:12:23.587213 [debug] [Thread-5 (]: On model.lab_dbt.powerpath_cyto_biopsy_bronze: /* {"app": "dbt", "dbt_version": "1.12.0", "dbt_databricks_version": "1.12.3", "databricks_sql_connector_version": "4.3.0", "profile_name": "lab_dbt", "target_name": "dev", "invocation_id": "2e9f6e12-ba37-4fb3-b90e-35d80b869793", "node_id": "model.lab_dbt.powerpath_cyto_biopsy_bronze"} */
+
+  
+  
+  
+  create or replace view `opsanalytics_adb_workspace01`.`lab_staging`.`powerpath_cyto_biopsy_bronze`
+  (
+    `Facility`,
+	`Priority`,
+	`spec_group`,
+	`Spec_code`,
+	`Specimen_description`,
+	`CPT_code`,
+	`Fee_sch`,
+	`Rev_ctr`,
+	`Encounter_no`,
+	`MRN`,
+	`AGE`,
+	`Case_no`,
+	`Case_created_date`,
+	`Collection_Date`,
+	`Received_Date`,
+	`signed_out_date`,
+	`TAT`,
+	`signed_out_Pathologist`,
+	`Refmd_name`,
+	`Refmd_code`,
+	`NPI_NO`,
+	`spec_sort_order`,
+	`patient_type`,
+	`_source_file`,
+	`_ingested_at`,
+	`PATIENT_SETTING`
+  )
+  comment 'Contains data raw powerpath data from 05/18/2026'
+  as (
+    select
+    c.*,
+    ps.PATIENT_SETTING
+from `opsanalytics_adb_workspace01`.`lab`.`powerpath_raw` c
+left join `opsanalytics_adb_workspace01`.`lab`.`lab_kpi_ap_patient_setting` ps
+    on c.Rev_ctr = ps.REV_CTR
+  )
+
+[0m15:12:23.770187 [debug] [Thread-6 (]: SQL status: OK in 3.040 seconds
+[0m15:12:23.775986 [debug] [Thread-6 (]: Databricks adapter: Cursor(session-id=01f1dc79-dffc-159e-aa8c-e306549c6e4f, command-id=01f1dc79-e01c-1ed1-9e3d-d1b9e155e738) - Closing
+[0m15:12:23.779987 [debug] [Thread-6 (]: Writing runtime sql for node "model.lab_dbt.scc_bronze"
+[0m15:12:23.782988 [debug] [Thread-6 (]: Using databricks connection "model.lab_dbt.scc_bronze"
+[0m15:12:23.784987 [debug] [Thread-6 (]: On model.lab_dbt.scc_bronze: /* {"app": "dbt", "dbt_version": "1.12.0", "dbt_databricks_version": "1.12.3", "databricks_sql_connector_version": "4.3.0", "profile_name": "lab_dbt", "target_name": "dev", "invocation_id": "2e9f6e12-ba37-4fb3-b90e-35d80b869793", "node_id": "model.lab_dbt.scc_bronze"} */
+
+  
+  
+  
+  create or replace view `opsanalytics_adb_workspace01`.`lab_staging`.`scc_bronze`
+  (
+    `Ward`,
+	`WARD_NAME`,
+	`REQUESTING_DOC`,
+	`LAST_NAME`,
+	`FIRST_NAME`,
+	`ORDER_ID`,
+	`ORDERING_DATE`,
+	`COLLECTION_DATE`,
+	`RECEIVE_DATE`,
+	`VERIFIED_DATE`,
+	`GROUP_TEST_ID`,
+	`TEST_ID`,
+	`TEST_NAME`,
+	`COLLECT_CENTER_ID`,
+	`TAT_OV`,
+	`TAT_CV`,
+	`TAT_RV`,
+	`TAT_CR`,
+	`PRIORITY`,
+	`COLLECTION_TO_RECEIVED`,
+	`ORDER_TO_COLLECTION`,
+	`REQUESTING_DOC_NAME`,
+	`PATIENT_MRN`,
+	`WORK_SHIFT`,
+	`WORKSTATION`,
+	`RESULT`,
+	`Addon`,
+	`MPI`,
+	`_ingested_at`,
+	`_source_file`,
+	`SCC_TEST_ID`,
+	`CLINIC_TYPE`,
+	`SITE`
+  )
+  
+  as (
+    select distinct scc_raw.Ward,
+                scc_raw.WARD_NAME,
+                scc_raw.REQUESTING_DOC,
+                scc_raw.LAST_NAME,
+                scc_raw.FIRST_NAME,
+                scc_raw.ORDER_ID,
+                scc_raw.ORDERING_DATE,
+                scc_raw.COLLECTION_DATE,
+                scc_raw.RECEIVE_DATE,
+                scc_raw.VERIFIED_DATE,
+                scc_raw.GROUP_TEST_ID,
+                scc_raw.TEST_ID,
+                scc_raw.TEST_NAME,
+                scc_raw.COLLECT_CENTER_ID,
+                scc_raw.TAT_OV,
+                scc_raw.TAT_CV,
+                scc_raw.TAT_RV,
+                scc_raw.TAT_CR,
+                scc_raw.PRIORITY,
+                scc_raw.COLLECTION_TO_RECEIVED,
+                scc_raw.ORDER_TO_COLLECTION,
+                scc_raw.REQUESTING_DOC_NAME,
+                scc_raw.PATIENT_MRN,
+                scc_raw.WORK_SHIFT,
+                scc_raw.WORKSTATION,
+                scc_raw.RESULT,
+                scc_raw.Addon,
+                scc_raw.MPI,
+                scc_raw._ingested_at,
+                scc_raw._source_file,
+                ps.SCC_TEST_ID,
+                tt.CLINIC_TYPE,
+                site_map.SITE
+from `opsanalytics_adb_workspace01`.`lab`.`scc_raw` scc_raw
+left join `opsanalytics_adb_workspace01`.`lab`.`lab_kpi_scc_test_codes` ps
+    on scc_raw.TEST_ID = ps.SCC_TEST_ID
+left join `opsanalytics_adb_workspace01`.`lab`.`lab_kpi_scc_clinictype` tt
+    on  scc_raw.CLINIC_TYPE = tt.CLINIC_TYPE
+left join `opsanalytics_adb_workspace01`.`lab`.`lab_kpi_site_names` site_map
+    on scc_raw.SITE = site_map.SITE
+  )
+
+[0m15:12:24.490260 [debug] [Thread-3 (]: SQL status: OK in 1.030 seconds
+[0m15:12:24.492258 [debug] [Thread-3 (]: Databricks adapter: Cursor(session-id=01f1dc79-dfd3-1830-9333-5734870803c7, command-id=01f1dc79-e034-1350-9a05-769c90ed95da) - Closing
+[0m15:12:24.506378 [debug] [Thread-3 (]: Applying tags to relation None
+[0m15:12:24.509379 [debug] [Thread-3 (]: On model.lab_dbt.cyto_backlog_bronze: Close
+[0m15:12:24.510379 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f1dc79-dfd3-1830-9333-5734870803c7) - Closing
+[0m15:12:24.545378 [debug] [Thread-4 (]: SQL status: OK in 1.090 seconds
+[0m15:12:24.546378 [debug] [Thread-4 (]: Databricks adapter: Cursor(session-id=01f1dc79-dfc5-129c-bcbb-23813f0d19f0, command-id=01f1dc79-e032-1226-87bb-a337a99548e3) - Closing
+[0m15:12:24.547378 [debug] [Thread-4 (]: Applying tags to relation None
+[0m15:12:24.631299 [debug] [Thread-5 (]: SQL status: OK in 1.040 seconds
+[0m15:12:24.633299 [debug] [Thread-5 (]: Databricks adapter: Cursor(session-id=01f1dc79-dffa-1879-8845-9ab263a76fd9, command-id=01f1dc79-e040-19fd-880f-13f2cf1fa039) - Closing
+[0m15:12:24.634299 [debug] [Thread-5 (]: Applying tags to relation None
+[0m15:12:24.673298 [debug] [Thread-4 (]: On model.lab_dbt.powerpath_bronze: Close
+[0m15:12:24.674299 [debug] [Thread-4 (]: Databricks adapter: Connection(session-id=01f1dc79-dfc5-129c-bcbb-23813f0d19f0) - Closing
+[0m15:12:24.821194 [debug] [Thread-5 (]: On model.lab_dbt.powerpath_cyto_biopsy_bronze: Close
+[0m15:12:24.822194 [debug] [Thread-5 (]: Databricks adapter: Connection(session-id=01f1dc79-dffa-1879-8845-9ab263a76fd9) - Closing
+[0m15:12:24.916204 [debug] [Thread-6 (]: SQL status: OK in 1.130 seconds
+[0m15:12:24.918205 [debug] [Thread-6 (]: Databricks adapter: Cursor(session-id=01f1dc79-dffc-159e-aa8c-e306549c6e4f, command-id=01f1dc79-e069-1b24-9aa7-a70405c207c8) - Closing
+[0m15:12:24.920206 [debug] [Thread-6 (]: Applying tags to relation None
+[0m15:12:25.062439 [debug] [Thread-6 (]: On model.lab_dbt.scc_bronze: Close
+[0m15:12:25.064071 [debug] [Thread-6 (]: Databricks adapter: Connection(session-id=01f1dc79-dffc-159e-aa8c-e306549c6e4f) - Closing
+[0m15:12:25.065070 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2e9f6e12-ba37-4fb3-b90e-35d80b869793', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D4E51BCA10>]}
+[0m15:12:25.066100 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2e9f6e12-ba37-4fb3-b90e-35d80b869793', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D4E4D71790>]}
+[0m15:12:25.068069 [info ] [Thread-3 (]: 1 of 9 OK created sql view model lab_staging.cyto_backlog_bronze ............... [[32mOK[0m in 4.46s]
+[0m15:12:25.071069 [info ] [Thread-4 (]: 2 of 9 OK created sql view model lab_staging.powerpath_bronze .................. [[32mOK[0m in 4.46s]
+[0m15:12:25.072091 [debug] [Thread-3 (]: Finished running node model.lab_dbt.cyto_backlog_bronze
+[0m15:12:25.074067 [debug] [Thread-4 (]: Finished running node model.lab_dbt.powerpath_bronze
+[0m15:12:25.075067 [debug] [Thread-3 (]: Began running node model.lab_dbt.cyto_backlog_silver
+[0m15:12:25.076096 [debug] [Thread-4 (]: Began running node model.lab_dbt.powerpath_daily_silver
+[0m15:12:25.077067 [info ] [Thread-3 (]: 5 of 9 START sql view model lab_staging.cyto_backlog_silver .................... [RUN]
+[0m15:12:25.078361 [info ] [Thread-4 (]: 6 of 9 START sql view model lab_staging.powerpath_daily_silver ................. [RUN]
+[0m15:12:25.290022 [debug] [Thread-5 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2e9f6e12-ba37-4fb3-b90e-35d80b869793', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D4D0B41210>]}
+[0m15:12:25.291058 [debug] [Thread-3 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.lab_dbt.cyto_backlog_silver) - Creating connection
+[0m15:12:25.292029 [debug] [Thread-4 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.lab_dbt.powerpath_daily_silver) - Creating connection
+[0m15:12:25.293126 [debug] [Thread-6 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2e9f6e12-ba37-4fb3-b90e-35d80b869793', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D4E4F73690>]}
+[0m15:12:25.295029 [info ] [Thread-5 (]: 3 of 9 OK created sql view model lab_staging.powerpath_cyto_biopsy_bronze ...... [[32mOK[0m in 4.69s]
+[0m15:12:25.296032 [debug] [Thread-3 (]: Acquiring new databricks connection 'model.lab_dbt.cyto_backlog_silver'
+[0m15:12:25.297419 [debug] [Thread-4 (]: Acquiring new databricks connection 'model.lab_dbt.powerpath_daily_silver'
+[0m15:12:25.299028 [info ] [Thread-6 (]: 4 of 9 OK created sql view model lab_staging.scc_bronze ........................ [[32mOK[0m in 4.69s]
+[0m15:12:25.300027 [debug] [Thread-5 (]: Finished running node model.lab_dbt.powerpath_cyto_biopsy_bronze
+[0m15:12:25.301027 [debug] [Thread-3 (]: Began compiling node model.lab_dbt.cyto_backlog_silver
+[0m15:12:25.302025 [debug] [Thread-4 (]: Began compiling node model.lab_dbt.powerpath_daily_silver
+[0m15:12:25.304032 [debug] [Thread-6 (]: Finished running node model.lab_dbt.scc_bronze
+[0m15:12:25.306029 [debug] [Thread-5 (]: Began running node model.lab_dbt.powerpath_cyto_biopsy_silver
+[0m15:12:25.310055 [debug] [Thread-3 (]: Writing injected SQL for node "model.lab_dbt.cyto_backlog_silver"
+[0m15:12:25.347355 [debug] [Thread-4 (]: Writing injected SQL for node "model.lab_dbt.powerpath_daily_silver"
+[0m15:12:25.348324 [info ] [Thread-5 (]: 7 of 9 START sql view model lab_staging.powerpath_cyto_biopsy_silver ........... [RUN]
+[0m15:12:25.350324 [debug] [Thread-5 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.lab_dbt.powerpath_cyto_biopsy_silver) - Creating connection
+[0m15:12:25.351326 [debug] [Thread-3 (]: Began executing node model.lab_dbt.cyto_backlog_silver
+[0m15:12:25.352327 [debug] [Thread-5 (]: Acquiring new databricks connection 'model.lab_dbt.powerpath_cyto_biopsy_silver'
+[0m15:12:25.353518 [debug] [Thread-4 (]: Began executing node model.lab_dbt.powerpath_daily_silver
+[0m15:12:25.355325 [debug] [Thread-3 (]: MATERIALIZING VIEW
+[0m15:12:25.356325 [debug] [Thread-5 (]: Began compiling node model.lab_dbt.powerpath_cyto_biopsy_silver
+[0m15:12:25.358324 [debug] [Thread-4 (]: MATERIALIZING VIEW
+[0m15:12:25.360324 [debug] [Thread-3 (]: Creating view `opsanalytics_adb_workspace01`.`lab_staging`.`cyto_backlog_silver`
+[0m15:12:25.364324 [debug] [Thread-5 (]: Writing injected SQL for node "model.lab_dbt.powerpath_cyto_biopsy_silver"
+[0m15:12:25.368327 [debug] [Thread-4 (]: Creating view `opsanalytics_adb_workspace01`.`lab_staging`.`powerpath_daily_silver`
+[0m15:12:25.370328 [debug] [Thread-3 (]: Using databricks connection "model.lab_dbt.cyto_backlog_silver"
+[0m15:12:25.372325 [debug] [Thread-4 (]: Using databricks connection "model.lab_dbt.powerpath_daily_silver"
+[0m15:12:25.373528 [debug] [Thread-3 (]: On model.lab_dbt.cyto_backlog_silver: /* {"app": "dbt", "dbt_version": "1.12.0", "dbt_databricks_version": "1.12.3", "databricks_sql_connector_version": "4.3.0", "profile_name": "lab_dbt", "target_name": "dev", "invocation_id": "2e9f6e12-ba37-4fb3-b90e-35d80b869793", "node_id": "model.lab_dbt.cyto_backlog_silver"} */
+select * from (
+        with filtered as (
+    select *
+    from `opsanalytics_adb_workspace01`.`lab_staging`.`cyto_backlog_bronze`
+    where spec_group in ('CYTO NONGYN', 'CYTO GYN')
+),
+
+cleaned as (
+    select
+        b.* except (Facility, Case_created_date, Received_Date),
+        case
+            when Facility = 'KH'   then 'MSB'
+            when Facility = 'R'    then 'MSW'
+            when Facility = 'STL'  then 'MSM'
+            when Facility = 'SNCH' then 'MSSN'
+            when Facility = 'MSS'  then 'MSH'
+            when Facility = 'SL'   then 'MSM'
+            when Facility = 'PACC' then 'MSUS'
+            else Facility
+        end                                      as Facility,
+        cast(Case_created_date as timestamp)     as Case_created_date,
+        cast(Received_Date     as timestamp)     as Received_Date
+    from filtered b
+)
+
+select
+    c.*,
+    cast(c.Received_Date as date)                       as acc_date_only,
+    date_format(c.Received_Date, 'EEEE')                as acc_day_only,
+    greatest(rd.bizday_index - cc.bizday_index - 1, 0)  as backlog
+from cleaned c
+left join `opsanalytics_adb_workspace01`.`lab`.`date_filter` cc
+    on cast(c.Case_created_date as date) = cc.calendar_date
+left join `opsanalytics_adb_workspace01`.`lab`.`date_filter` rd
+    on c._report_date = rd.calendar_date
+    ) as __dbt_sbq
+    where false
+    limit 0
+
+    
+[0m15:12:25.374323 [debug] [Thread-5 (]: Began executing node model.lab_dbt.powerpath_cyto_biopsy_silver
+[0m15:12:25.375358 [debug] [Thread-4 (]: On model.lab_dbt.powerpath_daily_silver: /* {"app": "dbt", "dbt_version": "1.12.0", "dbt_databricks_version": "1.12.3", "databricks_sql_connector_version": "4.3.0", "profile_name": "lab_dbt", "target_name": "dev", "invocation_id": "2e9f6e12-ba37-4fb3-b90e-35d80b869793", "node_id": "model.lab_dbt.powerpath_daily_silver"} */
+select * from (
+        -- Surgical pathology (Breast + GI) case-level silver.
+-- Mirrors patho_prep() in Lab_KPI_Daily_Dashboard_Prelim_Run_4.Rmd.
+
+with bronze as (
+    select
+        *,
+        case when spec_group = 'BREAST' then 'Breast' else spec_group end as spec_group_clean
+    from `opsanalytics_adb_workspace01`.`lab_staging`.`powerpath_bronze`
+),
+
+-- GI cases with any specimen code not marked 'Include' are dropped entirely
+exclude_case_numbers as (
+    select distinct Case_no
+    from bronze
+    where spec_group_clean = 'GI'
+      and (GI_CODE_INCLEXCL is null or GI_CODE_INCLEXCL <> 'Include')
+),
+
+cleaned as (
+    select
+        replace(b.Case_no, '*failed to decode utf16*', '')  as Case_no,
+        b.spec_group_clean                                  as spec_group,
+        case
+            when b.Facility = 'KH'   then 'MSB'
+            when b.Facility = 'R'    then 'MSW'
+            when b.Facility = 'STL'  then 'MSM'
+            when b.Facility = 'BIMC' then 'MSBI'
+            when b.Facility = 'SNCH' then 'MSSN'
+            when b.Facility = 'MSS'  then 'MSH'
+            when b.Facility = 'SL'   then 'MSM'
+            else b.Facility                                 -- PACC stays PACC (as in R)
+        end                                                 as Facility,
+        cast(b.Case_created_date as timestamp)              as Case_created_date,
+        cast(b.Collection_Date   as timestamp)              as Collection_Date,
+        cast(b.Received_Date     as timestamp)              as Received_Date,
+        cast(b.signed_out_date   as timestamp)              as signed_out_date,
+        b.Priority, b.Spec_code, b.Specimen_description, b.CPT_code, b.Rev_ctr,
+        b.Encounter_no, b.MRN, b.Refmd_code, b.Refmd_name,
+        b.spec_sort_order, b.patient_type, b.GI_CODE_INCLEXCL,
+        -- MSBK patient setting comes from patient_type, not the rev-center crosswalk
+        case
+            when b.Rev_ctr = 'MSBK' and b.patient_type in ('A', 'O') then 'Amb'
+            when b.Rev_ctr = 'MSBK' and b.patient_type = 'IN'        then 'IP'
+            else b.PATIENT_SETTING
+        end                                                 as PATIENT_SETTING,
+        b._source_file, b._ingested_at
+    from bronze b
+    left anti join exclude_case_numbers x
+        on b.Case_no = x.Case_no
+    where b.spec_sort_order = 'A'                           -- primary specimens only
+      and b.spec_group_clean in ('GI', 'Breast')
+),
+
+filtered as (
+    select *
+    from cleaned
+    where Facility not in ('NYEE', 'MSBI')
+)
+
+select
+    f.Facility                as FACILITY,
+    f.Priority                as PRIORITY,
+    f.Spec_code               as SPEC_CODE,
+    f.Specimen_description    as SPECIMEN_DESCRIPTION,
+    f.CPT_code                as CPT_CODE,
+    f.Rev_ctr                 as REV_CTR,
+    f.Encounter_no            as ENCOUNTER_NO,
+    f.MRN,
+    f.Case_no                 as CASE_NO,
+    f.Case_created_date       as CASE_CREATED_DATE,
+    f.Collection_Date         as COLLECTION_DATE,
+    f.Received_Date           as RECEIVED_DATE,
+    f.signed_out_date         as SIGNED_OUT_DATE,
+    f.Refmd_code              as REFMD_CODE,
+    f.Refmd_name              as REFMD_NAME,
+    f.spec_sort_order         as SPEC_SORT_ORDER,
+    f.spec_group              as SPEC_GROUP,
+    f.patient_type            as PATIENT_TYPE,
+    f.PATIENT_SETTING,
+    f.GI_CODE_INCLEXCL,
+    -- R: difftime(signed_out, collection, units = "days") -> fractional calendar days
+    (unix_timestamp(f.signed_out_date) - unix_timestamp(f.Collection_Date)) / 86400.0
+                              as COLLECTION_TO_SIGNED_OUT,
+    -- R: bizdays(Received_Date, signed_out_date) on the MSHS working-day calendar
+    so.bizday_index - rc.bizday_index
+                              as RECEIVED_TO_SIGNED_OUT,
+    f._source_file            as _SOURCE_FILE,
+    f._ingested_at            as _INGESTED_AT
+from filtered f
+left join `opsanalytics_adb_workspace01`.`lab`.`date_filter` rc
+    on cast(f.Received_Date as date) = rc.calendar_date
+left join `opsanalytics_adb_workspace01`.`lab`.`date_filter` so
+    on cast(f.signed_out_date as date) = so.calendar_date
+    ) as __dbt_sbq
+    where false
+    limit 0
+
+    
+[0m15:12:25.376351 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m15:12:25.378324 [debug] [Thread-5 (]: MATERIALIZING VIEW
+[0m15:12:25.379036 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m15:12:25.381938 [debug] [Thread-5 (]: Creating view `opsanalytics_adb_workspace01`.`lab_staging`.`powerpath_cyto_biopsy_silver`
+[0m15:12:25.383939 [debug] [Thread-5 (]: Using databricks connection "model.lab_dbt.powerpath_cyto_biopsy_silver"
+[0m15:12:25.385941 [debug] [Thread-5 (]: On model.lab_dbt.powerpath_cyto_biopsy_silver: /* {"app": "dbt", "dbt_version": "1.12.0", "dbt_databricks_version": "1.12.3", "databricks_sql_connector_version": "4.3.0", "profile_name": "lab_dbt", "target_name": "dev", "invocation_id": "2e9f6e12-ba37-4fb3-b90e-35d80b869793", "node_id": "model.lab_dbt.powerpath_cyto_biopsy_silver"} */
+select * from (
+        with raw as (
+    select *
+    from `opsanalytics_adb_workspace01`.`lab_staging`.`powerpath_cyto_biopsy_bronze`
+    where spec_group in ('CYTO NONGYN', 'CYTO GYN', 'BREAST')
+      and spec_sort_order = 'A'
+),
+
+cleaned as (
+    select
+        replace(Case_no, '*failed to decode utf16*', '')   as Case_no,
+        case
+            when Facility = 'KH'   then 'MSB'
+            when Facility = 'R'    then 'MSW'
+            when Facility = 'STL'  then 'MSM'
+            when Facility = 'SNCH' then 'MSSN'
+            when Facility = 'MSS'  then 'MSH'
+            when Facility = 'SL'   then 'MSM'
+            when Facility = 'PACC' then 'MSUS'
+            else Facility
+        end                                                 as Facility,
+        case
+            when Spec_code = 'BREA1' and spec_group = 'BREAST' then 'Breast Biopsy'
+            when spec_group = 'CYTO NONGYN'                    then 'Cytology NONGYN'
+            when spec_group = 'CYTO GYN'                       then 'Cytology GYN'
+            else 'Breast Large/Resection'
+        end                                                 as TEST_NAME,
+        cast(Case_created_date as timestamp)                as Case_created_date,
+        cast(Collection_Date   as timestamp)                as Collection_Date,
+        cast(Received_Date     as timestamp)                as Received_Date,
+        cast(signed_out_date   as timestamp)                as signed_out_date,
+        Priority, Spec_code, Specimen_description, CPT_code, Rev_ctr,
+        Encounter_no, MRN, Refmd_code, Refmd_name,
+        spec_sort_order, spec_group, patient_type,
+        PATIENT_SETTING,
+        _source_file, _ingested_at
+    from raw
+),
+
+with_setting as (
+    select
+        c.* except (PATIENT_SETTING),
+        case
+            when c.Rev_ctr = 'MSBK' and c.patient_type in ('A', 'O') then 'Amb'
+            when c.Rev_ctr = 'MSBK' and c.patient_type = 'IN'        then 'IP'
+            else PATIENT_SETTING
+        end as PATIENT_SETTING
+    from cleaned c
+),
+
+with_tat as (
+    select
+        w.*,
+        datediff(w.signed_out_date, w.Collection_Date)   as Collection_to_signed_out,
+        so.bizday_index - rc.bizday_index                as Received_to_signed_out
+    from with_setting w
+    left join `opsanalytics_adb_workspace01`.`lab`.`date_filter` rc
+        on cast(w.Received_Date   as date) = rc.calendar_date
+    left join `opsanalytics_adb_workspace01`.`lab`.`date_filter` so
+        on cast(w.signed_out_date as date) = so.calendar_date
+),
+
+
+new_data as (
+    select
+        Facility                as FACILITY,
+        Priority                as PRIORITY,
+        Spec_code               as SPEC_CODE,
+        Specimen_description    as SPECIMEN_DESCRIPTION,
+        CPT_code                as CPT_CODE,
+        Rev_ctr                 as REV_CTR,
+        Encounter_no            as ENCOUNTER_NO,
+        MRN,
+        Case_no                 as CASE_NO,
+        Case_created_date       as CASE_CREATED_DATE,
+        Collection_Date         as COLLECTION_DATE,
+        Received_Date           as RECEIVED_DATE,
+        signed_out_date         as SIGNED_OUT_DATE,
+        Refmd_code              as REFMD_CODE,
+        spec_sort_order         as SPEC_SORT_ORDER,
+        TEST_NAME,
+        PATIENT_SETTING,
+        Collection_to_signed_out as COLLECTION_TO_SIGNED_OUT,
+        Received_to_signed_out   as RECEIVED_TO_SIGNED_OUT,
+        case
+            when TEST_NAME = 'Breast Biopsy'          then 3
+            when TEST_NAME = 'Breast Large/Resection' then 5
+            when TEST_NAME = 'Cytology GYN'           then 8
+            else 8
+        end                     as TAT_TARGET,
+        case
+            when Received_to_signed_out <= case
+                when TEST_NAME = 'Breast Biopsy'          then 3
+                when TEST_NAME = 'Breast Large/Resection' then 5
+                when TEST_NAME = 'Cytology GYN'           then 8
+                else 8
+            end then 1 else 0
+        end                     as IS_TAT_WITHIN_TARGET,
+        spec_group              as SPEC_GROUP,
+        Refmd_name              as REFMD_NAME,
+        _source_file            as _SOURCE_FILE,
+        _ingested_at            as _INGESTED_AT
+    from with_tat
+),
+
+historical as (
+    select
+        FACILITY, PRIORITY, SPEC_CODE, SPECIMEN_DESCRIPTION, CPT_CODE, REV_CTR,
+        ENCOUNTER_NO, MRN, CASE_NO, CASE_CREATED_DATE, COLLECTION_DATE,
+        RECEIVED_DATE, SIGNED_OUT_DATE, REFMD_CODE, SPEC_SORT_ORDER, TEST_NAME,
+        PATIENT_SETTING, COLLECTION_TO_SIGNED_OUT, RECEIVED_TO_SIGNED_OUT,
+        TAT_TARGET, IS_TAT_WITHIN_TARGET, SPEC_GROUP, REFMD_NAME,
+        cast(null as string)    as _SOURCE_FILE,
+        cast(null as timestamp) as _INGESTED_AT
+    from `opsanalytics_adb_workspace01`.`lab`.`powerpath_cyto_biopsy_historical`
+)
+
+
+select * from historical
+union all
+select * from new_data
+    ) as __dbt_sbq
+    where false
+    limit 0
+
+    
+[0m15:12:25.505280 [debug] [Thread-5 (]: Opening a new connection, currently in state init
+[0m15:12:27.045937 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f1dc79-e226-1bfa-8ccf-946448b4896a) - Created
+[0m15:12:27.181365 [debug] [Thread-4 (]: Databricks adapter: Connection(session-id=01f1dc79-e254-173e-8d3d-a79a53b31442) - Created
+[0m15:12:27.218101 [debug] [Thread-5 (]: Databricks adapter: Connection(session-id=01f1dc79-e254-10a4-a62a-b2194816d008) - Created
+[0m15:12:27.632352 [debug] [Thread-4 (]: SQL status: OK in 2.250 seconds
+[0m15:12:27.640353 [debug] [Thread-4 (]: Databricks adapter: Cursor(session-id=01f1dc79-e254-173e-8d3d-a79a53b31442, command-id=01f1dc79-e264-1920-b078-edc7923f1ae9) - Closing
+[0m15:12:27.645352 [debug] [Thread-4 (]: Writing runtime sql for node "model.lab_dbt.powerpath_daily_silver"
+[0m15:12:27.648351 [debug] [Thread-4 (]: Using databricks connection "model.lab_dbt.powerpath_daily_silver"
+[0m15:12:27.650351 [debug] [Thread-4 (]: On model.lab_dbt.powerpath_daily_silver: /* {"app": "dbt", "dbt_version": "1.12.0", "dbt_databricks_version": "1.12.3", "databricks_sql_connector_version": "4.3.0", "profile_name": "lab_dbt", "target_name": "dev", "invocation_id": "2e9f6e12-ba37-4fb3-b90e-35d80b869793", "node_id": "model.lab_dbt.powerpath_daily_silver"} */
+
+  
+  
+  
+  create or replace view `opsanalytics_adb_workspace01`.`lab_staging`.`powerpath_daily_silver`
+  (
+    `FACILITY`,
+	`PRIORITY`,
+	`SPEC_CODE`,
+	`SPECIMEN_DESCRIPTION`,
+	`CPT_CODE`,
+	`REV_CTR`,
+	`ENCOUNTER_NO`,
+	`MRN`,
+	`CASE_NO`,
+	`CASE_CREATED_DATE`,
+	`COLLECTION_DATE`,
+	`RECEIVED_DATE`,
+	`SIGNED_OUT_DATE`,
+	`REFMD_CODE`,
+	`REFMD_NAME`,
+	`SPEC_SORT_ORDER`,
+	`SPEC_GROUP`,
+	`PATIENT_TYPE`,
+	`PATIENT_SETTING`,
+	`GI_CODE_INCLEXCL`,
+	`COLLECTION_TO_SIGNED_OUT`,
+	`RECEIVED_TO_SIGNED_OUT`,
+	`_SOURCE_FILE`,
+	`_INGESTED_AT`
+  )
+  
+  as (
+    -- Surgical pathology (Breast + GI) case-level silver.
+-- Mirrors patho_prep() in Lab_KPI_Daily_Dashboard_Prelim_Run_4.Rmd.
+
+with bronze as (
+    select
+        *,
+        case when spec_group = 'BREAST' then 'Breast' else spec_group end as spec_group_clean
+    from `opsanalytics_adb_workspace01`.`lab_staging`.`powerpath_bronze`
+),
+
+-- GI cases with any specimen code not marked 'Include' are dropped entirely
+exclude_case_numbers as (
+    select distinct Case_no
+    from bronze
+    where spec_group_clean = 'GI'
+      and (GI_CODE_INCLEXCL is null or GI_CODE_INCLEXCL <> 'Include')
+),
+
+cleaned as (
+    select
+        replace(b.Case_no, '*failed to decode utf16*', '')  as Case_no,
+        b.spec_group_clean                                  as spec_group,
+        case
+            when b.Facility = 'KH'   then 'MSB'
+            when b.Facility = 'R'    then 'MSW'
+            when b.Facility = 'STL'  then 'MSM'
+            when b.Facility = 'BIMC' then 'MSBI'
+            when b.Facility = 'SNCH' then 'MSSN'
+            when b.Facility = 'MSS'  then 'MSH'
+            when b.Facility = 'SL'   then 'MSM'
+            else b.Facility                                 -- PACC stays PACC (as in R)
+        end                                                 as Facility,
+        cast(b.Case_created_date as timestamp)              as Case_created_date,
+        cast(b.Collection_Date   as timestamp)              as Collection_Date,
+        cast(b.Received_Date     as timestamp)              as Received_Date,
+        cast(b.signed_out_date   as timestamp)              as signed_out_date,
+        b.Priority, b.Spec_code, b.Specimen_description, b.CPT_code, b.Rev_ctr,
+        b.Encounter_no, b.MRN, b.Refmd_code, b.Refmd_name,
+        b.spec_sort_order, b.patient_type, b.GI_CODE_INCLEXCL,
+        -- MSBK patient setting comes from patient_type, not the rev-center crosswalk
+        case
+            when b.Rev_ctr = 'MSBK' and b.patient_type in ('A', 'O') then 'Amb'
+            when b.Rev_ctr = 'MSBK' and b.patient_type = 'IN'        then 'IP'
+            else b.PATIENT_SETTING
+        end                                                 as PATIENT_SETTING,
+        b._source_file, b._ingested_at
+    from bronze b
+    left anti join exclude_case_numbers x
+        on b.Case_no = x.Case_no
+    where b.spec_sort_order = 'A'                           -- primary specimens only
+      and b.spec_group_clean in ('GI', 'Breast')
+),
+
+filtered as (
+    select *
+    from cleaned
+    where Facility not in ('NYEE', 'MSBI')
+)
+
+select
+    f.Facility                as FACILITY,
+    f.Priority                as PRIORITY,
+    f.Spec_code               as SPEC_CODE,
+    f.Specimen_description    as SPECIMEN_DESCRIPTION,
+    f.CPT_code                as CPT_CODE,
+    f.Rev_ctr                 as REV_CTR,
+    f.Encounter_no            as ENCOUNTER_NO,
+    f.MRN,
+    f.Case_no                 as CASE_NO,
+    f.Case_created_date       as CASE_CREATED_DATE,
+    f.Collection_Date         as COLLECTION_DATE,
+    f.Received_Date           as RECEIVED_DATE,
+    f.signed_out_date         as SIGNED_OUT_DATE,
+    f.Refmd_code              as REFMD_CODE,
+    f.Refmd_name              as REFMD_NAME,
+    f.spec_sort_order         as SPEC_SORT_ORDER,
+    f.spec_group              as SPEC_GROUP,
+    f.patient_type            as PATIENT_TYPE,
+    f.PATIENT_SETTING,
+    f.GI_CODE_INCLEXCL,
+    -- R: difftime(signed_out, collection, units = "days") -> fractional calendar days
+    (unix_timestamp(f.signed_out_date) - unix_timestamp(f.Collection_Date)) / 86400.0
+                              as COLLECTION_TO_SIGNED_OUT,
+    -- R: bizdays(Received_Date, signed_out_date) on the MSHS working-day calendar
+    so.bizday_index - rc.bizday_index
+                              as RECEIVED_TO_SIGNED_OUT,
+    f._source_file            as _SOURCE_FILE,
+    f._ingested_at            as _INGESTED_AT
+from filtered f
+left join `opsanalytics_adb_workspace01`.`lab`.`date_filter` rc
+    on cast(f.Received_Date as date) = rc.calendar_date
+left join `opsanalytics_adb_workspace01`.`lab`.`date_filter` so
+    on cast(f.signed_out_date as date) = so.calendar_date
+  )
+
+[0m15:12:27.678934 [debug] [Thread-3 (]: SQL status: OK in 2.300 seconds
+[0m15:12:27.679934 [debug] [Thread-5 (]: SQL status: OK in 2.170 seconds
+[0m15:12:27.689608 [debug] [Thread-5 (]: Databricks adapter: Cursor(session-id=01f1dc79-e254-10a4-a62a-b2194816d008, command-id=01f1dc79-e26e-1104-83cf-6eb90719911b) - Closing
+[0m15:12:27.692937 [debug] [Thread-3 (]: Databricks adapter: Cursor(session-id=01f1dc79-e226-1bfa-8ccf-946448b4896a, command-id=01f1dc79-e258-1948-ade7-95243ba7ff75) - Closing
+[0m15:12:27.697760 [debug] [Thread-5 (]: Writing runtime sql for node "model.lab_dbt.powerpath_cyto_biopsy_silver"
+[0m15:12:27.702894 [debug] [Thread-3 (]: Writing runtime sql for node "model.lab_dbt.cyto_backlog_silver"
+[0m15:12:27.706868 [debug] [Thread-5 (]: Using databricks connection "model.lab_dbt.powerpath_cyto_biopsy_silver"
+[0m15:12:27.707906 [debug] [Thread-3 (]: Using databricks connection "model.lab_dbt.cyto_backlog_silver"
+[0m15:12:27.708865 [debug] [Thread-5 (]: On model.lab_dbt.powerpath_cyto_biopsy_silver: /* {"app": "dbt", "dbt_version": "1.12.0", "dbt_databricks_version": "1.12.3", "databricks_sql_connector_version": "4.3.0", "profile_name": "lab_dbt", "target_name": "dev", "invocation_id": "2e9f6e12-ba37-4fb3-b90e-35d80b869793", "node_id": "model.lab_dbt.powerpath_cyto_biopsy_silver"} */
+
+  
+  
+  
+  create or replace view `opsanalytics_adb_workspace01`.`lab_staging`.`powerpath_cyto_biopsy_silver`
+  (
+    `FACILITY`,
+	`PRIORITY`,
+	`SPEC_CODE`,
+	`SPECIMEN_DESCRIPTION`,
+	`CPT_CODE`,
+	`REV_CTR`,
+	`ENCOUNTER_NO`,
+	`MRN`,
+	`CASE_NO`,
+	`CASE_CREATED_DATE`,
+	`COLLECTION_DATE`,
+	`RECEIVED_DATE`,
+	`SIGNED_OUT_DATE`,
+	`REFMD_CODE`,
+	`SPEC_SORT_ORDER`,
+	`TEST_NAME`,
+	`PATIENT_SETTING`,
+	`COLLECTION_TO_SIGNED_OUT`,
+	`RECEIVED_TO_SIGNED_OUT`,
+	`TAT_TARGET`,
+	`IS_TAT_WITHIN_TARGET`,
+	`SPEC_GROUP`,
+	`REFMD_NAME`,
+	`_SOURCE_FILE`,
+	`_INGESTED_AT`
+  )
+  
+  as (
+    with raw as (
+    select *
+    from `opsanalytics_adb_workspace01`.`lab_staging`.`powerpath_cyto_biopsy_bronze`
+    where spec_group in ('CYTO NONGYN', 'CYTO GYN', 'BREAST')
+      and spec_sort_order = 'A'
+),
+
+cleaned as (
+    select
+        replace(Case_no, '*failed to decode utf16*', '')   as Case_no,
+        case
+            when Facility = 'KH'   then 'MSB'
+            when Facility = 'R'    then 'MSW'
+            when Facility = 'STL'  then 'MSM'
+            when Facility = 'SNCH' then 'MSSN'
+            when Facility = 'MSS'  then 'MSH'
+            when Facility = 'SL'   then 'MSM'
+            when Facility = 'PACC' then 'MSUS'
+            else Facility
+        end                                                 as Facility,
+        case
+            when Spec_code = 'BREA1' and spec_group = 'BREAST' then 'Breast Biopsy'
+            when spec_group = 'CYTO NONGYN'                    then 'Cytology NONGYN'
+            when spec_group = 'CYTO GYN'                       then 'Cytology GYN'
+            else 'Breast Large/Resection'
+        end                                                 as TEST_NAME,
+        cast(Case_created_date as timestamp)                as Case_created_date,
+        cast(Collection_Date   as timestamp)                as Collection_Date,
+        cast(Received_Date     as timestamp)                as Received_Date,
+        cast(signed_out_date   as timestamp)                as signed_out_date,
+        Priority, Spec_code, Specimen_description, CPT_code, Rev_ctr,
+        Encounter_no, MRN, Refmd_code, Refmd_name,
+        spec_sort_order, spec_group, patient_type,
+        PATIENT_SETTING,
+        _source_file, _ingested_at
+    from raw
+),
+
+with_setting as (
+    select
+        c.* except (PATIENT_SETTING),
+        case
+            when c.Rev_ctr = 'MSBK' and c.patient_type in ('A', 'O') then 'Amb'
+            when c.Rev_ctr = 'MSBK' and c.patient_type = 'IN'        then 'IP'
+            else PATIENT_SETTING
+        end as PATIENT_SETTING
+    from cleaned c
+),
+
+with_tat as (
+    select
+        w.*,
+        datediff(w.signed_out_date, w.Collection_Date)   as Collection_to_signed_out,
+        so.bizday_index - rc.bizday_index                as Received_to_signed_out
+    from with_setting w
+    left join `opsanalytics_adb_workspace01`.`lab`.`date_filter` rc
+        on cast(w.Received_Date   as date) = rc.calendar_date
+    left join `opsanalytics_adb_workspace01`.`lab`.`date_filter` so
+        on cast(w.signed_out_date as date) = so.calendar_date
+),
+
+
+new_data as (
+    select
+        Facility                as FACILITY,
+        Priority                as PRIORITY,
+        Spec_code               as SPEC_CODE,
+        Specimen_description    as SPECIMEN_DESCRIPTION,
+        CPT_code                as CPT_CODE,
+        Rev_ctr                 as REV_CTR,
+        Encounter_no            as ENCOUNTER_NO,
+        MRN,
+        Case_no                 as CASE_NO,
+        Case_created_date       as CASE_CREATED_DATE,
+        Collection_Date         as COLLECTION_DATE,
+        Received_Date           as RECEIVED_DATE,
+        signed_out_date         as SIGNED_OUT_DATE,
+        Refmd_code              as REFMD_CODE,
+        spec_sort_order         as SPEC_SORT_ORDER,
+        TEST_NAME,
+        PATIENT_SETTING,
+        Collection_to_signed_out as COLLECTION_TO_SIGNED_OUT,
+        Received_to_signed_out   as RECEIVED_TO_SIGNED_OUT,
+        case
+            when TEST_NAME = 'Breast Biopsy'          then 3
+            when TEST_NAME = 'Breast Large/Resection' then 5
+            when TEST_NAME = 'Cytology GYN'           then 8
+            else 8
+        end                     as TAT_TARGET,
+        case
+            when Received_to_signed_out <= case
+                when TEST_NAME = 'Breast Biopsy'          then 3
+                when TEST_NAME = 'Breast Large/Resection' then 5
+                when TEST_NAME = 'Cytology GYN'           then 8
+                else 8
+            end then 1 else 0
+        end                     as IS_TAT_WITHIN_TARGET,
+        spec_group              as SPEC_GROUP,
+        Refmd_name              as REFMD_NAME,
+        _source_file            as _SOURCE_FILE,
+        _ingested_at            as _INGESTED_AT
+    from with_tat
+),
+
+historical as (
+    select
+        FACILITY, PRIORITY, SPEC_CODE, SPECIMEN_DESCRIPTION, CPT_CODE, REV_CTR,
+        ENCOUNTER_NO, MRN, CASE_NO, CASE_CREATED_DATE, COLLECTION_DATE,
+        RECEIVED_DATE, SIGNED_OUT_DATE, REFMD_CODE, SPEC_SORT_ORDER, TEST_NAME,
+        PATIENT_SETTING, COLLECTION_TO_SIGNED_OUT, RECEIVED_TO_SIGNED_OUT,
+        TAT_TARGET, IS_TAT_WITHIN_TARGET, SPEC_GROUP, REFMD_NAME,
+        cast(null as string)    as _SOURCE_FILE,
+        cast(null as timestamp) as _INGESTED_AT
+    from `opsanalytics_adb_workspace01`.`lab`.`powerpath_cyto_biopsy_historical`
+)
+
+
+select * from historical
+union all
+select * from new_data
+  )
+
+[0m15:12:27.710282 [debug] [Thread-3 (]: On model.lab_dbt.cyto_backlog_silver: /* {"app": "dbt", "dbt_version": "1.12.0", "dbt_databricks_version": "1.12.3", "databricks_sql_connector_version": "4.3.0", "profile_name": "lab_dbt", "target_name": "dev", "invocation_id": "2e9f6e12-ba37-4fb3-b90e-35d80b869793", "node_id": "model.lab_dbt.cyto_backlog_silver"} */
+
+  
+  
+  
+  create or replace view `opsanalytics_adb_workspace01`.`lab_staging`.`cyto_backlog_silver`
+  (
+    `Priority`,
+	`spec_group`,
+	`Spec_code`,
+	`Specimen_description`,
+	`Current_step`,
+	`CPT_code`,
+	`Fee_sch`,
+	`Rev_ctr`,
+	`Encounter_no`,
+	`MRN`,
+	`AGE`,
+	`Case_no`,
+	`Collection_Date`,
+	`signed_out_date`,
+	`TAT_days`,
+	`Refmd_name`,
+	`Refmd_code`,
+	`NPI_NO`,
+	`_source_file`,
+	`_report_date`,
+	`_ingested_at`,
+	`PATIENT_SETTING`,
+	`RECEIVED_TO_SIGNED_OUT_DAYS`,
+	`Facility`,
+	`Case_created_date`,
+	`Received_Date`,
+	`acc_date_only`,
+	`acc_day_only`,
+	`backlog`
+  )
+  comment 'One row per pending case per report date. Snapshot grain — the same case recurs daily until signed out. Never dedupe on Case_no alone.
+'
+  as (
+    with filtered as (
+    select *
+    from `opsanalytics_adb_workspace01`.`lab_staging`.`cyto_backlog_bronze`
+    where spec_group in ('CYTO NONGYN', 'CYTO GYN')
+),
+
+cleaned as (
+    select
+        b.* except (Facility, Case_created_date, Received_Date),
+        case
+            when Facility = 'KH'   then 'MSB'
+            when Facility = 'R'    then 'MSW'
+            when Facility = 'STL'  then 'MSM'
+            when Facility = 'SNCH' then 'MSSN'
+            when Facility = 'MSS'  then 'MSH'
+            when Facility = 'SL'   then 'MSM'
+            when Facility = 'PACC' then 'MSUS'
+            else Facility
+        end                                      as Facility,
+        cast(Case_created_date as timestamp)     as Case_created_date,
+        cast(Received_Date     as timestamp)     as Received_Date
+    from filtered b
+)
+
+select
+    c.*,
+    cast(c.Received_Date as date)                       as acc_date_only,
+    date_format(c.Received_Date, 'EEEE')                as acc_day_only,
+    greatest(rd.bizday_index - cc.bizday_index - 1, 0)  as backlog
+from cleaned c
+left join `opsanalytics_adb_workspace01`.`lab`.`date_filter` cc
+    on cast(c.Case_created_date as date) = cc.calendar_date
+left join `opsanalytics_adb_workspace01`.`lab`.`date_filter` rd
+    on c._report_date = rd.calendar_date
+  )
+
+[0m15:12:28.746857 [debug] [Thread-3 (]: SQL status: OK in 1.030 seconds
+[0m15:12:28.747857 [debug] [Thread-3 (]: Databricks adapter: Cursor(session-id=01f1dc79-e226-1bfa-8ccf-946448b4896a, command-id=01f1dc79-e2b9-109d-afd5-91df5ceffe68) - Closing
+[0m15:12:28.749857 [debug] [Thread-3 (]: Applying tags to relation None
+[0m15:12:28.750858 [debug] [Thread-3 (]: On model.lab_dbt.cyto_backlog_silver: Close
+[0m15:12:28.751649 [debug] [Thread-3 (]: Databricks adapter: Connection(session-id=01f1dc79-e226-1bfa-8ccf-946448b4896a) - Closing
+[0m15:12:28.819273 [debug] [Thread-4 (]: SQL status: OK in 1.170 seconds
+[0m15:12:28.821173 [debug] [Thread-4 (]: Databricks adapter: Cursor(session-id=01f1dc79-e254-173e-8d3d-a79a53b31442, command-id=01f1dc79-e2b5-16bd-aa21-eb41a465457e) - Closing
+[0m15:12:28.822686 [debug] [Thread-4 (]: Applying tags to relation None
+[0m15:12:28.844204 [debug] [Thread-5 (]: SQL status: OK in 1.130 seconds
+[0m15:12:28.846846 [debug] [Thread-5 (]: Databricks adapter: Cursor(session-id=01f1dc79-e254-10a4-a62a-b2194816d008, command-id=01f1dc79-e2b8-1984-8bd5-90c77e3c8efd) - Closing
+[0m15:12:28.847873 [debug] [Thread-5 (]: Applying tags to relation None
+[0m15:12:29.023187 [debug] [Thread-4 (]: On model.lab_dbt.powerpath_daily_silver: Close
+[0m15:12:29.024186 [debug] [Thread-4 (]: Databricks adapter: Connection(session-id=01f1dc79-e254-173e-8d3d-a79a53b31442) - Closing
+[0m15:12:29.190751 [debug] [Thread-5 (]: On model.lab_dbt.powerpath_cyto_biopsy_silver: Close
+[0m15:12:29.192272 [debug] [Thread-5 (]: Databricks adapter: Connection(session-id=01f1dc79-e254-10a4-a62a-b2194816d008) - Closing
+[0m15:12:29.346598 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2e9f6e12-ba37-4fb3-b90e-35d80b869793', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D4E519FFD0>]}
+[0m15:12:29.347207 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2e9f6e12-ba37-4fb3-b90e-35d80b869793', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D4E491CC90>]}
+[0m15:12:29.348207 [debug] [Thread-5 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2e9f6e12-ba37-4fb3-b90e-35d80b869793', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D4E4F64990>]}
+[0m15:12:29.349525 [info ] [Thread-3 (]: 5 of 9 OK created sql view model lab_staging.cyto_backlog_silver ............... [[32mOK[0m in 4.27s]
+[0m15:12:29.350207 [info ] [Thread-4 (]: 6 of 9 OK created sql view model lab_staging.powerpath_daily_silver ............ [[32mOK[0m in 4.27s]
+[0m15:12:29.352209 [info ] [Thread-5 (]: 7 of 9 OK created sql view model lab_staging.powerpath_cyto_biopsy_silver ...... [[32mOK[0m in 4.00s]
+[0m15:12:29.353207 [debug] [Thread-3 (]: Finished running node model.lab_dbt.cyto_backlog_silver
+[0m15:12:29.354208 [debug] [Thread-4 (]: Finished running node model.lab_dbt.powerpath_daily_silver
+[0m15:12:29.355207 [debug] [Thread-5 (]: Finished running node model.lab_dbt.powerpath_cyto_biopsy_silver
+[0m15:12:29.358211 [debug] [Thread-6 (]: Began running node model.lab_dbt.powerpath_cyto_gold
+[0m15:12:29.360208 [info ] [Thread-6 (]: 8 of 9 START sql table model lab_staging.powerpath_cyto_gold ................... [RUN]
+[0m15:12:29.362282 [debug] [Thread-6 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.lab_dbt.powerpath_cyto_gold) - Creating connection
+[0m15:12:29.363384 [debug] [Thread-6 (]: Acquiring new databricks connection 'model.lab_dbt.powerpath_cyto_gold'
+[0m15:12:29.365284 [debug] [Thread-6 (]: Began compiling node model.lab_dbt.powerpath_cyto_gold
+[0m15:12:29.369279 [debug] [Thread-6 (]: Writing injected SQL for node "model.lab_dbt.powerpath_cyto_gold"
+[0m15:12:29.375284 [debug] [Thread-6 (]: Began executing node model.lab_dbt.powerpath_cyto_gold
+[0m15:12:29.404414 [debug] [Thread-6 (]: MATERIALIZING TABLE
+[0m15:12:29.452326 [debug] [Thread-6 (]: Using databricks connection "model.lab_dbt.powerpath_cyto_gold"
+[0m15:12:29.454333 [debug] [Thread-6 (]: On model.lab_dbt.powerpath_cyto_gold: /* {"app": "dbt", "dbt_version": "1.12.0", "dbt_databricks_version": "1.12.3", "databricks_sql_connector_version": "4.3.0", "profile_name": "lab_dbt", "target_name": "dev", "invocation_id": "2e9f6e12-ba37-4fb3-b90e-35d80b869793", "node_id": "model.lab_dbt.powerpath_cyto_gold"} */
+SELECT
+    table_catalog,
+    table_schema,
+    table_name,
+    filter_name,
+    target_columns
+  FROM `opsanalytics_adb_workspace01`.`information_schema`.`row_filters`
+  WHERE table_catalog = 'opsanalytics_adb_workspace01'
+    AND table_schema = 'lab_staging'
+    AND table_name = 'powerpath_cyto_gold'
+[0m15:12:29.455747 [debug] [Thread-6 (]: Opening a new connection, currently in state init
+[0m15:12:30.451080 [debug] [Thread-6 (]: Databricks adapter: Connection(session-id=01f1dc79-e425-1a70-ab58-a6b3f2097d76) - Created
+[0m15:12:30.989264 [debug] [Thread-6 (]: SQL status: OK in 1.530 seconds
+[0m15:12:30.997258 [debug] [Thread-6 (]: Databricks adapter: Cursor(session-id=01f1dc79-e425-1a70-ab58-a6b3f2097d76, command-id=01f1dc79-e45b-1618-9ae8-726b337f420f) - Closing
+[0m15:12:31.019547 [debug] [Thread-6 (]: Writing runtime sql for node "model.lab_dbt.powerpath_cyto_gold"
+[0m15:12:31.023206 [debug] [Thread-6 (]: Using databricks connection "model.lab_dbt.powerpath_cyto_gold"
+[0m15:12:31.023626 [debug] [Thread-6 (]: On model.lab_dbt.powerpath_cyto_gold: /* {"app": "dbt", "dbt_version": "1.12.0", "dbt_databricks_version": "1.12.3", "databricks_sql_connector_version": "4.3.0", "profile_name": "lab_dbt", "target_name": "dev", "invocation_id": "2e9f6e12-ba37-4fb3-b90e-35d80b869793", "node_id": "model.lab_dbt.powerpath_cyto_gold"} */
+
+  
+    
+        create or replace table `opsanalytics_adb_workspace01`.`lab_staging`.`powerpath_cyto_gold`
+      
+      
+    using delta
+  
+      
+      
+      
+      
+      
+      
+      
+      
+      as
+      with base as (
+    select
+        s.*,
+        cast(s.SIGNED_OUT_DATE as date)              as signed_out_date_only,
+        cast(s.RECEIVED_DATE   as date)              as acc_date_only,
+        tt.RECEIVED_TO_SIGNED_OUT_DAYS,
+        tt.COLLECTED_TO_SIGNED_OUT_DAYS
+    from `opsanalytics_adb_workspace01`.`lab_staging`.`powerpath_cyto_biopsy_silver` s
+    left join `opsanalytics_adb_workspace01`.`lab`.`lab_kpi_ap_tat_targets` tt
+        on  s.SPEC_GROUP       = tt.SPEC_GROUP
+        and s.PATIENT_SETTING  = tt.PATIENT_SETTING
+)
+
+select
+    SPEC_CODE                                        as SPECIMEN_CODE,
+    SPEC_GROUP                                       as SPECIMEN_GROUP,
+    FACILITY                                         as SITE,
+    PATIENT_SETTING,
+    REV_CTR                                          as REVENUE_CENTER,
+    signed_out_date_only                             as SIGNED_OUT_DATE,
+    date_format(signed_out_date_only, 'EEEE')        as SIGNED_OUT_DAY,
+    RECEIVED_TO_SIGNED_OUT_DAYS                      as REC_TO_SIGNED_OUT_TARGET,
+    COLLECTED_TO_SIGNED_OUT_DAYS                     as COL_TO_SIGNED_OUT_TARGET,
+    acc_date_only                                    as ACCESSION_DATE,
+    date_format(acc_date_only, 'EEEE')               as ACCESION_DAY,
+    date_add(signed_out_date_only, 1)                as REPORT_DATE,
+    date_format(date_add(signed_out_date_only, 1), 'EEEE') as REPORT_DAY,
+
+    count(*)                                         as NO_CASES_SIGNED_OUT,
+    round(avg(RECEIVED_TO_SIGNED_OUT), 0)            as REC_TO_SIGNED_OUT_AVG,
+    round(percentile(RECEIVED_TO_SIGNED_OUT, 0.5), 0) as REC_TO_SIGNED_OUT_MEDIAN,
+    round(stddev(RECEIVED_TO_SIGNED_OUT), 1)         as REC_TO_SIGNED_OUT_STDDEV,
+    round(
+        sum(case when RECEIVED_TO_SIGNED_OUT <= RECEIVED_TO_SIGNED_OUT_DAYS then 1 else 0 end)
+        / nullif(sum(case when RECEIVED_TO_SIGNED_OUT >= 0 then 1 else 0 end), 0)
+    , 2)                                             as REC_TO_SIGNED_OUT_WITHIN_TARGET,
+    ceil(avg(COLLECTION_TO_SIGNED_OUT))              as COL_TO_SIGNED_OUT_AVG,
+    round(percentile(COLLECTION_TO_SIGNED_OUT, 0.5), 0) as COL_TO_SIGNED_OUT_MEDIAN,
+    round(stddev(COLLECTION_TO_SIGNED_OUT), 1)       as COL_TO_SIGNED_OUT_STDDEV,
+    sum(case when signed_out_date_only = acc_date_only then 1 else 0 end) as CYTO_ACCESSION_VOLUME
+from base
+group by 1,2,3,4,5,6,7,8,9,10,11,12,13
+  
+[0m15:12:33.653063 [debug] [Thread-6 (]: SQL status: OK in 2.630 seconds
+[0m15:12:33.655056 [debug] [Thread-6 (]: Databricks adapter: Cursor(session-id=01f1dc79-e425-1a70-ab58-a6b3f2097d76, command-id=01f1dc79-e4b1-173e-a6b2-6c86488698c2) - Closing
+[0m15:12:33.666227 [debug] [Thread-6 (]: Applying tags to relation None
+[0m15:12:33.714084 [debug] [Thread-6 (]: On model.lab_dbt.powerpath_cyto_gold: Close
+[0m15:12:33.716078 [debug] [Thread-6 (]: Databricks adapter: Connection(session-id=01f1dc79-e425-1a70-ab58-a6b3f2097d76) - Closing
+[0m15:12:33.926107 [debug] [Thread-6 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2e9f6e12-ba37-4fb3-b90e-35d80b869793', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D4E5451190>]}
+[0m15:12:33.929185 [info ] [Thread-6 (]: 8 of 9 OK created sql table model lab_staging.powerpath_cyto_gold .............. [[32mOK[0m in 4.56s]
+[0m15:12:33.931308 [debug] [Thread-6 (]: Finished running node model.lab_dbt.powerpath_cyto_gold
+[0m15:12:33.932486 [debug] [Thread-4 (]: Began running node model.lab_dbt.cyto_backlog_gold
+[0m15:12:33.934492 [info ] [Thread-4 (]: 9 of 9 START sql table model lab_staging.cyto_backlog_gold ..................... [RUN]
+[0m15:12:33.937531 [debug] [Thread-4 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.lab_dbt.cyto_backlog_gold) - Creating connection
+[0m15:12:33.938057 [debug] [Thread-4 (]: Acquiring new databricks connection 'model.lab_dbt.cyto_backlog_gold'
+[0m15:12:33.939328 [debug] [Thread-4 (]: Began compiling node model.lab_dbt.cyto_backlog_gold
+[0m15:12:33.944513 [debug] [Thread-4 (]: Writing injected SQL for node "model.lab_dbt.cyto_backlog_gold"
+[0m15:12:33.948177 [debug] [Thread-4 (]: Began executing node model.lab_dbt.cyto_backlog_gold
+[0m15:12:34.002221 [debug] [Thread-4 (]: MATERIALIZING TABLE
+[0m15:12:34.006768 [debug] [Thread-4 (]: Using databricks connection "model.lab_dbt.cyto_backlog_gold"
+[0m15:12:34.008815 [debug] [Thread-4 (]: On model.lab_dbt.cyto_backlog_gold: /* {"app": "dbt", "dbt_version": "1.12.0", "dbt_databricks_version": "1.12.3", "databricks_sql_connector_version": "4.3.0", "profile_name": "lab_dbt", "target_name": "dev", "invocation_id": "2e9f6e12-ba37-4fb3-b90e-35d80b869793", "node_id": "model.lab_dbt.cyto_backlog_gold"} */
+SELECT
+    table_catalog,
+    table_schema,
+    table_name,
+    filter_name,
+    target_columns
+  FROM `opsanalytics_adb_workspace01`.`information_schema`.`row_filters`
+  WHERE table_catalog = 'opsanalytics_adb_workspace01'
+    AND table_schema = 'lab_staging'
+    AND table_name = 'cyto_backlog_gold'
+[0m15:12:34.013718 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m15:12:35.067363 [debug] [Thread-4 (]: Databricks adapter: Connection(session-id=01f1dc79-e6e8-1df3-986c-3d44d74c62bd) - Created
+[0m15:12:35.770788 [debug] [Thread-4 (]: SQL status: OK in 1.760 seconds
+[0m15:12:35.775794 [debug] [Thread-4 (]: Databricks adapter: Cursor(session-id=01f1dc79-e6e8-1df3-986c-3d44d74c62bd, command-id=01f1dc79-e720-1adb-9beb-1d3662f32a42) - Closing
+[0m15:12:35.778792 [debug] [Thread-4 (]: Writing runtime sql for node "model.lab_dbt.cyto_backlog_gold"
+[0m15:12:35.782320 [debug] [Thread-4 (]: Using databricks connection "model.lab_dbt.cyto_backlog_gold"
+[0m15:12:35.783334 [debug] [Thread-4 (]: On model.lab_dbt.cyto_backlog_gold: /* {"app": "dbt", "dbt_version": "1.12.0", "dbt_databricks_version": "1.12.3", "databricks_sql_connector_version": "4.3.0", "profile_name": "lab_dbt", "target_name": "dev", "invocation_id": "2e9f6e12-ba37-4fb3-b90e-35d80b869793", "node_id": "model.lab_dbt.cyto_backlog_gold"} */
+
+  
+    
+        create or replace table `opsanalytics_adb_workspace01`.`lab_staging`.`cyto_backlog_gold`
+      
+      
+    using delta
+  
+      
+      
+      
+      
+      
+      
+      comment 'One row per pending case per report date.'
+      
+      as
+      with backlog_summary as (
+    select
+        spec_group,
+        _report_date,
+        count(case when backlog > RECEIVED_TO_SIGNED_OUT_DAYS then 1 end) as cyto_backlog,
+        ceil(percentile(case when backlog > RECEIVED_TO_SIGNED_OUT_DAYS then backlog end, 0.25)) as percentile_25th,
+        ceil(percentile(case when backlog > RECEIVED_TO_SIGNED_OUT_DAYS then backlog end, 0.50)) as percentile_50th,
+        coalesce(max(case when backlog > RECEIVED_TO_SIGNED_OUT_DAYS then backlog end), 0) as maximum,
+        sum(case when acc_date_only = _report_date then 1 else 0 end) as cyto_acc_spec_group_vol
+    from `opsanalytics_adb_workspace01`.`lab_staging`.`cyto_backlog_silver`
+    group by 1, 2
+),
+
+cyto_accessioned as (
+    select
+        SPECIMEN_GROUP as spec_group,
+        REPORT_DATE    as _report_date,
+        sum(CYTO_ACCESSION_VOLUME) as cyto_acc_recieved
+    from `opsanalytics_adb_workspace01`.`lab_staging`.`powerpath_cyto_gold`
+    group by 1, 2
+)
+
+select
+    b.spec_group,
+    b._report_date,
+    b.cyto_backlog,
+    b.percentile_25th,
+    b.percentile_50th,
+    b.maximum,
+    coalesce(c.cyto_acc_recieved, 0) + b.cyto_acc_spec_group_vol as total_accessioned_volume
+from backlog_summary b
+left join cyto_accessioned c
+    on  b.spec_group    = c.spec_group
+    and b._report_date  = c._report_date
+  
+[0m15:12:37.833382 [debug] [Thread-4 (]: SQL status: OK in 2.050 seconds
+[0m15:12:37.834380 [debug] [Thread-4 (]: Databricks adapter: Cursor(session-id=01f1dc79-e6e8-1df3-986c-3d44d74c62bd, command-id=01f1dc79-e788-181e-8c15-9ed1cbff7322) - Closing
+[0m15:12:37.836381 [debug] [Thread-4 (]: Applying tags to relation None
+[0m15:12:37.841381 [debug] [Thread-4 (]: Using databricks connection "model.lab_dbt.cyto_backlog_gold"
+[0m15:12:37.842498 [debug] [Thread-4 (]: On model.lab_dbt.cyto_backlog_gold: /* {"app": "dbt", "dbt_version": "1.12.0", "dbt_databricks_version": "1.12.3", "databricks_sql_connector_version": "4.3.0", "profile_name": "lab_dbt", "target_name": "dev", "invocation_id": "2e9f6e12-ba37-4fb3-b90e-35d80b869793", "node_id": "model.lab_dbt.cyto_backlog_gold"} */
+
+    
+  DESCRIBE TABLE EXTENDED `opsanalytics_adb_workspace01`.`lab_staging`.`cyto_backlog_gold` AS JSON
+
+  
+[0m15:12:38.158909 [debug] [Thread-4 (]: SQL status: OK in 0.310 seconds
+[0m15:12:38.162226 [debug] [Thread-4 (]: Databricks adapter: Cursor(session-id=01f1dc79-e6e8-1df3-986c-3d44d74c62bd, command-id=01f1dc79-e8bf-1548-b0ff-6038a8273ea0) - Closing
+[0m15:12:38.172912 [debug] [Thread-4 (]: On model.lab_dbt.cyto_backlog_gold: Close
+[0m15:12:38.174641 [debug] [Thread-4 (]: Databricks adapter: Connection(session-id=01f1dc79-e6e8-1df3-986c-3d44d74c62bd) - Closing
+[0m15:12:38.311097 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '2e9f6e12-ba37-4fb3-b90e-35d80b869793', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D4E4D9BA50>]}
+[0m15:12:38.312267 [info ] [Thread-4 (]: 9 of 9 OK created sql table model lab_staging.cyto_backlog_gold ................ [[32mOK[0m in 4.37s]
+[0m15:12:38.314099 [debug] [Thread-4 (]: Finished running node model.lab_dbt.cyto_backlog_gold
+[0m15:12:38.317100 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=master) - Creating connection
+[0m15:12:38.318536 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m15:12:38.320101 [info ] [MainThread]: 
+[0m15:12:38.321160 [info ] [MainThread]: Finished running 2 table models, 7 view models in 0 hours 0 minutes and 22.45 seconds (22.45s).
+[0m15:12:38.324207 [debug] [MainThread]: Command end result
+[0m15:12:38.440144 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\tommad01\Desktop\Lab\lab_dbt\target\manifest.json
+[0m15:12:38.447076 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\tommad01\Desktop\Lab\lab_dbt\target\semantic_manifest.json
+[0m15:12:38.453791 [debug] [MainThread]: Wrote artifact OsiDocument to C:\Users\tommad01\Desktop\Lab\lab_dbt\target\osi_document.json
+[0m15:12:38.465792 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\tommad01\Desktop\Lab\lab_dbt\target\run_results.json
+[0m15:12:38.465792 [info ] [MainThread]: 
+[0m15:12:38.466794 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m15:12:38.467790 [info ] [MainThread]: 
+[0m15:12:38.468789 [info ] [MainThread]: Done. PASS=9 WARN=0 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=9
+[0m15:12:38.469790 [debug] [MainThread]: Command `dbt run` succeeded at 15:12:38.469790 after 29.64 seconds
+[0m15:12:38.470857 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D4D0BD1750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D4D0B24550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D4D0B37090>]}
+[0m15:12:38.471390 [debug] [MainThread]: Flushing usage events
+[0m15:12:38.906373 [debug] [MainThread]: An error was encountered while trying to flush usage events

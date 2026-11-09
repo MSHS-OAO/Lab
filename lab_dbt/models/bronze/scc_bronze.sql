@@ -27,6 +27,7 @@ select distinct scc_raw.Ward,
                 scc_raw.Addon,
                 scc_raw.MPI,
                 scc_raw._ingested_at,
+                scc_raw._source_file,
                 ps.SCC_TEST_ID,
                 tt.CLINIC_TYPE,
                 site_map.SITE

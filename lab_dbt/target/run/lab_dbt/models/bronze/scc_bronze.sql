@@ -33,6 +33,7 @@
 	`Addon`,
 	`MPI`,
 	`_ingested_at`,
+	`_source_file`,
 	`SCC_TEST_ID`,
 	`CLINIC_TYPE`,
 	`SITE`
@@ -68,6 +69,7 @@
                 scc_raw.Addon,
                 scc_raw.MPI,
                 scc_raw._ingested_at,
+                scc_raw._source_file,
                 ps.SCC_TEST_ID,
                 tt.CLINIC_TYPE,
                 site_map.SITE
