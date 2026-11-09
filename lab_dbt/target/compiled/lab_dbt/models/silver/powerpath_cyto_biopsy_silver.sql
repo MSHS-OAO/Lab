@@ -1,64 +1,30 @@
-with raw as (
+-- Silver: cytology + breast filters, derived columns (TEST_NAME, TAT), plus frozen history.
+-- Mappings (site, patient setting, MSBK override, casts) live in powerpath_cyto_biopsy_bronze.
+
+with filtered as (
     select *
     from `opsanalytics_adb_workspace01`.`lab_staging`.`powerpath_cyto_biopsy_bronze`
     where spec_group in ('CYTO NONGYN', 'CYTO GYN', 'BREAST')
       and spec_sort_order = 'A'
 ),
 
-cleaned as (
-    select
-        replace(Case_no, '*failed to decode utf16*', '')   as Case_no,
-        case
-            when Facility = 'KH'   then 'MSB'
-            when Facility = 'R'    then 'MSW'
-            when Facility = 'STL'  then 'MSM'
-            when Facility = 'SNCH' then 'MSSN'
-            when Facility = 'MSS'  then 'MSH'
-            when Facility = 'SL'   then 'MSM'
-            when Facility = 'PACC' then 'MSUS'
-            else Facility
-        end                                                 as Facility,
-        case
-            when Spec_code = 'BREA1' and spec_group = 'BREAST' then 'Breast Biopsy'
-            when spec_group = 'CYTO NONGYN'                    then 'Cytology NONGYN'
-            when spec_group = 'CYTO GYN'                       then 'Cytology GYN'
-            else 'Breast Large/Resection'
-        end                                                 as TEST_NAME,
-        cast(Case_created_date as timestamp)                as Case_created_date,
-        cast(Collection_Date   as timestamp)                as Collection_Date,
-        cast(Received_Date     as timestamp)                as Received_Date,
-        cast(signed_out_date   as timestamp)                as signed_out_date,
-        Priority, Spec_code, Specimen_description, CPT_code, Rev_ctr,
-        Encounter_no, MRN, Refmd_code, Refmd_name,
-        spec_sort_order, spec_group, patient_type,
-        PATIENT_SETTING,
-        _source_file, _ingested_at
-    from raw
-),
-
-with_setting as (
-    select
-        c.* except (PATIENT_SETTING),
-        case
-            when c.Rev_ctr = 'MSBK' and c.patient_type in ('A', 'O') then 'Amb'
-            when c.Rev_ctr = 'MSBK' and c.patient_type = 'IN'        then 'IP'
-            else PATIENT_SETTING
-        end as PATIENT_SETTING
-    from cleaned c
-),
-
 with_tat as (
     select
-        w.*,
-        datediff(w.signed_out_date, w.Collection_Date)   as Collection_to_signed_out,
+        f.*,
+        case
+            when f.Spec_code = 'BREA1' and f.spec_group = 'BREAST' then 'Breast Biopsy'
+            when f.spec_group = 'CYTO NONGYN'                      then 'Cytology NONGYN'
+            when f.spec_group = 'CYTO GYN'                         then 'Cytology GYN'
+            else 'Breast Large/Resection'
+        end                                              as TEST_NAME,
+        datediff(f.signed_out_date, f.Collection_Date)   as Collection_to_signed_out,
         so.bizday_index - rc.bizday_index                as Received_to_signed_out
-    from with_setting w
+    from filtered f
     left join `opsanalytics_adb_workspace01`.`lab`.`date_filter` rc
-        on cast(w.Received_Date   as date) = rc.calendar_date
+        on cast(f.Received_Date   as date) = rc.calendar_date
     left join `opsanalytics_adb_workspace01`.`lab`.`date_filter` so
-        on cast(w.signed_out_date as date) = so.calendar_date
+        on cast(f.signed_out_date as date) = so.calendar_date
 ),
-
 
 new_data as (
     select
@@ -113,7 +79,6 @@ historical as (
         cast(null as timestamp) as _INGESTED_AT
     from `opsanalytics_adb_workspace01`.`lab`.`powerpath_cyto_biopsy_historical`
 )
-
 
 select * from historical
 union all

@@ -1,6 +1,14 @@
-{{ config(materialized='table') }}
+with backlog_with_targets as (
+    select
+        s.*,
+        tt.RECEIVED_TO_SIGNED_OUT_DAYS
+    from {{ ref('cyto_backlog_silver') }} s
+    left join {{ source('lab', 'lab_kpi_ap_tat_targets') }} tt
+        on  s.spec_group      = tt.SPEC_GROUP
+        and s.PATIENT_SETTING = tt.PATIENT_SETTING
+),
 
-with backlog_summary as (
+backlog_summary as (
     select
         spec_group,
         _report_date,
@@ -9,7 +17,7 @@ with backlog_summary as (
         ceil(percentile(case when backlog > RECEIVED_TO_SIGNED_OUT_DAYS then backlog end, 0.50)) as percentile_50th,
         coalesce(max(case when backlog > RECEIVED_TO_SIGNED_OUT_DAYS then backlog end), 0) as maximum,
         sum(case when acc_date_only = _report_date then 1 else 0 end) as cyto_acc_spec_group_vol
-    from {{ ref('cyto_backlog_silver') }}
+    from backlog_with_targets
     group by 1, 2
 ),
 

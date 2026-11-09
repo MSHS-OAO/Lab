@@ -5,10 +5,24 @@ sources:
     catalog: opsanalytics_adb_workspace01
     schema: lab
     tables:
-      - name: mshs_holidays
-        description: NYSE holidays 1990-2100 excluding Good Friday. Working-day calendar for AP turnaround times.
       - name: powerpath_raw
         description: Raw PowerPath KPI report extracts, one row per specimen, all columns as strings.
+      - name: scc_raw
+        description: Raw SCC report extracts, one row per specimen, all columns as strings.
+      - name: cyto_backlog_raw
+        description: >
+          Raw cytology pending-cases extracts. One snapshot per report date —
+          the same case recurs across files until signed out. Grain is (Case_no, _report_date).
+      - name : lab_kpi_scc_test_codes
+        description: scc test codes mapping
+      - name : lab_kpi_scc_clinictype
+        description: Crosswalk clinic type setting 
+      - name : lab_kpi_site_names
+        description : site mapper for  scc  data
+      - name: lab_kpi_scc_icu
+        description: SCC ICU units by SITE, WARD, WARD_NAME. A lab is ICU when its site+ward+ward name is listed here.
+      - name: lab_kpi_turnaround_targets
+        description: CP turnaround targets by TEST, DIVISION, PRIORITY, PT_SETTING ('All' = applies to every value).
       - name: lab_kpi_ap_patient_setting
         description: Crosswalk from REV_CTR to patient setting.
       - name: lab_kpi_gi_codes
@@ -20,11 +34,7 @@ sources:
           Frozen Oracle-era output of the R pipeline, signed out 2025-01-01 through 2026-05-17.
           Predates Excel ingestion, so _SOURCE_FILE and _INGESTED_AT are null.
           Never written to — union'd into powerpath_cyto_biopsy_silver as history.
-      - name: cyto_backlog_raw
-        description: >
-          Raw cytology pending-cases extracts. One snapshot per report date —
-          the same case recurs across files until signed out. Grain is (Case_no, _report_date).
-      - name: lab_kpi_ap_tat_targets
-        description: Turnaround targets by SPEC_GROUP and PATIENT_SETTING.
       - name: date_filter
         description: Table for business days calculation; created from mshs_holidays.
+      - name: mshs_holidays
+        description: NYSE holidays 1990-2100 excluding Good Friday. Working-day calendar for AP turnaround times.
