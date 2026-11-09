@@ -27,5 +27,6 @@ Reference logic source of truth: the R Markdown dashboard
 | Clinical pathology (SCC) | `scc_bronze` | `scc_silver` | `scc_gold`, `cp_*_dashboard_template`, `cp_tat_gold`, `cp_vol_gold`, `cp_missing_collections_gold`, `cp_add_on_gold` |
 
 Site codes follow R: PACC stays PACC, BIMC -> MSBI (then excluded). spec_group BREAST -> Breast.
-Formatting (colours, kable, pivots to site columns) stays in the R report; gold returns long tables.
+Gold tables feed Tableau. Keep them long (one row per cell, site as a column) with nulls for
+empty cells; colours, pivots to site columns and table layout are done in Tableau.
 Shared AP summary logic is the `ap_signed_out_summary` macro.
