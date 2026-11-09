@@ -26,8 +26,11 @@ models:
       - dbt_utils.unique_combination_of_columns:
           arguments:
             combination_of_columns: [Case_no, _report_date]
-  - name: cyto_backlog_gold
-    description: One row per pending case per report date.
     columns:
       - name: backlog
-        description: Business days from case creation to report date, minus one. Feeds into Dashboard
+        description: Business days from case creation to report date, minus one.
+  - name: cyto_backlog_gold
+    description: >
+      One row per spec_group per report date. Backlog volume, 25th/50th percentile and
+      maximum of backlogged days (cases past target), plus total accessioned volume.
+      Feeds the dashboard's Cytology backlog table.
