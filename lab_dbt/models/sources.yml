@@ -11,6 +11,10 @@ sources:
         description: Raw PowerPath KPI report extracts, one row per specimen, all columns as strings.
       - name: lab_kpi_ap_patient_setting
         description: Crosswalk from REV_CTR to patient setting.
+      - name: lab_kpi_gi_codes
+        description: Crosswalk from SPEC_CODE to GI_CODE_INCLEXCL.
+      - name: lab_kpi_ap_tat_targets
+        description: Turnaround time targets for anatomic pathology cases
       - name: powerpath_cyto_biopsy_historical
         description: >
           Frozen Oracle-era output of the R pipeline, signed out 2025-01-01 through 2026-05-17.

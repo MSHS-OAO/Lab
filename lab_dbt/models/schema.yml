@@ -1,6 +1,9 @@
 version: 2
 
 models:
+  - name: powerpath_cyto_biopsy_bronze
+    description: Contains data raw powerpath data from 05/18/2026 
+
   - name: powerpath_cyto_biopsy_silver
  #   tests:
  #    - dbt_utils.unique_combination_of_columns:
