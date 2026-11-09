@@ -50,5 +50,5 @@ cleaned as (
         spec_sort_order, spec_group, patient_type,
         PATIENT_SETTING,
         _source_file, _ingested_at
-    from raw
-),
+    from with_setting
+)

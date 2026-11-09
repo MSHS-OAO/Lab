@@ -31,7 +31,7 @@
 	`_ingested_at`,
 	`PATIENT_SETTING`
   )
-  
+  comment 'Contains data raw powerpath data from 05/18/2026'
   as (
     select
     c.*,

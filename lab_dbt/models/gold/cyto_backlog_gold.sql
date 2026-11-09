@@ -1,5 +1,3 @@
-{{ config(materialized='table') }}
-
 with backlog_summary as (
     select
         spec_group,
