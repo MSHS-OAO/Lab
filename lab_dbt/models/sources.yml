@@ -30,8 +30,6 @@ sources:
           Frozen Oracle-era output of the R pipeline, signed out 2025-01-01 through 2026-05-17.
           Predates Excel ingestion, so _SOURCE_FILE and _INGESTED_AT are null.
           Never written to — union'd into powerpath_cyto_biopsy_silver as history.
-      # - name: lab_kpi_ap_tat_targets
-      #   description: Turnaround targets by SPEC_GROUP and PATIENT_SETTING.
       - name: date_filter
         description: Table for business days calculation; created from mshs_holidays.
       - name: mshs_holidays
