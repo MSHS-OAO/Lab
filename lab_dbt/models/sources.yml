@@ -34,7 +34,12 @@ sources:
           Frozen Oracle-era output of the R pipeline, signed out 2025-01-01 through 2026-05-17.
           Predates Excel ingestion, so _SOURCE_FILE and _INGESTED_AT are null.
           Never written to — union'd into powerpath_cyto_biopsy_silver as history.
-      - name: date_filter
-        description: Table for business days calculation; created from mshs_holidays.
       - name: mshs_holidays
         description: NYSE holidays 1990-2100 excluding Good Friday. Working-day calendar for AP turnaround times.
+      - name: epic_cytology_raw
+        description: >
+          Full snapshot of Oracle PATH_ORDER_RESULT_V (Epic pathology orders/results), written by
+          Processing/oracle_epic_cytology. Used to keep only cytology cases finalized in Epic
+          (LAB_STATUS in 'Final result', 'Edited Result - FINAL'), joined on SPECIMEN_ID = Case_no.
+      - name: lab_kpi_definitions
+        description: KPI definitions shown on the dashboard's Assumptions and Methodology tab.

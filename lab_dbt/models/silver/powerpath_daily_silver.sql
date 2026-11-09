@@ -54,7 +54,7 @@ select
     f._source_file            as _SOURCE_FILE,
     f._ingested_at            as _INGESTED_AT
 from filtered f
-left join {{ source('lab', 'date_filter') }} rc
+left join {{ ref('date_filter') }} rc
     on cast(f.Received_Date as date) = rc.calendar_date
-left join {{ source('lab', 'date_filter') }} so
+left join {{ ref('date_filter') }} so
     on cast(f.signed_out_date as date) = so.calendar_date
