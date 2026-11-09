@@ -31,10 +31,9 @@
 	`PATIENT_SETTING`,
 	`acc_date_only`,
 	`acc_day_only`,
-	`backlog` comment 'Business days from case creation to report date, minus one.'
+	`backlog`
   )
-  comment 'One row per pending case per report date. Snapshot grain — the same case recurs daily until signed out. Never dedupe on Case_no alone.
-'
+  
   as (
     -- Silver: cytology spec-group filter + derived backlog columns.
 -- Grain: one row per pending case per report date (Case_no, _report_date).
