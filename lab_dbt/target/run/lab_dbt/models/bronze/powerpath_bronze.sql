@@ -27,7 +27,7 @@
 	`_source_file`,
 	`_ingested_at`
   )
-  
+  comment 'Raw PowerPath extracts with site, spec_group, patient setting and GI code mappings. Feeds cytology and surgical pathology.'
   as (
     -- Bronze: raw PowerPath + reference mappings (no filtering, no calculations)
 
