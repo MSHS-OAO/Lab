@@ -24,7 +24,7 @@ Reference logic source of truth: the R Markdown dashboard
 | Surgical pathology | `powerpath_bronze` | `powerpath_daily_silver` | `powerpath_sp_gold` |
 | Cytology backlog | `cyto_backlog_bronze` | `cyto_backlog_silver` | `cyto_backlog_gold` |
 | AP dashboard | | | `ap_dashboard_template`, `ap_dashboard_gold` |
-| Clinical pathology (SCC) | `scc_bronze` | `scc_silver` | `scc_gold`, `cp_*_dashboard_template`, `cp_tat_gold`, `cp_vol_gold`, `cp_missing_collections_gold`, `cp_add_on_gold` |
+| Clinical pathology (SCC) | `scc_bronze` | `scc_silver` | `scc_preprocessed_gold` (one row per lab + targets), `scc_gold`, `scc_monthly_gold` (+ Oracle history), `cp_*_dashboard_template`, `cp_tat_gold`, `cp_vol_gold`, `cp_missing_collections_gold`, `cp_add_on_gold` |
 
 Site codes follow R: PACC stays PACC, BIMC -> MSBI (then excluded). spec_group BREAST -> Breast.
 Gold tables feed Tableau. Keep them long (one row per cell, site as a column) with nulls for

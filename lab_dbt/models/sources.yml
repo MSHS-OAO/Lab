@@ -43,3 +43,15 @@ sources:
           (LAB_STATUS in 'Final result', 'Edited Result - FINAL'), joined on SPECIMEN_ID = Case_no.
       - name: lab_kpi_definitions
         description: KPI definitions shown on the dashboard's Assumptions and Methodology tab.
+
+  # Frozen copies of Oracle tables loaded by Archive/Lab Mapping and Raw Data Ingestion From Oracle.ipynb.
+  # They live in the same schema dbt builds into (lab_staging for dev, lab_production for prod).
+  - name: lab_history
+    catalog: opsanalytics_adb_workspace01
+    schema: "{{ target.schema }}"
+    tables:
+      - name: scc_preprocessed_silver
+        description: >
+          Oracle LAB_KPI_PREPROCESSED_DAILY: one row per resulted SCC lab written by the R pipeline
+          before dbt. Primary key (ORDERID, TEST, RESULTTIME, TESTNAME). Union'd into scc_monthly_gold
+          for result dates before dbt data starts.
