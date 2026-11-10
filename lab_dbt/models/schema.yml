@@ -67,6 +67,17 @@ models:
 
   - name: scc_gold
     description: SCC daily summary (R cp_summary) by site, result date, test, setting, priority and targets.
+  - name: scc_preprocessed_gold
+    description: >
+      One row per resulted SCC lab with targets, DASHBOARD_PRIORITY and in-target flags
+      (dbt equivalent of Oracle LAB_KPI_PREPROCESSED_DAILY). Feeds scc_gold and scc_monthly_gold.
+  - name: scc_monthly_gold
+    description: >
+      Rebuild of Oracle LAB_KPI_CP_MONTHLY_VIEW (same columns). Oracle history (lab_history.scc_preprocessed_silver)
+      up to its last result date, then scc_preprocessed_gold. Months with fewer than 28 result days are dropped.
+    columns:
+      - name: TOTALRESULTED
+        tests: [not_null]
   - name: cp_tat_dashboard_template
     description: Valid CP TAT table cells (test, site, dashboard priority, dashboard setting).
     tests:
