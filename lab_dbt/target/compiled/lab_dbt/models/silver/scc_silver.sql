@@ -89,42 +89,60 @@ file_result_date as (
         group by _source_file, RESULT_DATE
     )
     where rn = 1
+),
+
+per_file as (
+    select
+        n.Ward                   as LOC_CODE,
+        n.WARD_NAME              as LOC_NAME,
+        n.ORDER_ID,
+        n.REQUESTING_DOC_NAME    as REQUEST_MD,
+        n.MPI                    as MSMRN,
+        n.WORK_SHIFT,
+        n.TEST_NAME,
+        n.TEST,
+        n.DIVISION,
+        n.PRIORITY               as ORDER_PRIORITY,
+        n.SITE,
+        n.ICU,
+        n.CLINIC_TYPE            as LOC_TYPE,
+        n.SETTING,
+        n.SETTING_ROLL_UP,
+        n.DETAILED_SETTING,
+        n.DASHBOARD_SETTING,
+        n.ADJ_PRIORITY,
+        n.ORDERING_DATE          as ORDER_TIME,
+        n.COLLECTION_DATE        as COLLECT_TIME,
+        n.RECEIVE_DATE           as RECEIVE_TIME,
+        n.VERIFIED_DATE          as RESULT_TIME,
+        n.RESULT_DATE,
+        n.COLLECT_TO_RECEIVE_TAT,
+        n.RECEIVE_TO_RESULT_TAT,
+        n.COLLECT_TO_RESULT_TAT,
+        n.ADD_ON_FINAL,
+        n.MISSING_COLLECT,
+        n.RECEIVE_TIME_TAT_INCL,
+        n.COLLECT_TIME_TAT_INCL,
+        n._source_file           as _SOURCE_FILE,
+        n._ingested_at           as _INGESTED_AT
+    from no_dupes n
+    join file_result_date d
+        on  n._source_file = d._source_file
+        and n.RESULT_DATE  = d.RESULT_DATE
+),
+
+-- The same lab can arrive in more than one daily file. Oracle LAB_KPI_PREPROCESSED_DAILY
+-- kept one row per (ORDERID, TEST, RESULTTIME, TESTNAME); keep the most recently ingested.
+cross_file as (
+    select
+        *,
+        row_number() over (
+            partition by ORDER_ID, TEST, RESULT_TIME, TEST_NAME
+            order by _INGESTED_AT desc, _SOURCE_FILE desc
+        ) as pk_rank
+    from per_file
 )
 
-select
-    n.Ward                   as LOC_CODE,
-    n.WARD_NAME              as LOC_NAME,
-    n.ORDER_ID,
-    n.REQUESTING_DOC_NAME    as REQUEST_MD,
-    n.MPI                    as MSMRN,
-    n.WORK_SHIFT,
-    n.TEST_NAME,
-    n.TEST,
-    n.DIVISION,
-    n.PRIORITY               as ORDER_PRIORITY,
-    n.SITE,
-    n.ICU,
-    n.CLINIC_TYPE            as LOC_TYPE,
-    n.SETTING,
-    n.SETTING_ROLL_UP,
-    n.DETAILED_SETTING,
-    n.DASHBOARD_SETTING,
-    n.ADJ_PRIORITY,
-    n.ORDERING_DATE          as ORDER_TIME,
-    n.COLLECTION_DATE        as COLLECT_TIME,
-    n.RECEIVE_DATE           as RECEIVE_TIME,
-    n.VERIFIED_DATE          as RESULT_TIME,
-    n.RESULT_DATE,
-    n.COLLECT_TO_RECEIVE_TAT,
-    n.RECEIVE_TO_RESULT_TAT,
-    n.COLLECT_TO_RESULT_TAT,
-    n.ADD_ON_FINAL,
-    n.MISSING_COLLECT,
-    n.RECEIVE_TIME_TAT_INCL,
-    n.COLLECT_TIME_TAT_INCL,
-    n._source_file           as _SOURCE_FILE,
-    n._ingested_at           as _INGESTED_AT
-from no_dupes n
-join file_result_date d
-    on  n._source_file = d._source_file
-    and n.RESULT_DATE  = d.RESULT_DATE
+select * except (pk_rank)
+from cross_file
+where pk_rank = 1

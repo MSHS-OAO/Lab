@@ -5,6 +5,7 @@ with filtered as (
     select *
     from `opsanalytics_adb_workspace01`.`lab_staging`.`cyto_backlog_bronze`
     where spec_group in ('CYTO NONGYN', 'CYTO GYN')
+      and coalesce(Facility, '') <> 'MSBI'      -- R drops MSBI after site mapping (keeps blanks)
 )
 
 select
@@ -14,7 +15,7 @@ select
     -- R: bizdays(Case_created_date, today) - 1
     greatest(rd.bizday_index - cc.bizday_index - 1, 0)  as backlog
 from filtered f
-left join `opsanalytics_adb_workspace01`.`lab`.`date_filter` cc
+left join `opsanalytics_adb_workspace01`.`lab_staging`.`date_filter` cc
     on cast(f.Case_created_date as date) = cc.calendar_date
-left join `opsanalytics_adb_workspace01`.`lab`.`date_filter` rd
+left join `opsanalytics_adb_workspace01`.`lab_staging`.`date_filter` rd
     on f._report_date = rd.calendar_date
