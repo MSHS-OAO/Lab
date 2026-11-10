@@ -40,11 +40,11 @@ select
         when c.Facility = 'KH'   then 'MSB'
         when c.Facility = 'R'    then 'MSW'
         when c.Facility = 'STL'  then 'MSM'
+        when c.Facility = 'BIMC' then 'MSBI'
         when c.Facility = 'SNCH' then 'MSSN'
         when c.Facility = 'MSS'  then 'MSH'
         when c.Facility = 'SL'   then 'MSM'
-        when c.Facility = 'PACC' then 'MSUS'
-        else c.Facility
+        else c.Facility                        -- PACC stays PACC (as in R)
     end                                        as Facility,
     cast(c.Case_created_date as timestamp)     as Case_created_date,
     cast(c.Received_Date     as timestamp)     as Received_Date,

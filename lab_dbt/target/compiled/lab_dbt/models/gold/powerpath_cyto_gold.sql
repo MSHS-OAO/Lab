@@ -1,3 +1,5 @@
+-- Gold: cytology signed-out summary (CYTO GYN / CYTO NONGYN). Mirrors cyto_prep() summary.
+
 with base as (
     select
         s.*,
@@ -7,8 +9,9 @@ with base as (
         tt.COLLECTED_TO_SIGNED_OUT_DAYS
     from `opsanalytics_adb_workspace01`.`lab_staging`.`powerpath_cyto_biopsy_silver` s
     left join `opsanalytics_adb_workspace01`.`lab`.`lab_kpi_ap_tat_targets` tt
-        on  s.SPEC_GROUP       = tt.SPEC_GROUP
-        and s.PATIENT_SETTING  = tt.PATIENT_SETTING
+        on  s.SPEC_GROUP      = tt.SPEC_GROUP
+        and s.PATIENT_SETTING = tt.PATIENT_SETTING
+    where s.SPEC_GROUP in ('CYTO GYN', 'CYTO NONGYN')
 )
 
 select
