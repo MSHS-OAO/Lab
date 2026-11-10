@@ -1,64 +1,45 @@
-with raw as (
-    select *
-    from {{ ref('powerpath_cyto_biopsy_bronze') }}
-    where spec_group in ('CYTO NONGYN', 'CYTO GYN', 'BREAST')
-      and spec_sort_order = 'A'
+-- Silver: cytology + breast cases (filters, TEST_NAME, TAT), plus frozen Oracle-era history.
+-- Mirrors the filter/TAT part of cyto_prep() in the Rmd.
+-- Mappings (site, spec_group, patient setting, MSBK override, casts) live in powerpath_bronze.
+
+with epic_finalized as (
+    -- R: cytology cases count only once they are finalized in Epic
+    select distinct SPECIMEN_ID
+    from {{ source('lab', 'epic_cytology_raw') }}
+    where LAB_STATUS in ('Final result', 'Edited Result - FINAL')
 ),
 
-cleaned as (
-    select
-        replace(Case_no, '*failed to decode utf16*', '')   as Case_no,
-        case
-            when Facility = 'KH'   then 'MSB'
-            when Facility = 'R'    then 'MSW'
-            when Facility = 'STL'  then 'MSM'
-            when Facility = 'SNCH' then 'MSSN'
-            when Facility = 'MSS'  then 'MSH'
-            when Facility = 'SL'   then 'MSM'
-            when Facility = 'PACC' then 'MSUS'
-            else Facility
-        end                                                 as Facility,
-        case
-            when Spec_code = 'BREA1' and spec_group = 'BREAST' then 'Breast Biopsy'
-            when spec_group = 'CYTO NONGYN'                    then 'Cytology NONGYN'
-            when spec_group = 'CYTO GYN'                       then 'Cytology GYN'
-            else 'Breast Large/Resection'
-        end                                                 as TEST_NAME,
-        cast(Case_created_date as timestamp)                as Case_created_date,
-        cast(Collection_Date   as timestamp)                as Collection_Date,
-        cast(Received_Date     as timestamp)                as Received_Date,
-        cast(signed_out_date   as timestamp)                as signed_out_date,
-        Priority, Spec_code, Specimen_description, CPT_code, Rev_ctr,
-        Encounter_no, MRN, Refmd_code, Refmd_name,
-        spec_sort_order, spec_group, patient_type,
-        PATIENT_SETTING,
-        _source_file, _ingested_at
-    from raw
-),
-
-with_setting as (
-    select
-        c.* except (PATIENT_SETTING),
-        case
-            when c.Rev_ctr = 'MSBK' and c.patient_type in ('A', 'O') then 'Amb'
-            when c.Rev_ctr = 'MSBK' and c.patient_type = 'IN'        then 'IP'
-            else PATIENT_SETTING
-        end as PATIENT_SETTING
-    from cleaned c
+filtered as (
+    select b.*
+    from {{ ref('powerpath_bronze') }} b
+    left join epic_finalized e
+        on b.Case_no = e.SPECIMEN_ID
+    where b.spec_group in ('CYTO NONGYN', 'CYTO GYN', 'Breast')
+      and b.spec_sort_order = 'A'                         -- primary specimens only
+      and coalesce(b.Facility, '') <> 'MSBI'              -- R drops MSBI after site mapping (keeps blanks)
+      and (b.spec_group = 'Breast' or e.SPECIMEN_ID is not null)
 ),
 
 with_tat as (
     select
-        w.*,
-        datediff(w.signed_out_date, w.Collection_Date)   as Collection_to_signed_out,
+        f.*,
+        case
+            when f.Spec_code = 'BREA1' and f.spec_group = 'Breast' then 'Breast Biopsy'
+            when f.spec_group = 'CYTO NONGYN'                      then 'Cytology NONGYN'
+            when f.spec_group = 'CYTO GYN'                         then 'Cytology GYN'
+            else 'Breast Large/Resection'
+        end                                              as TEST_NAME,
+        -- R: difftime(signed_out, collection, units = "days") -> fractional calendar days
+        (unix_timestamp(f.signed_out_date) - unix_timestamp(f.Collection_Date)) / 86400.0
+                                                         as Collection_to_signed_out,
+        -- R: bizdays(Received_Date, signed_out_date)
         so.bizday_index - rc.bizday_index                as Received_to_signed_out
-    from with_setting w
-    left join {{ source('lab','date_filter') }} rc
-        on cast(w.Received_Date   as date) = rc.calendar_date
-    left join {{ source('lab','date_filter') }} so
-        on cast(w.signed_out_date as date) = so.calendar_date
+    from filtered f
+    left join {{ ref('date_filter') }} rc
+        on cast(f.Received_Date   as date) = rc.calendar_date
+    left join {{ ref('date_filter') }} so
+        on cast(f.signed_out_date as date) = so.calendar_date
 ),
-
 
 new_data as (
     select
@@ -84,14 +65,12 @@ new_data as (
         case
             when TEST_NAME = 'Breast Biopsy'          then 3
             when TEST_NAME = 'Breast Large/Resection' then 5
-            when TEST_NAME = 'Cytology GYN'           then 8
             else 8
         end                     as TAT_TARGET,
         case
             when Received_to_signed_out <= case
                 when TEST_NAME = 'Breast Biopsy'          then 3
                 when TEST_NAME = 'Breast Large/Resection' then 5
-                when TEST_NAME = 'Cytology GYN'           then 8
                 else 8
             end then 1 else 0
         end                     as IS_TAT_WITHIN_TARGET,
@@ -103,17 +82,21 @@ new_data as (
 ),
 
 historical as (
+    -- Normalize the frozen history to the same site / spec_group values as new data
     select
-        FACILITY, PRIORITY, SPEC_CODE, SPECIMEN_DESCRIPTION, CPT_CODE, REV_CTR,
+        case when FACILITY = 'MSUS' then 'PACC' else FACILITY end              as FACILITY,
+        PRIORITY, SPEC_CODE, SPECIMEN_DESCRIPTION, CPT_CODE, REV_CTR,
         ENCOUNTER_NO, MRN, CASE_NO, CASE_CREATED_DATE, COLLECTION_DATE,
         RECEIVED_DATE, SIGNED_OUT_DATE, REFMD_CODE, SPEC_SORT_ORDER, TEST_NAME,
         PATIENT_SETTING, COLLECTION_TO_SIGNED_OUT, RECEIVED_TO_SIGNED_OUT,
-        TAT_TARGET, IS_TAT_WITHIN_TARGET, SPEC_GROUP, REFMD_NAME,
+        TAT_TARGET, IS_TAT_WITHIN_TARGET,
+        case when upper(SPEC_GROUP) = 'BREAST' then 'Breast' else SPEC_GROUP end as SPEC_GROUP,
+        REFMD_NAME,
         cast(null as string)    as _SOURCE_FILE,
         cast(null as timestamp) as _INGESTED_AT
     from {{ source('lab', 'powerpath_cyto_biopsy_historical') }}
+    where coalesce(FACILITY, '') not in ('MSBI', 'BIMC')
 )
-
 
 select * from historical
 union all

@@ -1,6 +1,16 @@
 version: 2
 
 models:
+  - name: date_filter
+    description: MSHS working-day calendar 1990-2100 (weekends and mshs_holidays excluded).
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          arguments:
+            combination_of_columns: [calendar_date]
+
+  - name: powerpath_bronze
+    description: Raw PowerPath extracts with site, spec_group, patient setting and GI code mappings. Feeds cytology and surgical pathology.
+
   - name: powerpath_cyto_biopsy_silver
  #   tests:
  #    - dbt_utils.unique_combination_of_columns:
@@ -15,16 +25,73 @@ models:
               arguments:
                 values: ['Breast Biopsy', 'Breast Large/Resection', 'Cytology GYN', 'Cytology NONGYN']
 
-  - name: cyto_backlog_silver
+  # - name: cyto_backlog_silver
+  #   description: >
+  #     One row per pending case per report date. Snapshot grain — the same case
+  #     recurs daily until signed out. Never dedupe on Case_no alone.
+  #   tests:
+  #     - dbt_utils.unique_combination_of_columns:
+  #         arguments:
+  #           combination_of_columns: [Case_no, _report_date]
+  #   columns:
+  #     - name: backlog
+  #       description: Business days from case creation to report date, minus one.
+  - name: cyto_backlog_gold
     description: >
-      One row per pending case per report date. Snapshot grain — the same case
-      recurs daily until signed out. Never dedupe on Case_no alone.
+      One row per spec_group per report date (_report_date = run date; resulted_date = day before).
+      Backlog volume, 25th/50th percentile (percentile of group percentiles, as in R), maximum,
+      total accessioned volume, plus 75th percentile / min / average / days_of_work.
+      resulted_date_is_working_day = false -> dashboard shows the weekend/holiday message.
     tests:
       - dbt_utils.unique_combination_of_columns:
           arguments:
-            combination_of_columns: [Case_no, _report_date]
-  - name: cyto_backlog_gold
-    description: One row per pending case per report date.
-    columns:
-      - name: backlog
-        description: Business days from case creation to report date, minus one. Feeds into Dashboard
+            combination_of_columns: [spec_group, _report_date]
+
+  - name: powerpath_cyto_gold
+    description: Cytology (CYTO GYN / NONGYN) signed-out summary, one row per spec code / site / setting / sign-out date.
+  - name: powerpath_sp_gold
+    description: Surgical pathology (Breast / GI) signed-out summary, one row per spec code / site / setting / sign-out date.
+
+  - name: ap_dashboard_template
+    description: Every AP dashboard cell (division, tab, spec group, setting, site, metric). SITE = 'All' is setting-level.
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          arguments:
+            combination_of_columns: [DIVISION, TAB, SPECIMEN_GROUP, PATIENT_SETTING, SITE, METRIC]
+  - name: ap_dashboard_gold
+    description: AP Efficiency Indicators and 24 Hour Volume cells per report date, long format. Null VALUE = no data (grey).
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          arguments:
+            combination_of_columns: [REPORT_DATE, DIVISION, TAB, SPECIMEN_GROUP, PATIENT_SETTING, SITE, METRIC]
+
+  - name: scc_gold
+    description: SCC daily summary (R cp_summary) by site, result date, test, setting, priority and targets.
+  - name: cp_tat_dashboard_template
+    description: Valid CP TAT table cells (test, site, dashboard priority, dashboard setting).
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          arguments:
+            combination_of_columns: [DIVISION, TEST, SITE, DASHBOARD_PRIORITY, DASHBOARD_SETTING]
+  - name: cp_vol_dashboard_template
+    description: Valid CP 24-hour volume cells (test, site, dashboard priority, patient setting).
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          arguments:
+            combination_of_columns: [DIVISION, TEST, SITE, DASHBOARD_PRIORITY, PT_SETTING]
+  - name: cp_tat_gold
+    description: CP TAT table cells per result date. SHOW_TAT = false where R hides TAT (C. diff Amb in Micro RRL).
+  - name: cp_vol_gold
+    description: CP 24-hour resulted volume per result date (0 where no labs).
+  - name: cp_missing_collections_gold
+    description: Labs missing collection times per result date and site.
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          arguments:
+            combination_of_columns: [RESULT_DATE, SITE]
+  - name: cp_add_on_gold
+    description: Add-on order volume per result date, test and site (0 where none).
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          arguments:
+            combination_of_columns: [RESULT_DATE, TEST, SITE]

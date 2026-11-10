@@ -1,5 +1,3 @@
-
-
 with base as (
     select
         s.*,
